@@ -1,0 +1,831 @@
+.hd-tooltip {
+  position: fixed;
+  z-index: var(--layer-tooltip, 9999);
+  box-sizing: border-box;
+  padding: 2px 14px 10px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-primary);
+  box-shadow: var(--shadow-s);
+  color: var(--text-normal);
+  font-size: var(--font-ui-small);
+  line-height: 1.55;
+  pointer-events: auto;
+}
+
+.hd-card-context {
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  font-size: 1.05em;
+  line-height: 1.55;
+  color: var(--text-normal);
+}
+
+.hd-table-card-topline {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  column-gap: 20px;
+  margin-bottom: 8px;
+}
+
+.hd-table-card-topline > .hd-ph {
+  grid-column: 2;
+  float: none;
+  margin: 0;
+  white-space: nowrap;
+  color: var(--text-muted);
+  font-size: 0.95em;
+}
+
+.hd-tooltip:has(.hd-card-context) {
+  padding: 12px 16px;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+.hd-tooltip:has(.hd-card-context) .hd-anchor {
+  color: var(--text-muted);
+}
+
+.hd-tooltip:has(.hd-card-context) .hd-en-block {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--background-modifier-border);
+  color: var(--text-muted);
+  row-gap: 6px;
+}
+
+.hd-tooltip:has(.hd-card-context) :is(.hd-en-pos-tag, .hd-en-bullet) {
+  color: var(--text-muted);
+}
+
+/* 阅读、听力原文的高亮完全交给 Obsidian 原生样式, 插件不再给原文高亮上色。 */
+
+/* 「隐藏原文高亮底色」开关: 只把本篇表格已收录词的正文高亮底色设为透明, 不隐藏 ==;
+   未收录的纯高亮(hd-plain-highlight)保持底色, 表格内高亮不受影响。 */
+body .hd-highlight-hidden :is(.markdown-rendered, .cm-s-obsidian) :is(mark, .cm-highlight):not(table *, .cm-table-widget *, pre *, code *, .internal-embed *, .hd-plain-highlight, .hd-plain-highlight *, :has(.hd-plain-highlight)) {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 写作、口语隐藏全部正文高亮, 不要求词表收录; 表格与嵌入内容保持原样。 */
+body .hd-highlight-hidden.hd-hide-unlisted-highlights :is(.markdown-rendered, .cm-s-obsidian) :is(mark, .cm-highlight):not(table *, .cm-table-widget *, pre *, code *, .internal-embed *) {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.hd-current-sense {
+  margin-bottom: 6px;
+  color: var(--text-muted);
+}
+
+.hd-listening-source {
+  display: none !important;
+}
+
+.hd-tooltip .hd-entry-sources {
+  clear: both;
+  margin-top: 16px;
+  color: var(--text-faint);
+  opacity: 0.85;
+  font: inherit;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.hd-meaning {
+  margin-bottom: 6px;
+}
+
+.hd-meaning:last-child,
+.hd-phrase-body {
+  margin-bottom: 0;
+}
+
+.hd-zh-block {
+  margin-bottom: 8px;
+  color: var(--text-normal);
+}
+
+.hd-zh-line {
+  margin-bottom: 2px;
+}
+
+.hd-zh-line.hd-pos-gap {
+  margin-top: 1em;
+}
+
+.hd-zh-line:last-child {
+  margin-bottom: 0;
+}
+
+/* 单词卡片显示阅读考过的释义, 文章卡片只强调当前语境义。 */
+.hd-tooltip mark:is(.hd-context-sense, .hd-tested-sense),
+.hd-mobile-meaning mark.hd-tested-sense {
+  background: var(--text-highlight-bg);
+  color: var(--text-normal);
+  border-radius: 3px;
+  padding: 0 2px;
+  font-weight: inherit;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* 牛津英文释义：两列网格，左列词性，右列释义；各词性的主项共用右列左对齐，不编号。 */
+.hd-en-block {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: 0.5em;
+  row-gap: 4px;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--background-modifier-border);
+  color: var(--text-faint);
+}
+
+.hd-en-pos-tag {
+  font-weight: 600;
+  color: var(--text-faint);
+}
+
+.hd-en-main + .hd-en-main,
+.hd-en-sub + .hd-en-main {
+  margin-top: 3px;
+}
+
+/* 子项：圆点悬挂缩进，折行文字与圆点后的文字对齐 */
+.hd-en-sub {
+  display: flex;
+  padding-left: 1em;
+}
+
+.hd-en-bullet {
+  flex-shrink: 0;
+  width: 0.9em;
+  color: var(--text-faint);
+}
+
+.hd-decomp {
+  padding-top: 6px;
+  border-top: 1px dashed var(--background-modifier-border);
+}
+
+/* 记忆锚点属于中文部分，不加分割线；分割线只留在中英文之间。颜色与音标一致 */
+.hd-decomp.hd-anchor {
+  padding-top: 0;
+  border-top: none;
+  color: var(--text-faint);
+}
+
+.hd-headword {
+  float: right;
+  margin-left: 12px;
+  color: var(--text-faint);
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller);
+}
+
+.hd-ph {
+  float: right;
+  margin-left: 12px;
+  color: var(--text-faint);
+  font-family: var(--font-monospace);
+  font-size: inherit;
+}
+
+/* 阅读卡片首行: search 词(与释义同色)在左, 音标在右。 */
+.hd-head-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.hd-head-row .hd-headword {
+  float: none;
+  margin: 0;
+  color: var(--text-normal);
+  font-family: inherit;
+  font-size: 1.1em;
+  font-weight: var(--font-semibold, 600);
+}
+
+.hd-head-row .hd-ph {
+  float: none;
+  margin: 0 0 0 auto;
+}
+
+.hd-tooltip > .hd-decomp:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+/* 隐藏列不用 display:none: 它的矩形全为 0, 会让 Obsidian 的 getClosestCell 提前中断,
+   点击时指针稍动就选出「第 0 列到按下列」的整行。改为保留 table-cell, 宽度与内容折叠为 0,
+   再右移 1px, 使它总比前一个可见格更靠近指针, 原函数不会提前中断(1px 远大于浮点误差)。 */
+table .hd-hidden-col {
+  display: table-cell;
+  width: 0 !important;
+  min-width: 0 !important;
+  max-width: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transform: translateX(1px);
+}
+table .hd-hidden-col > * { display: none !important; }
+
+/* 单词表第二列（设置 → 单词表第二列）：body.hd-second-column-meaning 时隐藏短语、显示释义。
+   编辑中的单元格保持原样，不打断编辑。 */
+body.hd-second-column-meaning table.hd-meaning-table .hd-chunk-meaning-cell:not(:has(.cm-editor)) > .table-cell-wrapper,
+body.hd-second-column-meaning table.hd-meaning-table .hd-chunk-meaning-cell:not(:has(.cm-editor)) > .hd-chunk-source,
+body.hd-second-column-meaning table.hd-meaning-table .hd-chunk-meaning-head:not(:has(.cm-editor)) > .table-cell-wrapper,
+body.hd-second-column-meaning table.hd-meaning-table .hd-chunk-meaning-head:not(:has(.cm-editor)) > .hd-chunk-source {
+  display: none;
+}
+
+body.hd-second-column-meaning table.hd-meaning-table td.hd-chunk-meaning-cell:not(:has(.cm-editor))::after {
+  content: attr(data-hd-meaning);
+  white-space: pre-line;
+}
+
+body.hd-second-column-meaning table.hd-meaning-table th.hd-chunk-meaning-head:not(:has(.cm-editor))::after {
+  content: attr(data-hd-meaning-label);
+}
+
+/* Mobile keeps the original detail cell for editing and cards, but presents
+   only its definition beside the word. Desktop never receives these classes. */
+table.hd-mobile-table .hd-mobile-definition:not(:has(.cm-editor)) > .table-cell-wrapper,
+table.hd-mobile-table .hd-mobile-definition > .hd-mobile-source {
+  display: none;
+}
+
+table.hd-mobile-table th.hd-mobile-definition:not(:has(.cm-editor))::after,
+table.hd-mobile-table td[data-hd-mobile-label]:not(:has(.cm-editor))::after {
+  content: attr(data-hd-mobile-label);
+}
+
+table.hd-mobile-table .hd-mobile-definition:has(.cm-editor) > .hd-mobile-meaning {
+  display: none;
+}
+
+table.hd-mobile-table .hd-mobile-meaning {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* Hidden cells are still :last-child, so themes (Baseline) draw the right edge
+   and right-hand corners on them. Give those to the last visible cell instead. */
+body:not(.table-100) table > tbody > tr > td.hd-visible-last {
+  border-right: var(--table-border-width) solid var(--table-border-color) !important;
+}
+
+table > tbody > tr:first-child > td.hd-visible-last,
+table > tbody > tr:first-child > td.hd-visible-last .table-cell-wrapper {
+  border-top-right-radius: var(--radius-s);
+}
+
+table > tbody > tr:last-child > td.hd-visible-last,
+table > tbody > tr:last-child > td.hd-visible-last .table-cell-wrapper {
+  border-bottom-right-radius: var(--radius-s);
+}
+
+.hd-phrase-table .hd-phrase-meaning,
+.hd-base-table .hd-phrase-meaning,
+.hd-base-table .hd-ex-meaning,
+.hd-cell-phonetic {
+  display: none;
+}
+
+.hd-row br.hd-br-hidden {
+  display: none;
+}
+
+.hd-row .hd-qtype {
+  display: none;
+}
+
+.hd-qtypes {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--background-modifier-border);
+  color: var(--text-accent);
+  font-size: var(--font-ui-smaller);
+}
+
+/* Keep the viewport stable when table widgets rebuild. */
+.hd-decomp-table,
+.hd-phrase-table,
+.hd-base-examples-table {
+  overflow-anchor: none;
+}
+
+/* H 高亮开关: 与耳机按钮同样插在词头格里, 几何与悬浮样式照 .audio-playback-btn。
+   耳机在最右侧, H 按钮再隔 --sound-actions-offset 让到它左边。 */
+.hd-decomp-table tr.hd-row > td.hd-word-cell,
+.hd-phrase-library tr.hd-row > td.hd-word-cell,
+.hd-base-examples-table tr.hd-row > td:first-child {
+  position: relative;
+}
+
+/* 评分 ≥ 1 的词头: 渲染层高亮, 样式与 Obsidian 原生 ==高亮== 一致; 源码里词头不再写 == 。 */
+.hd-score-mark {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-normal);
+}
+
+/* ==========================================================================
+   耳机点读（原 table-sound 插件的 styles.css，2026-10-05 原样并入）
+   ========================================================================== */
+
+/* Audio Playback: table-cell controls */
+
+/* 耳机按钮几何单一事实源：按钮尺寸与右偏移都从这里推导。 */
+body {
+  --sound-btn-size: 18px;
+  --sound-actions-offset: 4px;  /* 操作栏距单元格右内边 */
+  --sound-actions-gap: 0px;     /* 编辑区让给操作面板的净空 */
+}
+
+/* 按钮地盘 = 按钮实际占的宽度(--sound-actions-inset) + 让出的净空(--sound-actions-gap)，
+   正文据此留出右侧 padding，调净空只改 --sound-actions-gap 一处。 */
+td[data-audio-bound],
+th[data-audio-bound],
+td[data-sentence-audio-bound],
+th[data-sentence-audio-bound] {
+  position: relative !important;
+  --sound-actions-inset: calc(var(--sound-actions-offset) + var(--sound-btn-size));
+  --sound-actions-zone: calc(var(--sound-actions-inset) + var(--sound-actions-gap));
+  padding-right: var(--sound-actions-zone) !important;
+}
+
+td[data-audio-bound] .table-cell-wrapper,
+th[data-audio-bound] .table-cell-wrapper {
+  position: relative !important;
+}
+
+.audio-playback-btn {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  right: 4px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px !important;
+  min-height: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+  box-sizing: border-box !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 5px !important;
+  color: var(--text-muted, #8a8a8a) !important;
+  background: transparent !important;
+  user-select: none !important;
+  transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), transform 0.15s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  z-index: 11 !important;
+}
+
+td[data-audio-bound] > .audio-playback-btn,
+th[data-audio-bound] > .audio-playback-btn {
+  z-index: 11 !important;
+}
+
+.audio-playback-btn svg,
+.audio-playback-btn .svg-icon {
+  width: 12px !important;
+  height: 12px !important;
+  stroke-width: 2.2 !important;
+  stroke: currentColor !important;
+  display: block !important;
+}
+
+.audio-playback-btn:hover {
+  color: var(--interactive-accent, #6366f1) !important;
+  background-color: color-mix(in srgb, var(--interactive-accent, #6366f1) 12%, transparent) !important;
+  transform: translateY(-50%) scale(1.12) !important;
+}
+
+.audio-playback-btn:active {
+  transform: translateY(-50%) scale(0.92) !important;
+}
+
+/* 播放 / 暂停只改变耳机图标(见下), 不再给单元格加底色、描边或呼吸动画。
+   状态类 audio-is-playing / audio-is-paused 仍挂在单元格上, 图标依赖它们。 */
+body {
+  --sound-playing-tint: 102, 163, 209;
+}
+
+body.theme-dark {
+  --sound-playing-tint: 138, 190, 232;
+}
+
+/* ==================== 播放中 / 暂停中的耳机图标 ==================== */
+/* 状态类挂在单元格上（播放推进与重渲染补写都已维护好），图标只跟着它走，
+   因此不需要任何 JS。图标直接换形，同时说明「现在什么状态」和「点下去会怎样」：
+   播放中显示暂停符，暂停中显示播放三角。
+
+   保持无彩——单元格底色已经在表达「在播这一格」了，按钮再上色就是重复喊话。
+   字形用 SVG 遮罩上色（background 走 currentColor），而不是 border 拼形状：
+   这样三角的尖角可以做圆角收边，两道竖条也能有真正的圆头，
+   在 18px 的按钮里才不显得毛糙。 */
+td.audio-is-playing .audio-playback-btn svg,
+th.audio-is-playing .audio-playback-btn svg,
+td.audio-is-playing .audio-playback-btn .svg-icon,
+th.audio-is-playing .audio-playback-btn .svg-icon,
+td.audio-is-paused .audio-playback-btn svg,
+th.audio-is-paused .audio-playback-btn svg,
+td.audio-is-paused .audio-playback-btn .svg-icon,
+th.audio-is-paused .audio-playback-btn .svg-icon {
+  display: none !important;
+}
+
+td.audio-is-playing .audio-playback-btn,
+th.audio-is-playing .audio-playback-btn,
+td.audio-is-paused .audio-playback-btn,
+th.audio-is-paused .audio-playback-btn {
+  color: var(--text-normal, #3f4451) !important;
+  background: transparent !important;
+  border: 1px solid color-mix(in srgb, var(--text-normal, #3f4451) 20%, transparent) !important;
+  box-shadow: none !important;
+}
+
+td.audio-is-playing .audio-playback-btn::before,
+th.audio-is-playing .audio-playback-btn::before,
+td.audio-is-paused .audio-playback-btn::before,
+th.audio-is-paused .audio-playback-btn::before {
+  content: "" !important;
+  display: block !important;
+  width: 12px !important;
+  height: 12px !important;
+  background: currentColor !important;
+  -webkit-mask-repeat: no-repeat !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-position: center !important;
+  mask-position: center !important;
+  -webkit-mask-size: contain !important;
+  mask-size: contain !important;
+}
+
+/* 播放中：两道圆头竖条 = 点它暂停 */
+td.audio-is-playing .audio-playback-btn::before,
+th.audio-is-playing .audio-playback-btn::before {
+  -webkit-mask-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Crect x='3.1' y='1.7' width='2' height='8.6' rx='1' fill='black'/%3E%3Crect x='6.9' y='1.7' width='2' height='8.6' rx='1' fill='black'/%3E%3C/svg%3E") !important;
+  mask-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Crect x='3.1' y='1.7' width='2' height='8.6' rx='1' fill='black'/%3E%3Crect x='6.9' y='1.7' width='2' height='8.6' rx='1' fill='black'/%3E%3C/svg%3E") !important;
+}
+
+/* 暂停中：圆角三角 = 点它继续。整体再压淡一档，与「在播」区分。 */
+td.audio-is-paused .audio-playback-btn,
+th.audio-is-paused .audio-playback-btn {
+  color: var(--text-muted, #6b7280) !important;
+}
+
+td.audio-is-paused .audio-playback-btn::before,
+th.audio-is-paused .audio-playback-btn::before {
+  -webkit-mask-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M4.3 2.9 L9.3 6 L4.3 9.1 Z' fill='black' stroke='black' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  mask-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M4.3 2.9 L9.3 6 L4.3 9.1 Z' fill='black' stroke='black' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+}
+
+/* 悬停时略微加深，提示可点 */
+td.audio-is-playing .audio-playback-btn:hover,
+th.audio-is-playing .audio-playback-btn:hover,
+td.audio-is-paused .audio-playback-btn:hover,
+th.audio-is-paused .audio-playback-btn:hover {
+  color: var(--text-normal, #3f4451) !important;
+  background: color-mix(in srgb, var(--text-normal, #3f4451) 8%, transparent) !important;
+  border-color: color-mix(in srgb, var(--text-normal, #3f4451) 34%, transparent) !important;
+}
+
+/* 6. 音标矩阵单元格专属紧凑排版与右上角读音耳朵 */
+td[data-audio-bound="phoneme"],
+th[data-audio-bound="phoneme"],
+td[data-audio-bound="phonetic"],
+th[data-audio-bound="phonetic"] {
+  position: relative !important;
+  padding-right: 68px !important;
+  min-width: 48px !important;
+  cursor: pointer !important;
+  vertical-align: middle !important;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+/* 单元格内容垂直居中，消除下方突兀空白，与多行发音技巧自然对齐 */
+.markdown-source-view.mod-cm6 .cm-table-widget td[data-audio-bound="phoneme"] .table-cell-wrapper,
+.markdown-source-view.mod-cm6 .cm-table-widget th[data-audio-bound="phoneme"] .table-cell-wrapper,
+td[data-audio-bound="phoneme"] .table-cell-wrapper,
+th[data-audio-bound="phoneme"] .table-cell-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+td[data-audio-bound="phoneme"]:hover,
+th[data-audio-bound="phoneme"]:hover,
+td[data-audio-bound="phonetic"]:hover,
+th[data-audio-bound="phonetic"]:hover {
+  background-color: var(--background-modifier-hover, rgba(125, 125, 125, 0.16)) !important;
+}
+
+td[data-audio-bound="phoneme"]:hover .audio-playback-btn,
+th[data-audio-bound="phoneme"]:hover .audio-playback-btn,
+td[data-audio-bound="phonetic"]:hover .audio-playback-btn,
+th[data-audio-bound="phonetic"]:hover .audio-playback-btn {
+  opacity: 1 !important;
+  color: var(--interactive-accent, #6366f1) !important;
+  background-color: var(--background-modifier-active-hover, rgba(99, 102, 241, 0.22)) !important;
+  transform: translateY(-50%) scale(1.12) !important;
+}
+
+/* ==================== 设置面板 ==================== */
+/* 多行文本框在窄面板里横排会被挤扁，改为标题在上、编辑区独占一行。 */
+.sound-setting-stacked {
+  display: block !important;
+}
+
+.sound-setting-stacked .setting-item-control {
+  width: 100% !important;
+  margin-top: 8px !important;
+  justify-content: flex-start !important;
+}
+
+.sound-setting-stacked textarea {
+  width: 100% !important;
+  resize: vertical !important;
+  line-height: 1.5 !important;
+}
+
+
+/* 单词主导的词汇表（带「拆解」列）：耳机挂在单词格最右侧，平时隐藏，悬浮这一格（或
+   它的高亮按钮）时才出现，高亮按钮在它左边；正在播放时保持显示。 */
+/* 单词表的单词格右侧并排两个按钮（高亮 + 耳机），留出的地盘要容下两个，
+   否则编辑时高亮按钮会压在编辑区上。高亮按钮与耳机同尺寸，间距 = --sound-actions-offset。 */
+table.ts-word-led td[data-audio-bound] {
+  --sound-actions-inset: calc(var(--sound-actions-offset) * 2 + var(--sound-btn-size) * 2);
+}
+
+/* 表格重建后耳机推迟一帧才绑定，data-audio-bound 到之前单词格没留地盘，
+   单词列先缩一下、短语列被撑宽，看起来闪一下。按高亮插件当帧打上的类先留出同样地盘与不换行。 */
+.hd-decomp-table tr.hd-row > td.hd-word-cell,
+.hd-phrase-library tr.hd-row > td.hd-word-cell {
+  --sound-actions-inset: calc(var(--sound-actions-offset) * 2 + var(--sound-btn-size) * 2);
+  --sound-actions-zone: calc(var(--sound-actions-inset) + var(--sound-actions-gap));
+  padding-right: var(--sound-actions-zone) !important;
+}
+
+table.ts-word-led td .audio-playback-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 词表的词头格(插件打了 hd-word-cell / hd-actions-zone): 只在鼠标移到右侧按钮区域时显示耳机;
+   其他单词主导表仍按整格悬浮显示。播放中始终显示。 */
+table.ts-word-led td:not(.hd-word-cell):hover .audio-playback-btn,
+table.ts-word-led td.hd-actions-zone .audio-playback-btn,
+table.ts-word-led td.audio-is-playing .audio-playback-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 题目里的同义改写: 高亮短语悬停显示原文表达 */
+body .markdown-rendered mark.hd-para-word,
+body .cm-s-obsidian span.hd-para-word {
+  cursor: help;
+  text-decoration: none;
+}
+.hd-tooltip .hd-para-body { white-space: normal; }
+
+/* Keep eight underscores in source; draw one unbroken answer line in preview. */
+.hd-answer-blank {
+  display: inline-block;
+  position: relative;
+  width: 8ch;
+  white-space: nowrap;
+  color: transparent !important;
+  vertical-align: baseline;
+}
+.hd-answer-blank::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.12em;
+  border-bottom: 1px solid var(--text-normal);
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   表格全列上下垂直居中 + 统一基准行高 (3 行完整可见，不遮挡)
+   ========================================================================== */
+
+:root {
+  /* 基准行高设为 68px：完美容纳 1 行、2 行及 3 行释义（覆盖 99.5% 词汇，不截断不遮挡） */
+  --word-table-row-height: 68px;
+}
+
+/* 1. 单元格强制垂直居中与统一基准高度 */
+.markdown-source-view.mod-cm6 .cm-table-widget table th:not(:has(.cm-editor)),
+.markdown-source-view.mod-cm6 .cm-table-widget table td:not(:has(.cm-editor)),
+.markdown-rendered table th,
+.markdown-rendered table td,
+table.hd-decomp-table th:not(:has(.cm-editor)),
+table.hd-decomp-table td:not(:has(.cm-editor)),
+table.hd-phrase-table th:not(:has(.cm-editor)),
+table.hd-phrase-table td:not(:has(.cm-editor)) {
+  vertical-align: middle !important;
+  height: var(--word-table-row-height) !important;
+  box-sizing: border-box !important;
+}
+
+/* 2. 释放单元格内部 wrapper：高度自适应居中，绝不强制裁剪文字 */
+.markdown-source-view.mod-cm6 .cm-table-widget table th:not(:has(.cm-editor)) .table-cell-wrapper,
+.markdown-source-view.mod-cm6 .cm-table-widget table td:not(:has(.cm-editor)) .table-cell-wrapper,
+.markdown-rendered table th .table-cell-wrapper,
+.markdown-rendered table td .table-cell-wrapper,
+table.hd-decomp-table th:not(:has(.cm-editor)) .table-cell-wrapper,
+table.hd-decomp-table td:not(:has(.cm-editor)) .table-cell-wrapper,
+table.hd-phrase-table th:not(:has(.cm-editor)) .table-cell-wrapper,
+table.hd-phrase-table td:not(:has(.cm-editor)) .table-cell-wrapper {
+  height: auto !important;
+  min-height: unset !important;
+  max-height: none !important;
+  overflow: visible !important;
+  vertical-align: middle !important;
+}
+
+/* 3. 释义列紧凑行距与内边距精修：使 3 行内容完全融入 68px 空间，行距更舒适工整（兼容第 2 列与第 3 列释义） */
+table.hd-decomp-table td:nth-child(2) .table-cell-wrapper,
+table.hd-decomp-table td:nth-child(3) .table-cell-wrapper,
+table.hd-decomp-table td:nth-child(4) .table-cell-wrapper,
+table.hd-phrase-table td:nth-child(2) .table-cell-wrapper,
+table.hd-phrase-table td:nth-child(3) .table-cell-wrapper,
+.markdown-source-view.mod-cm6 .cm-table-widget table td:nth-child(2) .table-cell-wrapper,
+.markdown-source-view.mod-cm6 .cm-table-widget table td:nth-child(3) .table-cell-wrapper {
+  line-height: 1.36 !important;
+  font-size: 0.93em !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+
+/* 实时预览直接显示高亮, 光标进入后也不展开 == 标记。源码模式保持原样。 */
+.markdown-source-view.is-live-preview .cm-formatting-highlight {
+  display: none;
+}
+
+
+/* 去掉行内音频为文字基线预留的底部空隙, 外框与播放器等高。 */
+.audio-embed > audio {
+  display: block;
+}
+
+.workspace-leaf-content:has(> .hd-floating-audio) {
+  position: relative;
+}
+.hd-floating-audio {
+  position: absolute;
+  z-index: 1000;
+  bottom: calc(36px + env(safe-area-inset-bottom, 0px));
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: var(--hd-audio-pane-width, calc(100vw - 32px));
+  padding: 10px 14px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 16px;
+  background: var(--background-primary);
+  box-shadow: 0 6px 28px rgba(0, 0, 0, .2);
+}
+.hd-floating-audio[hidden] { display: none; }
+.hd-floating-audio button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+.hd-floating-audio button:hover { background: var(--background-modifier-hover); color: var(--text-normal); }
+.hd-floating-audio button svg { width: 19px; height: 19px; stroke-width: 1.8; }
+.hd-floating-audio button.hd-floating-audio-toggle { background: var(--interactive-accent); color: var(--text-on-accent); }
+.hd-floating-audio button.hd-floating-audio-toggle:hover { background: var(--interactive-accent-hover); }
+.hd-floating-audio input[type="range"] { width: 160px; min-width: 50px; margin: 0; }
+.hd-floating-audio-time {
+  white-space: nowrap;
+  font-size: var(--font-ui-smaller);
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+}
+@media (max-width: 600px) {
+  .hd-floating-audio { gap: 6px; flex-wrap: wrap; justify-content: center; width: calc(100vw - 32px); }
+  .hd-floating-audio input[type="range"] { flex: 1; }
+}
+
+.hd-synonyms { margin-top: 6px; padding-top: 6px; border-top: 1px dashed var(--background-modifier-border); font-size: 0.85em; color: var(--text-muted); }
+.hd-syn-line { display: flex; gap: 6px; line-height: 1.5; }
+.hd-syn-pos { flex: none; font-style: italic; color: var(--text-faint); }
+
+/* ---------- 悬浮卡片: 与 memory-cards 的 .mc-peek 同一版式 ----------
+ * 取 memory-cards 的令牌(浅/深两套); 顶行单词在左、音标在右, 各段顶部虚线 + 小号段名, 正文 13px / 1.65。 */
+body {
+  --hd-peek-surface: #ffffff;
+  --hd-peek-edge: rgba(68, 52, 36, 0.08);
+  --hd-peek-hair: rgba(68, 52, 36, 0.1);
+  --hd-peek-ink: #1d1c1a;
+  --hd-peek-ink-2: #5d5953;
+  --hd-peek-ink-3: #a19b92;
+  --hd-peek-shadow: 0 0 0 1px var(--hd-peek-edge), 0 10px 28px -10px rgba(68, 52, 36, 0.32), 0 2px 6px rgba(68, 52, 36, 0.08);
+}
+body.theme-dark {
+  --hd-peek-surface: #272522;
+  --hd-peek-edge: rgba(255, 255, 255, 0.07);
+  --hd-peek-hair: rgba(255, 255, 255, 0.08);
+  --hd-peek-ink: #f1eee8;
+  --hd-peek-ink-2: #b4aea6;
+  --hd-peek-ink-3: #77726b;
+  --hd-peek-shadow: 0 0 0 1px var(--hd-peek-edge), 0 12px 30px -10px rgba(0, 0, 0, 0.7);
+}
+body .hd-tooltip.hd-tooltip {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 14px;
+  background: var(--hd-peek-surface);
+  box-shadow: var(--hd-peek-shadow);
+  color: var(--hd-peek-ink);
+  font-family: "Maple Mono NF CN", "Maple Mono", var(--font-monospace), monospace;
+  font-size: 13px;
+  line-height: 1.65;
+}
+body .hd-tooltip.hd-tooltip :is(.hd-card-context, .hd-meaning, .hd-zh-block) { color: var(--hd-peek-ink-2); font-size: 13px; line-height: 1.6; margin: 10px 0 0; }
+/* 顶行里的 .hd-card-context 是单词本身, 不需要块与块之间的上边距 */
+body .hd-tooltip.hd-tooltip .hd-table-card-topline > .hd-card-context { margin: 0; }
+/* 释义、记忆、同义词、英意正文统一 13px, 内部子元素一律继承 */
+body .hd-tooltip.hd-tooltip :is(.hd-card-context, .hd-meaning, .hd-zh-block, .hd-anchor, .hd-synonyms, .hd-en-block) :not(.hd-headword, .hd-ph) { font-size: inherit; }
+/* 顶行 */
+body .hd-tooltip.hd-tooltip :is(.hd-head-row, .hd-table-card-topline) {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+body .hd-tooltip.hd-tooltip .hd-headword { float: none; margin: 0; font-size: 15px; font-weight: 500; color: var(--hd-peek-ink); }
+body .hd-tooltip.hd-tooltip .hd-ph { float: none; margin: 0 0 0 auto; font-size: 13px; color: var(--hd-peek-ink-3); font-family: inherit; white-space: nowrap; }
+/* 单词表卡片没有单词, 第一行只有音标: 上下留白与阅读卡片顶行一致 */
+body .hd-tooltip.hd-tooltip > .hd-ph { display: block; padding: 0; text-align: right; }
+/* 间距节奏: 卡片上下内边距 10px, 各块之间统一 10px (虚线上下各 10px), 段名到正文 6px, 末段不留底部内边距 */
+body .hd-tooltip.hd-tooltip :is(.hd-anchor, .hd-synonyms, .hd-en-block) {
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+  border-top: 1px dashed var(--hd-peek-hair);
+  line-height: 1.65;
+}
+body .hd-tooltip.hd-tooltip :is(.hd-anchor, .hd-synonyms, .hd-en-block) { color: var(--hd-peek-ink-2); font-size: 13px; }
+body .hd-tooltip.hd-tooltip :is(strong, b) { font-weight: 500; }
+body .hd-tooltip.hd-tooltip .hd-anchor :is(strong, b) { color: var(--hd-peek-ink); }
+body .hd-tooltip.hd-tooltip .hd-syn-pos { color: var(--hd-peek-ink-3); }
+body .hd-tooltip.hd-tooltip :is(.hd-anchor, .hd-synonyms, .hd-en-block)::before {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  color: var(--hd-peek-ink-3);
+}
+body .hd-tooltip.hd-tooltip .hd-anchor::before { content: "记忆"; }
+body .hd-tooltip.hd-tooltip .hd-synonyms::before { content: "同义词"; }
+/* 英意是网格, 段名占满首行 */
+body .hd-tooltip.hd-tooltip .hd-en-block { column-gap: 0.5em; row-gap: 6px; }
+body .hd-tooltip.hd-tooltip .hd-en-block::before { content: "英意"; grid-column: 1 / -1; margin-bottom: 0; }
+body .hd-tooltip.hd-tooltip :is(.hd-en-pos-tag, .hd-en-bullet) { color: var(--hd-peek-ink-3); font-weight: 400; padding: 0; }
+body .hd-tooltip.hd-tooltip .hd-en-bullet { width: 0.9em; }
+
+/* 编辑表格单元格时, Baseline 主题会给 .table-cell-wrapper 加悬停灰底(--background-modifier-hover), 去掉。 */
+body div:is(.markdown-preview-view, .is-live-preview, .markdown-source-view) table .table-cell-wrapper:is(:active, :focus, :focus-within) {
+  background-color: transparent !important;
+}

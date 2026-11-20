@@ -1,0 +1,36 @@
+platform :ios, '16.0'
+
+target 'Memory' do
+  use_frameworks! :linkage => :static
+
+  pod 'SnapKit'
+  pod 'LookinServer', :configurations => ['Debug']
+  pod 'MMKV'
+
+  # 测试 target 只借 Pods 的头文件/模块搜索路径（不重复链接一份）。
+  # 少了它，`@testable import Memory` 解析不到 MMKV / SnapKit，整个
+  # MemoryTests 编译不过——`pod install` 之后跑测试会直接失败。
+  target 'MemoryTests' do
+    inherit! :search_paths
+  end
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['ENABLE_USER_SCRIPT_SANDBOXING'] = 'NO'
+      # 各 pod 自带的部署目标（SnapKit 12.0 / MMKV 13.0 / LookinServer 9.0）
+      # 已经低于新版 Xcode 允许的下限，不统一抬上来整个工程编不过。
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '16.0'
+    end
+  end
+
+  installer.aggregate_targets.each do |target|
+    target.user_project.native_targets.each do |native_target|
+      native_target.build_configurations.each do |config|
+        config.build_settings['ENABLE_USER_SCRIPT_SANDBOXING'] = 'NO'
+      end
+    end
+    target.user_project.save
+  end
+end

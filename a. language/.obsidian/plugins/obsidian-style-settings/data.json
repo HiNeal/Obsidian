@@ -1,0 +1,9 @@
+{
+  "baseline-style@@tab-top-left-style": "tab-top-left-icon",
+  "baseline-style@@tab-left-style": "tab-left-compact",
+  "baseline-style@@nav-action": "nav-action-center",
+  "baseline-style@@focus-view": false,
+  "baseline-style@@text-highlight-bg@@light": "#a5d6a74d",
+  "baseline-style@@text-highlight-bg@@dark": "#66bb6a29",
+  "baseline-style@@background-modifier-border@@light": "#d1d1d1"
+}

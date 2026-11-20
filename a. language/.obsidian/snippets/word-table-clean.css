@@ -1,0 +1,52 @@
+/* ==========================================================================
+   表格全列上下垂直居中 + 统一基准行高 (3 行完整可见，不遮挡)
+   ========================================================================== */
+
+:root {
+  /* 基准行高设为 68px：完美容纳 1 行、2 行及 3 行释义（覆盖 99.5% 词汇，不截断不遮挡） */
+  --word-table-row-height: 68px;
+}
+
+/* 1. 单元格强制垂直居中与统一基准高度 */
+.markdown-source-view.mod-cm6 .cm-table-widget table th:not(:has(.cm-editor)),
+.markdown-source-view.mod-cm6 .cm-table-widget table td:not(:has(.cm-editor)),
+.markdown-rendered table th,
+.markdown-rendered table td,
+table.hd-decomp-table th:not(:has(.cm-editor)),
+table.hd-decomp-table td:not(:has(.cm-editor)),
+table.hd-phrase-table th:not(:has(.cm-editor)),
+table.hd-phrase-table td:not(:has(.cm-editor)) {
+  vertical-align: middle !important;
+  height: var(--word-table-row-height) !important;
+  box-sizing: border-box !important;
+}
+
+/* 2. 释放单元格内部 wrapper：高度自适应居中，绝不强制裁剪文字 */
+.markdown-source-view.mod-cm6 .cm-table-widget table th:not(:has(.cm-editor)) .table-cell-wrapper,
+.markdown-source-view.mod-cm6 .cm-table-widget table td:not(:has(.cm-editor)) .table-cell-wrapper,
+.markdown-rendered table th .table-cell-wrapper,
+.markdown-rendered table td .table-cell-wrapper,
+table.hd-decomp-table th:not(:has(.cm-editor)) .table-cell-wrapper,
+table.hd-decomp-table td:not(:has(.cm-editor)) .table-cell-wrapper,
+table.hd-phrase-table th:not(:has(.cm-editor)) .table-cell-wrapper,
+table.hd-phrase-table td:not(:has(.cm-editor)) .table-cell-wrapper {
+  height: auto !important;
+  min-height: unset !important;
+  max-height: none !important;
+  overflow: visible !important;
+  vertical-align: middle !important;
+}
+
+/* 3. 释义列紧凑行距与内边距精修：使 3 行内容完全融入 68px 空间，行距更舒适工整（兼容第 2 列与第 3 列释义） */
+table.hd-decomp-table td:nth-child(2) .table-cell-wrapper,
+table.hd-decomp-table td:nth-child(3) .table-cell-wrapper,
+table.hd-decomp-table td:nth-child(4) .table-cell-wrapper,
+table.hd-phrase-table td:nth-child(2) .table-cell-wrapper,
+table.hd-phrase-table td:nth-child(3) .table-cell-wrapper,
+.markdown-source-view.mod-cm6 .cm-table-widget table td:nth-child(2) .table-cell-wrapper,
+.markdown-source-view.mod-cm6 .cm-table-widget table td:nth-child(3) .table-cell-wrapper {
+  line-height: 1.36 !important;
+  font-size: 0.93em !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}

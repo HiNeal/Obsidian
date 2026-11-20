@@ -1,0 +1,9 @@
+{
+  "id": "highlight-decompose",
+  "name": "Highlight Decompose",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Hover highlights to look up the current note and the central Cambridge word and phrase libraries.",
+  "author": "Local",
+  "isDesktopOnly": false
+}

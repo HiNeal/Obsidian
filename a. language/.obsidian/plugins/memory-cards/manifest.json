@@ -1,0 +1,9 @@
+{
+  "id": "memory-cards",
+  "name": "Memory Cards",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "直接在 Obsidian 里用单词卡学习笔记表格, 替代 Memory App。",
+  "author": "Local",
+  "isDesktopOnly": false
+}

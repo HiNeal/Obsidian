@@ -1,0 +1,60 @@
+/* --- Elegant & Minimal Footnotes (右上角小箭头 ↗ 方案) --- */
+
+/* 
+   【设计方案】：
+   隐藏默认的 "[1]"、"[2]" 粗糙数字，将其替换为书籍和维基百科中常用的学术跳转/浮窗小箭头（↗）。
+   - 平时显示为半透明的主题高亮色 ↗，体积缩小至 9px，完全不影响阅读体验；
+   - 鼠标悬浮时 ↗ 变亮，并正常弹出解析气泡；
+   - 完美修复了 Live Preview (实时预览) 模式下出现三个小箭头 (↗↗↗) 的 CodeMirror 渲染冲突。
+*/
+
+/* 1. Reading View (阅读模式) - 保持正常渲染单箭头 */
+.markdown-rendered .footnote-link {
+    font-size: 0px !important; /* 隐藏原有的 [数字] */
+    text-decoration: none !important;
+}
+
+.markdown-rendered .footnote-link::before {
+    content: "↗" !important;
+    font-size: 9px !important; /* 调整为极精细的 9px 尺寸 */
+    color: var(--text-accent, #7a75a7) !important;
+    opacity: 0.65 !important;
+    vertical-align: super !important;
+    display: inline-block !important;
+    line-height: 1 !important;
+    margin-left: 1px !important;
+    transition: opacity 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.markdown-rendered .footnote-ref:hover .footnote-link::before,
+.markdown-rendered .footnote-link:hover::before {
+    opacity: 1 !important;
+    color: var(--interactive-accent, #e91e63) !important;
+    transform: scale(1.2);
+}
+
+/* 2. Live Preview (实时预览模式) - 修复 ↗↗↗ 冲突 */
+
+/* 隐藏 Live Preview 中脚标的括号和内容本身 */
+.cm-s-obsidian .cm-footref {
+    font-size: 0px !important; 
+}
+
+/* 仅对非格式化符号（即排除 [ 和 ]，仅保留中间的数字部分）添加单个 ↗ */
+.cm-s-obsidian .cm-footref:not([class*="formatting"])::before {
+    content: "↗" !important;
+    font-size: 9px !important; /* 同步调整为 9px 尺寸 */
+    color: var(--text-accent, #7a75a7) !important;
+    opacity: 0.65 !important;
+    vertical-align: super !important;
+    display: inline-block !important;
+    line-height: 1 !important;
+    margin-left: 1px !important;
+    transition: opacity 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.cm-s-obsidian .cm-footref:not([class*="formatting"]):hover::before {
+    opacity: 1 !important;
+    color: var(--interactive-accent, #e91e63) !important;
+    transform: scale(1.2);
+}

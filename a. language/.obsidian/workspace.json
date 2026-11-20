@@ -1,0 +1,290 @@
+{
+  "main": {
+    "id": "1d77092417c7e205",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e2974bf57f88131",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "af05a94297c111fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01. base/y.word-root.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "y.word-root"
+            }
+          },
+          {
+            "id": "22632a966860479d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01. base/z.word-suffix.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "z.word-suffix"
+            }
+          },
+          {
+            "id": "bc5f5233d855732b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02. word/a. 雅思词汇真经/06-科技发明.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "06-科技发明"
+            }
+          },
+          {
+            "id": "9fd402b97ac01f8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AGENTS.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "AGENTS"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8c21722ed5aeeb93",
+    "type": "split",
+    "children": [
+      {
+        "id": "ccc47a9e6de31331",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad05637bd926e95c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1c1d1dd9afd61357",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "\"meit\"",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "42fb8276a11eccb6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 296.4107971191406
+  },
+  "right": {
+    "id": "8994399f8735ddbf",
+    "type": "split",
+    "children": [
+      {
+        "id": "8776018234f91d17",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0a3463bcf8cd5e3c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "AGENTS.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "5e79b644297b99ca",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "06. reading/10. 今日阅读/The origin of language.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "4eeef9d9daee8de2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5943b92264b96174",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "e197fbdb97519f4e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "06. reading/10. 今日阅读/The origin of language.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 339.3133544921875
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "switcher:Open quick switcher": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "templates:Insert template": false,
+      "memory-cards:单词卡": false,
+      "obsidian-local-images-plus:Local Images Plus  0.19.3\r\nLocalize attachments (plugin folder)": false
+    }
+  },
+  "active": "9fd402b97ac01f8c",
+  "lastOpenFiles": [
+    "02. word/a. 雅思词汇真经/06-科技发明.md",
+    "01. base/y.word-root.md",
+    "01. base/z.word-suffix.md",
+    "AGENTS.md",
+    "20. resource/Memory/AGENTS.md",
+    "02. word/a. 雅思词汇真经/05-学校教育.md",
+    "02. word/a. 雅思词汇真经/07-文化历史.md",
+    "02. word/a. 雅思词汇真经/04-太空探索.md",
+    "02. word/a. 雅思词汇真经/01-自然地理.md",
+    "20. resource/17. dictionary/04. 词根词缀字典（合并增强版）/词根词缀字典（合并增强版）.png",
+    "20. resource/17. dictionary/04. 词根词缀字典（合并增强版）/词根词缀字典（合并增强版）.mdx",
+    "20. resource/17. dictionary/04. 词根词缀字典（合并增强版）/jsmind.js",
+    "20. resource/17. dictionary/04. 词根词缀字典（合并增强版）/jsmind.css",
+    "20. resource/17. dictionary/04. 词根词缀字典（合并增强版）",
+    "20. resource/17. dictionary/03. 韦氏高阶英汉双解词典2019完美版/maldpe.mdx",
+    "20. resource/17. dictionary/03. 韦氏高阶英汉双解词典2019完美版/maldpe.mdd",
+    "20. resource/17. dictionary/03. 韦氏高阶英汉双解词典2019完美版/maldpe.js",
+    "20. resource/17. dictionary/03. 韦氏高阶英汉双解词典2019完美版/maldpe.jpg",
+    "20. resource/17. dictionary/03. 韦氏高阶英汉双解词典2019完美版/maldpe.css",
+    "20. resource/17. dictionary/03. 韦氏高阶英汉双解词典2019完美版/maldpe-jquery-3.6.0.min.js",
+    "20. resource/17. dictionary/03. 韦氏高阶英汉双解词典2019完美版/maldpe-crypto-js.min.js",
+    "20. resource/17. dictionary/02. 剑桥在线英汉双解词典完美版/cdepe.png",
+    "20. resource/17. dictionary/01. 牛津高阶英汉双解词典第10版完美版/oaldpe.png",
+    "CleanShot 2026-11-17 at 7.48.39 AM@2x.png",
+    "20. resource/17. dictionary/词根词缀字典（合并增强版）/词根词缀字典（合并增强版）.png",
+    "20. resource/17. dictionary/Oxford Advanced Learner's Dictionary/oald10.png",
+    "01. base/a.phonemes.md",
+    "05. listening/01. 听力词汇/01. 住宿.md",
+    "20. resource/17. dictionary/韦氏高阶英汉双解词典2019完美版/maldpe.jpg",
+    "20. resource/17. dictionary/牛津高阶英汉双解词典第10版完美版/oaldpe.png",
+    "20. resource/17. dictionary/剑桥在线英汉双解词典完美版/cdepe.png",
+    "01. base/d.phonics.md",
+    "01. base/b.connected.md",
+    "05. listening/01. 听力词汇/11. 答案词.md",
+    "01. base/x.word-prefix.md",
+    "06. reading/01. 方法总论/阅读方法论.md",
+    "05. listening/10. 今日听力/Office Move.md",
+    "05. listening/10. 今日听力/Summer Camp Work.md",
+    "05. listening/01. 方法总论/听力方法论.md",
+    "05. listening/01. 听力词汇/09. 地图题.md",
+    "05. listening/10. 今日听力/Early History of Salt.md",
+    "05. listening/10. 今日听力/Afternoon Tea.md",
+    "05. listening/10. 今日听力/The Vikings.md",
+    "05. listening/10. 今日听力/Shampoo Marketing Project.md",
+    "05. listening/10. 今日听力/Party Reservation.md",
+    "05. listening/10. 今日听力/Willows Studies.md",
+    "04. grammer/z. 长难句骨架.canvas",
+    "Untitled.canvas"
+  ]
+}

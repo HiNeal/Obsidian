@@ -1,0 +1,16 @@
+{
+  "readableLineLength": false,
+  "rightToLeft": false,
+  "strictLineBreaks": false,
+  "showIndentGuide": true,
+  "tabSize": 4,
+  "promptDelete": false,
+  "vimMode": false,
+  "excludedFiles": [
+    "*.mp3"
+  ],
+  "alwaysUpdateLinks": true,
+  "focusNewTab": true,
+  "defaultViewMode": "source",
+  "livePreview": true
+}

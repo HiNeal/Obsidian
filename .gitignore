@@ -1,0 +1,26 @@
+*.pdf
+*.wav
+*.mp3
+*.mp4
+*.m4a
+*.mov
+*.avi
+*.mkv
+*.flv
+*.wmv
+*.onnx
+*.bin
+*.safetensors
+*.mdd
+*.mdx
+.obsidian/workspace.json
+.cache/
+
+
+*.mdd*
+*.mdx*
+*.pt
+*.ttf
+*.otf
+**/20. resource/17. dictionary/
+**/20. resource/20. common/

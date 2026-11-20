@@ -1,0 +1,1122 @@
+/* Memory Cards
+ * 一套设计令牌同时供卡片页 (.mc-view) 与所有弹窗 (.mc-sheet) 使用, 保证全插件观感一致。
+ * 结构: 令牌 → 卡片页 (顶栏 / 卡片 / 进度 / 控制栏) → 弹窗 (骨架 / 分组 / 行 / 控件) → 动效偏好。
+ */
+
+/* ==================== 令牌 ==================== */
+
+.mc-view,
+.mc-sheet {
+  --mc-font: "Maple Mono NF CN", "Maple Mono", var(--font-monospace), monospace;
+  --mc-page: #ffffff;   /* 卡片页背景 */
+  --mc-paper: #f3f0ea;  /* 弹窗底色: 比白色组卡片深一档, 分组才看得出 */
+  --mc-surface: #ffffff;
+  --mc-surface-2: #f8f5f0;
+  --mc-edge: rgba(68, 52, 36, 0.08);
+  --mc-hair: rgba(68, 52, 36, 0.1);
+  --mc-ink: #1d1c1a;
+  --mc-ink-2: #5d5953;
+  --mc-ink-3: #a19b92;
+  --mc-accent: #8a76d6;
+  --mc-accent-deep: #6f5cc0;
+  --mc-accent-soft: rgba(138, 118, 214, 0.12);
+  --mc-focus: #ff2d4a;
+  --mc-ok: #2f9e5b;
+  --mc-exam: rgba(118, 196, 112, 0.24);
+  --mc-mask: #ebe6dd;
+  --mc-shadow-card:
+    0 0.5px 1px rgba(68, 52, 36, 0.05),
+    0 8px 18px -8px rgba(68, 52, 36, 0.14),
+    0 30px 60px -30px rgba(68, 52, 36, 0.28);
+  --mc-shadow-raise: 0 1px 2px rgba(68, 52, 36, 0.06), 0 0 0 1px var(--mc-edge);
+  --mc-ease-out: cubic-bezier(.2, .8, .2, 1);
+  --mc-ease-spring: cubic-bezier(.2, 1.3, .4, 1);
+  font-family: var(--mc-font);
+  color: var(--mc-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.theme-dark .mc-view,
+.theme-dark .mc-sheet {
+  --mc-page: #141312;
+  --mc-paper: #141312;
+  --mc-surface: #1f1d1b;
+  --mc-surface-2: #272522;
+  --mc-edge: rgba(255, 255, 255, 0.07);
+  --mc-hair: rgba(255, 255, 255, 0.08);
+  --mc-ink: #f1eee8;
+  --mc-ink-2: #b4aea6;
+  --mc-ink-3: #77726b;
+  --mc-accent-soft: rgba(138, 118, 214, 0.2);
+  --mc-ok: #62c987;
+  --mc-exam: rgba(110, 190, 105, 0.24);
+  --mc-mask: #34312d;
+  --mc-shadow-card: 0 0.5px 1px rgba(0, 0, 0, 0.4), 0 30px 60px -28px rgba(0, 0, 0, 0.75);
+}
+
+.mc-view button,
+.mc-view input,
+.mc-sheet button,
+.mc-sheet input {
+  font-family: var(--mc-font);
+}
+
+/* 统一的 SVG 图标 */
+.mc-svg { width: 18px; height: 18px; flex-shrink: 0; display: block; }
+
+.mc-delete-action:hover { color: var(--text-error); }
+.mc-delete-action.is-disabled { opacity: 0.35; pointer-events: none; }
+
+/* ==================== 卡片页 ==================== */
+
+/* 卡片翻页时会飞出页面边缘; Obsidian 默认给 .view-content 加 overflow: auto, 必须压住, 否则底部滚动条会一闪 */
+.workspace-leaf-content .view-content.mc-view {
+  padding: 0;
+  background: var(--mc-page);
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.mc-root {
+  height: 100%;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 20px calc(14px + env(safe-area-inset-bottom, 0px));
+  box-sizing: border-box;
+  position: relative; /* 听写输入框贴在卡片右侧时以这里为定位基准 */
+  user-select: none;
+  -webkit-user-select: none;
+  container-type: inline-size; /* 给 .mc-stage 的 max-height 提供宽度 (cqw) */
+}
+/* 卡片 + 进度条 + 控制栏作为一组, 多出来的高度按 2 : 3 分到上下: 整组略偏上, 控制栏紧跟卡片 */
+.mc-root::before,
+.mc-root::after { content: ""; flex: 2 1 0; min-height: 0; }
+.mc-root::after { flex-grow: 3; }
+
+/* ---------- 卡片 (iPhone 15 Pro Max 屏幕比例 430 × 932, 圆角 ≈ 宽度 12.8%) ---------- */
+
+.mc-stage {
+  flex: 1000 1 auto; /* 先把高度都给卡片, 卡片到顶 (宽度决定的高度) 后余量才分给上下留白 */
+  min-height: 240px;
+  max-height: calc(100cqw * 932 / 430);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  container-type: size;
+  touch-action: pan-y;
+}
+
+.mc-card,
+.mc-card-under {
+  --mc-w: min(100cqw, 100cqh * 430 / 932);
+  width: var(--mc-w);
+  aspect-ratio: 430 / 932;
+  border-radius: calc(var(--mc-w) * 0.128);
+}
+
+/* 背后的一张纸, 让牌堆有厚度 */
+.mc-card-under {
+  position: absolute;
+  background: var(--mc-surface);
+  box-shadow: 0 0 0 1px var(--mc-edge);
+  transform: translateY(9px) scale(0.93);
+  opacity: 0.55;
+}
+.mc-stage.is-empty .mc-card-under { display: none; }
+
+.mc-card {
+  flex: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--mc-surface);
+  box-shadow: var(--mc-shadow-card), 0 0 0 1px var(--mc-edge);
+  overflow: hidden;
+  will-change: transform;
+  transform-origin: 50% 100%;
+}
+.mc-card.is-hidden { display: none; }
+
+.mc-root-annotations {
+  position: absolute;
+  inset: 0 22px;
+  pointer-events: none;
+  visibility: hidden;
+}
+.mc-root-annotations.is-ready { visibility: visible; }
+.mc-root-gloss {
+  position: absolute;
+  width: max-content;
+  max-width: 180px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: normal;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  text-align: center;
+  color: var(--mc-ink-2);
+}
+
+.mc-upper {
+  position: relative;
+  flex: 1 1 46%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 36px 22px 22px;
+}
+
+.mc-word {
+  flex-shrink: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+  color: var(--mc-ink);
+  white-space: nowrap;
+  /* 检测超宽, 同时为上下标记线及 g / p / y 等字形留出余量。 */
+  overflow: hidden;
+  padding: 0.24em 0 0.32em;
+}
+.mc-word.is-multi { white-space: normal; overflow-wrap: anywhere; line-height: 1.3; }
+
+.mc-card.hide-memory-hints .mc-root-annotations { display: none; }
+.mc-word-root {
+  color: inherit;
+  position: relative;
+}
+.mc-word-root::after {
+  content: "";
+  position: absolute;
+  left: var(--mc-root-inset-l, 0);
+  right: var(--mc-root-inset-r, 0);
+  bottom: -0.1em;
+  height: 0;
+  border-bottom: 5px dotted var(--mc-root-color, var(--mc-ink-3));
+  pointer-events: none;
+}
+.mc-word-root.is-overline::after { top: 0.06em; bottom: auto; }
+/* 关闭提示或尚未揭晓时只保留单词本身。 */
+.mc-card:is(.hide-memory-hints, .is-concealed) .mc-word-root::after { display: none; }
+.mc-card.is-concealed .mc-root-annotations { visibility: hidden; }
+
+.mc-divider {
+  flex-shrink: 0;
+  width: 28px;
+  height: 2px;
+  margin: 0 auto;
+  border-radius: 2px;
+  background: var(--mc-hair);
+}
+
+.mc-lower {
+  flex: 1 1 54%;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 20px 24px 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 36px), transparent);
+          mask-image: linear-gradient(to bottom, #000 calc(100% - 36px), transparent);
+}
+.mc-lower::-webkit-scrollbar { display: none; }
+
+.mc-examples {
+  flex: none;
+  min-height: 0;
+  max-height: 30%;
+  margin: 0 24px 32px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  text-align: center;
+}
+.mc-example-words { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px 18px; }
+.mc-example-word { max-width: 100%; overflow-wrap: anywhere; font-size: 14px; line-height: 1.6; font-weight: 400; color: var(--mc-ink-2); }
+.mc-examples.is-hidden { display: none; }
+.mc-card.is-concealed .mc-examples { visibility: hidden; }
+
+/* 释义块整体居中, 块内左对齐: 词性一列, 释义一列, 折行对齐释义起点 */
+.mc-meaning {
+  width: fit-content;
+  max-width: 100%;
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  color: var(--mc-ink-2);
+  transition: opacity 0.4s ease, filter 0.4s ease, transform 0.4s var(--mc-ease-out);
+}
+/* 整块是一张两列网格: 词性列宽 = 本卡最宽的词性 (n. / adj. ...), 各行释义起点对齐 */
+.mc-card:not(.is-paired) .mc-meaning {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: 0.7em;
+}
+.mc-sense { display: contents; }
+.mc-sense.is-plain .mc-def { grid-column: 1 / -1; }
+.mc-sense.is-gap > span { margin-top: 8px; }
+.mc-pos { color: var(--mc-ink-3); white-space: nowrap; }
+.mc-def { min-width: 0; overflow-wrap: anywhere; }
+.mc-exam {
+  color: inherit;
+  background: var(--mc-exam);
+  padding: 1px 3px;
+  border-radius: 4px;
+}
+.mc-card.is-paired .mc-meaning { font-size: 15px; color: var(--mc-ink); text-align: center; }
+
+/* 复习 / 听写: 释义先藏 (.is-hinted: 听写但没有录音, 释义先亮出来看义拼词) */
+.mc-card.is-concealed:not(.is-hinted) .mc-meaning { opacity: 0; filter: blur(5px); transform: translateY(4px); }
+
+.mc-hint {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(var(--mc-w) * 0.07);
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--mc-ink-3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.mc-card.is-concealed .mc-hint { opacity: 1; animation: mc-breathe 2.4s ease-in-out infinite; }
+@keyframes mc-breathe { 50% { opacity: 0.45; } }
+
+/* 悬浮卡: 挂在整个标签页上 (可比手机卡片宽), 释义下面的另一张卡片, 顶边贴释义底部, 三角指向释义中间 (下方放不下改放单词上方); 位置由 cardFace.placePeek() 计算 */
+.mc-peek {
+  position: absolute;
+  z-index: 5;
+  width: max-content;
+  max-width: min(800px, calc(100% - 32px));
+  min-width: min(460px, calc(100% - 32px));
+  background: var(--mc-surface);
+  border-radius: 14px;
+  box-shadow: 0 0 0 1px var(--mc-edge), 0 10px 28px -10px rgba(68, 52, 36, 0.32), 0 2px 6px rgba(68, 52, 36, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transform-origin: 50% 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.22s var(--mc-ease-out), visibility 0s linear 0.18s;
+}
+.mc-peek.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  pointer-events: auto;
+  transition: opacity 0.18s ease, transform 0.22s var(--mc-ease-out), visibility 0s;
+}
+.mc-peek.is-instant { transition: none; }
+.mc-peek.is-above { transform: translateY(4px); transform-origin: 50% 100%; }
+.mc-peek.is-visible.is-above { transform: none; }
+.theme-dark .mc-peek {
+  background: var(--mc-surface-2);
+  box-shadow: 0 0 0 1px var(--mc-edge), 0 12px 30px -10px rgba(0, 0, 0, 0.7);
+}
+.mc-peek-body {
+  overflow-y: auto;
+  scrollbar-width: none;
+  padding: 4px 18px 14px;
+  box-sizing: border-box;
+}
+.mc-peek-body::-webkit-scrollbar { display: none; }
+/* 三角: 旋转的小方块只露出一半, 与卡片同色同描边; 默认在顶部朝上 (指向释义), .is-above 时在底部朝下 (指向单词) */
+.mc-peek-arrow {
+  position: absolute;
+  top: -8px;
+  width: 16px;
+  height: 8px;
+  margin-left: -8px;
+  overflow: hidden;
+  pointer-events: none;
+}
+.mc-peek-arrow::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 3px;
+  width: 11px;
+  height: 11px;
+  transform: rotate(45deg);
+  background: var(--mc-surface);
+  box-shadow: 0 0 0 1px var(--mc-edge);
+}
+.mc-peek.is-above .mc-peek-arrow { top: auto; bottom: -8px; }
+.mc-peek.is-above .mc-peek-arrow::before { top: -6px; }
+.theme-dark .mc-peek-arrow::before { background: var(--mc-surface-2); }
+/* 顶行: 单词靠左, 灰色音标靠右 */
+.mc-peek-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0 10px;
+}
+.mc-peek-word {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--mc-ink);
+  overflow-wrap: anywhere;
+}
+.mc-peek-phonetic {
+  flex: none;
+  font-size: 13px;
+  color: var(--mc-ink-3);
+  white-space: nowrap;
+}
+/* 各段之间一条细线, 段名小号灰字 */
+.mc-peek-section {
+  border-top: 1px dashed var(--mc-hair);
+  padding: 10px 0 12px;
+}
+.mc-peek-section:last-child { padding-bottom: 2px; }
+.mc-peek-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--mc-ink-3);
+  margin-bottom: 7px;
+}
+.mc-peek-phrase {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--mc-ink-2);
+}
+.mc-phrase-line + .mc-phrase-line { margin-top: 4px; }
+.mc-peek-phrase strong {
+  color: var(--mc-accent-deep);
+  font-weight: 700;
+  background: var(--mc-accent-soft);
+  padding: 0 4px;
+  border-radius: 5px;
+}
+.theme-dark .mc-peek-phrase strong { color: #b6a8ee; }
+/* 构词用纯文字上下对照, 靠字号和留白区分层次。 */
+.mc-peek-memory { font-size: 13px; line-height: 1.65; color: var(--mc-ink-2); }
+.mc-peek-memory :is(strong, b) { color: var(--mc-ink); font-weight: 500; }
+.mc-mem-parts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 14px 24px;
+  margin-bottom: 0;
+}
+.mc-mem-part {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  min-width: 42px;
+  max-width: 100%;
+  padding: 2px 0;
+  text-align: center;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
+}
+.mc-mem-part b {
+  max-width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.015em;
+  line-height: 1.35;
+  color: var(--mc-ink-2);
+}
+.mc-mem-part span {
+  max-width: 100%;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--mc-ink-3);
+}
+.mc-mem-line { color: var(--mc-ink-2); }
+.mc-mem-line + .mc-mem-line { margin-top: 6px; }
+.mc-mem-line + .mc-mem-line { margin-top: 0; }
+.mc-peek-en { font-size: 13px; line-height: 1.65; color: var(--mc-ink-2); }
+.mc-peek-syn { font-size: 13px; line-height: 1.65; color: var(--mc-ink-2); }
+/* 英意: 左栏词性, 右栏义项; 同一词性下的多条主义项文字起点对齐 */
+.mc-en-grid { display: grid; grid-template-columns: max-content minmax(0, 1fr); }
+.mc-en-pos:not(:empty) { padding-right: 0.5em; color: var(--mc-ink-3); }
+.mc-en-grid > .is-main:nth-child(n+3) { margin-top: 6px; }
+/* 子项: 圆点悬挂缩进, 折行文字与圆点后的文字对齐 (与悬浮卡片 .hd-en-sub 同一写法) */
+.mc-en.is-sub { display: flex; padding-left: 1em; }
+.mc-en.is-sub::before { content: "•"; flex: none; width: 0.9em; color: var(--mc-ink-3); }
+.mc-peek .is-hidden { display: none; }
+
+/* 听写遮挡 */
+.mc-mask {
+  color: transparent !important;
+  background: var(--mc-mask);
+  border-radius: 10px;
+  padding: 0 8px;
+  cursor: pointer;
+  transition: color 0.35s ease, background 0.35s ease;
+}
+.mc-mask.is-revealed { color: inherit !important; background: transparent; }
+
+/* ---------- 听写输入框: 在幕布上, 不在卡片里 ----------
+ * 够宽时 .is-side 贴到卡片右侧, 输入框中线对齐被遮住的单词; 不够宽 (窄标签页 / 手机) 排在卡片下面。
+ * left / top 由 dictation.js 的 place() 计算。状态: 默认 → 聚焦 (紫) → 拼对 (绿, 只读) / 拼错 (红, 晃一下, 清空等着再拼一遍)。
+ */
+.mc-dict {
+  --mc-dict-tone: var(--mc-accent);
+  --mc-dict-soft: var(--mc-accent-soft);
+  flex-shrink: 0;
+  align-self: center;
+  width: min(100%, 300px);
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+}
+.mc-dict.is-hidden { display: none; }
+.mc-dict.is-side { position: absolute; width: 240px; margin: 0; }
+.mc-dict.is-correct { --mc-dict-tone: var(--mc-ok); --mc-dict-soft: color-mix(in srgb, var(--mc-ok) 14%, transparent); }
+.mc-dict.is-wrong { --mc-dict-tone: var(--mc-focus); --mc-dict-soft: color-mix(in srgb, var(--mc-focus) 12%, transparent); }
+
+.mc-dict-label {
+  display: none;
+  margin: 0 0 9px 4px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--mc-ink-3);
+}
+.mc-dict.is-side .mc-dict-label { display: block; }
+
+.mc-dict-field {
+  position: relative;
+  height: 50px;
+  border-radius: 16px;
+  background: var(--mc-surface);
+  box-shadow: 0 0 0 1px var(--mc-edge), 0 1px 2px rgba(68, 52, 36, 0.05), 0 10px 22px -14px rgba(68, 52, 36, 0.3);
+  transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+.theme-dark .mc-dict-field { box-shadow: 0 0 0 1px var(--mc-edge), 0 12px 24px -14px rgba(0, 0, 0, 0.7); }
+.mc-dict-field:focus-within,
+.mc-dict:is(.is-correct, .is-wrong) .mc-dict-field {
+  box-shadow: 0 0 0 1.5px var(--mc-dict-tone), 0 0 0 5px var(--mc-dict-soft);
+}
+.mc-dict.is-shake .mc-dict-field { animation: mc-dict-shake 0.32s ease; }
+@keyframes mc-dict-shake {
+  0%, 100% { transform: none; }
+  20% { transform: translateX(-6px); }
+  45% { transform: translateX(5px); }
+  70% { transform: translateX(-3px); }
+}
+
+/* Obsidian 给 input[type=text] 的边框、底色、高度与聚焦描边全部归零, 外观交给 .mc-dict-field */
+.mc-view input.mc-dict-input,
+.mc-view input.mc-dict-input:is(:hover, :focus, :active) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 44px;
+  border: none;
+  border-radius: inherit;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--mc-ink);
+  caret-color: var(--mc-accent);
+  user-select: text;
+  -webkit-user-select: text;
+  transition: color 0.2s ease;
+}
+.mc-view input.mc-dict-input::placeholder { font-size: 13px; font-weight: 500; letter-spacing: 0.08em; color: var(--mc-ink-3); }
+.mc-dict.is-correct input.mc-dict-input { color: var(--mc-dict-tone); }
+.mc-dict.is-wrong input.mc-dict-input { caret-color: var(--mc-focus); }
+
+/* 左端: 再听一遍 */
+.mc-view button.mc-dict-replay {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  z-index: 1;
+  width: 28px;
+  height: 28px;
+  margin: -14px 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  box-shadow: none;
+  color: var(--mc-ink-3);
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+.mc-view button.mc-dict-replay:hover { color: var(--mc-accent-deep); background: var(--mc-accent-soft); }
+.mc-view button.mc-dict-replay:active { transform: scale(0.9); }
+.mc-dict-replay svg { width: 17px; height: 17px; display: block; }
+
+/* 右端小方块: 平时是回车提示, 判分后变成 ✓ / ✕ */
+.mc-dict-badge {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  margin-top: -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--mc-ink-3);
+  background: var(--mc-surface-2);
+  box-shadow: inset 0 0 0 1px var(--mc-edge);
+  pointer-events: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.25s var(--mc-ease-spring);
+}
+.mc-dict.is-correct .mc-dict-badge {
+  color: #fff;
+  background: var(--mc-dict-tone);
+  box-shadow: none;
+  animation: mc-score-bump 0.26s var(--mc-ease-spring);
+}
+
+.mc-dict-status {
+  margin-top: 9px;
+  min-height: 16px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  color: var(--mc-ink-3);
+  transition: color 0.2s ease;
+}
+.mc-dict:is(.is-correct, .is-wrong) .mc-dict-status { color: var(--mc-dict-tone); }
+
+/* 评分弹窗: 从卡片顶部弹出, 只显示分数; 连按时数字跳动, 到边界左右晃, 停手 0.9 秒后收起 */
+.mc-score {
+  position: absolute;
+  top: calc(var(--mc-w) * 0.07 - 6px);
+  left: 50%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 64px;
+  padding: 9px 14px 10px;
+  border-radius: 16px;
+  background: var(--mc-surface);
+  box-shadow: 0 10px 28px -10px rgba(255, 45, 74, 0.45), 0 0 0 1px rgba(255, 45, 74, 0.14);
+  opacity: 0;
+  transform: translateX(-50%) scale(0.35);
+  transform-origin: 50% 0;
+  pointer-events: none;
+  transition: opacity 0.12s ease, transform 0.18s var(--mc-ease-spring);
+}
+.mc-score.is-visible { opacity: 1; transform: translateX(-50%) scale(1); }
+.mc-score.is-zero { box-shadow: 0 10px 28px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px var(--mc-edge); }
+
+.mc-score-num {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--mc-focus);
+}
+.mc-score.is-zero .mc-score-num { color: var(--mc-ink-3); }
+/* 减分: 绿色 (减到 0 也是绿的); 加分与单纯看分保持红色 */
+.mc-score.is-down { box-shadow: 0 10px 28px -10px color-mix(in srgb, var(--mc-ok) 55%, transparent), 0 0 0 1px color-mix(in srgb, var(--mc-ok) 22%, transparent); }
+.mc-score.is-down .mc-score-num { color: var(--mc-ok); }
+.mc-score.is-bump .mc-score-num { animation: mc-score-bump 0.22s var(--mc-ease-spring); }
+@keyframes mc-score-bump {
+  0% { transform: scale(0.7); }
+  60% { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+.mc-score.is-blocked.is-visible { animation: mc-score-shake 0.28s ease; }
+@keyframes mc-score-shake {
+  0%, 100% { transform: translateX(-50%) scale(1); }
+  25% { transform: translateX(calc(-50% - 4px)) scale(1); }
+  75% { transform: translateX(calc(-50% + 4px)) scale(1); }
+}
+
+.mc-score-hint { font-size: 10px; letter-spacing: 0.04em; color: var(--mc-ink-3); white-space: nowrap; }
+.mc-score-hint.is-hidden { display: none; }
+
+/* 空状态 */
+.mc-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 32px 24px;
+  text-align: center;
+}
+.mc-empty.is-hidden { display: none; }
+.mc-empty .mc-empty-icon { width: 40px; height: 40px; color: var(--mc-ink-3); margin-bottom: 6px; }
+.mc-empty-title { font-size: 14px; font-weight: 600; color: var(--mc-ink); }
+.mc-empty-desc { font-size: 11px; color: var(--mc-ink-3); }
+.mc-view button.mc-empty-btn {
+  margin-top: 12px;
+  height: 34px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #fff;
+  background: var(--mc-accent);
+  box-shadow: 0 6px 14px -6px rgba(111, 92, 192, 0.6);
+  cursor: pointer;
+}
+
+/* ---------- 滑杆 (进度条与弹窗共用) ----------
+ * 轨道与滑块同高 (16px), 滑块不需要任何 margin 偏移, 天然垂直居中;
+ * 可见的细线 (4px) 用两层背景画在轨道正中: 上层是填充, 下层是底轨。
+ * Obsidian 自带样式会用 position: relative + top: var(--slider-thumb-y) (-5px) 把滑块往上提,
+ * 按下时还会改 top 与尺寸, 这里全部归零, 否则滑块与细线错开。
+ */
+
+:is(.mc-view, .mc-sheet) input.mc-range {
+  --mc-thumb: 16px;
+  --mc-line: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: var(--mc-thumb);
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+}
+:is(.mc-view, .mc-sheet) input.mc-range:focus { outline: none; box-shadow: none; }
+:is(.mc-view, .mc-sheet) input.mc-range::-webkit-slider-runnable-track {
+  height: var(--mc-thumb);
+  border: none;
+  border-radius: calc(var(--mc-line) / 2);
+  background:
+    linear-gradient(var(--mc-accent), var(--mc-accent)) 0 50% / var(--mc-fill, 0%) var(--mc-line) no-repeat,
+    linear-gradient(var(--mc-hair), var(--mc-hair)) 0 50% / 100% var(--mc-line) no-repeat;
+}
+:is(.mc-view, .mc-sheet) input.mc-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  width: var(--mc-thumb);
+  height: var(--mc-thumb);
+  margin: 0;
+  position: static;
+  top: 0;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.22), 0 0 0 0.5px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: transform 0.2s var(--mc-ease-spring), box-shadow 0.2s ease;
+}
+:is(.mc-view, .mc-sheet) input.mc-range:is(:hover, :active, :focus)::-webkit-slider-thumb {
+  width: var(--mc-thumb);
+  height: var(--mc-thumb);
+  top: 0;
+  opacity: 1;
+  background: #fff;
+  border: none;
+}
+:is(.mc-view, .mc-sheet) input.mc-range:active::-webkit-slider-thumb {
+  transform: scale(1.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 0 0 6px var(--mc-accent-soft);
+}
+:is(.mc-view, .mc-sheet) input.mc-range::-moz-range-track { height: var(--mc-line); border-radius: 2px; background: var(--mc-hair); }
+:is(.mc-view, .mc-sheet) input.mc-range::-moz-range-progress { height: var(--mc-line); border-radius: 2px; background: var(--mc-accent); }
+:is(.mc-view, .mc-sheet) input.mc-range::-moz-range-thumb {
+  box-sizing: border-box;
+  width: var(--mc-thumb);
+  height: var(--mc-thumb);
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.22);
+}
+:is(.mc-view, .mc-sheet) input.mc-range:disabled { cursor: default; opacity: 0.5; }
+
+/* ---------- 进度 ---------- */
+
+.mc-progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 2px 2px;
+  flex-shrink: 0;
+}
+.mc-progress-track { position: relative; flex: 1; }
+
+/* ---------- 控制栏: [顺序] [‹] [▶] [›] [⚙] ---------- */
+
+.mc-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 4px 0;
+  flex-shrink: 0;
+}
+.mc-view button.mc-ctrl {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  box-shadow: none;
+  color: var(--mc-ink);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.18s var(--mc-ease-spring), background 0.2s ease, color 0.2s ease;
+}
+.mc-view button.mc-ctrl:active { transform: scale(0.88); }
+.mc-view button.mc-ctrl.mc-side { width: 38px; height: 38px; color: var(--mc-ink-3); }
+.mc-view button.mc-ctrl.mc-side.is-smart { color: #e8862f; }
+.mc-view button.mc-ctrl.mc-step { width: 44px; height: 44px; background: var(--mc-surface); box-shadow: var(--mc-shadow-raise); }
+.mc-view button.mc-ctrl.mc-step .mc-svg { width: 19px; height: 19px; }
+.mc-view button.mc-ctrl.mc-play {
+  width: 56px;
+  height: 56px;
+  color: #fff;
+  background: linear-gradient(155deg, #9d8be2 0%, var(--mc-accent-deep) 100%);
+  box-shadow: 0 8px 18px -8px rgba(111, 92, 192, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+.mc-view button.mc-ctrl.mc-play .mc-svg { width: 21px; height: 21px; }
+
+@media (hover: hover) {
+  .mc-view button.mc-ctrl.mc-side:hover { color: var(--mc-accent-deep); background: var(--mc-accent-soft); }
+  .mc-view button.mc-ctrl.mc-step:hover { color: var(--mc-accent-deep); }
+}
+
+/* 横屏手机: 单词与释义左右分栏, 卡片铺满 */
+@media (min-aspect-ratio: 4/3) and (max-height: 520px) {
+  .mc-root { max-width: 680px; }
+  .mc-card { flex-direction: row; width: 100%; height: 100%; aspect-ratio: auto; border-radius: 24px; }
+  .mc-card-under { display: none; }
+  .mc-upper { align-items: center; padding: 20px; }
+  .mc-divider { width: 2px; height: 28px; margin: auto 0; background: repeating-linear-gradient(to bottom, var(--mc-hair) 0 4px, transparent 4px 7px); }
+  .mc-lower { justify-content: center; padding: 20px; -webkit-mask-image: none; mask-image: none; }
+}
+
+/* ==================== 弹窗 ==================== */
+
+/* 弹窗挂在卡片标签页里: 遮罩只盖住这个标签页, 弹窗相对它居中; 没有宿主时 (.is-global) 才铺满整个窗口 */
+.mc-view { position: relative; }
+.mc-sheet-container {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.mc-sheet-container.is-global { position: fixed; z-index: var(--layer-modal, 50); }
+.mc-sheet-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 16, 12, 0.32);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  animation: mc-fade-in 0.2s ease;
+}
+@keyframes mc-fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+.mc-sheet {
+  position: relative;
+  width: min(400px, 100%);
+  max-height: min(100%, 720px);
+  border-radius: 22px;
+  background: var(--mc-paper);
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--mc-edge);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: mc-sheet-in 0.32s var(--mc-ease-out);
+}
+@keyframes mc-sheet-in {
+  from { opacity: 0; transform: translateY(14px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+
+/* 手机: 贴着标签页底部的抽屉 */
+.is-mobile .mc-sheet-container { align-items: flex-end; padding: 0; }
+.is-mobile .mc-sheet {
+  width: 100%;
+  max-width: 560px;
+  max-height: 88%;
+  border-radius: 22px 22px 0 0;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  animation-name: mc-drawer-in;
+}
+@keyframes mc-drawer-in { from { transform: translateY(100%); } to { transform: none; } }
+.is-mobile .mc-sheet-header::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  width: 36px;
+  height: 4px;
+  margin-left: -18px;
+  border-radius: 2px;
+  background: var(--mc-hair);
+}
+
+.mc-sheet-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 18px 10px 22px;
+  flex-shrink: 0;
+}
+.mc-sheet-title { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; color: var(--mc-ink); }
+.mc-sheet button.mc-sheet-close {
+  height: 30px;
+  padding: 0 4px;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--mc-accent-deep);
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+.theme-dark .mc-sheet button.mc-sheet-close { color: #b9aaf0; }
+.mc-sheet button.mc-sheet-close:hover { opacity: 0.7; }
+.mc-sheet button.mc-sheet-close:active { opacity: 0.5; }
+
+.mc-sheet-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 2px 16px 22px;
+  scrollbar-width: none;
+}
+.mc-sheet-body::-webkit-scrollbar { display: none; }
+
+/* ---------- 分组 ---------- */
+
+.mc-section { margin-top: 18px; }
+.mc-section:first-child { margin-top: 8px; }
+.mc-section-label {
+  padding: 0 6px 7px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--mc-ink-3);
+}
+.mc-group {
+  border-radius: 14px;
+  background: var(--mc-surface);
+  box-shadow: 0 0 0 1px var(--mc-edge);
+  overflow: hidden;
+}
+.mc-section-footnote {
+  padding: 7px 6px 0;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--mc-ink-3);
+}
+
+/* ---------- 行 ---------- */
+
+.mc-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 50px;
+  padding: 9px 14px;
+  box-sizing: border-box;
+  outline: none;
+  transition: background 0.15s ease;
+}
+.mc-row + .mc-row::before,
+.mc-block + .mc-row::before,
+.mc-row + .mc-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 14px;
+  height: 1px;
+  background: var(--mc-hair);
+}
+.mc-row.is-clickable { cursor: pointer; }
+.mc-row.is-clickable:active,
+.mc-row.is-clickable:focus-visible { background: var(--mc-surface-2); }
+@media (hover: hover) { .mc-row.is-clickable:hover { background: var(--mc-surface-2); } }
+.mc-row.is-disabled .mc-row-text { opacity: 0.45; }
+
+.mc-row-text { flex: 1; min-width: 0; }
+.mc-row-title { font-size: 14px; font-weight: 500; color: var(--mc-ink); }
+.mc-row-desc {
+  margin-top: 2px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--mc-ink-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mc-row-trailing { flex-shrink: 0; display: flex; align-items: center; color: var(--mc-ink-3); }
+.mc-row-current { font-size: 11px; font-weight: 600; color: var(--mc-accent-deep); }
+.theme-dark .mc-row-current { color: #b9aaf0; }
+.mc-row.is-selected .mc-row-title { color: var(--mc-accent-deep); font-weight: 600; }
+.theme-dark .mc-row.is-selected .mc-row-title { color: #b9aaf0; }
+
+/* ---------- 开关 ---------- */
+
+.mc-sheet button.mc-switch {
+  position: relative;
+  width: 46px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: var(--mc-hair);
+  box-shadow: inset 0 0 0 1px var(--mc-edge);
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+.mc-switch-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18), 0 0 0 0.5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s var(--mc-ease-spring);
+}
+.mc-sheet button.mc-switch.is-on { background: var(--mc-accent); }
+.mc-switch.is-on .mc-switch-knob { transform: translateX(18px); }
+.mc-sheet button.mc-switch:active .mc-switch-knob { width: 26px; }
+.mc-sheet button.mc-switch.is-on:active .mc-switch-knob { transform: translateX(14px); }
+.mc-sheet button.mc-switch:disabled { opacity: 0.4; cursor: default; }
+
+/* ---------- 滑杆字段 ---------- */
+
+/* 组里的整块控件 (滑杆字段) 与行使用同样的内边距 */
+.mc-block { position: relative; padding: 12px 14px; }
+
+.mc-field-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.mc-field-title { flex: 1; font-size: 14px; font-weight: 500; color: var(--mc-ink); }
+.mc-value-pill {
+  min-width: 52px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--mc-accent-deep);
+  background: var(--mc-accent-soft);
+}
+.theme-dark .mc-value-pill { color: #b9aaf0; }
+.mc-sheet .mc-field input.mc-range { margin: 0 2px; width: calc(100% - 4px); }
+.mc-field-scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  padding: 0 2px;
+  font-size: 10px;
+  color: var(--mc-ink-3);
+}
+
+/* ---------- 搜索 (切换卡组) ---------- */
+
+.mc-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 16px 4px;
+  padding: 0 12px;
+  height: 38px;
+  border-radius: 11px;
+  background: var(--mc-surface);
+  box-shadow: 0 0 0 1px var(--mc-edge);
+  color: var(--mc-ink-3);
+  flex-shrink: 0;
+}
+.mc-sheet .mc-search input {
+  flex: 1;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  font-size: 13px;
+  color: var(--mc-ink);
+}
+.mc-sheet .mc-search input:focus { box-shadow: none; outline: none; }
+.mc-sheet .mc-search input::-webkit-search-cancel-button { display: none; }
+
+/* ==================== 动效偏好 ==================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .mc-view *, .mc-sheet, .mc-sheet * { animation-duration: 1ms !important; transition-duration: 1ms !important; }
+}
+
+/* 第一列表头右侧的单表学习入口。 */
+th.mc-table-host { position: relative; padding-right: 40px !important; }
+button.mc-table-study {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 4px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 26px;
+  padding: 4px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 7px;
+  background: var(--background-primary);
+  color: var(--text-muted);
+  box-shadow: none;
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+.mc-table-host:hover > .mc-table-study,
+.mc-table-host:focus-within > .mc-table-study,
+button.mc-table-study:focus-visible { opacity: 1; }
+button.mc-table-study:hover { color: var(--text-accent); }
+button.mc-table-study svg { width: 17px; height: 17px; }
+@media (hover: none) { button.mc-table-study { opacity: 1; } }
+.mc-view { position: relative; }

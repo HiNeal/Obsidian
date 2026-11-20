@@ -1,0 +1,36 @@
+# wan
+
+缺乏
+
+| 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
+| --- | :--- | --- | --- | --- | --- | --- | --- |
+| wan | /wɒn/ | v. 变苍白<br>adj. 苍白的; 无血色的; 病态的 | **wan(缺乏)**<br>围绕“缺乏”这一核心含义构成, 表示“苍白的, 无血色的, 病态的, 有倦容的, 有愁容的, 暗淡的, 微弱的” |  adj. (of a person's complexion or appearance) pale and giving the impression of illness or exhaustion<br>&emsp;• (of light) pale; weak<br>&emsp;• (of a smile) lacking enthusiasm or energy  |  a **wan** smile  | adj. pale, dim, pallid, ashen, white, white as a sheet, grey, anaemic | 0 |
+| wane | /weɪn/ | n. 减少; 衰微; 败落<br>v. 变小; 亏缺; 衰落 | **wan(缺乏)**, e(连接字母)<br>围绕“缺乏”这一核心含义构成, 表示“变暗淡, 衰落, 衰退, 退潮” |  v. (of the moon) have a progressively smaller part of its visible surface illuminated, so that it appears to decrease in size<br>(of a state or feeling) decrease in vigour or extent; become weaker<br>n. the amount by which a plank or log is bevelled or falls short of a squared shape  |  **wane** in power and influence  | v. disappear, decrease, diminish, dwindle, decline, shrink, contract, taper off | 0 |
+| wanton | /ˈwɒntən/ | n. 荡妇; 水性杨花的女人<br>v. 变化无常; 嬉戏; 闲荡<br>adj. 恶意的; 不负责任的; 无节制的 | **wan(缺乏)**, **ton(教养)**<br>缺乏教养的, 即放肆的、放荡的 | adj. (of a cruel or violent action) deliberate and unprovoked<br>n. a sexually unrestrained woman<br>v. play; frolic<br>behave in a sexually unrestrained way | sheer **wanton** vandalism | adj. deliberate, unprovoked, licentious, capricious, wilful, malicious, malevolent, spiteful | 0 |
+
+# wis, wit
+
+知道, 了解
+
+| 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
+| --- | :--- | --- | --- | --- | --- | --- | --- |
+| wisdom | /ˈwɪzdəm/ | n. 智慧; 才智; 明智; 学问; 名言至理 | **wis(知道, 了解)**, -dom(性质, 状态)<br>表示与“知道”有关的性质或状态, 即“智慧, 才智” |  n. the quality of having experience, knowledge, and good judgement; the quality of being wise<br>&emsp;• the fact of being based on sensible or wise thinking<br>&emsp;• the body of knowledge and experience that develops within a specified society or period  |  profound **wisdom** and insight  | n. sagacity, knowledge, sageness, intelligence, understanding, insight, perception, perceptiveness | 0 |
+| wit | /wɪt/ | n. 机智; 风趣幽默; 智慧; 风趣的人; (复数)智力 | **wit(知道, 了解)**<br>围绕“知道”这一核心含义构成, 表示“智力” |  n. the capacity for inventive thought and quick understanding; keen intelligence<br>&emsp;• good sense<br>a natural aptitude for using words and ideas in a quick and inventive way to create humour<br>&emsp;• a witty person<br>v. that is to say (used to be more specific about something already referred to)  |  a sharp **wit**  | n. intelligence, wittiness, repartee, wag, shrewdness, astuteness, cleverness, canniness | 0 |
+| witness | /ˈwɪtnəs/ | n. 证人; 目击者; 证据<br>v. 目击; 见证; 作证 | **wit(知道, 了解)**, -ness(性质, 状态)<br>表示与“知道”有关的性质或状态, 即“证据, 证明, 证言, 证人, 目击者” |  n. a person who sees an event, typically a crime or accident, take place<br>&emsp;• a person giving sworn testimony to a court of law or the police<br>&emsp;• a person who is present at the signing of a document and signs it themselves to confirm this<br>evidence; proof<br>&emsp;• used to refer to confirmation or evidence given by signature or under oath<br>&emsp;• open profession of one's religious faith through words or actions<br>v. see (an event, typically a crime or accident) happen<br>&emsp;• be present as someone signs (a document) or gives (their signature) to a document and sign it oneself to confirm this<br>have knowledge of (a development) from observation or experience<br>&emsp;• be the place, period, or setting in which (an event or development) takes place<br>&emsp;• be a sign or proof of (something); serve as evidence<br>&emsp;• used to introduce an example that proves a preceding statement<br>openly profess one's religious faith  |  the prosecution **witness** in court  | n. observer, attestor, evidence, onlooker, looker-on, eyewitness, spectator, viewer<br>v. see, countersign, attest to, observe, watch, look on at, be a witness to, view | 0 |
+| witticism | /ˈwɪtɪsɪzəm/ | n. 妙语; 打趣话; 戏谑话 | **wit(知道, 了解)**, t(连接字母), -ic(…的, 人, …学), -ism(主义, 语言)<br>与“知道、机智”相关的言辞, 即妙语 |  n. a witty remark  |  a sharp and memorable **witticism**  | n. joke, quip, witty remark, flash of wit, jest, pun, play on words, double entendre | 0 |
+| witting | /ˈwɪtɪŋ/ | adj. 意识到的; 知晓的; 故意的 | **wit(知道, 了解)**, t(连接字母), -ing(…的)<br>明知而有意为之的 |  adj. done in full awareness or consciousness; deliberate<br>&emsp;• (of a person) conscious or aware of the full facts of a situation  |  a **witting** accomplice  |  | 0 |
+| wise | /waɪz/ | adj. 聪明的; 明智的; 博学的; 精明的 | **wis(知道, 了解)**, e(连接字母)<br>懂得多、有知识, 引申为明智的 |  adj. having or showing experience, knowledge, and good judgement<br>&emsp;• sensible or prudent<br>&emsp;• having knowledge in a specified subject<br>&emsp;• aware of, especially so as to know how to act<br>n. the manner or extent of something  |  give **wise** counsel  | adj. sage, sagacious, intelligent, clever, learned, with/showing great knowledge, knowledgeable, informed | 0 |
+| witless | /ˈwɪtləs/ | adj. 无才智的; 不机敏的; 愚蠢的; 糊涂的 | **wit(知道, 了解)**, -less(无…的, 不…的)<br>在前词基础上加“-less”构成形容词, 表示“无才智的” |  adj. foolish; stupid<br>&emsp;• to such an extent that one cannot think clearly or rationally  |  a **witless** retort  | adj. foolish, stupid, out of one's mind, unintelligent, idiotic, brainless, mindless, imbecilic | 0 |
+| witted |  | adj. (常用以构成复合词) 智力⋯的; 智能⋯的 | **wit(知道, 了解)**, t(连接字母), -ed(…的)<br>围绕“知道”这一核心含义构成, 表示“(常用以构成复合词) 智力⋯的” |  adj. having wit or understanding  |  a quick-**witted** young person  |  | 0 |
+| witty | /ˈwɪti/ | adj. 机智的; 有才智的; 措辞巧妙的; 诙谐的; [方] 聪明的 | **wit(知道, 了解)**, t(连接字母), -y(充满…的, 有…特征的, 像…的)<br>围绕“知道”这一核心含义构成, 表示“机智的” |  adj. showing or characterized by quick and inventive verbal humour  |  a **witty** remark  | adj. humorous, clever, amusing, droll, funny, comic, comical, chucklesome | 0 |
+
+# woman
+
+女
+
+| 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
+| --- | :--- | --- | --- | --- | --- | --- | --- |
+| chairwoman | /ˈtʃeəwʊmən/ | n. 女主席; 女会长; 女议长; 女委员长 | **chair(主席)**, **woman(女)**<br>由“主席、会长、议长”与“女”共同限定词义, 表示“女主席” |  n. a woman chosen to preside over a meeting<br>a woman who is the administrative head of a department of instruction at a college or university  |  the newly elected **chairwoman**  | n. chair, chairperson, president, convener, spokesperson, spokeswoman, leader, MC | 0 |
+| gentlewoman | /ˈdʒentlwʊmən/ | n. 贵妇人; 女士; 淑女; (王室、贵族的)侍女, 女仆 | **gent(出身高贵)**, -le(…的), **woman(女)**<br>有教养或出身良好的女性 | n. a woman of noble birth or good social standing | a well educated **gentlewoman** |  | 0 |
+| womanizer | /ˈwʊmənaɪzə(r)/ | n. 追求女色的人 | **woman(女)**, -iz(…化), -er(人)<br>由“使带女子气”派生为当前词义 | n. a man who engages in numerous casual sexual affairs with women | a notorious and serial **womanizer** | n. philanderer, Casanova, Don Juan, Romeo, Lothario, flirt, ladies' man, playboy | 0 |
+| womanly | /ˈwʊmənli/ | adv. 有女子气质的; 适合女子的; 女子般地<br>adj. 有女子气质的, 适合女子的; 女子般地 | **woman(女)**, -ly(…的)<br>围绕“女”这一核心含义构成, 表示“有女子气质的, 适合女子的” |  adj. having or denoting qualities and characteristics traditionally associated with or expected of women<br>&emsp;• regarded as suitable or appropriate for a woman<br>&emsp;• (of a woman's body) rounded and well developed  |  dignified and graceful **womanly** charm  | adj. feminine, rounded, female, womanlike, all-woman, curvaceous, shapely, voluptuous | 0 |

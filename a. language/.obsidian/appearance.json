@@ -1,0 +1,13 @@
+{
+  "accentColor": "",
+  "cssTheme": "Baseline",
+  "theme": "moonstone",
+  "baseFontSize": 14,
+  "textFontFamily": "Maple Mono NF CN",
+  "monospaceFontFamily": "Maple Mono NF CN",
+  "interfaceFontFamily": "Maple Mono NF CN",
+  "enabledCssSnippets": [],
+  "showRibbon": false,
+  "baseFontSizeAction": false,
+  "showViewHeader": true
+}

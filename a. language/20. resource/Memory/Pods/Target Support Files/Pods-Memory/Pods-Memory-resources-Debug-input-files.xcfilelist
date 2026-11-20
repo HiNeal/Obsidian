@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Memory/Pods-Memory-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/MMKV/MMKV_Privacy.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit_Privacy.bundle
