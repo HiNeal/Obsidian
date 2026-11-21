@@ -16,10 +16,10 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| barite |  | n. 重晶石 | **bar(o)(重, 压)**, -ite(矿物)<br>密度较大的含钡矿物, 即重晶石 |  n. a mineral consisting of barium sulfate, typically occurring as colorless prismatic crystals or thin white flakes  |  **barite** in drilling fluids  |  | 0 |
+| barite | /ˈbæraɪt/ | n. 重晶石 | **bar(o)(重, 压)**, -ite(矿物)<br>密度较大的含钡矿物, 即重晶石 |  n. a mineral consisting of barium sulfate, typically occurring as colorless prismatic crystals or thin white flakes  |  **barite** in drilling fluids  |  | 0 |
 | baritone | /ˈbærɪtəʊn/ | n. 男中音; 男中音歌手 | **bar(o)(重, 压)**, i(连接元音), **ton(音; 雷)**, e(连接字母)<br>音调“低沉、重”的男声, 即男中音 |  n. an adult male singing voice between tenor and bass<br>&emsp;• a singer with a baritone voice<br>&emsp;• a part written for a baritone voice<br>an instrument that is second lowest in pitch in its family<br>&emsp;• a brass instrument similar to a euphonium, sounding in B flat and used in brass bands<br>adj. having or denoting an adult male singing voice between tenor and bass<br>denoting an instrument that is second lowest in pitch in its family  |  a deep rich **baritone** voice  |  | 0 |
 | barometer | /bəˈrɒmɪtə(r)/ | n. 气压计; 气压表 | **bar(o)(重, 压)**, -meter(测量器, 仪表)<br>测量“压”的仪器或方法, 即“气压计, 气压表” |  n. an instrument measuring atmospheric pressure, used especially in forecasting the weather and determining altitude<br>&emsp;• something which reflects changes in circumstances or opinions  |  a reliable **barometer** of opinion  |  | 0 |
-| baric |  | adj. 气压的 | **bar(栏栏, 障碍)**, -ic(…的)<br>围绕“栏栏”这一核心含义构成, 表示“气压的” |  adj. of or relating to atmospheric weight or pressure  |  a **baric** pressure measurement  |  | 0 |
+| baric | /ˈbeərɪk/ | adj. 气压的 | **bar(栏栏, 障碍)**, -ic(…的)<br>围绕“栏栏”这一核心含义构成, 表示“气压的” |  adj. of or relating to atmospheric weight or pressure  |  a **baric** pressure measurement  |  | 0 |
 
 # bar
 
@@ -94,7 +94,7 @@
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | amphibian | /æmˈfɪbiən/ | n. 两栖动物<br>adj. 两栖的; 水陆两用的 | amphi-(二者, 两种), **bi(o)(生命, 生物)**, -an(…的)<br>兼具两种生活方式的生物, 即"两栖动物" |  n. a cold-blooded vertebrate animal of a class that comprises the frogs, toads, newts, salamanders, and caecilians. They are distinguished by having an aquatic gill-breathing larval stage followed (typically) by a terrestrial lung-breathing adult stage<br>&emsp;• a seaplane, tank, or other vehicle that can operate on land and on water<br>adj. relating to amphibians  |  a critically endangered **amphibian**  |  | 0 |
 | antibiotic | /ˌæntibaɪˈɒtɪk/ | adj. 抗菌的<br>n. 抗生素 | anti-(反对, 相反), **bi(o)(生命, 生物)**, -tic(…的)<br>对抗微生物生命活动的; 转化作名词时指抗生素 |  n. a medicine (such as penicillin or its derivatives) that inhibits the growth of or destroys microorganisms<br>adj. relating to antibiotics  |  a broad spectrum **antibiotic**  |  | 0 |
-| biocide |  | n. 杀虫剂 | **bi(o)(生命, 生物)**, **cid(切, 杀)**, e(连接字母)<br>由“生命”与“杀”共同限定词义, 表示“杀虫剂” |  n. a substance that destroys living things, especially a pesticide, fungicide, or herbicide<br>the destruction of life  |  treatment with a **biocide**  |  | 0 |
+| biocide | /ˈbaɪəsaɪd/ | n. 杀虫剂 | **bi(o)(生命, 生物)**, **cid(切, 杀)**, e(连接字母)<br>由“生命”与“杀”共同限定词义, 表示“杀虫剂” |  n. a substance that destroys living things, especially a pesticide, fungicide, or herbicide<br>the destruction of life  |  treatment with a **biocide**  |  | 0 |
 | biography | /baɪˈɒɡrəfi/ | n. 传记 | **bi(o)(生命, 生物)**, **graph(写, 画)**, -y(活动)<br>记录一个人生命经历的写作活动及其形成的作品, 即传记 |  n. an account of someone's life written by someone else<br>&emsp;• biographies considered as a literary genre<br>&emsp;• the course of a person's life  |  an authorized literary **biography**  | n. life story, life history, life, memoir, profile, account | 0 |
 | biometrics | /ˌbaɪəʊˈmetrɪks/ | n. 生物特征识别 | **bi(o)(生命, 生物)**, **metrics(测量指标)**<br>通过身体或行为特征进行身份测量识别的技术 |  n. the automated recognition of individuals by means of unique physical characteristics (such as fingerprints, voice, typing speed, etc.), typically for the purposes of security<br>&emsp;• unique physical characteristics used in the automated recognition of individuals, typically for the purposes of security<br>the application of statistical analysis to biological data<br>&emsp;• the branch of statistics that deals with data relating to living organisms  |  the use of fingerprint **biometrics**  |  | 0 |
 | biosphere | /ˈbaɪəʊsfɪə(r)/ | n. 生命层; 生物圈 | **bi(o)(生命, 生物)**, **sphere(范围)**<br>由“生命”与“区域、范围”共同限定词义, 表示“生命层, 生物圈” |  n. the regions of the surface and atmosphere of the earth or another planet occupied by living organisms<br>an artificial structure enclosing a self-contained ecosystem or ecosystems  |  the Earth's fragile **biosphere**  |  | 0 |
@@ -109,7 +109,7 @@
 | Bible | /ˈbaɪbl/ | n. 基督教的《圣经》 | **bibl(书)**, e(连接字母)<br>核心意象(词根 bibli“书”): 多部“书”卷汇成的经典, 即《圣经》 | n. the Christian scriptures, consisting of the Old and New Testaments<br>&emsp;• the Jewish scriptures, consisting of the Torah or Law, the Prophets, and the Hagiographa or Writings<br>&emsp;• a copy of the Christian or Jewish scriptures<br>a book regarded as authoritative in a particular sphere | passages from the **Bible** |  | 0 |
 | bibliographer | /ˌbɪbliˈɒɡrəfə(r)/ | n. 书目提要编著人 | **bibli(o)(书)**, **graph(写, 画)**, -er(人)<br>记录或描绘“书”的方法, 即“书目提要编著人” |  n. an expert in bibliography  |  a specialist analytical **bibliographer**  |  | 0 |
 | bibliography | /ˌbɪbliˈɒɡrəfi/ | n. 书目提要; 目录学; □参考书目 | **bibli(o)(书)**, **graph(写, 画)**, -y(活动)<br>把书籍记录汇集成的一组书目 |  n. a list of the books referred to in a scholarly work, typically printed as an appendix<br>&emsp;• a list of the books of a specific author or publisher, or on a specific subject<br>&emsp;• the history or systematic description of books, their authorship, printing, publication, editions, etc  |  compile a comprehensive **bibliography**  | n. list of references, book list, list of books, catalogue, record | 0 |
-| bibliomania |  | n. 藏书癖 (狂) | **bibli(o)(书)**, -mania(狂热, 精神失常)<br>由“书”与“狂热”共同限定词义, 表示“藏书癖 (狂)” |  n. passionate enthusiasm for collecting and possessing books  |  the collector's lifelong **bibliomania**  |  | 0 |
+| bibliomania | /ˌbɪblɪəʊˈmeɪnɪə/ | n. 藏书癖 (狂) | **bibli(o)(书)**, -mania(狂热, 精神失常)<br>由“书”与“狂热”共同限定词义, 表示“藏书癖 (狂)” |  n. passionate enthusiasm for collecting and possessing books  |  the collector's lifelong **bibliomania**  |  | 0 |
 
 # blanc
 
@@ -128,7 +128,7 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | blastocyst | /ˈblæstəsɪst/ | n. 胚囊; 胚胞 | **blast(o)(芽胚)**, **cyst(i)(囊, 膀胱)**<br>由“胚”与“囊”共同限定词义, 表示“胚囊” |  n. a mammalian blastula in which some differentiation of cells has occurred  |  implantation of the **blastocyst**  |  | 0 |
-| blastoderm |  | n. 胚盘; 胚膜 | **blast(o)(芽胚)**, **derm(o)(皮肤)**<br>由“胚”与“皮肤”共同限定词义, 表示“胚盘, 胚膜” |  n. a blastula having the form of a disc of cells on top of the yolk  |  the formation of the **blastoderm**  |  | 0 |
+| blastoderm | /ˈblæstəʊdɜːm/ | n. 胚盘; 胚膜 | **blast(o)(芽胚)**, **derm(o)(皮肤)**<br>由“胚”与“皮肤”共同限定词义, 表示“胚盘, 胚膜” |  n. a blastula having the form of a disc of cells on top of the yolk  |  the formation of the **blastoderm**  |  | 0 |
 
 # brace, brach
 
@@ -145,8 +145,8 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| brachycephalic |  | adj. 短头的 | **brachy(短)**, **cephal(o)(头)**, -ic(…的)<br>头骨颅面纵向明显扁平缩短的特征, 特指巴哥犬、斗牛犬等短头颅动物 |  adj. having a relatively broad, short skull (typically with the breadth at least 80 per cent of the length)  |  a **brachycephalic** dog breed  |  | 0 |
-| brachypterous |  | adj. 短翅的 | **brachy(短)**, **pter(翼, 翅)**, -ous(…的)<br>翅膀短小或退化的 |  adj. having rudimentary or abnormally small wings  |  a **brachypterous** insect species  |  | 0 |
+| brachycephalic | /ˌbrækɪsɪˈfælɪk/ | adj. 短头的 | **brachy(短)**, **cephal(o)(头)**, -ic(…的)<br>头骨颅面纵向明显扁平缩短的特征, 特指巴哥犬、斗牛犬等短头颅动物 |  adj. having a relatively broad, short skull (typically with the breadth at least 80 per cent of the length)  |  a **brachycephalic** dog breed  |  | 0 |
+| brachypterous | /brəˈkɪptərəs/ | adj. 短翅的 | **brachy(短)**, **pter(翼, 翅)**, -ous(…的)<br>翅膀短小或退化的 |  adj. having rudimentary or abnormally small wings  |  a **brachypterous** insect species  |  | 0 |
 
 # brady
 
@@ -155,7 +155,7 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | bradycardia | /ˌbrædiˈkɑːdiə/ | n. [医] 心搏缓慢 | **brady(缓慢)**, **cardi(o)(心脏)**, a(连接元音)<br>“缓慢”的“心脏”跳动, 即心动过缓 |  n. abnormally slow heart action  |  the treatment of symptomatic **bradycardia**  |  | 0 |
-| bradykinin |  | n. 缓激肽; 血管舒张素 | **brady(缓慢)**, **kin(e)(运动)**, -in(…素)<br>引起“缓慢”“运动”(平滑肌反应)的物质, 即缓激肽 |  n. a compound released in the blood in some circumstances which causes contraction of smooth muscle and dilation of blood vessels. It is a peptide with nine amino-acid residues  |  the release of **bradykinin**  |  | 0 |
+| bradykinin | /ˌbreɪdɪˈkaɪnɪn/ | n. 缓激肽; 血管舒张素 | **brady(缓慢)**, **kin(e)(运动)**, -in(…素)<br>引起“缓慢”“运动”(平滑肌反应)的物质, 即缓激肽 |  n. a compound released in the blood in some circumstances which causes contraction of smooth muscle and dilation of blood vessels. It is a peptide with nine amino-acid residues  |  the release of **bradykinin**  |  | 0 |
 
 # brev(i), brief
 
@@ -188,7 +188,7 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | bronchitis | /brɒŋˈkaɪtɪs/ | n. 支气管炎 | **bronch(o)(支气管)**, -itis(…炎)<br>支气管发生炎症, 即支气管炎 |  n. inflammation of the mucous membrane in the bronchial tubes. It typically causes bronchospasm and coughing  |  suffer from chronic **bronchitis**  |  | 0 |
-| bronchopneumonia |  | n. 支气管肺炎 | **bronch(o)(支气管)**, o(连接元音), **pneumonia(肺炎)**<br>累及“支气管”的肺炎, 即支气管肺炎 |  n. inflammation of the lungs, arising in the bronchi or bronchioles  |  a severe case of **bronchopneumonia**  |  | 0 |
+| bronchopneumonia | /ˌbrɒŋkəʊˌnjuːˈməʊnɪə/ | n. 支气管肺炎 | **bronch(o)(支气管)**, o(连接元音), **pneumonia(肺炎)**<br>累及“支气管”的肺炎, 即支气管肺炎 |  n. inflammation of the lungs, arising in the bronchi or bronchioles  |  a severe case of **bronchopneumonia**  |  | 0 |
 | bronchoscope | /ˈbrɒŋkəskəʊp/ | n. 支气管窥镜 | **bronch(o)(支气管)**, -scope(观察仪器)<br>由“支气管”与“镜”共同限定词义, 表示“支气管窥镜” |  n. a fibre-optic cable that is passed into the windpipe in order to view the bronchi  |  examination with a flexible **bronchoscope**  |  | 0 |
 | bronchus | /ˈbrɒŋkəs/ | n. 支气管; 细支气管 | **bronch(o)(支气管)**, -us(名词词尾)<br>词根本身即表示“支气管”, 整词沿用该义 |  n. any of the major air passages of the lungs which diverge from the windpipe  |  the right main **bronchus**  |  | 0 |
 | bronchial | /ˈbrɒŋkiəl/ | adj. 支气管的; 细支气管的 | **bronch(o)(支气管)**, -ial(…的)<br>围绕“支气管”这一核心含义构成, 表示“支气管的” |  adj. relating to the bronchi or bronchioles  |  the **bronchial** tree branches  |  | 0 |

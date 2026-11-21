@@ -16,7 +16,7 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | odontology | /ˌəʊdɒnˈtɒlədʒi/ /ˌɒdɒnˈtɒlədʒi/ | n. 牙科学; 齿科学 | **odont(o)(牙)**, -logy(…学, …研究)<br>以“牙”为研究对象的学科, 即“牙科学, 齿科学” |  n. the scientific study of the structure and diseases of teeth  |  the study of forensic **odontology**  |  | 0 |
-| orthodontia |  | n. 正齿学; 畸齿矫正术; 矫形齿科学 | orth-(正确, 直), **odont(o)(牙)**, -ia(性质, 状态)<br>围绕“齿”这一核心含义构成, 表示“正齿学” |  n. orthodontics  |  the practice of corrective **orthodontia**  |  | 0 |
+| orthodontia | /ˌɔːθəˈdɒntɪə/ | n. 正齿学; 畸齿矫正术; 矫形齿科学 | orth-(正确, 直), **odont(o)(牙)**, -ia(性质, 状态)<br>围绕“齿”这一核心含义构成, 表示“正齿学” |  n. orthodontics  |  the practice of corrective **orthodontia**  |  | 0 |
 | orthodontist | /ˌɔːθəˈdɒntɪst/ | n. 畸齿矫正医生; 矫形齿科医生 | orth-(正确, 直), **odont(o)(牙)**, -ist(人, …主义的)<br>把“牙”齿“矫正”到正的人, 即畸齿矫正医生 |  n. a dentist who is qualified to treat irregularities in the teeth and jaws  |  consult a specialist **orthodontist**  |  | 0 |
 
 # ole(o)
@@ -26,10 +26,10 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | olea |  | n. [复] 油 | **ole(o)(油)**, a(连接元音)<br>“油”(橄榄树)的拉丁词, 即油 |  n. a genus of trees and shrubs that includes the olive  |  the genus known as **olea**  |  | 0 |
-| oleate |  | n. 油酸盐 | **ole(o)(油)**, -ate(做, 使, …的, 人)<br>“油”酸形成的盐, 即油酸盐 |  n. a salt or ester of oleic acid  |  a solution of sodium **oleate**  |  | 0 |
-| oleoresin |  | n. 含油树脂 | **ole(o)(油)**, **resin(树脂)**<br>由“油”与“树脂”共同限定词义, 表示“含油树脂” |  n. a natural or artificial mixture of essential oils and a resin, e.g. balsam  |  a natural plant **oleoresin**  |  | 0 |
+| oleate | /ˈəʊlɪeɪt/ | n. 油酸盐 | **ole(o)(油)**, -ate(做, 使, …的, 人)<br>“油”酸形成的盐, 即油酸盐 |  n. a salt or ester of oleic acid  |  a solution of sodium **oleate**  |  | 0 |
+| oleoresin | /ˌəʊlɪəʊˈrezɪn/ | n. 含油树脂 | **ole(o)(油)**, **resin(树脂)**<br>由“油”与“树脂”共同限定词义, 表示“含油树脂” |  n. a natural or artificial mixture of essential oils and a resin, e.g. balsam  |  a natural plant **oleoresin**  |  | 0 |
 | petroleum | /pəˈtrəʊliəm/ | n. 石油 | **petr(o)(石, 岩石)**, **ole(o)(油)**, -um(化学元素或物质)<br>石中之油 |  n. a liquid mixture of hydrocarbons which is present in suitable rock strata and can be extracted and refined to produce fuels including petrol, paraffin, and diesel oil; oil  |  extract underground crude **petroleum**  |  | 0 |
-| oleic |  | adj. 油 (酸) 的 | **ole(o)(油)**, -ic(…的)<br>表示与“油”有关或具有该特征, 即“油 (酸) 的” |  adj. of or relating to oleic acid  |  the concentration of **oleic** acid  |  | 0 |
+| oleic | /əʊˈliːɪk/ | adj. 油 (酸) 的 | **ole(o)(油)**, -ic(…的)<br>表示与“油”有关或具有该特征, 即“油 (酸) 的” |  adj. of or relating to oleic acid  |  the concentration of **oleic** acid  |  | 0 |
 
 # olig(o)
 
@@ -47,8 +47,8 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| ombrometer |  | n. 雨量计 | **ombro(雨)**, **meter(测量; 测量器, 仪表)**<br>用于精确测定一定时间内地面降雨量的仪器 |  n. rain gauge  |  measure rainfall with an **ombrometer**  |  | 0 |
-| ombrophile |  | n. 喜雨植物; 适雨生物<br>adj. 喜雨的 | **ombro(雨)**, **phil(o)(爱)**<br>极度喜好充沛雨水并在多雨环境中茂盛生长的植物 |  n. a plant that thrives in rainy conditions  |  a rain loving forest **ombrophile**  |  | 0 |
+| ombrometer | /ɒmˈbrɒmɪtə/ | n. 雨量计 | **ombro(雨)**, **meter(测量; 测量器, 仪表)**<br>用于精确测定一定时间内地面降雨量的仪器 |  n. rain gauge  |  measure rainfall with an **ombrometer**  |  | 0 |
+| ombrophile | /ˈɒmbrəʊfaɪl/ | n. 喜雨植物; 适雨生物<br>adj. 喜雨的 | **ombro(雨)**, **phil(o)(爱)**<br>极度喜好充沛雨水并在多雨环境中茂盛生长的植物 |  n. a plant that thrives in rainy conditions  |  a rain loving forest **ombrophile**  |  | 0 |
 
 # omphal(o)
 
@@ -56,8 +56,8 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| omphalos |  | n. (古希腊) 盾中央的浮凸物; 中心; 中枢; 脐 | **omphal(o)(脐)**, s(连接字母)<br>原指人体肚脐, 古希腊特指德尔斐世界神圣中心石, 引申为枢纽、中心 |  n. the centre or hub of something<br>(in ancient Greece) a conical stone (especially that at Delphi) representing the navel of the earth<br>&emsp;• a boss on an ancient Greek shield  |  the **omphalos** of the world  |  | 0 |
-| omphalitis |  | n. 脐炎 | **omphal(o)(脐)**, -itis(…炎)<br>新生儿或人体的肚脐部位发炎 |  n. inflammation of the navel, especially in newborn babies  |  a newborn infant with **omphalitis**  |  | 0 |
+| omphalos | /ˈɒmfəlɒs/ | n. (古希腊) 盾中央的浮凸物; 中心; 中枢; 脐 | **omphal(o)(脐)**, s(连接字母)<br>原指人体肚脐, 古希腊特指德尔斐世界神圣中心石, 引申为枢纽、中心 |  n. the centre or hub of something<br>(in ancient Greece) a conical stone (especially that at Delphi) representing the navel of the earth<br>&emsp;• a boss on an ancient Greek shield  |  the **omphalos** of the world  |  | 0 |
+| omphalitis | /ˌɒmfəˈlaɪtɪs/ | n. 脐炎 | **omphal(o)(脐)**, -itis(…炎)<br>新生儿或人体的肚脐部位发炎 |  n. inflammation of the navel, especially in newborn babies  |  a newborn infant with **omphalitis**  |  | 0 |
 
 # oneir(o)
 
@@ -66,7 +66,7 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | oneiric | /əʊˈnaɪrɪk/ | adj. 梦的; 关于梦的 | **oneir(o)(梦)**, -ic(…的)<br>电影与艺术批评中形容氛围如梦境般虚幻迷离、超现实的特质, 即梦境般的 |  adj. relating to dreams or dreaming  |  the **oneiric** imagery of films  |  | 0 |
-| oneirology |  | n. 梦学; 释梦学 | **oneir(o)(梦)**, -logy(…学, …研究)<br>科学研究梦境产生机制及其象征意义的学科 |  n. the study of dreams and their interpretation  |  the scientific study of **oneirology**  |  | 0 |
+| oneirology | /əʊˌnaɪˈrɒlədʒi/ | n. 梦学; 释梦学 | **oneir(o)(梦)**, -logy(…学, …研究)<br>科学研究梦境产生机制及其象征意义的学科 |  n. the study of dreams and their interpretation  |  the scientific study of **oneirology**  |  | 0 |
 
 # oner, on
 
@@ -85,9 +85,9 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| ontogenesis |  | n. 个体发生; 个体发育 | **ont(o)(存在, 个体)**, **gen(族, 种类; 出生, 产生)**, -esis(行为, 过程)<br>由“个体”与“出生”共同限定词义, 表示“个体发生” |  n. the development of an individual organism or anatomical or behavioural feature from the earliest stage to maturity  |  the early stages of **ontogenesis**  |  | 0 |
+| ontogenesis | /ˌɒntəʊˈdʒenɪsɪs/ | n. 个体发生; 个体发育 | **ont(o)(存在, 个体)**, **gen(族, 种类; 出生, 产生)**, -esis(行为, 过程)<br>由“个体”与“出生”共同限定词义, 表示“个体发生” |  n. the development of an individual organism or anatomical or behavioural feature from the earliest stage to maturity  |  the early stages of **ontogenesis**  |  | 0 |
 | ontology | /ɒnˈtɒlədʒi/ | n. 本体论 | **ont(o)(存在, 个体)**, -logy(…学, …研究)<br>在前词基础上加“-logy”构成名词, 表示“本体论” |  n. the branch of metaphysics dealing with the nature of being<br>a set of concepts and categories in a subject area or domain that shows their properties and the relations between them  |  the **ontology** of social reality  |  | 0 |
-| ontogenetic |  | adj. 个体发生的; 个体发育的 | **ont(o)(存在, 个体)**, o(连接元音), **gen(族, 种类; 出生, 产生)**, -etic(…的)<br>与“个体”的“产生”过程有关的, 即个体发生的 | adj. of, relating to, or appearing in the course of ontogeny | the **ontogenetic** development of organisms |  | 0 |
+| ontogenetic | /ˌɒntəʊdʒɪˈnetɪk/ | adj. 个体发生的; 个体发育的 | **ont(o)(存在, 个体)**, o(连接元音), **gen(族, 种类; 出生, 产生)**, -etic(…的)<br>与“个体”的“产生”过程有关的, 即个体发生的 | adj. of, relating to, or appearing in the course of ontogeny | the **ontogenetic** development of organisms |  | 0 |
 | ontological | /ˌɒntəˈlɒdʒɪkl/ | adj. 本体论的 | **ont(o)(存在, 个体)**, -logical(…学的)<br>围绕“个体”这一核心含义构成, 表示“本体论的” |  adj. relating to the branch of metaphysics dealing with the nature of being<br>showing the relations between the concepts and categories in a subject area or domain  |  an **ontological** database  |  | 0 |
 
 # onym
@@ -96,15 +96,15 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| anonym |  | n. 匿名者; 无名氏 | an-(无, 不, 非), **onym(名)**<br>否定或缺少“名”所指的性质, 因此表示“匿名者, 无名氏” |  n. an anonymous person or publication<br>a pseudonym  |  write under an **anonym**  |  | 0 |
+| anonym | /ˈænənɪm/ | n. 匿名者; 无名氏 | an-(无, 不, 非), **onym(名)**<br>否定或缺少“名”所指的性质, 因此表示“匿名者, 无名氏” |  n. an anonymous person or publication<br>a pseudonym  |  write under an **anonym**  |  | 0 |
 | anonymity | /ˌænəˈnɪməti/ | n. 匿名状态; 身份隐匿 | an-(无, 不, 非), **onym(名)**, -ity(性质, 状态)<br>姓名不被公开的状态 | n. the condition of being anonymous<br>&emsp;• lack of outstanding, individual, or unusual features; impersonality | preserve the **anonymity** of participants |  | 0 |
 | antonym | /ˈæntənɪm/ | n. 短语; 习语; n-反义词 | ant-(反对, 相反), **onym(名)**<br>由“反对”与“名”共同限定词义, 表示“反义词” |  n. a word or phrase that is opposite in meaning to another word or phrase in the same language (e.g. bad and good)  |  the exact **antonym**  |  | 0 |
 | patronymic | /ˌpætrəˈnɪmɪk/ | adj. 源于父名的<br>n. 父系的姓; 源于父名的姓 | **patr(i)(父祖; 祖国)**, **onym(名)**, -ic(…的)<br>由“父”与“名”共同限定词义, 表示“源于父名(或祖先名)的(姓)” |  n. a name derived from the name of a father or ancestor, e.g. Johnson, O'Brien, Ivanovich<br>adj. denoting or relating to a name derived from the name of a father or male ancestor  |  the **patronymic** naming of children  |  | 0 |
 | pseudonym | /ˈsuːdənɪm/ /ˈsjuːdənɪm/ | n. 假名 | pseud-(假的), **onym(名)**<br>由“假的”与“名”共同限定词义, 表示“假名” |  n. a fictitious name, especially one used by an author  |  use a **pseudonym**  | n. pen name, assumed name, incognito, alias, false name, professional name, sobriquet, stage name | 0 |
 | synonym | /ˈsɪnənɪm/ | n. 同义词 | syn-(共同), **onym(名)**<br>名称或表达不同而意义相同的词, 即同义词 |  n. a word or phrase that means exactly or nearly the same as another word or phrase in the same language, for example shut is a synonym of close<br>&emsp;• a person or thing so closely associated with a particular quality or idea that the mention of their name calls it to mind<br>&emsp;• a taxonomic name which has the same application as another, especially one which has been superseded and is no longer valid  |  look up a suitable **synonym**  |  | 0 |
 | anonymous | /əˈnɒnɪməs/ | adj. 无名的; 匿名的 | an-(无, 不, 非), **onym(名)**, -ous(…的)<br>以“名”为语义核心构成, 表示“匿名的” |  adj. (of a person) not identified by name; of unknown name<br>&emsp;• having no outstanding, individual, or unusual features; unremarkable or impersonal<br>&emsp;• used in names of support groups for people addicted to a particular substance or form of behaviour to indicate the confidentiality maintained among members of the group  |  an **anonymous** tip-off about corruption  | adj. unnamed, unsigned, characterless, of unknown name, nameless, incognito, unidentified, unknown | 0 |
-| homonymous |  | adj. 同名的 | hom-(相同), **onym(名)**, -ous(…的)<br>核心意象(词根 onym“名”): “相同”的“名”称, 即同名的 | adj. having the same name<br>having the same form but different meanings | two **homonymous** words in English |  | 0 |
-| onymous |  | adj. 有名字的; 署名的 | **onym(名)**, -ous(…的)<br>表示与“名”有关或具有该特征, 即“有名字的” |  adj. having a name; named  |  an **onymous** contribution to journals  |  | 0 |
+| homonymous | /həʊˈmɒnɪməs/ | adj. 同名的 | hom-(相同), **onym(名)**, -ous(…的)<br>核心意象(词根 onym“名”): “相同”的“名”称, 即同名的 | adj. having the same name<br>having the same form but different meanings | two **homonymous** words in English |  | 0 |
+| onymous | /ˈɒnɪməs/ | adj. 有名字的; 署名的 | **onym(名)**, -ous(…的)<br>表示与“名”有关或具有该特征, 即“有名字的” |  adj. having a name; named  |  an **onymous** contribution to journals  |  | 0 |
 | pseudonymous | /suːˈdɒnɪməs/ /sjuːˈdɒnɪməs/ | adj. (用) 假名的 | pseud-(假的), **onym(名)**, -ous(…的)<br>用“假”“名”的, 即用假名的 |  adj. writing or written under a false name  |  the **pseudonymous** author of novels  |  | 0 |
 
 # oo
@@ -114,8 +114,8 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | oocyte | /ˈəʊəsaɪt/ | n. 卵母细胞 | **oo(卵)**, **cyt(o)(细胞)**, e(连接字母)<br>雌性卵巢内未成熟或成熟的原始生殖细胞, 即卵母细胞 |  n. a cell in an ovary which may undergo meiotic division to form an ovum  |  a mature human **oocyte**  |  | 0 |
-| oolite |  | n. 卵石, 鲕状岩 | **oo(卵)**, -lite(石)<br>由“卵”形颗粒组成的“石”, 即鲕状岩 |  n. limestone consisting of a mass of rounded grains (ooliths) made up of concentric layers  |  a layer of limestone **oolite**  |  | 0 |
-| oolitic |  | adj. 鲕状的 | **oo(卵)**, **lit(石)**, -ic(…的)<br>由“鱼卵石”派生为当前词义 | adj. consisting of or resembling small rounded mineral grains | an exposure of **oolitic** limestone |  | 0 |
+| oolite | /ˈəʊəlaɪt/ | n. 卵石, 鲕状岩 | **oo(卵)**, -lite(石)<br>由“卵”形颗粒组成的“石”, 即鲕状岩 |  n. limestone consisting of a mass of rounded grains (ooliths) made up of concentric layers  |  a layer of limestone **oolite**  |  | 0 |
+| oolitic | /ˌəʊəˈlɪtɪk/ | adj. 鲕状的 | **oo(卵)**, **lit(石)**, -ic(…的)<br>由“鱼卵石”派生为当前词义 | adj. consisting of or resembling small rounded mineral grains | an exposure of **oolitic** limestone |  | 0 |
 
 # oper
 
@@ -126,7 +126,7 @@
 | cooperate | /kəʊˈɒpəreɪt/ | v. 合作; 协助; 协作 | co-(与, 共同), **oper(工作)**, -ate(做, 使)<br>使“工作”共同结合或发挥作用, 因此表示“合作, 协作” |  v. work jointly towards the same end<br>&emsp;• assist someone or comply with their requests  |  **cooperate** closely on cross-border trade  | v. collaborate, be of assistance, work together, work side by side, act together, act jointly, pull together, band together | 0 |
 | cooperation | /kəʊˌɒpəˈreɪʃn/ | n. 合作, 协作 | co-(与, 共同), **oper(工作)**, -ation(行为, 结果)<br>在前词基础上加“-ation”构成名词, 表示“合作, 协作” |  n. the action or process of working together to the same end<br>&emsp;• assistance, especially by complying readily with requests<br>&emsp;• the formation and operation of cooperatives  |  strengthen international economic **cooperation**  | n. collaboration, assistance, working together, joint action, combined effort, teamwork, mutual support, partnership | 0 |
 | cooperative | /kəʊˈɒpərətɪv/ | adj. 合作的; 协作的; 合作社<br>n. 合作的, 协作的; 合作社 | co-(与, 共同), **oper(工作)**, -ative(…的)<br>在前词基础上加“-ative”构成名词或形容词, 表示“合作的, 协作的” |  adj. involving mutual assistance in working towards a common goal<br>&emsp;• willing to be of assistance<br>&emsp;• (of a farm, business, etc.) owned and run jointly by its members, with profits or benefits shared among them<br>n. a farm, business, or other organization which is owned and run jointly by its members, who share the profits or benefits  |  a **cooperative** effort  | adj. collaborative, helpful, collective, communal, combined, common, joint, shared | 0 |
-| cooperator |  | n. 合作者, 合作社社员 | co-(与, 共同), **oper(工作)**, -ator(人)<br>在前词基础上加“-ator”构成名词, 表示“合作者, 合作社社员” |  n. one that cooperates  |  a willing **cooperator** in research  |  | 0 |
+| cooperator | /kəʊˈɒpəreɪtə/ | n. 合作者, 合作社社员 | co-(与, 共同), **oper(工作)**, -ator(人)<br>在前词基础上加“-ator”构成名词, 表示“合作者, 合作社社员” |  n. one that cooperates  |  a willing **cooperator** in research  |  | 0 |
 | inoperable | /ɪnˈɒpərəbl/ | adj. 不能实行手术的, 不宜动手术的 | in-(无, 不, 非), **oper(工作)**, -able(可…的)<br>否定或缺少“工作”所指的性质, 因此表示“不能实行手术的, 不宜动手术的” |  adj. not able to be suitably operated on<br>not able to be used<br>not able to be implemented; impractical  |  an **inoperable** brain tumour  | adj. untreatable, unusable, impractical, incurable, beyond cure, beyond surgery, irremediable, malignant | 0 |
 | opera | /ˈɒprə/ /ˈɒpərə/ | n. 歌剧 | **oper(工作)**, a(连接字母)<br>围绕“工作”这一核心含义构成, 表示“歌剧” |  n. a dramatic work in one or more acts, set to music for singers and instrumentalists<br>&emsp;• operas as a genre of classical music<br>&emsp;• a building for the performance of opera  |  the **opera** house  |  | 0 |
 | operability | /ˌɒp(ə)rəˈbɪləti/ | n. 可操作性, 合用性; 能实行手术治疗 | **oper(工作)**, -ability(可…性)<br>围绕“工作”这一核心含义构成, 表示“可操作性, 合用性” |  n. the quality or state of being operable compare resectability  |  the **operability** of the system  |  | 0 |
@@ -136,7 +136,7 @@
 | operational | /ˌɒpəˈreɪʃənl/ | adj. 操作上的, 用手操作的; 业务上的; 运算上的 | **oper(工作)**, -ation(行为, 结果), -al(…的)<br>表示与“工作”有关或具有该特征, 即“操作上的, 用手操作的” |  adj. in or ready for use<br>&emsp;• relating to the routine functioning and activities of an organization<br>&emsp;• relating to active operations of the armed forces, police, or emergency services<br>relating to or in accordance with operationalism  |  an **operational** fighter squadron  | adj. up and running, in working order, running, working, functioning, operative, in operation, in use | 0 |
 | operative | /ˈɒpərətɪv/ | adj. 动作的; 运转的; 有效的<br>n. 技工; 侦探 | **oper(工作)**, -ative(…的)<br>围绕“工作”这一核心含义构成, 表示“操作的, 工作着的, 起作用的, 有效的, 施行的, 手术的” |  adj. functioning or having effect<br>&emsp;• (of a word) having the most significance in a phrase or sentence<br>relating to surgery<br>n. a worker, especially one in a manufacturing industry<br>a secret agent or private detective  |  the **operative** word in discussion  | adj. in force, functioning, key, in operation, effective, in effect, valid, working<br>n. machinist, agent, detective, (machine) operator, mechanic, engineer, driver, worker | 0 |
 | operator | /ˈɒpəreɪtə(r)/ | n. 操作人员; (外科)手术员; 经营者; 经纪人 | **oper(工作)**, -ator(人)<br>围绕“工作”这一核心含义构成, 表示“操作人员” |  n. a person who operates equipment or a machine<br>&emsp;• a person who works at the switchboard of a telephone exchange<br>a person or company that runs a business<br>a person who acts in a shrewd or manipulative way<br>a symbol or function denoting an operation (e.g. ×, +)  |  a telephone **operator**  | n. machinist, contractor, manipulator, mechanic, operative, engineer, driver, worker | 0 |
-| operon |  | n. [生]操纵子 | **oper(工作)**, -on(人, 物)<br>共同受控一起“工作”的一组基因, 即操纵子 |  n. a unit made up of linked genes which is thought to regulate other genes responsible for protein synthesis  |  the regulation of the **operon**  |  | 0 |
+| operon | /ˈɒpərɒn/ | n. [生]操纵子 | **oper(工作)**, -on(人, 物)<br>共同受控一起“工作”的一组基因, 即操纵子 |  n. a unit made up of linked genes which is thought to regulate other genes responsible for protein synthesis  |  the regulation of the **operon**  |  | 0 |
 
 # ophi(o)
 
@@ -144,8 +144,8 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| ophidian |  | n. 蛇<br>adj. 蛇类的; 蛇样的 | **ophi(o)(蛇)**, d(连接字母), -ian(…的)<br>围绕“蛇”这一核心含义构成, 表示“蛇类的, 像蛇的” |  n. a reptile of the group Ophidia; a snake<br>adj. relating to or denoting snakes  |  an **ophidian** reptile species  |  | 0 |
-| ophiology |  | n. 蛇类学 | **ophi(o)(蛇)**, -logy(…学, …研究)<br>专门研究蛇类生物特征与分类的学科 |  n. the branch of zoology that deals with snakes  |  the scientific study of **ophiology**  |  | 0 |
+| ophidian | /ɒˈfɪdɪən/ | n. 蛇<br>adj. 蛇类的; 蛇样的 | **ophi(o)(蛇)**, d(连接字母), -ian(…的)<br>围绕“蛇”这一核心含义构成, 表示“蛇类的, 像蛇的” |  n. a reptile of the group Ophidia; a snake<br>adj. relating to or denoting snakes  |  an **ophidian** reptile species  |  | 0 |
+| ophiology | /ˌɒfɪˈɒlədʒi/ | n. 蛇类学 | **ophi(o)(蛇)**, -logy(…学, …研究)<br>专门研究蛇类生物特征与分类的学科 |  n. the branch of zoology that deals with snakes  |  the scientific study of **ophiology**  |  | 0 |
 
 # ophthalm(o)
 
@@ -156,8 +156,8 @@
 | ophthalmic | /ɒfˈθælmɪk/ /ɒpˈθælmɪk/ | adj. 眼睛的; 眼科的; 眼炎的 | **ophthalm(o)(眼)**, -ic(…的)<br>在前词基础上加“-ic”构成名词或形容词, 表示“眼的” |  adj. relating to the eye and its diseases  |  an **ophthalmic** surgeon  |  | 0 |
 | ophthalmologist | /ˌɒfθælˈmɒlədʒɪst/ /ˌɒpθælˈmɒlədʒɪst/ | n. 眼科学者; 眼科医生 | **ophthalm(o)(眼)**, -logist(…学家)<br>研究并诊治“眼”病的人, 即眼科医生 |  n. a specialist in the branch of medicine concerned with the study and treatment of disorders and diseases of the eye  |  consult a qualified **ophthalmologist**  |  | 0 |
 | ophthalmology | /ˌɒfθælˈmɒlədʒi/ /ˌɒpθælˈmɒlədʒi/ | n. 眼科学 | **ophthalm(o)(眼)**, -logy(…学, …研究)<br>在前词基础上加“-logy”构成名词, 表示“眼科学” |  n. the branch of medicine concerned with the diagnosis and treatment of disorders of the eye  |  a department of clinical **ophthalmology**  |  | 0 |
-| ophthalmoscope |  | n. 检眼镜 | **ophthalm(o)(眼)**, -scope(观察仪器)<br>由“眼”与“镜”共同限定词义, 表示“检眼镜” |  n. an instrument for inspecting the retina and other parts of the eye  |  examination with a direct **ophthalmoscope**  |  | 0 |
-| ophthalmoscopy |  | n. 用检眼镜检查(法) | **ophthalm(o)(眼)**, **scop(目标; 镜, 观察)**, y(连接字母)<br>在前词基础上加“-y”构成名词, 表示“用检眼镜检查” |  n. examination of the interior of the eye using an ophthalmoscope  |  undergo a dilated fundus **ophthalmoscopy**  |  | 0 |
+| ophthalmoscope | /ɒfˈθælməskəʊp/ | n. 检眼镜 | **ophthalm(o)(眼)**, -scope(观察仪器)<br>由“眼”与“镜”共同限定词义, 表示“检眼镜” |  n. an instrument for inspecting the retina and other parts of the eye  |  examination with a direct **ophthalmoscope**  |  | 0 |
+| ophthalmoscopy | /ˌɒfθælˈmɒskəpi/ | n. 用检眼镜检查(法) | **ophthalm(o)(眼)**, **scop(目标; 镜, 观察)**, y(连接字母)<br>在前词基础上加“-y”构成名词, 表示“用检眼镜检查” |  n. examination of the interior of the eye using an ophthalmoscope  |  undergo a dilated fundus **ophthalmoscopy**  |  | 0 |
 
 # opt
 
@@ -210,7 +210,7 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| orate |  | v. 演说; 装演说腔 | **or(说)**, -ate(做, 使, …的, 人)<br>发表“说”话, 即演说 |  v. make a speech, especially pompously or at length  |  **orate** before a large audience  | v. declaim, make a speech, hold forth, speak, discourse, pontificate, preach, sermonize | 0 |
+| orate | /ɔːˈreɪt/ | v. 演说; 装演说腔 | **or(说)**, -ate(做, 使, …的, 人)<br>发表“说”话, 即演说 |  v. make a speech, especially pompously or at length  |  **orate** before a large audience  | v. declaim, make a speech, hold forth, speak, discourse, pontificate, preach, sermonize | 0 |
 | oracle | /ˈɒrəkl/ | n. 预言; 先知 | **ora(说)**, -cle(名词后缀)<br>核心意象(词根 or“说”): 神明借人之口“说”出的答复, 即神谕 | n. a priest or priestess acting as a medium through whom advice or prophecy was sought from the gods in classical antiquity<br>&emsp;• a place at which divine advice or prophecy was sought<br>&emsp;• a person or thing regarded as an infallible authority on something | consult an ancient Greek **oracle** | n. prophet, prophetess, authority, sibyl, seer, augur, prognosticator, diviner | 0 |
 | oral | /ˈɔːrəl/ | adj. 口头的; 口腔的<br>n. 口试 | **or(说)**, -al(…的, 行为, 人, 物)<br>用嘴“说”的, 即口头的 |  adj. spoken rather than written; verbal<br>&emsp;• relating to the transmission of information or literature by word of mouth<br>&emsp;• (of a society) not having reached the stage of literacy<br>relating to the mouth<br>&emsp;• done or taken by the mouth<br>&emsp;• (of a speech sound) pronounced by the voice resonating in the mouth, as the vowels in English<br>n. a spoken examination or test  |  rich **oral** traditions  | adj. spoken, verbal, unwritten, by mouth, vocal, viva voce, uttered, said<br>n. oral examination | 0 |
 | oration | /ɔːˈreɪʃn/ | n. 演说; 讲演 | **or(说)**, -ation(行为, 情况, 状态)<br>“说”话的行为, 即演说 |  n. a formal speech, especially one given on a ceremonial occasion<br>&emsp;• the style or manner in which an oration is given  |  a moving public funeral **oration**  | n. speech, address, lecture, talk, homily, sermon, discourse, declamation | 0 |
@@ -225,7 +225,7 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| cyclorama |  | n. 圆形画景 | **cycl(o)(圆, 环)**, **orama(观看, 景象)**<br>由“圆”与“景”共同限定词义, 表示“圆形画景” |  n. a circular picture of a 360° scene, viewed from inside<br>&emsp;• a cloth stretched tight in an arc around the back of a stage set, often used to depict the sky  |  a painted theatre **cyclorama**  |  | 0 |
+| cyclorama | /saɪkləˈrɑːmə/ | n. 圆形画景 | **cycl(o)(圆, 环)**, **orama(观看, 景象)**<br>由“圆”与“景”共同限定词义, 表示“圆形画景” |  n. a circular picture of a 360° scene, viewed from inside<br>&emsp;• a cloth stretched tight in an arc around the back of a stage set, often used to depict the sky  |  a painted theatre **cyclorama**  |  | 0 |
 | diorama | /ˌdaɪəˈrɑːmə/ | n. 透景画; 西洋景; 洋片 | di-(= dia-, 穿透), **oram(观看, 景象)**, -a(名词后缀)<br>核心意象(词根 oram“观看, 景象”): 透过开口观看的“景象”, 即透景画 | n. a model representing a scene with three-dimensional figures, either in miniature or as a large-scale museum exhibit<br>&emsp;• a miniature film set used for special effects or animation | a museum **diorama** of wildlife |  | 0 |
 | panorama | /ˌpænəˈrɑːmə/ | n. 全景 (画); 全景照片 | pan-(全, 总, 泛), **orama(观看, 景象)**<br>把四周全部景象纳入一次观看, 即全景; pan- 是‘全部’ |  n. an unbroken view of the whole region surrounding an observer<br>&emsp;• a picture or photograph containing a wide view<br>&emsp;• a complete survey or presentation of a subject  |  a magnificent **panorama** of mountains  | n. view, overview, vista, wide view, aerial view, bird's-eye view, scenic view, prospect | 0 |
 | panoramic | /ˌpænəˈræmɪk/ | adj. 全景的(全方位的) | pan-(全部), **oram(观看, 景象)**, -ic(…的, 人, …学)<br><br>视野向四周铺开, 把整体景象收入眼中 | adj. (of a view or picture) with a wide view surrounding the observer; sweeping<br>&emsp;• including all aspects of a subject; wide-ranging | a **panoramic** view of countryside | adj. sweeping, wide-ranging, wide, extensive, bird's-eye, scenic, commanding, broad | 0 |
@@ -294,7 +294,7 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| ornithine |  | n. 鸟氨酸 | **ornith(o)(鸟)**, -ine(…的)<br>围绕“鸟”这一核心含义构成, 表示“鸟氨酸” |  n. an amino acid which is produced by the body and is important in protein metabolism  |  the amino acid **ornithine**  |  | 0 |
+| ornithine | /ˈɔːnɪθiːn/ | n. 鸟氨酸 | **ornith(o)(鸟)**, -ine(…的)<br>围绕“鸟”这一核心含义构成, 表示“鸟氨酸” |  n. an amino acid which is produced by the body and is important in protein metabolism  |  the amino acid **ornithine**  |  | 0 |
 | ornithologist | /ˌɔːnɪˈθɒlədʒɪst/ | n. 鸟学家 | **ornith(o)(鸟)**, -logist(…学家)<br>围绕“鸟”这一核心含义构成, 表示“鸟学家” |  n. a person who studies or is an expert on birds  |  a professional field **ornithologist**  |  | 0 |
 | ornithology | /ˌɔːnɪˈθɒlədʒi/ | n. 鸟学; 禽学 | **ornith(o)(鸟)**, -logy(…学, …研究)<br>在前词基础上加“-logy”构成名词, 表示“鸟学” |  n. the scientific study of birds  |  the study of field **ornithology**  |  | 0 |
 
@@ -317,7 +317,7 @@
 | oscillation | /ˌɒsɪˈleɪʃn/ | n. 摆动; 动摇; 振动 | **oscill(o)(摇动)**, -ation(行为, 结果)<br>在前词基础上加“-ation”构成名词, 表示“摆动” |  n. movement back and forth in a regular rhythm<br>&emsp;• variation or fluctuation between two states, limits, opinions, etc<br>regular variation in magnitude or position about a central point, especially of an electric current or voltage  |  the frequency of an **oscillation**  | n. swinging, wavering, swing, swaying, swinging from side to side, swinging backwards and forwards, swinging back and forth, swinging to and fro | 0 |
 | oscillator | /ˈɒsɪleɪtə(r)/ | n. 摇摆的人(或物); 振荡器 | **oscill(o)(摇动)**, -ator(物)<br>产生周期性振荡的装置或系统 |  n. a device for generating oscillatory electric currents or voltages by non-mechanical means  |  a quartz crystal **oscillator**  |  | 0 |
 | oscilloscope | /əˈsɪləskəʊp/ | n. 示波器; 示波管 | **oscill(o)(摇动)**, -scope(观察仪器)<br>围绕“观察”这一核心含义构成, 表示“示波器” |  n. a device for viewing oscillations by a display on the screen of a cathode ray tube  |  a digital storage **oscilloscope**  |  | 0 |
-| oscillatory |  | adj. 摆动的; 振动的; 动摇不定的 | **oscill(o)(摇动)**, -atory(…的)<br>在前词基础上加“-atory”构成形容词, 表示“摆动的” |  adj. characterized by oscillation : vibratory  |  the **oscillatory** motion of pendulums  |  | 0 |
+| oscillatory | /əˈsɪlətəri/ | adj. 摆动的; 振动的; 动摇不定的 | **oscill(o)(摇动)**, -atory(…的)<br>在前词基础上加“-atory”构成形容词, 表示“摆动的” |  adj. characterized by oscillation : vibratory  |  the **oscillatory** motion of pendulums  |  | 0 |
 
 # oss(e), oss(i)
 
@@ -336,11 +336,11 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| osteitis |  | n. 骨炎 | **oste(o)(骨)**, -itis(…炎)<br>“骨”发生炎症, 即“骨炎” |  n. inflammation of the substance of a bone  |  the diagnosis of **osteitis** pubis  |  | 0 |
+| osteitis | /ˌɒstɪˈaɪtɪs/ | n. 骨炎 | **oste(o)(骨)**, -itis(…炎)<br>“骨”发生炎症, 即“骨炎” |  n. inflammation of the substance of a bone  |  the diagnosis of **osteitis** pubis  |  | 0 |
 | osteoarthritis | /ˌɒstiəʊɑːˈθraɪtɪs/ | n. 骨关节炎 | **oste(o)(骨)**, **arthr(o)(关节)**, -itis(…炎)<br>“骨、关节”发生炎症, 即“骨关节炎” |  n. degeneration of joint cartilage and the underlying bone, most common from middle age onward. It causes pain and stiffness, especially in the hip, knee, and thumb joints  |  the treatment of knee **osteoarthritis**  |  | 0 |
-| osteogenesis |  | n. 骨生成; 成骨; 骨发生 | **oste(o)(骨)**, **gen(族, 种类; 出生, 产生)**, -esis(行为, 过程)<br>由“骨”与“出生”共同限定词义, 表示“骨生成” |  n. the formation of bone  |  the process of bone **osteogenesis**  |  | 0 |
+| osteogenesis | /ˌɒstɪəʊˈdʒenɪsɪs/ | n. 骨生成; 成骨; 骨发生 | **oste(o)(骨)**, **gen(族, 种类; 出生, 产生)**, -esis(行为, 过程)<br>由“骨”与“出生”共同限定词义, 表示“骨生成” |  n. the formation of bone  |  the process of bone **osteogenesis**  |  | 0 |
 | osteology | /ˌɒstiˈɒlədʒi/ | n. 骨学 | **oste(o)(骨)**, -logy(…学, …研究)<br>以“骨”为研究对象的学科, 即“骨学” |  n. the study of the structure and function of the skeleton and bony structures  |  the study of human **osteology**  |  | 0 |
-| osteoma |  | n. 骨瘤 | **oste(o)(骨)**, -oma(肿瘤, 肿块)<br>围绕“骨”这一核心含义构成, 表示“骨瘤” |  n. a benign tumor composed of bone tissue  |  a benign skull **osteoma**  |  | 0 |
+| osteoma | /ˌɒstɪˈəʊmə/ | n. 骨瘤 | **oste(o)(骨)**, -oma(肿瘤, 肿块)<br>围绕“骨”这一核心含义构成, 表示“骨瘤” |  n. a benign tumor composed of bone tissue  |  a benign skull **osteoma**  |  | 0 |
 | osteopathy | /ˌɒstiˈɒpəθi/ | n. 疗骨术 | **oste(o)(骨)**, **pathy(疾病, 疗法)**<br>由“骨”与“疗法”共同限定词义, 表示“疗骨术” |  n. a form of complementary medicine involving the treatment of medical disorders through the manipulation and massage of the skeleton and musculature  |  a registered practitioner of **osteopathy**  |  | 0 |
 | osteotomy | /ˌɒstiˈɒtəmi/ | n. 骨切开术; 截骨术 | **oste(o)(骨)**, -tomy(切, 割)<br>切开“骨”的术式, 即“骨切开术” |  n. the surgical cutting of a bone, especially to allow realignment  |  undergo a corrective knee **osteotomy**  |  | 0 |
 | periosteum | /ˌperɪˈɒstiəm/ | n. 骨膜 | peri-(四周, 近), **oste(o)(骨)**, -um(名词词尾)<br>包围并覆盖骨表面的膜, 即骨膜 |  n. a dense layer of vascular connective tissue enveloping the bones except at the surfaces of the joints  |  the **periosteum** covering the bone  |  | 0 |
@@ -356,9 +356,9 @@
 | otolith | /ˈəʊtəlɪθ/ | n. 耳石; 听石 | **ot(o)(耳)**, **lith(o)(石)**<br>围绕“耳”这一核心含义构成, 表示“耳石, 听石” |  n. each of three small oval calcareous bodies in the inner ear of vertebrates, involved in sensing gravity and movement  |  the **otolith** of a fish  |  | 0 |
 | otology | /əʊˈtɒlədʒi/ | n. 耳科学 | **ot(o)(耳)**, -logy(…学, …研究)<br>以“耳”为研究对象的学科, 即“耳科学” |  n. the study of the anatomy and diseases of the ear  |  a specialist in clinical **otology**  |  | 0 |
 | otorhinolaryngology | /ˌəʊtəʊraɪnəʊlærɪŋˈɡɒlədʒi/ | n. 耳鼻喉科学 | **ot(o)(耳)**, **rhin(o)(鼻)**, **laryng(o)(喉)**, -logy(…学, …研究)<br>以“耳、鼻、喉”为研究对象的学科, 即“耳鼻喉科学” |  n. the study of diseases of the ear, nose, and throat  |  a department of clinical **otorhinolaryngology**  |  | 0 |
-| otoscope |  | n. 耳镜 | **ot(o)(耳)**, -scope(观察仪器)<br>由“耳”与“镜”共同限定词义, 表示“耳镜” |  n. an instrument designed for visual examination of the eardrum and the passage of the outer ear, typically having a light and a set of lenses  |  examination with a handheld **otoscope**  |  | 0 |
+| otoscope | /ˈəʊtəskəʊp/ | n. 耳镜 | **ot(o)(耳)**, -scope(观察仪器)<br>由“耳”与“镜”共同限定词义, 表示“耳镜” |  n. an instrument designed for visual examination of the eardrum and the passage of the outer ear, typically having a light and a set of lenses  |  examination with a handheld **otoscope**  |  | 0 |
 | parotid | /pəˈrɒtɪd/ | n. 耳下腺; 腮腺 | par-(旁边), **ot(o)(耳)**, -id(…的)<br>位于耳旁的腺体, 即腮腺 |  adj. relating to, situated near, or affecting a parotid gland<br>n. short for parotid gland  |  the **parotid** duct  |  | 0 |
-| otic |  | adj. 耳(部)的 | **ot(o)(耳)**, -ic(…的, 人, …学)<br>与“耳”有关的, 即耳部的 |  adj. relating to the ear  |  the development of **otic** vesicles  |  | 0 |
+| otic | /ˈəʊtɪk/ | adj. 耳(部)的 | **ot(o)(耳)**, -ic(…的, 人, …学)<br>与“耳”有关的, 即耳部的 |  adj. relating to the ear  |  the development of **otic** vesicles  |  | 0 |
 
 # ov(i), ov(o)
 
@@ -381,7 +381,7 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | ovarian | /əʊˈveəriən/ | adj. 卵巢的 | **ovari(o)(卵巢)**, -an(…的)<br>围绕“卵巢”这一核心含义构成, 表示“卵巢的” |  adj. relating to an ovary or the ovaries  |  an **ovarian** cyst  |  | 0 |
-| ovariectomy |  | n. 卵巢切除术 | **ovari(o)(卵巢)**, ec-(出, 外), **tom(y)(切, 割)**, -y(名词后缀)<br>卵巢切除术 | n. surgical removal of one or both ovaries; oophorectomy | undergo a bilateral **ovariectomy** |  | 0 |
+| ovariectomy | /əʊˌveərɪˈektəmi/ | n. 卵巢切除术 | **ovari(o)(卵巢)**, ec-(出, 外), **tom(y)(切, 割)**, -y(名词后缀)<br>卵巢切除术 | n. surgical removal of one or both ovaries; oophorectomy | undergo a bilateral **ovariectomy** |  | 0 |
 
 # oxy
 
@@ -390,6 +390,6 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | oxygenate | /ˈɒksɪdʒəneɪt/ | v. 充氧于; 氧化 | **oxy(酸; 快; 含氧; 尖锐, 敏锐)**, **gen(族, 种类; 出生, 产生)**, -ate(做, 使)<br>在前词基础上加“-ate”构成动词, 表示“充氧于” | v. supply, treat, charge, or enrich with oxygen | **oxygenate** the circulating blood |  | 0 |
-| oxychloride |  | n. 氯氧化物 | **oxy(酸; 快; 含氧; 尖锐, 敏锐)**, **chlor(o)(绿, 氯)**, -ide(化合物)<br>同时含氧和氯的化合物, 即氯氧化物 |  n. a compound containing oxygen and chlorine with another element  |  a compound of copper **oxychloride**  |  | 0 |
+| oxychloride | /ˌɒksɪˈklɔːraɪd/ | n. 氯氧化物 | **oxy(酸; 快; 含氧; 尖锐, 敏锐)**, **chlor(o)(绿, 氯)**, -ide(化合物)<br>同时含氧和氯的化合物, 即氯氧化物 |  n. a compound containing oxygen and chlorine with another element  |  a compound of copper **oxychloride**  |  | 0 |
 | oxygen | /ˈɒksɪdʒən/ | n. 氧 (气); 氧气 | **oxy(酸)**, **gen(出生, 产生)**<br>名称原意为“产生酸的物质”, 源于早期化学理论; 现代指氧 |  n. a colourless, odourless reactive gas, the chemical element of atomic number 8 and the life-supporting component of the air  |  breathe in **oxygen**  |  | 0 |
-| oxytetracycline |  | n. 氧四环素; 土霉素 | **oxy(酸; 快; 含氧; 尖锐, 敏锐)**, tetra-(四), **cycl(o)(轮; 圆, 环)**, -ine(化学名词后缀)<br>核心意象(词根 oxy“酸; 含氧”): 含“氧”基团的四环素, 即土霉素 | n. an antibiotic related to tetracycline, used to treat a variety of bacterial infections | the antibiotic known as **oxytetracycline** |  | 0 |
+| oxytetracycline | /ˌɒksɪˌtetrəˈsaɪkliːn/ | n. 氧四环素; 土霉素 | **oxy(酸; 快; 含氧; 尖锐, 敏锐)**, tetra-(四), **cycl(o)(轮; 圆, 环)**, -ine(化学名词后缀)<br>核心意象(词根 oxy“酸; 含氧”): 含“氧”基团的四环素, 即土霉素 | n. an antibiotic related to tetracycline, used to treat a variety of bacterial infections | the antibiotic known as **oxytetracycline** |  | 0 |

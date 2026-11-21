@@ -4,8 +4,8 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| ichthyology |  | n. 鱼类学 | **ichthy(o)(鱼)**, -logy(…学, …研究)<br>在前词基础上加“-logy”构成名词, 表示“鱼类学” |  n. the branch of zoology that deals with fishes  |  the scientific study of **ichthyology**  |  | 0 |
-| ichthyosis |  | n. (鱼)鳞癣 | **ichthy(o)(鱼)**, -osis(状态, 过程)<br>皮肤呈鱼鳞状的病症, 因此称为鱼鳞癣 |  n. a congenital skin condition which causes the epidermis to become dry and horny like fish scales  |  a severe form of **ichthyosis**  |  | 0 |
+| ichthyology | /ɪkθɪˈɒlədʒi/ | n. 鱼类学 | **ichthy(o)(鱼)**, -logy(…学, …研究)<br>在前词基础上加“-logy”构成名词, 表示“鱼类学” |  n. the branch of zoology that deals with fishes  |  the scientific study of **ichthyology**  |  | 0 |
+| ichthyosis | /ɪkθɪˈəʊsɪs/ | n. (鱼)鳞癣 | **ichthy(o)(鱼)**, -osis(状态, 过程)<br>皮肤呈鱼鳞状的病症, 因此称为鱼鳞癣 |  n. a congenital skin condition which causes the epidermis to become dry and horny like fish scales  |  a severe form of **ichthyosis**  |  | 0 |
 
 # ide(o)
 
@@ -70,10 +70,10 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | imperative | /ɪmˈperətɪv/ | adj. 必须的; 紧急的; 命令的; 强制的; 专横的<br>n. 当务之急 | **imper(统治, 命令)**, -ative(…的)<br>围绕“统治”这一核心含义构成, 表示“必须的” |  adj. of vital importance; crucial<br>giving an authoritative command; peremptory<br>&emsp;• denoting the mood of a verb that expresses a command or exhortation, as in come here!<br>n. an essential or urgent thing<br>&emsp;• a factor or influence making something necessary<br>a verb or phrase in the imperative mood<br>&emsp;• the imperative mood  |  becomes **imperative** to act  | adj. vitally important, peremptory, of vital importance, all-important, vital, crucial, critical, essential | 0 |
-| imperator |  | n. 凯旋将军; 皇帝; [拉](古罗马)大将军 | **imper(统治, 命令)**, -ator(人)<br>围绕“统治”这一核心含义构成, 表示“(古罗马)大将军, 凯旋将军” |  n. commander (a title conferred under the Republic on a victorious general and under the Empire on the emperor)  |  the title of Roman **imperator**  |  | 0 |
+| imperator | /ˌɪmpəˈrɑːtɔː/ | n. 凯旋将军; 皇帝; [拉](古罗马)大将军 | **imper(统治, 命令)**, -ator(人)<br>围绕“统治”这一核心含义构成, 表示“(古罗马)大将军, 凯旋将军” |  n. commander (a title conferred under the Republic on a victorious general and under the Empire on the emperor)  |  the title of Roman **imperator**  |  | 0 |
 | imperialism | /ɪmˈpɪəriəlɪzəm/ | n. 帝国主义 | **imper(统治, 命令)**, -ial(…的), -ism(主义)<br>由“帝王的”派生为当前词义 | n. a policy of extending a country's power and influence through colonization, use of military force, or other means | the struggle against **imperialism** |  | 0 |
 | imperialist | /ɪmˈpɪəriəlɪst/ | n. 帝国主义者 | **imper(统治, 命令)**, -ial(…的), -ist(人)<br>由“帝王的”派生为当前词义 | adj. relating to, supporting, or practising imperialism<br>n. a person who supports or practises imperialism | an **imperialist** regime |  | 0 |
-| imperium |  | n. 绝对统治; 统治; 主权; [拉] 最高权力 | **imper(统治, 命令)**, -ium(场所及金属元素名称)<br>命令与统治所及之处, 即最高统治权 |  n. absolute power  |  the **imperium** of ancient Rome  |  | 0 |
+| imperium | /ɪmˈpɪərɪəm/ | n. 绝对统治; 统治; 主权; [拉] 最高权力 | **imper(统治, 命令)**, -ium(场所及金属元素名称)<br>命令与统治所及之处, 即最高统治权 |  n. absolute power  |  the **imperium** of ancient Rome  |  | 0 |
 | imperial | /ɪmˈpɪəriəl/ | adj. 帝国的; 帝制的 | **imper(统治, 命令)**, -ial(…的)<br>与帝国统治或皇权有关的 |  adj. relating to an empire<br>&emsp;• relating to an emperor<br>&emsp;• majestic or magnificent<br>&emsp;• imperious or domineering<br>relating to or denoting the system of non-metric weights and measures (the ounce, pound, stone, inch, foot, yard, mile, acre, pint, gallon, etc.) formerly used for all measures in the UK, and still used for some  |  the **imperial** court  | adj. royal, imperious, regal, monarchal, monarchial, monarchical, sovereign, kingly | 0 |
 | imperious | /ɪmˈpɪəriəs/ | adj. 专横的; 傲慢的; 迫切的 | **imper(统治, 命令)**, -ious(…的)<br>表示与“统治”有关或具有该特征, 即“专横的” |  adj. arrogant and domineering  |  an **imperious** tone of command  | adj. peremptory, high-handed, commanding, imperial, overbearing, overweening, domineering, authoritarian | 0 |
 
@@ -102,7 +102,7 @@
 | integrate | /ˈɪntɪɡreɪt/ | v. (使)成为一体; (使)合并; （使）成为一体; （使）合并 | **integr(完整)**, -ate(做, 使)<br>使各部分合成完整的一体, 即"整合" |  v. combine (one thing) with another to form a whole<br>&emsp;• combine (two things) so that they form a whole<br>&emsp;• (of a thing) combine with another to form a whole<br>bring (people or groups with particular characteristics or needs) into equal participation in or membership of a social group or institution<br>&emsp;• come into equal participation in or membership of a social group or institution<br>&emsp;• desegregate (a school, area, etc.), especially racially<br>find the integral of  |  **integrate** immigrants into mainstream society  | v. combine, amalgamate, merge, unite, join, fuse, blend, mingle | 0 |
 | disintegration | /dɪsˌɪntɪˈɡreɪʃn/ | n. 崩溃; 溃散; 瓦解; 分裂; 分解 | dis-(否定, 相反), **integr(完整)**, -ation(行为, 结果)<br>由“分解”派生为当前词义 | n. the process of losing cohesion or strength<br>the process of coming to pieces<br>&emsp;• a process in which a nucleus or other subatomic particle emits a smaller particle or divides into smaller particles | the **disintegration** of infected cells |  | 0 |
 | integral | /ˈɪntɪɡrəl/ /ɪnˈteɡrəl/ | adj. 完整的; 必需的<br>n. 积分; 整体 | **integr(完整)**, -al(…的)<br>表示与“完整”有关或具有该特征, 即“构成整体所必需的” |  adj. necessary to make a whole complete; essential or fundamental<br>&emsp;• included as part of a whole rather than supplied separately<br>&emsp;• having all the parts that are necessary to be complete<br>of or denoted by an integer<br>&emsp;• involving only integers, especially as coefficients of a function<br>n. a function of which a given function is the derivative, i.e. which yields that function when differentiated, and which may express the area under the curve of a graph of the function<br>&emsp;• a function satisfying a given differential equation  |  **integral** component of the curriculum  | adj. essential, built-in, unified, fundamental, basic, intrinsic, inherent, constitutive | 0 |
-| integrality |  | n. 完整性 | **integr(完整)**, -al(…的), -ity(性质, 状态)<br>由“整体”派生为当前词义 | n. integral quality or state | the **integrality** of feasible solutions |  | 0 |
+| integrality | /ɪntɪˈɡrælɪti/ | n. 完整性 | **integr(完整)**, -al(…的), -ity(性质, 状态)<br>由“整体”派生为当前词义 | n. integral quality or state | the **integrality** of feasible solutions |  | 0 |
 | integrity | /ɪnˈteɡrəti/ | n. 完整; 完全; 完善; 诚实; 正直 | **integr(完整)**, -ity(性质, 状态)<br>在前词基础上加“-ity”构成名词, 表示“完整” |  n. the quality of being honest and having strong moral principles<br>the state of being whole and undivided<br>&emsp;• the condition of being unified or sound in construction<br>&emsp;• internal consistency or lack of corruption in electronic data  |  maintain scientific **integrity**  | n. honesty, unity, soundness, uprightness, probity, rectitude, honour, honourableness | 0 |
 | integrative | /ˈɪntɪɡrətɪv/ | adj. 综合的; 一体化的 | **integr(完整)**, -ative(…的)<br>在前词基础上加“-ative”构成形容词, 表示“综合的” |  adj. combining two or more things to form an effective unit or system<br>&emsp;• combining allopathic and complementary therapies  |  an **integrative** approach to learning  |  | 0 |
 
@@ -112,7 +112,7 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| iodate |  | v. 用碘处理 | **iod(碘)**, -ate(做, 使)<br>围绕“碘”这一核心含义构成, 表示“用碘处理” |  n. a salt or ester of iodic acid  |  a solution of potassium **iodate**  |  | 0 |
+| iodate | /ˈaɪədeɪt/ | v. 用碘处理 | **iod(碘)**, -ate(做, 使)<br>围绕“碘”这一核心含义构成, 表示“用碘处理” |  n. a salt or ester of iodic acid  |  a solution of potassium **iodate**  |  | 0 |
 | iodide | /ˈaɪədaɪd/ | n. 碘化物 | **iod(碘)**, -ide(化合物)<br>围绕“碘”这一核心含义构成, 表示“碘化物” |  n. a compound of iodine with another element or group, especially a salt of the anion I−  |  a solution of potassium **iodide**  |  | 0 |
 | iodine | /ˈaɪədiːn/ | n. 碘 | **iod(碘)**, -ine(…的)<br>围绕“碘”这一核心含义构成, 表示“碘” |  n. the chemical element of atomic number 53, a non-metallic element forming black crystals and a violet vapour<br>&emsp;• a solution of iodine in alcohol, used as a mild antiseptic  |  the **iodine** content of food  |  | 0 |
 
@@ -137,7 +137,7 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | isobar | /ˈaɪsəbɑː(r)/ | n. 等压线 | **iso(等, 同)**, **bar(o)(重, 压)**<br>气象图上把大气压强相等的各点连结而成的线, 即等压线 |  n. a line on a map connecting points having the same atmospheric pressure at a given time or on average over a given period<br>&emsp;• a curve or formula representing a physical system at constant pressure<br>each of two or more isotopes of different elements, with the same atomic weight  |  an **isobar** on weather maps  |  | 0 |
-| isomorphism |  | n. 同型性; 同晶型性; [物] [化] (类质) 同晶型 (现象) | **iso(等, 同)**, **morph(o)(形)**, -ism(主义, 语言)<br>“相同”的“形”态, 即同型性 |  n. similarity in form or structure<br>a correspondence preserving the structure of mathematical objects  |  an **isomorphism** between two groups  |  | 0 |
+| isomorphism | /aɪsəʊˈmɔːfɪzəm/ | n. 同型性; 同晶型性; [物] [化] (类质) 同晶型 (现象) | **iso(等, 同)**, **morph(o)(形)**, -ism(主义, 语言)<br>“相同”的“形”态, 即同型性 |  n. similarity in form or structure<br>a correspondence preserving the structure of mathematical objects  |  an **isomorphism** between two groups  |  | 0 |
 | isostatic | /ˌaɪsəˈstætɪk/ | adj. 均衡的 | **iso(等, 同)**, **stat(静止, 稳定)**, -ic(…的)<br>各部分处于相等而稳定的平衡状态 |  adj. characterized by or involving the equilibrium that exists between parts of the earth's crust  |  the process of **isostatic** adjustment  |  | 0 |
 
 # it

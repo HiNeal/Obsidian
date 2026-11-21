@@ -138,7 +138,7 @@
 | synergism | /ˈsɪnədʒɪz(ə)m/ | n. 协同; (尤指药物的) 协助作用 | syn-(共同), **erg(o)(工作)**, -ism(行为)<br>共同作用产生的协同现象 |  n. interaction producing an effect greater than the sum of the separate effects  |  the **synergism** between two compounds  |  | 0 |
 | energetic | /ˌenəˈdʒetɪk/ | adj. 精力充沛的; 充满活力的; 积极的 | en-(进入, 包围), **erg(o)(工作)**, -etic(…的)<br>具有持续做功、行动的能力, 因此表示精力充沛的 |  adj. showing or involving great activity or vitality<br>relating to or characterized by energy (in the technical sense)  |  an **energetic** basketball player  | adj. active, vigorous, forceful, lively, dynamic, zestful, spirited, animated | 0 |
 | lethargic | /ləˈθɑːdʒɪk/ | adj. 昏睡的; 无生气的 | **leth(遗忘)**, **arg(工作)**, -ic(…的)<br>核心意象: 像不愿工作、昏昏欲睡般提不起劲, 因此表示无生气的 | adj. affected by lethargy; sluggish and apathetic | feel tired and **lethargic** | adj. sluggish, languid, inert, inactive, slow, torpid, lifeless, dull | 0 |
-| synergic |  | adj. 协作的; 合作的 | syn-(共同), **erg(o)(工作)**, -ic(…的)<br>使“工作”共同结合或发挥作用, 因此表示“协作的, 合作的” |  adj. working together : cooperating  |  the **synergic** effects of drugs  |  | 0 |
+| synergic | /sɪˈnɜːdʒɪk/ | adj. 协作的; 合作的 | syn-(共同), **erg(o)(工作)**, -ic(…的)<br>使“工作”共同结合或发挥作用, 因此表示“协作的, 合作的” |  adj. working together : cooperating  |  the **synergic** effects of drugs  |  | 0 |
 
 # err
 
@@ -164,7 +164,7 @@
 | ethnography | /eθˈnɒɡrəfi/ | n. 人种史; 人种论 | **ethn(o)(民族, 人民)**, -graphy(写, 记录法)<br>对“民族”文化的书写记录, 即人种志 |  n. the scientific description of peoples and cultures with their customs, habits, and mutual differences  |  a detailed urban **ethnography**  |  | 0 |
 | ethnologist | /eθˈnɒlədʒɪst/ | n. 人种学者; 民族学者 | **ethn(o)(民族, 人民)**, -logist(…学家)<br>围绕“人民”这一核心含义构成, 表示“人种学者” |  n. a specialist in the comparative and analytical study of cultures  |  a distinguished comparative **ethnologist**  |  | 0 |
 | ethnology | /eθˈnɒlədʒi/ | n. 人种学; 民族学 | **ethn(o)(民族, 人民)**, -logy(…学, …研究)<br>在前词基础上加“-logy”构成名词, 表示“人种学” |  n. the study of the characteristics of different peoples and the differences and relationships between them  |  the study of comparative **ethnology**  |  | 0 |
-| ethnical |  | adj. 种族的; 人种学的 | **ethn(o)(民族, 人民)**, -ical(…的)<br>围绕“人种”这一核心含义构成, 表示“种族的” |  adj. ethnic<br>of or relating to ethnology  |  differences between **ethnical** groups  |  | 0 |
+| ethnical | /ˈeθnɪkl/ | adj. 种族的; 人种学的 | **ethn(o)(民族, 人民)**, -ical(…的)<br>围绕“人种”这一核心含义构成, 表示“种族的” |  adj. ethnic<br>of or relating to ethnology  |  differences between **ethnical** groups  |  | 0 |
 | ethnocentric | /ˌeθnəʊˈsentrɪk/ | adj. 种族(或民族)中心主义的 | **ethn(o)(民族, 人民)**, **centr(o)(中心)**, -ic(…的)<br>由“民族”与“中心”共同限定词义, 表示“种族(或民族)中心主义的” |  adj. evaluating other cultures according to preconceptions originating in the standards and customs of one's own culture  |  an **ethnocentric** view of society  |  | 0 |
 
 # ev
@@ -175,7 +175,7 @@
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | coeval | /kəʊˈiːvl/ | adj. 同时代的<br>n. 同时代的人 | co-(与, 共同), **ev(年龄, 时代)**, -al(…的)<br>使“时代”共同结合或发挥作用, 因此表示“同时代的(人或物)” |  adj. having the same age or date of origin; contemporary<br>n. a person of roughly the same age as oneself; a contemporary  |  two **coeval** geological formations  |  | 0 |
 | longevity | /lɒnˈdʒevəti/ | n. 长寿; 长命; 长期供职; 资历 | **long(长; 归属)**, **ev(年龄, 时代)**, -ity(性质, 状态)<br>由“长”与“寿命”共同限定词义, 表示“长寿, 长命” |  n. long life<br>&emsp;• long existence or service  |  health and **longevity**  |  | 0 |
-| medievalism |  | n. 中世纪精神 (或特征; 状态; 风俗; 信仰等); 对中世纪风味的爱好; 中世纪残存的思想 (或风俗等) | **med(i)(中间)**, **ev(年龄, 时代)**, -al(…的, 行为, 人, 物), -ism(主义, 语言)<br>中间时代的特征或风尚, 即中世纪精神 |  n. medieval quality, character, or state  |  the **medievalism** of Gothic architecture  |  | 0 |
+| medievalism | /ˌmedɪˈiːvəlɪzəm/ | n. 中世纪精神 (或特征; 状态; 风俗; 信仰等); 对中世纪风味的爱好; 中世纪残存的思想 (或风俗等) | **med(i)(中间)**, **ev(年龄, 时代)**, -al(…的, 行为, 人, 物), -ism(主义, 语言)<br>中间时代的特征或风尚, 即中世纪精神 |  n. medieval quality, character, or state  |  the **medievalism** of Gothic architecture  |  | 0 |
 | medievalist | /medˈiːv(ə)lɪst/ | n. 中世纪史专家 (或研究者); 中世纪艺术 (或文化) 的鉴赏者 (或爱好者) | **med(i)(中间)**, **ev(年龄, 时代)**, -al(…的), -ist(人)<br>在前词基础上加“-ist”构成名词, 表示“中世纪史专家” | n. an expert in or student of medieval history or culture | a distinguished literary **medievalist** |  | 0 |
 | medieval | /ˌmediˈiːvl/ | adj. 中古时代的; 中世纪的; 守旧的 | **med(i)(中间)**, **ev(年龄, 时代)**, -al(…的)<br>处在古代与近代之间时期的, 即中世纪的 |  adj. relating to the Middle Ages<br>&emsp;• very cruel, uncivilized, or primitive  |  preserve magnificent **medieval** architecture  | adj. of the Middle Ages, primitive, Middle Age, of the Dark Ages, Dark-Age, 11th to 14th century, 6th to 14th century, Gothic | 0 |
 | primeval | /praɪˈmiːvl/ | adj. 原始的; 远古的 | **prim(第一, 首要)**, **ev(年龄, 时代)**, -al(…的)<br>属于最初时代的, 因此表示原始的、远古的 |  adj. of the earliest time in history<br>&emsp;• (of emotion or behaviour) strongly instinctive and unreasoning  |  a **primeval** desire  | adj. ancient, instinctive, earliest, first, prehistoric, antediluvian, antique, primordial | 0 |

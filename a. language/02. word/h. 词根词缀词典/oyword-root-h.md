@@ -10,8 +10,8 @@
 | habit | /ˈhæbɪt/ | n. 习惯; 习性 | **habit(居住)**<br>长期“居住”其中而形成的状态, 即习惯 |  n. a settled or regular tendency or practice, especially one that is hard to give up<br>&emsp;• an addictive practice, especially one of taking drugs<br>&emsp;• an automatic reaction to a specific situation<br>&emsp;• general shape or mode of growth, especially of a plant or a mineral<br>a long, loose garment worn by a member of a religious order  |  a cocaine **habit**  | n. practice, mannerism, addiction, garment, custom, pattern, routine, style | 0 |
 | habitat | /ˈhæbɪtæt/ | n. 栖息地; 产地; 住处; 聚集处; （动植物的）生活环境 | **habit(居住)**, a(连接元音), t(连接字母)<br>生物“居住”的地方, 即栖息地 |  n. the natural home or environment of an animal, plant, or other organism<br>&emsp;• a person's usual or preferred surroundings  |  prevent catastrophic **habitat** destruction  | n. natural environment, natural element, natural territory, natural surroundings, natural terrain, home, domain, haunt | 0 |
 | habitation | /ˌhæbɪˈteɪʃn/ | n. 居住; 住处; 聚居地 | **habit(居住)**, -ation(行为, 结果)<br>围绕“居住”这一核心含义构成, 表示“居住, 住处” |  n. the fact of living in a particular place<br>&emsp;• a house or home  |  signs of human **habitation**  | n. occupancy, house, occupation, residence, residency, living in, housing, billeting | 0 |
-| habitude |  | n. 习俗; 习惯; 性情; 气质 | **habit(居住)**, -ude(名词后缀) | n. a habitual tendency or way of behaving | the force of **habitude** |  | 0 |
-| habitus |  | n. 习惯; 习性; 体质 | **habit(居住)**, u(连接元音), s(连接字母)<br>长期“居住”其中养成的习性, 即习惯、体质 |  n. a person's general constitution, especially physical build<br>the way a person of a particular background perceives and reacts to the world  |  the concept of social **habitus**  |  | 0 |
+| habitude | /ˈhæbɪtjuːd/ | n. 习俗; 习惯; 性情; 气质 | **habit(居住)**, -ude(名词后缀) | n. a habitual tendency or way of behaving | the force of **habitude** |  | 0 |
+| habitus | /ˈhæbɪtəs/ | n. 习惯; 习性; 体质 | **habit(居住)**, u(连接元音), s(连接字母)<br>长期“居住”其中养成的习性, 即习惯、体质 |  n. a person's general constitution, especially physical build<br>the way a person of a particular background perceives and reacts to the world  |  the concept of social **habitus**  |  | 0 |
 | inhabitant | /ɪnˈhæbɪtənt/ | n. 居民; 住户; 常住居民; 栖居的动物 | in-(向内, 进入), **habit(居住)**, -ant(人; 物)<br>居住在某地之内的人 |  n. a person or animal that lives in or occupies a place<br>&emsp;• a person who fulfils the residential or legal requirements for being a member of a state or parish  |  an **inhabitant** of the island  | n. resident, occupant, occupier, dweller, settler, local, native, population | 0 |
 | habitable | /ˈhæbɪtəbl/ | adj. 可居住的; 适于居住的 | **habit(居住)**, -able(可…的)<br>围绕“居住”这一核心含义构成, 表示“可居住的” |  adj. suitable or good enough to live in  |  **habitable** living space  | adj. fit to live in, inhabitable, fit to occupy, in good repair, usable, liveable in, suitable for residential use | 0 |
 | habitual | /həˈbɪtʃuəl/ | adj. 习惯的; 惯常的 | **habit(居住)**, -ual(…的)<br>具有习惯特征的, 即惯常的 | adj. done constantly or as a habit<br>&emsp;• doing something constantly or regularly<br>&emsp;• regular; usual | the **habitual** use of alcohol | adj. constant, inveterate, customary, persistent, continual, continuous, perpetual, non-stop | 0 |
@@ -23,7 +23,7 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | hagiography | /ˌhæɡiˈɒɡrəfi/ | n. 圣徒传记 | **hagi(o)(神圣, 圣徒)**, -graphy(写, 记录法)<br>原指记录基督教圣徒生平的宗教传记, 引申为过于盲目吹捧赞扬的传记作品 |  n. the writing of the lives of saints<br>&emsp;• a biography that treats its subject with undue reverence  |  a work of medieval **hagiography**  |  | 0 |
-| hagiology |  | n. 圣徒言行录; 圣徒学 | **hagi(o)(神圣, 圣徒)**, -logy(…学, …研究)<br>记录并研究圣徒生平与神圣事迹的学问 |  n. literature dealing with the lives and legends of saints  |  the study of Christian **hagiology**  |  | 0 |
+| hagiology | /ˌhæɡɪˈɒlədʒi/ | n. 圣徒言行录; 圣徒学 | **hagi(o)(神圣, 圣徒)**, -logy(…学, …研究)<br>记录并研究圣徒生平与神圣事迹的学问 |  n. literature dealing with the lives and legends of saints  |  the study of Christian **hagiology**  |  | 0 |
 
 # hal
 
@@ -54,12 +54,12 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | happen | /ˈhæpən/ | v. 发生; 出现; 碰巧 | **hap(运气, 偶然)**, p(连接字母), -en(做, 使)<br>围绕“偶发”这一核心含义构成, 表示“(偶然)发生” |  v. take place; occur<br>&emsp;• ensue as an effect or result of an action or event<br>&emsp;• chance to do something or come about<br>&emsp;• come about by chance<br>find or come across by chance<br>be experienced by (someone); befall<br>&emsp;• become of  |  incidents that **happen** during wartime  | v. occur, ensue, become of, chance, discover unexpectedly, take place, come about, come off | 0 |
-| hap |  | n. 偶然; 机会; 运气<br>v. 偶然发生 | **hap(运气, 偶然)**<br>表示偶然发生的事情、机会或运气 |  v. cover or wrap with a blanket or warm clothes  |  by good **hap** alone  |  | 0 |
+| hap | /hæp/ | n. 偶然; 机会; 运气<br>v. 偶然发生 | **hap(运气, 偶然)**<br>表示偶然发生的事情、机会或运气 |  v. cover or wrap with a blanket or warm clothes  |  by good **hap** alone  |  | 0 |
 | haphazard | /hæpˈhæzəd/ | n. 偶然性; 偶然事件<br>adj. 无计划的; 偶然的; 随便的<br>adv. 偶然地 | **hap(运气, 偶然)**, **hazard(风险)**<br>由偶然与风险合成, 表示无计划、任意的 | adj. lacking any obvious principle of organization | a **haphazard** approach to planning | adj. random, unplanned, unsystematic, unmethodical, disorganized, disorderly, irregular, indiscriminate | 0 |
 | mishap | /ˈmɪshæp/ | n. 小灾难 | mis-(坏, 错误), **hap(运气, 偶然)**<br>不好的偶然事件, 即不幸、灾祸 |  n. an unlucky accident  |  a minor **mishap**  | n. accident, trouble, problem, difficulty, issue, setback, reverse, adversity | 0 |
 | hapless | /ˈhæpləs/ | adj. 不幸的; 运气不好的 | **hap(运气, 偶然)**, -less(无…的, 不…的)<br>围绕“机会”这一核心含义构成, 表示“不幸的” |  adj. (especially of a person) unfortunate  |  a **hapless** victim  | adj. unfortunate, unlucky, luckless, out of luck, ill-starred, ill-fated, jinxed, cursed | 0 |
 | happy | /ˈhæpi/ | adj. 幸福的; 幸运的 | **hap(运气, 偶然)**, p(连接字母), -y(充满…的, 有…特征的, 像…的)<br>围绕“机会”这一核心含义构成, 表示“幸福的” |  adj. feeling or showing pleasure or contentment<br>&emsp;• used in greetings<br>having a sense of trust and confidence in (a person, arrangement, or situation)<br>&emsp;• satisfied with the quality or standard of<br>&emsp;• willing to do something<br>fortunate and convenient<br>inclined to use a specified thing excessively or at random  |  a **happy** and fulfilling life  | adj. contented, willing, glad, fortunate, appropriate, content, cheerful, cheery | 0 |
-| haply |  | adv. 偶然地; 侥幸地; 或许 | **hap(运气, 偶然)**, -ly(…地)<br>围绕“偶发”这一核心含义构成, 表示“偶然地, 侥幸地” |  adv. by any chance; perhaps  |  **haply** meet again someday  |  | 0 |
+| haply | /ˈhæpli/ | adv. 偶然地; 侥幸地; 或许 | **hap(运气, 偶然)**, -ly(…地)<br>围绕“偶发”这一核心含义构成, 表示“偶然地, 侥幸地” |  adv. by any chance; perhaps  |  **haply** meet again someday  |  | 0 |
 | perhaps | /pəˈhæps/ /præps/ | adv. 或许; 可能; 多半 | per-(通过, 贯穿), **hap(运气, 偶然)**, s(连接字母)<br>碰运气 |  adv. used to express uncertainty or possibility<br>&emsp;• used when one does not wish to be too definite or assertive in the expression of an opinion<br>&emsp;• used when making a polite request, offer, or suggestion  |  **perhaps** most importantly  | adv. maybe, for all I know, for all you know, it could be (that), it may be (that), it is possible (that), possibly, conceivably | 0 |
 
 # hard
@@ -71,7 +71,7 @@
 | harden | /ˈhɑːdn/ | v. 变硬; 变坚固; 使变硬 | **hard(强, 硬)**, -en(做, 使)<br>围绕“硬”这一核心含义构成, 表示“变硬,变坚固” |  v. make or become hard or harder<br>&emsp;• make or become more severe and less sympathetic<br>&emsp;• make or become tougher and more clearly defined<br>&emsp;• (of prices of shares, commodities, etc.) rise and remain steady at a higher level  |  **harden** into a solid mass  | v. solidify, toughen, set, become hard, become solid, congeal, clot, coagulate | 0 |
 | hardener | /ˈhɑɚdnɚ/ | n. 硬化剂 | **hard(强, 硬)**, -en(做, 使), -er(物)<br>使材料硬化的添加剂 |  n. one that hardens  |  an epoxy resin **hardener**  |  | 0 |
 | hardening | /ˈhɑːdnɪŋ/ | n. 硬化; 硬化剂 | **hard(强, 硬)**, -en(做, 使), -ing(物)<br>在前词基础上加“-ing”构成名词, 表示“硬化” |  n. the process of becoming or making something hard  |  the **hardening** of steel  |  | 0 |
-| hardihood |  | n. 大胆; 刚毅; 鲁莽; 勇气; 胆子 | **hard(强, 硬)**, i(连接字母), -hood(性质, 状态)<br>表示与“强”有关的性质或状态, 即“大胆,刚毅” |  n. boldness; daring  |  a person of great **hardihood**  | n. bravery, courage, boldness, daring, spirit, valour, mettle, heart | 0 |
+| hardihood | /ˈhɑːdɪhʊd/ | n. 大胆; 刚毅; 鲁莽; 勇气; 胆子 | **hard(强, 硬)**, i(连接字母), -hood(性质, 状态)<br>表示与“强”有关的性质或状态, 即“大胆,刚毅” |  n. boldness; daring  |  a person of great **hardihood**  | n. bravery, courage, boldness, daring, spirit, valour, mettle, heart | 0 |
 | hardiness | /ˈhɑːdinəs/ | n. 强壮; 耐劳(性); 勇气; 胆子 | **hard(强, 硬)**, i(连接字母), -ness(性质, 状态)<br>由“难的”派生为当前词义 | n. the ability to endure difficult conditions<br>&emsp;• the ability of a plant to survive outside during winter | the winter **hardiness** of plants | n. robustness, healthiness, strength, toughness, vigour, ruggedness, sturdiness, resilience | 0 |
 | hardship | /ˈhɑːdʃɪp/ | n. 苦难; 受苦 | **hard(强, 硬)**, -ship(性质, 状态)<br>艰难的处境或经历, 即苦难 | n. severe suffering or privation | intolerable levels of **hardship** | n. privation, deprivation, destitution, poverty, austerity, penury, want, need | 0 |
 | hardware | /ˈhɑːdweə(r)/ | n. 五金器具; (计算机)硬件 | **hard(强, 硬)**, **ware(器具)**<br>原指坚硬的金属器具, 后来也指计算机实体设备, 即硬件 |  n. tools, machinery, and other durable equipment<br>&emsp;• tools, implements, and other items used in home life and activities such as gardening<br>the machines, wiring, and other physical components of a computer or other electronic system  |  upgrade computer **hardware**  | n. equipment, apparatus, gear, paraphernalia, tackle, kit, machinery, tools | 0 |
@@ -165,7 +165,7 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| helicity |  | n. 螺旋性 | **helic(o)(螺旋)**, -ity(性质, 状态)<br>表示与“螺旋”有关的性质或状态, 即“螺旋性” |  n. helical character, especially of DNA<br>a combination of the spin and the linear motion of a subatomic particle  |  the **helicity** of a particle  |  | 0 |
+| helicity | /hiːˈlɪsɪti/ | n. 螺旋性 | **helic(o)(螺旋)**, -ity(性质, 状态)<br>表示与“螺旋”有关的性质或状态, 即“螺旋性” |  n. helical character, especially of DNA<br>a combination of the spin and the linear motion of a subatomic particle  |  the **helicity** of a particle  |  | 0 |
 | helicopter | /ˈhelɪkɒptə(r)/ | n. 直升飞机; 直升机<br>v. 用直升机载送; 乘直升机旅行 | **helic(o)(螺旋)**, **pter(翼, 翅)**<br>靠旋转的翼片升空飞行的航空器, 即直升机 |  n. a type of aircraft which derives both lift and propulsion from one or more sets of horizontally revolving overhead rotors. It is capable of moving vertically and horizontally, the direction of motion being controlled by the pitch of the rotor blades<br>v. transport by helicopter<br>&emsp;• fly somewhere in a helicopter  |  evacuate patients by **helicopter**  |  | 0 |
 | helipad | /ˈhelipæd/ | n. 直升飞机场 | **heli(螺旋)**, **pad(起降平台)**<br>供直升机起降的平台 | n. a landing and take-off area for helicopters | a rooftop emergency **helipad** |  | 0 |
 | helix | /ˈhiːlɪks/ | n. 螺旋(形) | **heli(螺旋)**, -x(名词后缀)<br>核心意象(词根 helic“螺旋”): 一圈圈盘绕的“螺旋”形, 即螺旋 | n. an object having a three-dimensional shape like that of a wire wound uniformly in a single layer around a cylinder or cone, as in a corkscrew or spiral staircase<br>&emsp;• a curve on a conical or cylindrical surface which would become a straight line if the surface were unrolled into a plane<br>&emsp;• an extended spiral chain of atoms in a protein, nucleic acid, or other polymeric molecule<br>the rim of the external ear | a double **helix** structure | n. spiral, coil, curl, corkscrew, twist, twirl, loop, gyre | 0 |
@@ -203,7 +203,7 @@
 | hesitate | /ˈhezɪteɪt/ | v. 犹豫不决; 踌躇; 顾虑 | **hes(粘着, 附着)**, i(连接元音), t(连接字母), -ate(做, 使, …的, 人)<br>像被“粘住”一样停下来, 即犹豫 |  v. pause in indecision before saying or doing something<br>&emsp;• be reluctant to do something  |  **hesitate** for a moment  | v. pause, be uncertain, be reluctant, delay, hang back, wait, shilly-shally, dither | 0 |
 | inhere | /ɪnˈhɪə(r)/ | v. 生来即存在于; 本质上即属于; 原来就有 | in-(向内, 进入), **her(粘着, 附着)**, e(连接字母)<br>固有地附着在事物内部, 即内在、固有 |  v. exist essentially or permanently in<br>&emsp;• (of rights, powers, etc.) be vested in a person or group or attached to the ownership of a property  |  **inhere** in the social system  |  | 0 |
 | adhesion | /ədˈhiːʒn/ | n. 黏着; 黏合; 附着 | ad-(到, 朝, 向), **hes(粘着, 附着)**, -ion(行为, 结果)<br>两个表面黏附到一起的状态, 即黏着、附着力 |  n. the action or process of adhering to a surface or object<br>&emsp;• the frictional grip of wheels, shoes, etc. on a surface<br>&emsp;• the sticking together of particles of different substances<br>&emsp;• allegiance to a particular person, party, or set of ideas<br>an abnormal adhering of surfaces due to inflammation or injury  |  **adhesion** to the surface  | n. sticking, traction, adherence, gluing, fixing, fastening, union, grip | 0 |
-| adhesiveness |  | n. 附着性; 黏着力 | ad-(到, 朝, 向), **hes(粘着, 附着)**, -ive(…的), -ness(性质, 状态)<br>由“粘着的”派生为当前词义 | n. the quality or state of being adhesive | the **adhesiveness** of tape |  | 0 |
+| adhesiveness | /ədˈhiːsɪvnɪs/ | n. 附着性; 黏着力 | ad-(到, 朝, 向), **hes(粘着, 附着)**, -ive(…的), -ness(性质, 状态)<br>由“粘着的”派生为当前词义 | n. the quality or state of being adhesive | the **adhesiveness** of tape |  | 0 |
 | coherence | /kəʊˈhɪərəns/ | n. 黏着; 黏合性; 连贯 | co-(与, 共同), **her(粘着, 附着)**, -ence(性质, 状态)<br>使“粘着”共同结合或发挥作用, 因此表示“黏着” |  n. the quality of being logical and consistent<br>the quality of forming a unified whole  |  the logical **coherence** of arguments  | n. consistency, logicality, good sense, soundness, organization, orderliness, unity, clarity | 0 |
 | hesitancy | /ˈhezɪtənsi/ | n. 踌躇; 犹豫 | **hes(粘着, 附着)**, -it(连接成分), -ancy(性质, 状态)<br>行动或判断迟疑不决的状态, 即犹豫 | n. the quality or state of being hesitant | a moment of understandable **hesitancy** | n. uncertainty, dithering, reluctance, hesitation, hesitance, unsureness, doubt, doubtfulness | 0 |
 | adherent | /ədˈhɪərənt/ | adj. 黏着的; 附着的 | ad-(到, 朝, 向), **her(粘着, 附着)**, -ent(…的, 人, 物)<br>“粘附”在某人某事之上的人, 即拥护者 |  n. someone who supports a particular party, person, or set of ideas<br>adj. sticking fast to an object or surface  |  a staunch **adherent**  | n. follower, fan, supporter, upholder, defender, advocate, disciple, votary<br>adj. adhesive, sticky, sticking, adhering, clinging, tacky, gluey, gummy | 0 |
@@ -220,7 +220,7 @@
 | heterodoxy | /ˈhetərədɒksi/ | n. 违反公认标准; 异教; 异端 | **heter(o)(异, 其他)**, **dox(观点; 荣耀)**, -y(活动)<br>持有不同于正统的观点, 因此表示异端、非正统观点 |  n. deviation from accepted or orthodox standards or beliefs  |  the charge of religious **heterodoxy**  |  | 0 |
 | heterogeneity | /ˌhetərədʒəˈniːəti/ | n. 异质性; 不均匀性; 多相性; 不纯一性 | **heter(o)(异, 其他)**, **gene(族, 种类)**, -ity(性质, 状态)<br>由不同种类构成的状态, 即异质性 |  n. the quality or state of being diverse in character or content  |  the **heterogeneity** of the population  |  | 0 |
 | heterosexuality | /ˌhetərəˌsekʃuˈæləti/ | n. 异性爱 | hetero-(异, 其他), **sex(性别)**, u(连接元音), -ality(性质, 状态)<br>由“异性的”派生为当前词义 | n. the quality or characteristic of being sexually or romantically attracted to people of the other sex | the social construction of **heterosexuality** |  | 0 |
-| heterosis |  | n. 杂种优势 | **heter(o)(异, 其他)**, -osis(状态, 过程)<br>围绕“异”这一核心含义构成, 表示“杂种优势” |  n. technical term for hybrid vigour  |  the effects of hybrid **heterosis**  |  | 0 |
+| heterosis | /hetəˈrəʊsɪs/ | n. 杂种优势 | **heter(o)(异, 其他)**, -osis(状态, 过程)<br>围绕“异”这一核心含义构成, 表示“杂种优势” |  n. technical term for hybrid vigour  |  the effects of hybrid **heterosis**  |  | 0 |
 
 # hibit
 
@@ -336,13 +336,13 @@
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | dehydration | /ˌdiːhaɪˈdreɪʃn/ | n. 脱水 | de-(脱离, 取消, 除去), **hydr(o)(水)**, -ation(行为, 结果)<br>由“脱离”与“水”共同限定词义, 表示“脱水” |  n. the loss or removal of water from something<br>&emsp;• a harmful reduction in the amount of water in the body  |  signs of severe **dehydration**  |  | 0 |
 | hydrant | /ˈhaɪdrənt/ | n. 消防龙头; 给水栓; 取水管 | **hydr(o)(水)**, -ant(人; 物)<br>连接供水系统、用于取水的装置 |  n. a fitting in a street or other public place with a nozzle by which a hose may be attached to a water main  |  a roadside fire **hydrant**  |  | 0 |
-| hydrobiology |  | n. 流体生物学 | **hydr(o)(水)**, **bi(o)(生命, 生物)**, -logy(…学, …研究)<br>由“水”与“生物”共同限定词义, 表示“流体生物学” |  n. the biology of bodies or units of water  |  the study of freshwater **hydrobiology**  |  | 0 |
+| hydrobiology | /ˌhaɪdrəʊbaɪˈɒlədʒi/ | n. 流体生物学 | **hydr(o)(水)**, **bi(o)(生命, 生物)**, -logy(…学, …研究)<br>由“水”与“生物”共同限定词义, 表示“流体生物学” |  n. the biology of bodies or units of water  |  the study of freshwater **hydrobiology**  |  | 0 |
 | hydrogen | /ˈhaɪdrədʒən/ | n. 氢气 | **hydr(o)(水)**, **gen(出生, 产生)**<br>产生水 |  n. a colourless, odourless, highly flammable gas, the chemical element of atomic number 1  |  generate clean **hydrogen** fuel  |  | 0 |
 | hydrology | /haɪˈdrɒlədʒi/ | n. 水文学; 水理学 | **hydr(o)(水)**, -logy(…学, …研究)<br>以“水”为研究对象的学科, 即“水文学, 水理学” |  n. the branch of science concerned with the properties of the earth's water, and especially its movement in relation to land  |  the **hydrology** of river basins  |  | 0 |
 | hydrometer | /haɪˈdrɒmɪtə(r)/ | n. (液体) 比重计 | **hydr(o)(水)**, -meter(测量器, 仪表)<br>测量“水”的仪器或方法, 即“(液体) 比重计” |  n. an instrument for measuring the density of liquids  |  measure density with a **hydrometer**  |  | 0 |
 | hydrophobia | /ˌhaɪdrəˈfəʊbiə/ | n. 恐水病 | **hydr(o)(水)**, **phob(怕, 厌恶)**, -ia(性质, 状态)<br>对“水”产生强烈恐惧或厌恶, 即“恐水病” |  n. extreme or irrational fear of water, especially as a symptom of rabies in humans<br>&emsp;• rabies, especially in humans  |  a patient suffering from **hydrophobia**  |  | 0 |
 | anhydrous | /ænˈhaɪdrəs/ | adj. 无水的 | an-(无, 不, 非), **hydr(o)(水)**, -ous(…的)<br>否定或缺少“水”所指的性质, 因此表示“无水的” |  adj. (of a substance, especially a crystalline compound) containing no water  |  crystals of **anhydrous** copper sulphate  |  | 0 |
-| hydrous |  | adj. 含水的; 水合的; 水化的; 水状的 | **hydr(o)(水)**, -ous(…的)<br>表示与“水”有关或具有该特征, 即“含水的” |  adj. containing water as a constituent  |  a **hydrous** lava flow  |  | 0 |
+| hydrous | /ˈhaɪdrəs/ | adj. 含水的; 水合的; 水化的; 水状的 | **hydr(o)(水)**, -ous(…的)<br>表示与“水”有关或具有该特征, 即“含水的” |  adj. containing water as a constituent  |  a **hydrous** lava flow  |  | 0 |
 
 # hyeto
 
@@ -350,8 +350,8 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| hyetograph |  | n. 每年平均雨量分布图表; 雨量计 | **hyeto(雨, 下雨)**, **graph(写, 画)**<br>记录并绘制某流域暴雨降雨强度随时间变化的图表, 即降雨量过程线图 |  n. a chart showing average annual rainfall  |  a **hyetograph** of rainfall intensity  |  | 0 |
-| hyetology |  | n. 雨量学; 降水学 | **hyeto(雨, 下雨)**, -logy(…学, …研究)<br>研究降雨规律与降水分布的科学 |  n. a branch of meteorology that deals with precipitation (as of rain and snow)  |  the scientific study of **hyetology**  |  | 0 |
+| hyetograph | /ˈhaɪətəɡrɑːf/ | n. 每年平均雨量分布图表; 雨量计 | **hyeto(雨, 下雨)**, **graph(写, 画)**<br>记录并绘制某流域暴雨降雨强度随时间变化的图表, 即降雨量过程线图 |  n. a chart showing average annual rainfall  |  a **hyetograph** of rainfall intensity  |  | 0 |
+| hyetology | /ˌhaɪəˈtɒlədʒi/ | n. 雨量学; 降水学 | **hyeto(雨, 下雨)**, -logy(…学, …研究)<br>研究降雨规律与降水分布的科学 |  n. a branch of meteorology that deals with precipitation (as of rain and snow)  |  the scientific study of **hyetology**  |  | 0 |
 
 # hygr
 
@@ -378,5 +378,5 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| hypsometer |  | n. 沸点测高器; 用三角测量法测量树的高度的仪器 | **hypso(高度)**, **meter(测量; 测量器, 仪表)**<br>利用三角测量原理或液体沸点测定山体与林木垂直高度的仪器, 即测高仪 |  n. a device for calibrating thermometers at the boiling point of water at a known height above sea level or for estimating height above sea level by finding the temperature at which water boils  |  measure height with a **hypsometer**  |  | 0 |
+| hypsometer | /hɪpˈsɒmɪtə/ | n. 沸点测高器; 用三角测量法测量树的高度的仪器 | **hypso(高度)**, **meter(测量; 测量器, 仪表)**<br>利用三角测量原理或液体沸点测定山体与林木垂直高度的仪器, 即测高仪 |  n. a device for calibrating thermometers at the boiling point of water at a known height above sea level or for estimating height above sea level by finding the temperature at which water boils  |  measure height with a **hypsometer**  |  | 0 |
 | hypsometry | /hɪpˈsɒmətri/ | n. 测高法; 测高学 | **hypso(高度)**, **meter(测量; 测量器, 仪表)**, -y(活动)<br>通过气压或沸点等物理量测定海拔高度的技术与学科 |  n. the science of measuring heights (as with reference to sea level)  |  the **hypsometry** of mountainous terrain  |  | 0 |
