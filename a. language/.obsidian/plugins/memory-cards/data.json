@@ -4,10 +4,10 @@
   "recent": [
     "02. word/a. 雅思词汇真经/06-科技发明.md",
     "02. word/a. 雅思词汇真经/01-自然地理.md",
-    "05. listening/01. 听力词汇/01. 住宿.md",
-    "05. listening/01. 听力词汇/11. 答案词.md",
-    "02. word/a. 雅思词汇真经/05-学校教育.md",
-    "02. word/a. 雅思词汇真经/04-太空探索.md"
+    "02. word/a. 雅思词汇真经/21-身心健康.md",
+    "02. word/h. 词根词缀词典/oyword-root-r.md",
+    "02. word/b. 剑雅阅读真题/14-交通旅行.md",
+    "02. word/h. 词根词缀词典/oyword-root-o.md"
   ],
   "decks": {
     "02. word/未整理单词.md": {
@@ -31,12 +31,12 @@
       }
     },
     "02. word/a. 雅思词汇真经/01-自然地理.md": {
-      "progress": 6,
+      "progress": 303,
       "focus": false,
       "contentMode": "word",
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "hydrogen",
+        "word": "artificially",
         "occurrence": 0
       },
       "dictation": false,
@@ -86,12 +86,12 @@
       "focus": false
     },
     "02. word/a. 雅思词汇真经/21-身心健康.md": {
-      "progress": 0,
+      "progress": 209,
       "review": false,
       "revealDelay": 1.3,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "chamber",
+        "word": "antibiotic",
         "occurrence": 0
       }
     },
@@ -123,10 +123,10 @@
       "focus": false
     },
     "02. word/a. 雅思词汇真经/06-科技发明.md": {
-      "progress": 40,
+      "progress": 4,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "sensitivity",
+        "word": "specialise",
         "occurrence": 0
       }
     },
@@ -487,6 +487,38 @@
       "bookmark": {
         "tableKey": "[\"答案词1次\",\"单词\",1]",
         "word": "petrol",
+        "occurrence": 0
+      }
+    },
+    "02. word/h. 词根词缀词典/oyword-root-r.md": {
+      "progress": 6,
+      "bookmark": {
+        "tableKey": "[\"radi(o)\",\"单词\",1]",
+        "word": "radiosensitivity",
+        "occurrence": 0
+      }
+    },
+    "02. word/b. 剑雅阅读真题/14-交通旅行.md": {
+      "progress": 15,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "travelogue",
+        "occurrence": 0
+      }
+    },
+    "02. word/h. 词根词缀词典/oyword-root-o.md": {
+      "progress": 77,
+      "bookmark": {
+        "tableKey": "[\"opt(o), ops, opi\",\"单词\",1]",
+        "word": "opinionated",
+        "occurrence": 0
+      }
+    },
+    "02. word/h. 词根词缀词典/oyword-root-p.md": {
+      "progress": 335,
+      "bookmark": {
+        "tableKey": "[\"ple, pli, ply, plen(i)\",\"单词\",1]",
+        "word": "plenipotentiary",
         "occurrence": 0
       }
     }

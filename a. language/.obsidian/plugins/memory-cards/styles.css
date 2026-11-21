@@ -190,22 +190,10 @@
 
 .mc-card.hide-memory-hints .mc-root-annotations { display: none; }
 .mc-word-root {
-  color: inherit;
-  position: relative;
+  color: var(--mc-root-color, inherit);
 }
-.mc-word-root::after {
-  content: "";
-  position: absolute;
-  left: var(--mc-root-inset-l, 0);
-  right: var(--mc-root-inset-r, 0);
-  bottom: -0.1em;
-  height: 0;
-  border-bottom: 5px dotted var(--mc-root-color, var(--mc-ink-3));
-  pointer-events: none;
-}
-.mc-word-root.is-overline::after { top: 0.06em; bottom: auto; }
-/* 关闭提示或尚未揭晓时只保留单词本身。 */
-.mc-card:is(.hide-memory-hints, .is-concealed) .mc-word-root::after { display: none; }
+/* 关闭提示或尚未揭晓时只保留单词本身的颜色。 */
+.mc-card:is(.hide-memory-hints, .is-concealed) .mc-word-root { color: inherit; }
 .mc-card.is-concealed .mc-root-annotations { visibility: hidden; }
 
 .mc-divider {

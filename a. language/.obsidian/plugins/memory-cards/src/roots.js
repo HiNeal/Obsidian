@@ -91,20 +91,26 @@ function resolveRootHints(memory, word, index) {
       if (!roots.some(entry => entry.word === root.word && entry.meaning === root.meaning)) roots.push(root);
     }
     const spans = alignParts(word, parts);
-    if (spans && !rootRanges.length) {
-      spans.forEach((span, i) => {
-        const root = matched[i];
-        if (!root) return;
-        let end = span.end;
-        const forms = rootForms(root.word);
-        // hem + o 等连接成分, 仅当拼成 Base 已有的 hemo 形式时并入同色范围。
-        for (let j = i + 1; j < parts.length && /连接(?:元音|字母|成分)/.test(parts[j].meaning); j++) {
-          const combined = word.slice(span.start, spans[j].end).toLowerCase();
-          if (!forms.some(form => form.startsWith(combined))) break;
-          if (forms.includes(combined)) end = spans[j].end;
+    if (spans && !rootRanges.length && parts.length > 1) {
+      // 每个成分 (词根、前缀、后缀、连接成分) 都画线, 各自一段范围; 词根的 rootIndex 指向 roots, 其余为 -1
+      for (let i = 0; i < spans.length; i++) {
+        const span = spans[i], root = matched[i];
+        let end = span.end, next = i + 1;
+        if (root) {
+          const forms = rootForms(root.word);
+          // hem + o 等连接成分, 仅当拼成 Base 已有的 hemo 形式时并入同色范围。
+          for (let j = i + 1; j < parts.length && /连接(?:元音|字母|成分)/.test(parts[j].meaning); j++) {
+            const combined = word.slice(span.start, spans[j].end).toLowerCase();
+            if (!forms.some(form => form.startsWith(combined))) break;
+            if (forms.includes(combined)) { end = spans[j].end; next = j + 1; }
+          }
         }
-        rootRanges.push({ start: span.start, end, rootIndex: roots.findIndex(entry => entry.word === root.word && entry.meaning === root.meaning) });
-      });
+        const rootIndex = root ? roots.findIndex(entry => entry.word === root.word && entry.meaning === root.meaning) : -1;
+        const part = parts[i];
+        const kind = /连接/.test(part.meaning || "") ? "link" : part.word.startsWith("-") ? "suffix" : part.word.endsWith("-") ? "prefix" : "root";
+        rootRanges.push({ start: span.start, end, rootIndex, kind });
+        i = next - 1;
+      }
     }
   }
   return { roots, rootRanges };

@@ -17,6 +17,23 @@ function layoutBox(el, ancestor) {
   return { left, top, width: el.offsetWidth, height: el.offsetHeight, bottom: top + el.offsetHeight };
 }
 
+// 统一用墨色 (跟随主题, 深色模式下自动变浅), 只靠浓淡区分; 动态按优先级依次取档:
+// 词根1 > 词根2 > ... (每个词根各占一档) > 主前缀 = 主后缀 (同层级) > 第二前缀 = 第二后缀 > ... > 连接成分
+// 前缀、后缀各自按出现顺序编号, 同一编号的前缀与后缀同层级; 档位依次为 100% 70% 40% 20% 10%, 超出 5 档的都取 10%
+const SHADE_LADDER = [100, 70, 40, 20, 10];
+function partShades(ranges) {
+  const count = kind => ranges.filter(range => range.kind === kind).length;
+  const rootCount = ranges.filter(range => !["prefix", "suffix", "link"].includes(range.kind)).length;
+  const affixTiers = Math.max(count("prefix"), count("suffix"));
+  const level = k => SHADE_LADDER[Math.min(k, SHADE_LADDER.length - 1)];
+  const seen = { root: 0, prefix: 0, suffix: 0 };
+  return ranges.map(range => {
+    if (range.kind === "link") return level(rootCount + affixTiers);
+    if (range.kind === "prefix" || range.kind === "suffix") return level(rootCount + seen[range.kind]++);
+    return level(seen.root++);
+  });
+}
+
 class CardFace {
   constructor(stage) {
     // 卡片背后的一张「下一张」纸, 给牌堆一点厚度
@@ -274,22 +291,19 @@ class CardFace {
     this.annotationEl.removeClass("is-ready");
     this.rootAnnotations = [];
     const word = this.wordEl.createSpan("mc-word-text");
-    let offset = 0, rootCount = 0;
-    for (const range of card.rootRanges || []) {
-      if (range.start < offset || range.end > card.word.length || range.end <= range.start) continue;
+    let offset = 0;
+    let end = 0;
+    const ranges = (card.rootRanges || []).filter(range => {
+      const ok = range.start >= end && range.end <= card.word.length && range.end > range.start;
+      if (ok) end = range.end;
+      return ok;
+    });
+    const shades = partShades(ranges);
+    for (const [index, range] of ranges.entries()) {
       word.appendText(card.word.slice(offset, range.start));
-      const rootIndex = Number.isInteger(range.rootIndex) && range.rootIndex >= 0 ? range.rootIndex : 0;
-      // 只给词根划线 (前缀/后缀不划); 多个词根依次下划线、上划线交替以示区分; 均不显示释义
-      const entry = card.roots?.[rootIndex];
-      if (entry && entry.kind !== "root") {
-        word.appendText(card.word.slice(range.start, range.end));
-      } else {
-        const mark = word.createSpan({ cls: "mc-word-root", text: card.word.slice(range.start, range.end) });
-        mark.toggleClass("is-overline", rootCount % 2 === 1);
-        const hue = ((270 - rootCount * 110) % 360 + 360) % 360;
-        mark.style.setProperty("--mc-root-color", `hsl(${hue} 28% 64%)`);
-        rootCount++;
-      }
+      // 按类型用不同浓淡的墨色; 均不显示释义
+      const mark = word.createSpan({ cls: "mc-word-root", text: card.word.slice(range.start, range.end) });
+      mark.style.setProperty("--mc-root-color", `color-mix(in srgb, var(--mc-ink) ${shades[index].toFixed(1)}%, transparent)`);
       offset = range.end;
     }
     word.appendText(card.word.slice(offset));

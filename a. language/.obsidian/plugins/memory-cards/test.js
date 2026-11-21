@@ -30,13 +30,13 @@ test("删除卡片: 整行移除, 其余内容逐字保留", () => {
   assert.strictEqual(removeCardRow(WORD_TABLE, cards[0], cards), expected);
 });
 
-test("词根判定: 不带连字符且不是连接成分的成分都画, 不比对 Base", () => {
+test("划线范围: 每个成分 (含前缀、后缀、连接成分) 都画, 不比对 Base", () => {
   const range = (memory, word) => resolveRootHints(memory, word).rootRanges.map(r => [r.start, r.end]);
-  assert.deepStrictEqual(range("speci(种类), -al(…的), -ise(…化, 使成)", "specialise"), [[0, 5]]);
-  assert.deepStrictEqual(range("vent(风), -il(连接成分), -at(做, 使), -ion(行为, 结果)", "ventilation"), [[0, 4]]);
-  assert.deepStrictEqual(range("ap-(到), plic, ply(折, 折叠), -ation(行为)", "application"), [[2, 6]]);
+  assert.deepStrictEqual(range("speci(种类), -al(…的), -ise(…化, 使成)", "specialise"), [[0, 5], [5, 7], [7, 10]]);
+  assert.deepStrictEqual(range("vent(风), -il(连接成分), -at(做, 使), -ion(行为, 结果)", "ventilation"), [[0, 4], [4, 6], [6, 8], [8, 11]]);
+  assert.deepStrictEqual(range("ap-(到), plic, ply(折, 折叠), -ation(行为)", "application"), [[0, 2], [2, 6], [6, 11]]);
   assert.deepStrictEqual(range("rain(雨), coat(外衣)", "raincoat"), [[0, 4], [4, 8]]);
-  assert.deepStrictEqual(range("calcul(词: 计算), -ate(做)", "calculate"), []);
+  assert.deepStrictEqual(range("calcul(词: 计算), -ate(做)", "calculate"), [[0, 6], [6, 9]]);
   assert.deepStrictEqual(range("core(基础词)", "core"), []);
   assert.deepStrictEqual(resolveRootHints("只描述词义", "calculus").roots, []);
 });
