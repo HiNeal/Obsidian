@@ -8,33 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2afd8c1b0c7b5beb",
+            "id": "7b89896fb8013c9b",
             "type": "leaf",
             "state": {
               "type": "memory-cards-view",
               "state": {
-                "file": "02. word/a. 雅思词汇真经/01-自然地理.md",
+                "file": "02. word/a. 雅思词汇真经/03-动物保护.md",
                 "tableKey": null
               },
               "icon": "mc-cards",
-              "title": "01-自然地理"
-            }
-          },
-          {
-            "id": "92bd88bb9b7cbd6f",
-            "type": "leaf",
-            "state": {
-              "type": "memory-cards-view",
-              "state": {
-                "file": "02. word/a. 雅思词汇真经/02-植物研究.md",
-                "tableKey": null
-              },
-              "icon": "mc-cards",
-              "title": "02-植物研究"
+              "title": "03-动物保护"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -202,8 +188,29 @@
       "obsidian-local-images-plus:Local Images Plus  0.19.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "92bd88bb9b7cbd6f",
+  "active": "7b89896fb8013c9b",
   "lastOpenFiles": [
+    "02. word/a. 雅思词汇真经/03-动物保护.md",
+    "20. resource/02. word/a. 雅思词汇真经/02-植物研究/audio/fluctuant.mp3",
+    "20. resource/17. dictionary/05. 牛津大词典/o2022k.png",
+    "20. resource/17. dictionary/05. 牛津大词典/o2022k.mdx",
+    "20. resource/17. dictionary/05. 牛津大词典/o2022k.mdd",
+    "20. resource/17. dictionary/05. 牛津大词典/o2022k.js",
+    "20. resource/17. dictionary/05. 牛津大词典/o2022k.css",
+    "20. resource/17. dictionary/05. 牛津大词典/o2022k.2.mdd",
+    "20. resource/17. dictionary/05. 牛津大词典/o2022k.1.mdd",
+    "20. resource/17. dictionary/05. 牛津大词典/INTRODUCTION.jpeg",
+    "20. resource/17. dictionary/05. 牛津大词典",
+    "20. resource/17. dictionary.zip",
+    "20. resource/17. dictionary/05. 牛津大词典 /o2022k.png",
+    "20. resource/17. dictionary/05. 牛津大词典 /o2022k.mdx",
+    "20. resource/17. dictionary/05. 牛津大词典 /o2022k(1).png",
+    "20. resource/17. dictionary/05. 牛津大词典 /INTRODUCTION(1).jpeg",
+    "20. resource/17. dictionary/05. 牛津大词典 /INTRODUCTION.jpeg",
+    "20. resource/17. dictionary/OED now/o2022k.png",
+    "20. resource/17. dictionary/OED now/o2022k(1).png",
+    "20. resource/17. dictionary/OED now/INTRODUCTION.jpeg",
+    "20. resource/17. dictionary/OED now/INTRODUCTION(1).jpeg",
     "02. word/a. 雅思词汇真经/02-植物研究.md",
     "02. word/a. 雅思词汇真经/01-自然地理.md",
     "01. base/a.phonemes.md",
@@ -221,27 +228,7 @@
     "02. word/a. 雅思词汇真经/05-学校教育.md",
     "02. word/a. 雅思词汇真经/07-文化历史.md",
     "02. word/a. 雅思词汇真经/04-太空探索.md",
-    "20. resource/17. dictionary/04. 词根词缀字典（合并增强版）/词根词缀字典（合并增强版）.png",
-    "20. resource/17. dictionary/04. 词根词缀字典（合并增强版）/词根词缀字典（合并增强版）.mdx",
-    "20. resource/17. dictionary/04. 词根词缀字典（合并增强版）/jsmind.js",
-    "20. resource/17. dictionary/04. 词根词缀字典（合并增强版）/jsmind.css",
-    "20. resource/17. dictionary/04. 词根词缀字典（合并增强版）",
-    "20. resource/17. dictionary/03. 韦氏高阶英汉双解词典2019完美版/maldpe.mdx",
-    "20. resource/17. dictionary/03. 韦氏高阶英汉双解词典2019完美版/maldpe.mdd",
-    "20. resource/17. dictionary/03. 韦氏高阶英汉双解词典2019完美版/maldpe.js",
-    "20. resource/17. dictionary/03. 韦氏高阶英汉双解词典2019完美版/maldpe.jpg",
-    "20. resource/17. dictionary/03. 韦氏高阶英汉双解词典2019完美版/maldpe.css",
-    "20. resource/17. dictionary/03. 韦氏高阶英汉双解词典2019完美版/maldpe-jquery-3.6.0.min.js",
-    "20. resource/17. dictionary/03. 韦氏高阶英汉双解词典2019完美版/maldpe-crypto-js.min.js",
-    "20. resource/17. dictionary/02. 剑桥在线英汉双解词典完美版/cdepe.png",
-    "20. resource/17. dictionary/01. 牛津高阶英汉双解词典第10版完美版/oaldpe.png",
-    "CleanShot 2026-11-17 at 7.48.39 AM@2x.png",
-    "20. resource/17. dictionary/词根词缀字典（合并增强版）/词根词缀字典（合并增强版）.png",
-    "20. resource/17. dictionary/Oxford Advanced Learner's Dictionary/oald10.png",
     "05. listening/01. 听力词汇/01. 住宿.md",
-    "20. resource/17. dictionary/韦氏高阶英汉双解词典2019完美版/maldpe.jpg",
-    "20. resource/17. dictionary/牛津高阶英汉双解词典第10版完美版/oaldpe.png",
-    "20. resource/17. dictionary/剑桥在线英汉双解词典完美版/cdepe.png",
     "01. base/d.phonics.md",
     "01. base/b.connected.md",
     "05. listening/01. 听力词汇/11. 答案词.md",
@@ -249,7 +236,6 @@
     "06. reading/01. 方法总论/阅读方法论.md",
     "05. listening/10. 今日听力/Office Move.md",
     "05. listening/10. 今日听力/Summer Camp Work.md",
-    "05. listening/01. 方法总论/听力方法论.md",
     "04. grammer/z. 长难句骨架.canvas",
     "Untitled.canvas"
   ]
