@@ -1,13 +1,13 @@
 {
   "speech": true,
-  "lastDeck": "02. word/a. 雅思词汇真经/06-科技发明.md",
+  "lastDeck": "02. word/a. 雅思词汇真经/02-植物研究.md",
   "recent": [
-    "02. word/a. 雅思词汇真经/06-科技发明.md",
+    "02. word/a. 雅思词汇真经/02-植物研究.md",
     "02. word/a. 雅思词汇真经/01-自然地理.md",
+    "02. word/a. 雅思词汇真经/06-科技发明.md",
     "02. word/a. 雅思词汇真经/21-身心健康.md",
     "02. word/h. 词根词缀词典/oyword-root-r.md",
-    "02. word/b. 剑雅阅读真题/14-交通旅行.md",
-    "02. word/h. 词根词缀词典/oyword-root-o.md"
+    "02. word/b. 剑雅阅读真题/14-交通旅行.md"
   ],
   "decks": {
     "02. word/未整理单词.md": {
@@ -31,25 +31,25 @@
       }
     },
     "02. word/a. 雅思词汇真经/01-自然地理.md": {
-      "progress": 303,
+      "progress": 0,
       "focus": false,
       "contentMode": "word",
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "artificially",
+        "word": "atmosphere",
         "occurrence": 0
       },
       "dictation": false,
       "order": "loop"
     },
     "02. word/a. 雅思词汇真经/02-植物研究.md": {
-      "progress": 19,
+      "progress": 63,
       "contentMode": "word",
       "dictation": false,
       "interval": 2.2,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "reef",
+        "word": "timber",
         "occurrence": 0
       }
     },

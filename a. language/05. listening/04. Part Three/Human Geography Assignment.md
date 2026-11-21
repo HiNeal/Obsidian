@@ -133,7 +133,7 @@ Right. So it looks as …
 
 |  | A | B | C | D | E | F | G |
 | :--- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Economies  | 🔴 | 🟢 | ○ | ○ | ○ | ○ | ○ |
+| Economies  | 🔴 | 🟢 | **eco(家, 环境)**, **nom(管理, 法则)**, -ies(复数)<br><br>○ | ○ | ○ | ○ | ○ |
 
 - A. The information given about this was too vague.
 - B. This may not be relevant to their course.

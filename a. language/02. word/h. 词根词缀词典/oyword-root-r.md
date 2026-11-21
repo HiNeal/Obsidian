@@ -142,15 +142,15 @@
 
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
-| reticulate |  | v. 成网状<br>adj. 网状的 | **reticul(网)**, -ate(做, 使)<br>在前词基础上加“-ate”构成形容词或动词, 表示“网状的” |  v. divide or mark (something) in such a way as to resemble a net or network<br>adj. arranged or marked like a net or network; reticulated  |  a leaf with **reticulate** venation  |  | 0 |
+| reticulate |  | v. 成网状<br>adj. 网状的 | **ret(网)**, -icul(小), -ate(做, 使, …的)<br>在前词基础上加“-ate”构成形容词或动词, 表示“网状的” |  v. divide or mark (something) in such a way as to resemble a net or network<br>adj. arranged or marked like a net or network; reticulated  |  a leaf with **reticulate** venation  |  | 0 |
 | reticle |  | n. 光网 | **reti(网)**, -cle(小)<br>围绕“网”这一核心含义构成, 表示“光网” |  n. a series of fine lines or fibres in the eyepiece of an optical device, such as a telescope or microscope, or on the screen of an oscilloscope, used as a measuring scale or an aid in locating objects  |  the **reticle** of a telescope  |  | 0 |
-| reticulation | /rɪˌtɪkjəˈleɪʃ(ə)n/ | n. 网状组织(如交通运输网); 网状(物) | **reticul(网)**, -ation(行为, 结果)<br>在前词基础上加“-ation”构成名词, 表示“网状” |  n. a pattern or arrangement of interlacing lines resembling a net<br>&emsp;• the formation of a network of wrinkles or cracks in a photographic emulsion<br>a network of pipes used in irrigation and water supply  |  the **reticulation** of water supplies  |  | 0 |
+| reticulation | /rɪˌtɪkjəˈleɪʃ(ə)n/ | n. 网状组织(如交通运输网); 网状(物) | **ret(网)**, -icul(小), -ation(行为, 结果)<br>在前词基础上加“-ation”构成名词, 表示“网状” |  n. a pattern or arrangement of interlacing lines resembling a net<br>&emsp;• the formation of a network of wrinkles or cracks in a photographic emulsion<br>a network of pipes used in irrigation and water supply  |  the **reticulation** of water supplies  |  | 0 |
 | reticule | /ˈretɪkjuːl/ | n. 光网; 可收口的女用网格拎包 | **reti(网)**, -cule(小)<br>围绕“网”这一核心含义构成, 表示“光网” |  n. reticle  |  a small silk **reticule**  |  | 0 |
 | reticulocyte | /rɪˈtɪkjələsaɪt/ | n. 网织红血球; 网状细胞 | **reticul(网)**, o(连接字母), **cyt(o)(细胞)**, e(连接字母)<br>由“网”与“细胞”共同限定词义, 表示“网织红血球, 网状细胞” |  n. an immature red blood cell without a nucleus, having a granular or reticulated appearance when suitably stained  |  a high blood **reticulocyte** count  |  | 0 |
-| reticulum | /rɪˈtɪkjələm/ /rɪˈtɪkjələ/ | n. (细胞原生质的)网状结构; (反刍动物的)蜂窝胃 | **reticul(网)**, -um(名词词尾)<br>网状结构, 也指反刍动物的蜂窝胃 |  n. a fine network or netlike structure<br>the second stomach of a ruminant, having a honeycomb-like structure, receiving food from the rumen and passing it to the omasum  |  the rough endoplasmic **reticulum**  |  | 0 |
+| reticulum | /rɪˈtɪkjələm/ /rɪˈtɪkjələ/ | n. (细胞原生质的)网状结构; (反刍动物的)蜂窝胃 | **ret(网)**, -icul(小), -um(名词后缀)<br>网状结构, 也指反刍动物的蜂窝胃 |  n. a fine network or netlike structure<br>the second stomach of a ruminant, having a honeycomb-like structure, receiving food from the rumen and passing it to the omasum  |  the rough endoplasmic **reticulum**  |  | 0 |
 | retina | /ˈretɪnə/ | n. 视网膜 | **reti(网)**, n(连接字母), -a(名词后缀)<br>核心意象(词根 reti“网”): 眼底像“网”一样的膜, 即视网膜 | n. a layer at the back of the eyeball that contains cells sensitive to light, which trigger nerve impulses that pass via the optic nerve to the brain, where a visual image is formed | the **retina** of the eye |  | 0 |
 | retinitis |  | n. 视网膜炎 | **reti(网)**, n(连接字母), -itis(炎症)<br>在前词基础上加“-itis”构成名词, 表示“视网膜炎” | n. inflammation of the retina of the eye | a diagnosis of **retinitis** pigmentosa |  | 0 |
-| reticular | /rɪˈtɪkjələ(r)/ | adj. 网状的; 网状结缔的; 网状组织的; 错综复杂的 | **reticul(网)**, -ar(…的)<br>围绕“网”这一核心含义构成, 表示“网状的” |  adj. characterized by a fine network or netlike structure  |  the **reticular** formation of brainstem  |  | 0 |
+| reticular | /rɪˈtɪkjələ(r)/ | adj. 网状的; 网状结缔的; 网状组织的; 错综复杂的 | **ret(网)**, -icul(小), -ar(…的)<br>围绕“网”这一核心含义构成, 表示“网状的” |  adj. characterized by a fine network or netlike structure  |  the **reticular** formation of brainstem  |  | 0 |
 
 # rhin(o)
 

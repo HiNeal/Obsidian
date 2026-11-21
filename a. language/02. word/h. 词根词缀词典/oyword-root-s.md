@@ -76,7 +76,7 @@
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | consanguinity | /ˌkɒnsæŋˈɡwɪnəti/ | n. 同血缘; 同宗 | con-(与, 共同), **sangui(n)(血)**, -ity(情况, 性质)<br>共有“血”缘的关系, 即血亲 |  n. the fact of being descended from the same ancestor  |  the degree of **consanguinity**  |  | 0 |
 | consanguineous | /ˌkɒnsæŋˈɡwɪniəs/ | adj. 同血缘的; 同宗的; 血亲的 | con-(与, 共同), **sangui(n)(血)**, -eous(…的)<br>使“血”共同结合或发挥作用, 因此表示“同血缘的, 同宗的, 血亲的” |  adj. relating to or denoting people descended from the same ancestor  |  a marriage between **consanguineous** partners  |  | 0 |
-| sanguinary | /ˈsæŋɡwɪnəri/ | adj. 血淋淋的; 血腥的; 嗜血成性的; 残忍的 | **sangui(n)(血)**, -ary(…的)<br>围绕“血”这一核心含义构成, 表示“血淋淋的, 血腥的” |  adj. involving or causing much bloodshed  |  a long and **sanguinary** conflict  |  | 0 |
+| sanguinary | /ˈsæŋɡwɪnəri/ | adj. 血淋淋的; 血腥的; 嗜血成性的; 残忍的 | **sangu(血)**, -in(连接成分), -ary(…的)<br>围绕“血”这一核心含义构成, 表示“血淋淋的, 血腥的” |  adj. involving or causing much bloodshed  |  a long and **sanguinary** conflict  |  | 0 |
 
 # sarc(o)
 
