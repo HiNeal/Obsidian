@@ -1,13 +1,13 @@
 {
   "speech": true,
-  "lastDeck": "02. word/a. 雅思词汇真经/03-动物保护.md",
+  "lastDeck": "02. word/a. 雅思词汇真经/10-物品材料.md",
   "recent": [
+    "02. word/a. 雅思词汇真经/10-物品材料.md",
+    "02. word/a. 雅思词汇真经/01-自然地理.md",
+    "02. word/a. 雅思词汇真经/11-时尚潮流.md",
     "02. word/a. 雅思词汇真经/03-动物保护.md",
     "02. word/a. 雅思词汇真经/02-植物研究.md",
-    "02. word/a. 雅思词汇真经/01-自然地理.md",
-    "02. word/a. 雅思词汇真经/06-科技发明.md",
-    "02. word/a. 雅思词汇真经/21-身心健康.md",
-    "02. word/h. 词根词缀词典/oyword-root-r.md"
+    "02. word/a. 雅思词汇真经/06-科技发明.md"
   ],
   "decks": {
     "02. word/未整理单词.md": {
@@ -31,16 +31,16 @@
       }
     },
     "02. word/a. 雅思词汇真经/01-自然地理.md": {
-      "progress": 0,
+      "progress": 17,
       "focus": false,
       "contentMode": "word",
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "atmosphere",
+        "word": "contaminate",
         "occurrence": 0
       },
       "dictation": false,
-      "order": "loop"
+      "order": "smart"
     },
     "02. word/a. 雅思词汇真经/02-植物研究.md": {
       "progress": 1,
@@ -141,13 +141,18 @@
       "progress": 14
     },
     "02. word/a. 雅思词汇真经/10-物品材料.md": {
-      "progress": 4
-    },
-    "02. word/a. 雅思词汇真经/11-时尚潮流.md": {
-      "progress": 2,
+      "progress": 1,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "extravagant",
+        "word": "staple",
+        "occurrence": 0
+      }
+    },
+    "02. word/a. 雅思词汇真经/11-时尚潮流.md": {
+      "progress": 5,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "embellish",
         "occurrence": 0
       }
     },
@@ -533,5 +538,5 @@
     "speaking": false
   },
   "showMemory": true,
-  "memoryHints": true
+  "memoryHints": false
 }

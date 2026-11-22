@@ -189,11 +189,20 @@
 .mc-word.is-multi { white-space: normal; overflow-wrap: anywhere; line-height: 1.3; }
 
 .mc-card.hide-memory-hints .mc-root-annotations { display: none; }
-.mc-word-root {
-  color: var(--mc-root-color, inherit);
+.mc-word-root { position: relative; }
+/* 只给词根画点状下划线, 两端按字形收进 (--mc-root-inset-*), 颜色同播放按钮的主色; 多个词根依次下划线、上划线交替。 */
+.mc-word-root::after {
+  content: "";
+  position: absolute;
+  left: var(--mc-root-inset-l, 0);
+  right: var(--mc-root-inset-r, 0);
+  bottom: -0.18em;
+  height: 0;
+  pointer-events: none;
+  border-bottom: 5px dotted var(--mc-accent);
 }
-/* 关闭提示或尚未揭晓时只保留单词本身的颜色。 */
-.mc-card:is(.hide-memory-hints, .is-concealed) .mc-word-root { color: inherit; }
+.mc-word-root.is-overline::after { top: 0.06em; bottom: auto; }
+.mc-card.is-concealed .mc-word-root::after { display: none; }
 .mc-card.is-concealed .mc-root-annotations { visibility: hidden; }
 
 .mc-divider {

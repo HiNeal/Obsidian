@@ -4,20 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "c8c32b36ce3b9084",
+        "id": "72536b6c9a9f7364",
         "type": "tabs",
         "children": [
           {
-            "id": "7b89896fb8013c9b",
+            "id": "43728484abfba644",
             "type": "leaf",
             "state": {
               "type": "memory-cards-view",
               "state": {
-                "file": "02. word/a. 雅思词汇真经/03-动物保护.md",
+                "file": "02. word/a. 雅思词汇真经/10-物品材料.md",
                 "tableKey": null
               },
               "icon": "mc-cards",
-              "title": "03-动物保护"
+              "title": "10-物品材料"
+            }
+          },
+          {
+            "id": "1f26cea005fc40a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01. base/y.word-root.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "y.word-root"
             }
           }
         ]
@@ -82,7 +97,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.4107971191406
+    "width": 296.4107971191406,
+    "collapsed": true
   },
   "right": {
     "id": "8994399f8735ddbf",
@@ -98,6 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "06. reading/20. 未整理阅读/Elephant Communication.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -185,11 +202,19 @@
       "bases:Create new base": false,
       "templates:Insert template": false,
       "memory-cards:单词卡": false,
-      "obsidian-local-images-plus:Local Images Plus  0.19.3\r\nLocalize attachments (plugin folder)": false
+      "obsidian-local-images-plus:Local Images Plus  0.19.3\r\nLocalize attachments (plugin folder)": false,
+      "obsidian-local-images-plus:Local Images Plus  0.19.8\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "7b89896fb8013c9b",
+  "active": "43728484abfba644",
   "lastOpenFiles": [
+    "02. word/a. 雅思词汇真经/10-物品材料.md",
+    "06. reading/06. 研究报道/Footprints in the Mud.md",
+    "02. word/a. 雅思词汇真经/01-自然地理.md",
+    "06. reading/04. 分项说明/Fishbourne Roman Palace.md",
+    "02. word/a. 雅思词汇真经/11-时尚潮流.md",
+    "06. reading/20. 未整理阅读/Elephant Communication.md",
+    "06. reading/20. 未整理阅读/Flower Power.md",
     "20. resource/02. word/h. 词根词缀词典/oyword-root-v/audio/vasoconstrictor.mp3",
     "20. resource/02. word/c. 高级英语词汇/62. Manner - behaviour and body language/audio/straitlaced.mp3",
     "20. resource/02. word/h. 词根词缀词典/oyword-root-s/audio/splenomegaly.mp3",
@@ -200,7 +225,6 @@
     "20. resource/06. reading/06. 研究报道/How stress affects our judgement/audio/hyper-vigilant.mp3",
     "20. resource/02. word/h. 词根词缀词典/oyword-root-h/audio/hydrobiology.mp3",
     "20. resource/02. word/h. 词根词缀词典/oyword-root-c/audio/hemocyanin.mp3",
-    "20. resource/06. reading/06. 研究报道/Carnivorous plants/audio/flytrap.mp3",
     "02. word/a. 雅思词汇真经/03-动物保护.md",
     "20. resource/17. dictionary/05. 牛津大词典/o2022k.png",
     "20. resource/17. dictionary/05. 牛津大词典/INTRODUCTION.jpeg",
@@ -213,7 +237,6 @@
     "20. resource/17. dictionary/OED now/INTRODUCTION.jpeg",
     "20. resource/17. dictionary/OED now/INTRODUCTION(1).jpeg",
     "02. word/a. 雅思词汇真经/02-植物研究.md",
-    "02. word/a. 雅思词汇真经/01-自然地理.md",
     "01. base/a.phonemes.md",
     "02. word/h. 词根词缀词典/oyword-root-p.md",
     "02. word/h. 词根词缀词典/oyword-root-o.md",
@@ -231,11 +254,6 @@
     "02. word/a. 雅思词汇真经/04-太空探索.md",
     "05. listening/01. 听力词汇/01. 住宿.md",
     "01. base/d.phonics.md",
-    "01. base/b.connected.md",
-    "05. listening/01. 听力词汇/11. 答案词.md",
-    "01. base/x.word-prefix.md",
-    "06. reading/01. 方法总论/阅读方法论.md",
-    "05. listening/10. 今日听力/Office Move.md",
     "04. grammer/z. 长难句骨架.canvas",
     "Untitled.canvas"
   ]
