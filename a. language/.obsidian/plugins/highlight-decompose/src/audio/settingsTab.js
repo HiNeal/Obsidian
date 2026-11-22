@@ -27,12 +27,6 @@ class TableSoundSettingTab extends PluginSettingTab {
         await save();
       }));
 
-    new Setting(containerEl)
-      .setName("隐藏原文高亮")
-      .addToggle((toggle) => toggle.setValue(Boolean(settings.hideListeningArticleHighlights)).onChange(async (value) => {
-        settings.hideListeningArticleHighlights = value;
-        await save();
-      }));
 
     // ---------- 阅读 ----------
     new Setting(containerEl).setName("阅读").setHeading();
@@ -47,27 +41,14 @@ class TableSoundSettingTab extends PluginSettingTab {
         await save();
       }));
 
-    new Setting(containerEl)
-      .setName("隐藏原文高亮")
-      .addToggle((toggle) => toggle.setValue(Boolean(settings.hideReadingArticleHighlights)).onChange(async (value) => {
-        settings.hideReadingArticleHighlights = value;
-        await save();
-      }));
 
     for (const [label, kind] of [["写作", "Writing"], ["口语", "Speaking"]]) {
       new Setting(containerEl).setName(label).setHeading();
       const audioKey = `${kind.toLowerCase()}HoverAudio`;
-      const highlightKey = `hide${kind}ArticleHighlights`;
       new Setting(containerEl)
         .setName("悬停朗读")
         .addToggle(toggle => toggle.setValue(settings[audioKey]).onChange(async value => {
           settings[audioKey] = value;
-          await save();
-        }));
-      new Setting(containerEl)
-        .setName("隐藏原文高亮")
-        .addToggle(toggle => toggle.setValue(settings[highlightKey]).onChange(async value => {
-          settings[highlightKey] = value;
           await save();
         }));
     }

@@ -241,7 +241,6 @@ class HighlightDecomposePlugin extends Plugin {
     const leaveCard = () => rowCardActive() ? this.hide() : this.scheduleHide();
     const updateHover = (e) => {
       const target = e.target instanceof Element ? e.target : null;
-      this.hoverPassageHighlight(target);
       this.hoverReadingAudio(target || document.body);
       // 鼠标移进卡片: 保持显示, 可以在卡片里停留、选字
       if (target && target.closest(".hd-tooltip")) return rowCardActive() ? this.hide() : this.cancelHide();
@@ -256,7 +255,6 @@ class HighlightDecomposePlugin extends Plugin {
     this.registerDomEvent(document, "mousemove", updateHover);
     this.registerDomEvent(document, "mouseout", (e) => {
       const target = e.relatedTarget instanceof Element ? e.relatedTarget : null;
-      this.hoverPassageHighlight(target);
       if (target && target.closest(".hd-tooltip")) return rowCardActive() ? this.hide() : this.cancelHide();
       if (!target || target.closest(".audio-playback-btn, .hd-promote")) return this.hide();
       const next = hoverElement(target);
@@ -266,7 +264,6 @@ class HighlightDecomposePlugin extends Plugin {
       leaveCard();
     });
     const leavePassage = () => {
-      this.clearPassageHighlight();
       this.hide();
     };
     this.registerDomEvent(window, "blur", leavePassage);
@@ -281,7 +278,6 @@ class HighlightDecomposePlugin extends Plugin {
     this.unloading = true;
     this.stopListeningHover();
     this.clearReadingHighlight();
-    this.clearPassageHighlight();
     document.querySelectorAll("[data-hd-passage]").forEach(el => el.removeAttribute("data-hd-passage"));
     document.querySelectorAll(".hd-answer-blank").forEach(el => el.replaceWith(document.createTextNode("________")));
     clearTimeout(this.audioStartupTimer);

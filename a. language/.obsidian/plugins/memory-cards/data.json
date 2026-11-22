@@ -1,13 +1,13 @@
 {
   "speech": true,
-  "lastDeck": "02. word/a. 雅思词汇真经/10-物品材料.md",
+  "lastDeck": "02. word/a. 雅思词汇真经/22-时间日期.md",
   "recent": [
+    "02. word/a. 雅思词汇真经/22-时间日期.md",
+    "06. reading/06. 研究报道/Footprints in the Mud.md",
     "02. word/a. 雅思词汇真经/10-物品材料.md",
     "02. word/a. 雅思词汇真经/01-自然地理.md",
     "02. word/a. 雅思词汇真经/11-时尚潮流.md",
-    "02. word/a. 雅思词汇真经/03-动物保护.md",
-    "02. word/a. 雅思词汇真经/02-植物研究.md",
-    "02. word/a. 雅思词汇真经/06-科技发明.md"
+    "02. word/a. 雅思词汇真经/03-动物保护.md"
   ],
   "decks": {
     "02. word/未整理单词.md": {
@@ -78,10 +78,10 @@
       "interval": 3
     },
     "02. word/a. 雅思词汇真经/22-时间日期.md": {
-      "progress": 2,
+      "progress": 0,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "precedent",
+        "word": "anniversary",
         "occurrence": 0
       },
       "focus": false
@@ -141,13 +141,14 @@
       "progress": 14
     },
     "02. word/a. 雅思词汇真经/10-物品材料.md": {
-      "progress": 36,
+      "progress": 15,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "memorandum",
+        "word": "cementer",
         "occurrence": 0
       },
-      "focus": false
+      "focus": false,
+      "review": false
     },
     "02. word/a. 雅思词汇真经/11-时尚潮流.md": {
       "progress": 5,
@@ -526,6 +527,14 @@
       "bookmark": {
         "tableKey": "[\"ple, pli, ply, plen(i)\",\"单词\",1]",
         "word": "plenipotentiary",
+        "occurrence": 0
+      }
+    },
+    "06. reading/06. 研究报道/Footprints in the Mud.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "dinosaur",
         "occurrence": 0
       }
     }

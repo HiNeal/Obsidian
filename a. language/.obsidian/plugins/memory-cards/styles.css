@@ -184,7 +184,7 @@
   white-space: nowrap;
   /* 检测超宽, 同时为上下标记线及 g / p / y 等字形留出余量。 */
   overflow: hidden;
-  padding: 0.24em 0 0.32em;
+  padding: 0.4em 0 0.32em;
 }
 .mc-word.is-multi { white-space: normal; overflow-wrap: anywhere; line-height: 1.3; }
 
@@ -201,7 +201,7 @@
   pointer-events: none;
   border-bottom: 5px dotted var(--mc-accent);
 }
-.mc-word-root.is-overline::after { top: 0.06em; bottom: auto; }
+.mc-word-root.is-overline::after { top: -0.18em; bottom: auto; }
 .mc-card.is-concealed .mc-word-root::after { display: none; }
 .mc-card.is-concealed .mc-root-annotations { visibility: hidden; }
 

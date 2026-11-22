@@ -328,7 +328,7 @@ class CardFace {
     let size = Math.round(Math.min(multi ? 30 : 44, width * (multi ? 0.09 : 0.13)));
     const min = 16;
     const lineHeight = multi ? 1.3 : 1.15;
-    const glyphRoom = 0.56; // 与 CSS 里 .mc-word 上下 padding (0.24em + 0.32em) 一致
+    const glyphRoom = 0.72; // 与 CSS 里 .mc-word 上下 padding (0.4em + 0.32em) 一致
     el.style.fontSize = `${size}px`;
     while (size > min && (el.scrollWidth > el.clientWidth + 1 || (multi && el.scrollHeight > size * (lineHeight * 3 + glyphRoom) + 2))) {
       size -= 1;
@@ -387,7 +387,7 @@ class CardFace {
       });
     }
     // 增加字形区留白, 让整条释义落在卡片内, 且不挤进中文释义区。
-    this.wordEl.style.paddingTop = `calc(0.24em + ${aboveHeight ? aboveHeight + 8 : 0}px)`;
+    this.wordEl.style.paddingTop = `calc(0.4em + ${aboveHeight ? aboveHeight + 8 : 0}px)`;
     this.wordEl.style.paddingBottom = `calc(0.32em + ${belowHeight ? belowHeight + 8 : 0}px)`;
     box = layoutBox(this.annotationEl, parent);
     for (const { mark, label, above } of this.rootAnnotations) {

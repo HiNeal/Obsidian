@@ -303,7 +303,6 @@ class HighlightDecomposePlugin extends Plugin {
     const leaveCard = () => rowCardActive() ? this.hide() : this.scheduleHide();
     const updateHover = (e) => {
       const target = e.target instanceof Element ? e.target : null;
-      this.hoverPassageHighlight(target);
       this.hoverReadingAudio(target || document.body);
       // 鼠标移进卡片: 保持显示, 可以在卡片里停留、选字
       if (target && target.closest(".hd-tooltip")) return rowCardActive() ? this.hide() : this.cancelHide();
@@ -318,7 +317,6 @@ class HighlightDecomposePlugin extends Plugin {
     this.registerDomEvent(document, "mousemove", updateHover);
     this.registerDomEvent(document, "mouseout", (e) => {
       const target = e.relatedTarget instanceof Element ? e.relatedTarget : null;
-      this.hoverPassageHighlight(target);
       if (target && target.closest(".hd-tooltip")) return rowCardActive() ? this.hide() : this.cancelHide();
       if (!target || target.closest(".audio-playback-btn, .hd-promote")) return this.hide();
       const next = hoverElement(target);
@@ -328,7 +326,6 @@ class HighlightDecomposePlugin extends Plugin {
       leaveCard();
     });
     const leavePassage = () => {
-      this.clearPassageHighlight();
       this.hide();
     };
     this.registerDomEvent(window, "blur", leavePassage);
@@ -343,7 +340,6 @@ class HighlightDecomposePlugin extends Plugin {
     this.unloading = true;
     this.stopListeningHover();
     this.clearReadingHighlight();
-    this.clearPassageHighlight();
     document.querySelectorAll("[data-hd-passage]").forEach(el => el.removeAttribute("data-hd-passage"));
     document.querySelectorAll(".hd-answer-blank").forEach(el => el.replaceWith(document.createTextNode("________")));
     clearTimeout(this.audioStartupTimer);
@@ -671,7 +667,7 @@ function candidates(text) {
   } else if (/s['’]$/.test(t)) {
     for (const form of candidates(t.slice(0, -1))) add(form);
   }
-  const irregular = { bore: "bear", borne: "bear", clung: "cling", dwelt: "dwell", dug: "dig", laid: "lay", bred: "breed", fed: "feed", foresaw: "foresee", foreseen: "foresee", grew: "grow", grown: "grow", shook: "shake", shaken: "shake", sought: "seek", caught: "catch", taught: "teach", thought: "think", brought: "bring", found: "find", ground: "grind", froze: "freeze", frozen: "freeze", arose: "arise", arisen: "arise", withdrew: "withdraw", withdrawn: "withdraw", swelled: "swell", swollen: "swell", sank: "sink", sunk: "sink", swung: "swing", threw: "throw", thrown: "throw", lay: "lie", lain: "lie", wrote: "write", written: "write", took: "take", taken: "take", went: "go", gone: "go", made: "make", ran: "run", rose: "rise", risen: "rise" };
+  const irregular = { bore: "bear", borne: "bear", clung: "cling", dwelt: "dwell", dug: "dig", laid: "lay", bred: "breed", fed: "feed", foresaw: "foresee", foreseen: "foresee", grew: "grow", grown: "grow", shook: "shake", shaken: "shake", sought: "seek", caught: "catch", taught: "teach", thought: "think", brought: "bring", found: "find", ground: "grind", froze: "freeze", frozen: "freeze", arose: "arise", arisen: "arise", withdrew: "withdraw", withdrawn: "withdraw", swelled: "swell", swollen: "swell", sank: "sink", sunk: "sink", shrank: "shrink", shrunk: "shrink", shrunken: "shrink", swung: "swing", threw: "throw", thrown: "throw", lay: "lie", lain: "lie", wrote: "write", written: "write", took: "take", taken: "take", went: "go", gone: "go", made: "make", ran: "run", rose: "rise", risen: "rise" };
   add(irregular[t]);
   // Genuine inflections only; -ly and other derivations need their own entries.
   add(({ mice: "mouse", children: "child", men: "man", women: "woman", teeth: "tooth", feet: "foot",
@@ -3400,72 +3396,36 @@ class HighlightVisibilityMethods {
     this.registerEvent(workspace.on("layout-change", () => this.syncHighlightVisibility()));
     this.registerEvent(workspace.on("highlight-decompose:settings", () => this.refreshHighlightSettings()));
     workspace.onLayoutReady(() => this.syncHighlightVisibility());
+    this.setupHighlightToggleButton();
   }
 
-  renderAnswerBlanks(root, source = "", question = true) {
-    const labels = questionBlanks(`# ${question ? "题目" : "原文"}\n${source}`, true);
-    const existing = root.querySelectorAll(".hd-answer-blank").length;
-    let blankIndex = existing;
-    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-    const nodes = [];
-    while (walker.nextNode()) {
-      const node = walker.currentNode;
-      if (!node.parentElement.closest(".hd-answer-blank, pre, code") && /(?:\\_){8}|(?<!_)_{8}(?!_)/.test(node.nodeValue)) nodes.push(node);
-    }
-    for (const node of nodes) {
-      const fragment = document.createDocumentFragment();
-      let offset = 0;
-      for (const match of node.nodeValue.matchAll(/(?:\\_){8}|(?<!_)_{8}(?!_)/g)) {
-        fragment.append(node.nodeValue.slice(offset, match.index));
-        const span = document.createElement("span");
-        span.className = "hd-answer-blank";
-        span.textContent = match[0];
-        const number = labels[blankIndex++]?.number;
-        if (number) span.dataset.hdQuestionNumber = number;
-        fragment.append(span);
-        offset = match.index + match[0].length;
-      }
-      fragment.append(node.nodeValue.slice(offset));
-      node.replaceWith(fragment);
-    }
+  // 「# 原文」标题后的开关: 点击切换本篇所属模块的「隐藏原文高亮」。
+  toggleArticleHighlights(path) {
+    const key = articleHighlightSetting(path);
+    const ts = this.tableSound;
+    if (!key || !ts?.settings) return;
+    ts.settings[key] = !ts.settings[key];
+    void ts.saveSettings();
   }
 
-  clearPassageHighlight() {
-    for (const node of this.hoveredPassageNodes || []) node.classList.remove("hd-passage-hover");
-    this.hoveredPassageNodes = null;
-    this.hoveredPassageAnchor = null;
+  paintHighlightToggle(btn) {
+    const hidden = Boolean(this.tableSound?.settings?.[articleHighlightSetting(btn.dataset.hdPath)]);
+    btn.classList.toggle("is-off", hidden);
+    require("obsidian").setIcon(btn, hidden ? "eye-off" : "eye");
+    btn.setAttribute("aria-label", hidden ? "显示原文高亮" : "隐藏原文高亮");
   }
 
-  hoverPassageHighlight(target) {
-    // 原文高亮交给 Obsidian 原生样式, 悬停不再改变高亮。
-    return this.clearPassageHighlight();
-    const scope = target?.closest("[data-hd-passage]");
-    const anchor = scope && !target.closest("table, pre, code, .internal-embed")
-      ? target.closest("[data-hd-highlight], mark, .cm-highlight") : null;
-    if (anchor === this.hoveredPassageAnchor) return;
-    this.clearPassageHighlight();
-    if (!anchor) return;
-    const id = anchor.dataset.hdHighlight;
-    const nodes = id === undefined ? [anchor]
-      : [...scope.querySelectorAll(`[data-hd-highlight="${id}"]`)];
-    // Native CM tokens can wrap our decoration; both layers must lose their
-    // background together when the pointer leaves the complete source range.
-    for (const node of [...nodes]) {
-      const token = node.closest(".cm-highlight");
-      if (token && !nodes.includes(token)) nodes.push(token);
-      for (const child of node.querySelectorAll(".cm-highlight, mark")) {
-        if (!nodes.includes(child)) nodes.push(child);
-      }
-    }
-    for (const node of nodes) node.classList.add("hd-passage-hover");
-    this.hoveredPassageNodes = nodes;
-    this.hoveredPassageAnchor = anchor;
+  makeHighlightToggle(path) {
+    const btn = document.createElement("span");
+    btn.className = "hd-hl-toggle";
+    btn.dataset.hdPath = path;
+    this.paintHighlightToggle(btn);
+    btn.addEventListener("mousedown", e => e.preventDefault());
+    btn.addEventListener("click", e => { e.preventDefault(); e.stopPropagation(); this.toggleArticleHighlights(path); });
+    return btn;
   }
 
-  // 原文高亮交给 Obsidian 原生样式, 不再隐藏。
-  hideReadingHighlights() {
-    return false;
-  }
+  setupHighlightToggleButton() {}
 
   // 开关变化后让已打开的编辑器重算装饰, 并刷新显示。
   refreshHighlightSettings() {
@@ -3473,6 +3433,7 @@ class HighlightVisibilityMethods {
     for (const leaf of this.app.workspace.getLeavesOfType("markdown")) {
       leaf.view?.editor?.cm?.dispatch({});
     }
+    for (const btn of document.querySelectorAll(".hd-hl-toggle")) this.paintHighlightToggle(btn);
     this.syncHighlightVisibility();
   }
 
@@ -3484,8 +3445,22 @@ class HighlightVisibilityMethods {
       const path = leaf.view.file?.path || "";
       const hidden = Boolean(settings?.[articleHighlightSetting(path)]);
       el.classList.toggle(HIDDEN_CLASS, hidden);
-      // 写作、口语的范文可直接标记表达, 无需先建立词表才能隐藏底色。
-      el.classList.toggle("hd-hide-unlisted-highlights", hidden && ["writing", "speaking"].includes(articleModule(path)));
+      // 关闭时不论本篇词表是否收录, 正文高亮底色一律隐藏。
+      el.classList.toggle("hd-hide-unlisted-highlights", hidden);
+      // 开关放进标签页标题栏的操作图标里, 与其他图标并排, 不随正文滚动。
+      const view = leaf.view;
+      if (!view.hdHlAction && typeof view.addAction === "function") {
+        view.hdHlAction = view.addAction("eye", "隐藏原文高亮", () => this.toggleArticleHighlights(view.file?.path || ""));
+        view.hdHlAction.addClass("hd-hl-action");
+      }
+      const act = view.hdHlAction;
+      if (act) {
+        const on = Boolean(articleHighlightSetting(path));
+        act.toggleClass("hd-hl-action-hidden", !on);
+        act.dataset.hdPath = path;
+        require("obsidian").setIcon(act, hidden ? "eye-off" : "eye");
+        act.setAttribute("aria-label", hidden ? "显示原文高亮" : "隐藏原文高亮");
+      }
       const questionShown = false;
       el.classList.toggle(QUESTION_SHOWN_CLASS, questionShown);
     }
@@ -4342,12 +4317,6 @@ class TableSoundSettingTab extends PluginSettingTab {
         await save();
       }));
 
-    new Setting(containerEl)
-      .setName("隐藏原文高亮")
-      .addToggle((toggle) => toggle.setValue(Boolean(settings.hideListeningArticleHighlights)).onChange(async (value) => {
-        settings.hideListeningArticleHighlights = value;
-        await save();
-      }));
 
     // ---------- 阅读 ----------
     new Setting(containerEl).setName("阅读").setHeading();
@@ -4362,27 +4331,14 @@ class TableSoundSettingTab extends PluginSettingTab {
         await save();
       }));
 
-    new Setting(containerEl)
-      .setName("隐藏原文高亮")
-      .addToggle((toggle) => toggle.setValue(Boolean(settings.hideReadingArticleHighlights)).onChange(async (value) => {
-        settings.hideReadingArticleHighlights = value;
-        await save();
-      }));
 
     for (const [label, kind] of [["写作", "Writing"], ["口语", "Speaking"]]) {
       new Setting(containerEl).setName(label).setHeading();
       const audioKey = `${kind.toLowerCase()}HoverAudio`;
-      const highlightKey = `hide${kind}ArticleHighlights`;
       new Setting(containerEl)
         .setName("悬停朗读")
         .addToggle(toggle => toggle.setValue(settings[audioKey]).onChange(async value => {
           settings[audioKey] = value;
-          await save();
-        }));
-      new Setting(containerEl)
-        .setName("隐藏原文高亮")
-        .addToggle(toggle => toggle.setValue(settings[highlightKey]).onChange(async value => {
-          settings[highlightKey] = value;
           await save();
         }));
     }

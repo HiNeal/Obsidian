@@ -829,3 +829,27 @@ body .hd-tooltip.hd-tooltip .hd-en-bullet { width: 0.9em; }
 body div:is(.markdown-preview-view, .is-live-preview, .markdown-source-view) table .table-cell-wrapper:is(:active, :focus, :focus-within) {
   background-color: transparent !important;
 }
+
+/* 「# 原文」标题后的高亮显隐开关 */
+.hd-hl-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 22px;
+  z-index: 20;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  border-radius: 6px;
+  color: var(--text-muted);
+  cursor: pointer;
+  user-select: none;
+}
+.hd-hl-toggle svg { width: 16px; height: 16px; }
+.hd-hl-toggle:hover { color: var(--text-normal); background: var(--background-modifier-hover); }
+.hd-hl-toggle:hover { color: var(--text-normal); }
+.hd-hl-toggle.is-off { opacity: 0.6; }
+
+.hd-hl-action-hidden { display: none !important; }
