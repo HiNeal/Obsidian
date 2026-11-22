@@ -26,7 +26,7 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | xeric | /ˈzɪərɪk/ | adj. 缺乏维持生命的水分的; 沙漠的; 干旱的; 旱生植物的 | **xer(o)(干燥)**, -ic(…的)<br>表示与“干燥”有关或具有该特征, 即“缺乏维持生命的水分的, 沙漠的, 干旱的” |  adj. (of an environment or habitat) containing little moisture; very dry  |  a species of **xeric** habitats  |  | 0 |
-| xerophyte | /ˈzɪərəʊfaɪt/ | n. 旱生植物 | **xer(o)(干燥)**, **phyt(o)(植物)**<br>适应干旱缺水恶劣环境生长的植物 |  n. a plant which needs very little water  |  a desert adapted **xerophyte**  |  | 0 |
+| xerophyte | /ˈzɪərəʊfaɪt/ | n. 旱生植物 | **xer(o)(干燥)**, **phyt(o)(植物)**, e(连接字母)<br>适应干旱缺水恶劣环境生长的植物 |  n. a plant which needs very little water  |  a desert adapted **xerophyte**  |  | 0 |
 
 # xiph(i), xiph(o)
 

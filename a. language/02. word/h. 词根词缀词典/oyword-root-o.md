@@ -87,7 +87,7 @@
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | ontogenesis | /ˌɒntəʊˈdʒenɪsɪs/ | n. 个体发生; 个体发育 | **ont(o)(存在, 个体)**, **gen(族, 种类; 出生, 产生)**, -esis(行为, 过程)<br>由“个体”与“出生”共同限定词义, 表示“个体发生” |  n. the development of an individual organism or anatomical or behavioural feature from the earliest stage to maturity  |  the early stages of **ontogenesis**  |  | 0 |
 | ontology | /ɒnˈtɒlədʒi/ | n. 本体论 | **ont(o)(存在, 个体)**, -logy(…学, …研究)<br>在前词基础上加“-logy”构成名词, 表示“本体论” |  n. the branch of metaphysics dealing with the nature of being<br>a set of concepts and categories in a subject area or domain that shows their properties and the relations between them  |  the **ontology** of social reality  |  | 0 |
-| ontogenetic | /ˌɒntəʊdʒɪˈnetɪk/ | adj. 个体发生的; 个体发育的 | **ont(o)(存在, 个体)**, o(连接元音), **gen(族, 种类; 出生, 产生)**, -etic(…的)<br>与“个体”的“产生”过程有关的, 即个体发生的 | adj. of, relating to, or appearing in the course of ontogeny | the **ontogenetic** development of organisms |  | 0 |
+| ontogenetic | /ˌɒntəʊdʒɪˈnetɪk/ | adj. 个体发生的; 个体发育的 | **ont(o)(存在, 个体)**, **gen(族, 种类; 出生, 产生)**, -etic(…的)<br>与“个体”的“产生”过程有关的, 即个体发生的 | adj. of, relating to, or appearing in the course of ontogeny | the **ontogenetic** development of organisms |  | 0 |
 | ontological | /ˌɒntəˈlɒdʒɪkl/ | adj. 本体论的 | **ont(o)(存在, 个体)**, -logical(…学的)<br>围绕“个体”这一核心含义构成, 表示“本体论的” |  adj. relating to the branch of metaphysics dealing with the nature of being<br>showing the relations between the concepts and categories in a subject area or domain  |  an **ontological** database  |  | 0 |
 
 # onym
@@ -284,7 +284,7 @@
 | adorn | /əˈdɔːn/ | v. 装饰; 打扮; 装扮 | ad-(到, 朝, 向), **orn(装饰, 装备)**<br>给某物加上装饰, 使其更美观, 因此表示装饰 |  v. make more beautiful or attractive  |  **adorn** garments with silver sequins  | v. embellish, decorate, furnish, ornament, add ornament to, enhance, beautify, prettify | 0 |
 | adornment | /əˈdɔːnmənt/ | n. 装饰; 打扮 | ad-(到, 朝, 向), **orn(装饰, 装备)**, -ment(行为, 过程)<br>在前词基础上加“-ment”构成名词, 表示“装饰” | n. a thing which adorns or decorates; an ornament<br>&emsp;• the action of adorning something | objects of personal **adornment** | n. embellishment, embellishing, decorating, decoration, ornamentation, ornament, enhancement, enhancing | 0 |
 | ornament | /ˈɔːnəmənt/ /ˈɔːnəment/ | n. 装饰 (物)<br>v. 装饰 | **orn(装饰, 装备)**, a(连接元音), -ment(物)<br>用于装饰的物品; 也可转化作动词表示装饰 |  n. a thing used or serving to make something look more attractive but usually having no practical purpose, especially a small object such as a figurine<br>&emsp;• decoration added to embellish something<br>&emsp;• a quality or person adding grace, beauty, or honour to something<br>&emsp;• embellishments made to a melody<br>v. make (something) look more attractive by adding decorative items  |  a delicate glass **ornament**  | n. knick-knack, decoration, trinket, bauble, piece of bric-a-brac, bibelot, gewgaw, gimcrack<br>v. decorate, adorn, embellish, trim, garnish, bedeck, deck (out), festoon | 0 |
-| ornamentation | /ˌɔːnəmenˈteɪʃn/ | n. 装饰; 修饰; 装饰品 | **orn(装饰, 装备)**, a(连接字母), -ment(物), -ation(行为, 结果)<br>在前词基础上加“-ation”构成名词, 表示“装饰” | n. decorative elements added to something to enhance its appearance<br>&emsp;• the action of decorating something or making it more elaborate | the rhetorical **ornamentation** of text | n. decoration, adornment, embellishment, ornament, finery, frippery, frills, trimmings | 0 |
+| ornamentation | /ˌɔːnəmenˈteɪʃn/ | n. 装饰; 修饰; 装饰品 | **orn(装饰, 装备)**, a(连接元音), -ment(物), -ation(行为, 结果)<br>在前词基础上加“-ation”构成名词, 表示“装饰” | n. decorative elements added to something to enhance its appearance<br>&emsp;• the action of decorating something or making it more elaborate | the rhetorical **ornamentation** of text | n. decoration, adornment, embellishment, ornament, finery, frippery, frills, trimmings | 0 |
 | ornamental | /ˌɔːnəˈmentl/ | adj. 装饰的 | **orn(装饰, 装备)**, a(连接元音), -ment(物), -al(…的)<br>在前词基础上加“-al”构成形容词, 表示“装饰的” | adj. serving or intended as an ornament; decorative<br>n. a plant grown for its attractive appearance | an **ornamental** fountain | adj. decorative, fancy, ornate, attractive, pretty, artistic, ornamented, showy | 0 |
 | ornate | /ɔːˈneɪt/ | adj. 装饰华丽的; 过分装饰的; 华美的; 矫揉造作的 | **orn(装饰, 装备)**, -ate(做, 使, …的, 人)<br>满是“装饰”的, 即华丽的 |  adj. elaborately or highly decorated<br>&emsp;• (of literary style) using unusual words and complex constructions<br>&emsp;• (of musical composition or performance) using many ornaments such as grace notes and trills  |  an **ornate** wrought-iron railing  | adj. elaborate, grandiose, decorated, embellished, adorned, ornamented, fancy, over-elaborate | 0 |
 
@@ -381,7 +381,7 @@
 | 单词 | 音标 | 释义 | 记忆 | 英意 | 意群 | 同义词 | 评分 |
 | --- | :--- | --- | --- | --- | --- | --- | --- |
 | ovarian | /əʊˈveəriən/ | adj. 卵巢的 | **ovari(o)(卵巢)**, -an(…的)<br>围绕“卵巢”这一核心含义构成, 表示“卵巢的” |  adj. relating to an ovary or the ovaries  |  an **ovarian** cyst  |  | 0 |
-| ovariectomy | /əʊˌveərɪˈektəmi/ | n. 卵巢切除术 | **ovari(o)(卵巢)**, ec-(出, 外), **tom(y)(切, 割)**, -y(名词后缀)<br>卵巢切除术 | n. surgical removal of one or both ovaries; oophorectomy | undergo a bilateral **ovariectomy** |  | 0 |
+| ovariectomy | /əʊˌveərɪˈektəmi/ | n. 卵巢切除术 | **ovari(o)(卵巢)**, -ectomy(切除)<br>卵巢切除术 | n. surgical removal of one or both ovaries; oophorectomy | undergo a bilateral **ovariectomy** |  | 0 |
 
 # oxy
 

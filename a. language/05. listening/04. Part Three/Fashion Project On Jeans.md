@@ -88,7 +88,7 @@
 
 |  | A | B | C | D | E | F | G |
 | :--- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Manufacturing  | ○ | ○ | manufactur(产品), -ing(行为, 行业, 物, …的)<br><br>批量把原料做成成品的制造业 | ○ | ○ | ○ | 🔴 |
+| Manufacturing  | ○ | ○ | **man(u)(手)**, **fact(做)**, -ure(行为, 结果), -ing(行为, 行业, 物)<br><br>批量把原料做成成品的制造业 | ○ | ○ | ○ | 🔴 |
 
 - A. Include more on practical uses of jeans
 - B. Add information about global aspects
