@@ -1,13 +1,13 @@
 {
   "speech": true,
-  "lastDeck": "02. word/a. 雅思词汇真经/05-学校教育.md",
+  "lastDeck": "05. listening/01. 听力词汇/13. 答案词.md",
   "recent": [
-    "02. word/a. 雅思词汇真经/05-学校教育.md",
-    "02. word/a. 雅思词汇真经/04-太空探索.md",
-    "02. word/a. 雅思词汇真经/03-动物保护.md",
-    "02. word/a. 雅思词汇真经/02-植物研究.md",
-    "02. word/a. 雅思词汇真经/01-自然地理.md",
-    "02. word/a. 雅思词汇真经/21-身心健康.md"
+    "05. listening/01. 听力词汇/13. 答案词.md",
+    "05. listening/01. 听力词汇/01. 日常生活与社交活动.md",
+    "05. listening/01. 听力词汇/02. 旅游.md",
+    "05. listening/01. 听力词汇/01. 住宿.md",
+    "05. listening/01. 听力词汇/11. 答案词.md",
+    "02. word/a. 雅思词汇真经/05-学校教育.md"
   ],
   "decks": {
     "02. word/未整理单词.md": {
@@ -481,22 +481,73 @@
       }
     },
     "05. listening/01. 听力词汇/01. 住宿.md": {
-      "progress": 43,
+      "progress": 29,
       "bookmark": {
         "tableKey": "[\"单词\",\"单词\",1]",
         "word": "repaint",
         "occurrence": 0
-      }
+      },
+      "order": "smart",
+      "review": false,
+      "revealDelay": 1.6,
+      "dictation": false
     },
     "05. listening/01. 听力词汇/11. 答案词.md": {
-      "progress": 45,
-      "dictation": false,
+      "progress": 0,
+      "dictation": true,
       "interval": 4,
       "focus": false,
       "bookmark": {
         "tableKey": "[\"答案词1次\",\"单词\",1]",
-        "word": "petrol",
+        "word": "rub",
         "occurrence": 0
+      },
+      "order": "loop",
+      "tableProgress": {
+        "[\"答案词10次以上\",\"单词\",1]": 0,
+        "[\"答案词8~9次\",\"单词\",1]": 0,
+        "[\"答案词7次\",\"单词\",1]": 0,
+        "[\"答案词6次\",\"单词\",1]": 0,
+        "[\"答案词5次\",\"单词\",1]": 0,
+        "[\"答案词4次\",\"单词\",1]": 0,
+        "[\"答案词3次\",\"单词\",1]": 0
+      },
+      "tableBookmarks": {
+        "[\"答案词10次以上\",\"单词\",1]": {
+          "tableKey": "[\"答案词10次以上\",\"单词\",1]",
+          "word": "art",
+          "occurrence": 0
+        },
+        "[\"答案词8~9次\",\"单词\",1]": {
+          "tableKey": "[\"答案词8~9次\",\"单词\",1]",
+          "word": "car",
+          "occurrence": 0
+        },
+        "[\"答案词7次\",\"单词\",1]": {
+          "tableKey": "[\"答案词7次\",\"单词\",1]",
+          "word": "map",
+          "occurrence": 0
+        },
+        "[\"答案词6次\",\"单词\",1]": {
+          "tableKey": "[\"答案词6次\",\"单词\",1]",
+          "word": "dry",
+          "occurrence": 0
+        },
+        "[\"答案词5次\",\"单词\",1]": {
+          "tableKey": "[\"答案词5次\",\"单词\",1]",
+          "word": "air",
+          "occurrence": 0
+        },
+        "[\"答案词4次\",\"单词\",1]": {
+          "tableKey": "[\"答案词4次\",\"单词\",1]",
+          "word": "dog",
+          "occurrence": 0
+        },
+        "[\"答案词3次\",\"单词\",1]": {
+          "tableKey": "[\"答案词3次\",\"单词\",1]",
+          "word": "red",
+          "occurrence": 0
+        }
       }
     },
     "02. word/h. 词根词缀词典/oyword-root-r.md": {
@@ -538,6 +589,50 @@
         "word": "dinosaur",
         "occurrence": 0
       }
+    },
+    "05. listening/01. 听力词汇/02. 旅游.md": {
+      "progress": 20,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "camp",
+        "occurrence": 0
+      }
+    },
+    "05. listening/01. 听力词汇/09. 地图题.md": {
+      "progress": 60,
+      "bookmark": {
+        "tableKey": "[\"短语\",\"单词\",1]",
+        "word": "the upper left",
+        "occurrence": 0
+      }
+    },
+    "05. listening/01. 听力词汇/01. 日常生活与社交活动.md": {
+      "progress": 41,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "trail",
+        "occurrence": 0
+      }
+    },
+    "05. listening/01. 听力词汇/13. 答案词.md": {
+      "progress": 5,
+      "bookmark": {
+        "tableKey": "[\"答案词1次\",\"单词\",1]",
+        "word": "drum",
+        "occurrence": 0
+      },
+      "tableProgress": {
+        "[\"答案词2次\",\"单词\",1]": 0
+      },
+      "tableBookmarks": {
+        "[\"答案词2次\",\"单词\",1]": {
+          "tableKey": "[\"答案词2次\",\"单词\",1]",
+          "word": "mud",
+          "occurrence": 0
+        }
+      },
+      "interval": 0,
+      "dictation": true
     }
   },
   "prefsVersion": 2,

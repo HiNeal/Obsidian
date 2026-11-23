@@ -2,25 +2,25 @@
 
 ![[20. resource/05. listening/10. 今日听力/The Vikings/audio/The Vikings.mp3]]
 
-**Speaker**: The Vikings, known for their seafaring skills, were not only warriors but also traders and explorers. Their voyages extended far beyond Scandinavia, reaching as far as North America.
+**Speaker**: The Vikings, known for their seafaring skills, were not only warriors but also traders and ==explorers==. Their voyages extended far beyond Scandinavia, reaching as far as North America.
 
-**Speaker**: One significant piece of evidence confirming this is the discovery of a small silver ==coin== found in a site associated with indigenous settlements. This finding suggests that Viking traders may have engaged in exchanges with indigenous people, possibly bartering metal goods or textiles for local resources.
+**Speaker**: One significant piece of evidence confirming this is the discovery of a small ==silver== ==coin== found in a site associated with ==indigenous== settlements. This finding suggests that Viking traders may have engaged in exchanges with indigenous people, possibly bartering metal goods or textiles for ==local resources==.
 
-**Speaker**: Warfare played an important role in Viking society, and they were skilled in producing and using a variety of ==weapons==. Archaeological digs have unearthed a range of armaments, including spears, axes, and an especially well-crafted weapon likely used both in combat and for ceremonial purposes. These weapons were often passed down through generations, signifying status and craftsmanship. One of the Vikings' most impressive achievements was their advanced shipbuilding techniques. They designed sleek, sturdy vessels capable of enduring long sea voyages. A key feature of their longships was a large ==sail==, allowing them to harness wind power and travel efficiently across vast distances. This innovation enabled them to raid, trade, and establish settlements across Europe and beyond. Given the harsh conditions at sea, preserving food for long voyages was crucial. Vikings employed various methods to prevent spoilage. One commonly used technique involved drying or curing meat, but they also relied heavily on a natural preservative, mainly ==salt==.
+**Speaker**: Warfare played an important role in Viking society, and they were skilled in producing and using a variety of ==weapons==. Archaeological ==digs== have unearthed a range of ==armaments==, including spears, ==axes==, and an especially well-crafted weapon likely used both in ==combat== and for ==ceremonial purposes==. These weapons were often passed down through generations, signifying status and craftsmanship. One of the Vikings' most impressive achievements was their advanced ==shipbuilding== techniques. They designed ==sleek==, ==sturdy== ==vessels== capable of enduring long sea voyages. A key feature of their longships was a large ==sail==, allowing them to harness wind power and travel efficiently across vast distances. This innovation enabled them to ==raid==, trade, and establish settlements across Europe and beyond. Given the harsh conditions at sea, preserving food for long voyages was crucial. Vikings employed various methods to prevent spoilage. One commonly used technique involved drying or curing meat, but they also relied heavily on a natural preservative, mainly ==salt==.
 
-**Speaker**: This ensured that their supplies remained edible for extended periods, particularly during their voyages to distant lands.
+**Speaker**: This ensured that their supplies remained edible for extended periods, particularly during their ==voyages== to distant lands.
 
-**Speaker**: Everyday life among the Vikings was quite different from modern times. For instance, their drinking vessels were often made from natural materials rather than glass or ceramics.
+**Speaker**: Everyday life among the Vikings was quite different from modern times. ==For instance==, their drinking vessels were often made from natural materials rather than glass or ==ceramics==.
 
-**Speaker**: A common choice was a ==horn==, which was both lightweight and durable. Eating utensils, on the other hand, were simpler than those we use today.
+**Speaker**: A common choice was a ==horn==, which was both lightweight and durable. Eating ==utensils==, on the other hand, were simpler than those we use today.
 
-**Speaker**: Rather than using spoons and knives exclusively, Vikings commonly carried a ==fork==, which served multiple purposes, including assisting in eating and even as a small tool. Viking sailors frequently encountered storms and rough waters, which often led to ship damage. However, they were highly skilled in maintaining and restoring their vessels.
+**Speaker**: Rather than using ==spoons== and ==knives== exclusively, Vikings commonly carried a ==fork==, which served multiple purposes, including assisting in eating and even as a small tool. Viking sailors frequently encountered storms and rough waters, which often led to ship damage. However, they were highly skilled in maintaining and restoring their vessels.
 
-**Speaker**: Rather than abandoning damaged ships, they made on-the-spot repairs, reinforcing wooden planks, sealing leaks, and replacing worn-out parts. Their ability to ==repair== ships ensured their survival during long and dangerous sea journeys. Vikings also had a remarkable ability to craft objects from raw materials. They were particularly adept at working with oars, transforming them into tools and weapons. One of the most essential materials they relied on was ==metal==, which they shaped into swords, armor, and farming implements.
+**Speaker**: Rather than abandoning damaged ships, they made on-the-spot repairs, ==reinforcing== wooden planks, sealing leaks, and replacing worn-out parts. Their ability to ==repair== ships ensured their survival during long and dangerous sea journeys. Vikings also had a remarkable ability to craft objects from raw materials. They were particularly adept at working with oars, transforming them into tools and weapons. One of the most essential materials they relied on was ==metal==, which they shaped into ==swords==, ==armor==, and ==farming implements==.
 
-**Speaker**: Like many ancient societies, Vikings passed down their history through oral traditions rather than written records. They often gathered around fires or in great halls to listen to recitations of heroic tales and myths. These narratives were preserved and transmitted through ==poems==, which kept their cultural heritage alive for generations.
+**Speaker**: Like many ancient societies, Vikings passed down their history through ==oral traditions== rather than written records. They often gathered around fires or in great ==halls== to listen to ==recitations== of heroic tales and myths. These ==narratives== were preserved and transmitted through ==poems==, which kept their cultural ==heritage== alive for generations.
 
-**Speaker**: Unlike in some contemporary societies of the time, Viking women had certain legal rights. They were able to inherit property and manage businesses. More notably, they had the right to approach a court if they wished to end their marriage. In such cases, a woman could formally request a ==divorce==, a practice that was relatively uncommon in many other medieval cultures.
+**Speaker**: Unlike in some ==contemporary== societies of the time, Viking women had certain legal rights. They were able to ==inherit== property and manage businesses. More ==notably==, they had the right to approach a ==court== if they wished to end their marriage. In such cases, a woman could formally request a ==divorce==, a practice that was relatively uncommon in many other medieval cultures.
 
 # 单词
 
@@ -39,11 +39,44 @@
 
 | 单词 | 释义 | 意群 | 评分 |
 | :--- | :--- | :--- | --- |
+| explorers | n. 探险家 | traders and **explorers** | 0 |
+| silver | n. 银; 银色; 银器(餐具); 银币(钱)<br><br>adj. ==银的==<br><br>v. 镀银(涂银, 使银白, 使头发变白) | a small **silver** coin | 0 |
+| indigenous | adj. 本土的; ==土著的== | associated with **indigenous** settlements | 0 |
+| digs | v. 挖(挖掘, 挖出, 发掘); 戳(翻找, 探究); 喜欢<br><br>n. 挖掘(==考古发掘==); 戳(挖苦) | Archaeological **digs** have unearthed | 0 |
+| armaments | n. 武器装备(军备) | a range of **armaments** | 0 |
+| axes | n. ==斧头==(大幅削减)<br><br>v. 砍掉(削减); 用斧砍 | spears, **axes**, and an | 0 |
+| combat | n. ==战斗==(斗争)<br><br>v. 抗击 | used both in **combat** and | 0 |
+| shipbuilding | n. 造船(造船业) | advanced **shipbuilding** techniques | 0 |
+| sleek | adj. 光滑亮泽的(毛色光亮的, 衣着光鲜的, ==造型流畅的==)<br><br>v. 使光滑亮泽 | designed **sleek**, sturdy vessels | 0 |
+| sturdy | adj. 健壮的(==坚固的==, 坚定的) | sleek, **sturdy** vessels capable of enduring | 0 |
+| vessels | n. ==船舶==; 容器(某种品质的化身); 脉管(植物导管) | sturdy **vessels** capable of enduring | 0 |
+| raid | n. 突袭(突袭抢劫, 警方突击搜查, 恶意收购)<br><br>v. ==突袭==(迅速偷拿) | to **raid**, trade, and establish | 0 |
+| voyages | n. ==航行==<br><br>v. 远航 | long sea **voyages** | 0 |
+| ceramics | adj. 陶瓷的(陶瓷制品的)<br><br>n. ==陶瓷器==(陶艺, 陶瓷材料, 耐高温非金属) | glass or **ceramics** | 0 |
+| utensils | n. 器皿 | Eating **utensils**, on the other hand | 0 |
+| spoons | n. ==勺子==(一勺); 勺状物<br><br>v. 用勺舀 | using **spoons** and knives exclusively | 0 |
+| knives | n. ==刀==(刀片)<br><br>v. 用刀刺(劈开) | spoons and **knives** exclusively | 0 |
+| reinforcing | v. ==加固==(强化, 增援) | **reinforcing** wooden planks, sealing leaks | 0 |
+| swords | n. 剑(武力与毁灭) | shaped into **swords**, armor | 0 |
+| armor | n. ==盔甲==; 装甲(装甲车辆); 甲壳; 心理防线<br><br>v. 使有防备 | swords, **armor**, and farming implements | 0 |
+| halls | n. 门厅(走廊); 会堂; ==大厅==(庄园宅第); 学生宿舍(食堂) | fires or in great **halls** | 0 |
+| recitations | n. 背诵(==朗诵==, 朗诵的诗文) | listen to **recitations** of heroic tales | 0 |
+| narratives | n. ==叙述==(叙事部分, 叙事艺术, 叙事框架)<br><br>adj. 叙事的 | These **narratives** were preserved | 0 |
+| heritage | n. 遗产(==文化遗产==, 遗产保护的, 传统品牌的) | cultural **heritage** alive for generations | 0 |
+| contemporary | adj. ==同时代的==(同期的); 当代的(风格现代的)<br><br>n. 同时代的人或物(同龄人) | some **contemporary** societies of the time | 0 |
+| inherit | v. ==继承==; 遗传; 承接(接手) | able to **inherit** property | 0 |
+| notably | adv. ==尤其==(显著地) | More **notably**, they had the right | 0 |
+| court | n. ==法庭==(法院所在地); 球场(庭院, 大宅或公寓名称); 宫廷人员(君主及御前大臣, 王宫); 公司理事会(理事会会议)<br><br>v. 讨好(争取好感, 招致) | right to approach a **court** | 0 |
 
 # 短语
 
 | 短语 | 释义 | 意群 | 评分 |
 | :--- | :--- | :--- | --- |
+| local resources | 本地资源 | textiles for **local resources** | 0 |
+| ceremonial purposes | 仪式用途 | and for **ceremonial purposes** | 0 |
+| For instance | 例如 | **For instance**, their drinking vessels | 0 |
+| farming implements | 农具 | armor, and **farming implements** | 0 |
+| oral traditions | 口头传统 | through **oral traditions** rather than written records | 0 |
 
 # 同义改写
 

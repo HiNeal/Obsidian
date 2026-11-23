@@ -146,37 +146,41 @@ class DeckSheet extends Sheet {
   }
 
   decks() {
-    return this.app.vault.getMarkdownFiles()
-      .filter((f) => DECK_ROOTS.some((r) => f.path.startsWith(r)))
-      .map((f) => f.path)
-      .sort((a, b) => a.localeCompare(b, "zh"));
+    if (!this._decks) {
+      this._decks = this.app.vault.getMarkdownFiles()
+        .filter((f) => DECK_ROOTS.some((r) => f.path.startsWith(r)))
+        .map((f) => f.path)
+        .sort((a, b) => a.localeCompare(b, "zh"))
+        .map((path) => ({ path, lower: path.toLowerCase(), title: baseName(path), folder: folderOf(path) }));
+    }
+    return this._decks;
   }
 
   build(body) {
     const tokens = this.query.trim().toLowerCase().split(/\s+/).filter(Boolean);
     const all = this.decks();
-    const exists = new Set(all);
     const choose = (path) => () => { this.close(); this.onChoose(path); };
-    const addRow = (group, path) => this.row(group, {
-      title: baseName(path), desc: folderOf(path), selected: path === this.currentPath, onClick: choose(path),
+    const addRow = (group, item) => this.row(group, {
+      title: item.title, desc: item.folder, selected: item.path === this.currentPath, onClick: choose(item.path),
     });
 
     if (!tokens.length) {
-      const recent = this.store.recent.filter((p) => exists.has(p));
+      const byPath = new Map(all.map((item) => [item.path, item]));
+      const recent = this.store.recent.map((p) => byPath.get(p)).filter(Boolean);
       if (recent.length) {
         const group = this.group(body, { label: "最近学习" });
-        recent.forEach((p) => addRow(group, p));
+        recent.forEach((item) => addRow(group, item));
       }
     }
 
-    const matches = tokens.length ? all.filter((p) => tokens.every((t) => p.toLowerCase().includes(t))) : all;
+    const matches = tokens.length ? all.filter((item) => tokens.every((t) => item.lower.includes(t))) : all;
     const shown = matches.slice(0, 80);
     const group = this.group(body, {
       label: tokens.length ? `搜索结果 · ${matches.length}` : "全部笔记",
       footnote: matches.length > shown.length ? `还有 ${matches.length - shown.length} 篇, 输入关键词缩小范围。` : "",
     });
     if (!shown.length) this.row(group, { title: "没有匹配的笔记" });
-    shown.forEach((p) => addRow(group, p));
+    shown.forEach((item) => addRow(group, item));
   }
 }
 

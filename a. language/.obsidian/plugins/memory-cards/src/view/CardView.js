@@ -53,6 +53,7 @@ class CardView extends ItemView {
     this.revealTimer = null;
     this.pendingScores = new Map(); // card -> 待写回的分数
     this.scoreSaveTimer = null;
+    this.reloadTimer = null;
     this.ownWrite = null;    // 最近一次评分写盘后的全文: modify 事件读到同样内容就是自己写的
     this.loadToken = 0;      // 每次切换卡组自增, 晚到的旧结果直接丢弃
     this.reloadSeq = 0;      // 笔记编辑触发的重读: 只应用比已应用的更新的那一次
@@ -105,7 +106,7 @@ class CardView extends ItemView {
     this.renderChrome();
 
     this.registerEvent(this.app.vault.on("modify", (file) => {
-      if (file.path === this.deckPath) this.reload();
+      if (file.path === this.deckPath) this.scheduleReload();
     }));
     // 偏好的改名迁移由插件统一处理 (卡片页没开时也要迁移), 这里只跟着改自己的路径
     this.registerEvent(this.app.vault.on("rename", (file, oldPath) => {
@@ -127,6 +128,8 @@ class CardView extends ItemView {
     this.autoplay.stop();
     this.player.stop();
     this.clearReveal();
+    clearTimeout(this.reloadTimer);
+    this.reloadTimer = null;
     this.face && this.face.destroy();
     this.resizeObserver && this.resizeObserver.disconnect();
     await this.deleteWrite;
@@ -196,10 +199,11 @@ class CardView extends ItemView {
       await this.flushScores();
       if (token !== this.loadToken || this.closed) return;
       const file = this.app.vault.getAbstractFileByPath(path);
+      const changedFile = path !== this.deckPath;
       this.deckPath = path;
       this.tableKey = tableKey;
       this.ownWrite = null;
-      this.plugin.audio.clear();
+      if (changedFile) this.plugin.audio.clear();
       if (!(file instanceof TFile)) {
         this.store.forget(path);
         this.allCards = [];
@@ -227,6 +231,14 @@ class CardView extends ItemView {
         this.renderChrome();
       }
     }
+  }
+
+  scheduleReload() {
+    clearTimeout(this.reloadTimer);
+    this.reloadTimer = setTimeout(() => {
+      this.reloadTimer = null;
+      this.reload();
+    }, 180);
   }
 
   /**
@@ -262,7 +274,7 @@ class CardView extends ItemView {
   }
 
   readScope(data) {
-    this.allCards = parseDeck(data, { rootIndex: this.plugin.rootIndex });
+    this.allCards = parseDeck(data);
     this.tables = tableScopes(this.allCards);
     return scopeCards(this.allCards, this.tableKey);
   }
@@ -294,7 +306,7 @@ class CardView extends ItemView {
 
   // ==================== 渲染 ====================
 
-  render({ keepReveal = false } = {}) {
+  render({ keepReveal = false, deferLayout = true } = {}) {
     const card = this.session.card;
     const prefs = this.prefs;
     const wasRevealed = this.face.revealed;
@@ -306,7 +318,8 @@ class CardView extends ItemView {
       this.face.setMemoryHints(this.store.memoryHints);
       this.face.render(card, { dictation: prefs.dictation, review: prefs.review && !prefs.dictation });
       if (keepReveal && wasRevealed) this.face.reveal();
-      requestAnimationFrame(() => { this.face.fit(); this.placeDict(); });
+      if (deferLayout) requestAnimationFrame(() => { this.face.fit(); this.placeDict(); });
+      else { this.face.fit(); this.placeDict(); }
       this.saveProgress();
     }
     this.syncDict(card, keepReveal);
@@ -382,7 +395,7 @@ class CardView extends ItemView {
       if (this.closed) return;
 
       this.session.advance(direction, this.arrangePrefs());
-      this.render();
+      this.render({ deferLayout: false });
 
       card.style.transform = "";
       card.style.opacity = "";

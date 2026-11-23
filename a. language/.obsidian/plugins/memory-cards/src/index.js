@@ -2,9 +2,8 @@
 
 const { Plugin, MarkdownView, TFile, addIcon } = require("obsidian");
 const { VIEW_TYPE, DECK_ROOTS } = require("./constants");
-const { parseDeck } = require("./parse");
+const { hasDeckCards } = require("./parse");
 const { PrefsStore } = require("./store");
-const { BASE_SOURCES, createRootIndex } = require("./roots");
 const { MemoryCardsSettingTab } = require("./settings");
 const { AudioLibrary } = require("./audio");
 const { registerIcons } = require("./ui/icons");
@@ -21,7 +20,6 @@ class MemoryCardsPlugin extends Plugin {
   async onload() {
     registerIcons(addIcon);
     this.store = await PrefsStore.load(this);
-    await this.loadRootIndex();
     this.addSettingTab(new MemoryCardsSettingTab(this.app, this));
     this.audio = new AudioLibrary(this.app);
     this.registerView(VIEW_TYPE, (leaf) => new CardView(leaf, this));
@@ -62,13 +60,6 @@ class MemoryCardsPlugin extends Plugin {
     // 笔记改名时迁移它的学习进度与设置 (卡片页没开着也要迁)
     this.registerEvent(this.app.vault.on("rename", (file, oldPath) => {
       if (file instanceof TFile && oldPath.endsWith(".md")) this.store.rename(oldPath, file.path);
-    }));
-    this.registerEvent(this.app.vault.on("modify", async file => {
-      if (!BASE_SOURCES.some(source => source.path === file.path)) return;
-      await this.loadRootIndex();
-      for (const leaf of this.app.workspace.getLeavesOfType(VIEW_TYPE)) {
-        if (leaf.view instanceof CardView) await leaf.view.reload({ force: true });
-      }
     }));
 
     this.registerEvent(this.app.workspace.on("file-menu", (menu, file) => {
@@ -117,16 +108,6 @@ class MemoryCardsPlugin extends Plugin {
     }));
   }
 
-  async loadRootIndex() {
-    const seq = this.rootIndexSeq = (this.rootIndexSeq || 0) + 1;
-    const index = new Map();
-    for (const { path, kind } of BASE_SOURCES) {
-      const file = this.app.vault.getAbstractFileByPath(path);
-      createRootIndex(file instanceof TFile ? await this.app.vault.read(file) : "", kind, index);
-    }
-    if (seq === this.rootIndexSeq) this.rootIndex = index;
-  }
-
   setMemoryHints(value) {
     this.store.memoryHints = value;
     for (const leaf of this.app.workspace.getLeavesOfType(VIEW_TYPE)) {
@@ -149,7 +130,7 @@ class MemoryCardsPlugin extends Plugin {
     }
     if (!this.store.shouldAutoOpen(file.path)) return;
     const text = await this.app.vault.cachedRead(file);
-    if (!parseDeck(text).length) return;
+    if (!hasDeckCards(text)) return;
     if (leaf.view !== view || view.file !== file) return; // 读文件期间已切走
     if (this.noteByChoice.get(leaf) === file.path || !this.store.shouldAutoOpen(file.path)) return;
     await this.openDeck(file.path, leaf);

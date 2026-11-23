@@ -1,3 +1,5 @@
+const { scanTables } = require("./parse");
+
 // 表格身份来自标题、首列表头与同名表顺序; 不依赖渲染出的表格数量。
 function tableScopes(cards) {
   const groups = new Map();
@@ -20,5 +22,6 @@ function tableScopes(cards) {
   }
   return tables;
 }
+const scanTableScopes = (markdown) => tableScopes(scanTables(markdown));
 const scopeCards = (cards, key) => key == null ? cards : cards.filter(c => c.tableKey === key);
-module.exports = { tableScopes, scopeCards };
+module.exports = { tableScopes, scanTableScopes, scopeCards };

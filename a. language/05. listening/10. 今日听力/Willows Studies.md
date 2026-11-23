@@ -6,11 +6,11 @@
 
 **Professor**: Now, I hope you've read the notes I gave you last week on the furniture company, Willows, as this will be the focus of our discussion today. Let's begin. Who can tell me what the current focus of the company's business is?
 
-**Tom**: The company used to be very large with many retail outlets across the country. However, since the recession, there have been fewer people spending money on furniture, and so the company was forced to close all of its outlets and now only operates online.
+**Tom**: The company used to be very large with many ==retail== ==outlets== across the country. However, since the ==recession==, there have been fewer people spending money on furniture, and so the company was forced to close all of its outlets and now only operates online.
 
 **Professor**: Well done, Tom. Bella, can you add anything?
 
-**Bella**: Willows used to produce a very large number of products such as tables, chairs, and light fittings. However, through market research, they realized that most of their profit was made from the sale of bookcases. So they now specialize in this one product.
+**Bella**: Willows used to produce a very large number of products such as tables, chairs, and light fittings. However, through market research, they realized that most of their profit was made from the sale of bookcases. So they now ==specialize== in this one product.
 
 **Professor**: Very good. Does anyone know how our department began its contact with Willows?
 
@@ -22,7 +22,7 @@
 
 **Professor**: Yes, exactly. Does anyone know what the student thought of their time working at Willows?
 
-**Tom**: Yes, he is a friend of ours. He worked as a member of the design team, creating technical drawings of the furniture using a computer. There was a special software that he used, which he said had a bad interface and was very difficult to predict. However, it was very efficient and helpful for quickly drawing up furniture designs.
+**Tom**: Yes, he is a friend of ours. He worked as a member of the design team, creating technical ==drawings== of the furniture using a computer. There was a special software that he used, which he said had a bad interface and was very difficult to predict. However, it was very efficient and helpful for quickly drawing up furniture designs.
 
 **Professor**: How interesting.
 
@@ -40,7 +40,7 @@
 
 **Tom**: Have you finished writing the feedback on our exam results, Professor?
 
-**Professor**: Yes, I have, Tom. And I must say that I was not disappointed. I am glad to say that your performance has dramatically increased since you began attending this after-school club, and you have both scored above the average. If you continue to work hard, your results should soon improve significantly.
+**Professor**: Yes, I have, Tom. And I must say that I was not disappointed. I am glad to say that your performance has dramatically increased since you began attending this after-school club, and you have both scored above the average. If you continue to work hard, your results should soon improve ==significantly==.
 
 **Professor**: Now, back to our discussion about Willows. Can anyone tell me what business decisions might benefit the company?
 
@@ -56,7 +56,7 @@
 
 **Tom**: Unfortunately, the new system does not allow clients to connect to the Willows system from home, so they are unable to access their work online. This also means that the system presents no opportunity to attract more contacts since clients are unable to view it from their homes.
 
-**Bella**: Yes, that's true. However, it could definitely benefit clients who visit the showroom. The system is very interactive and allows clients to easily browse the furniture catalog, which will save them a lot of time.
+**Bella**: Yes, that's true. However, it could definitely benefit clients who visit the showroom. The system is very ==interactive== and allows clients to easily ==browse== the furniture ==catalog==, which will save them a lot of time.
 
 **Tom**: It's a shame that staff are still needed to guide clients through the online system, as it means that no savings can be made in labor costs.
 
@@ -64,12 +64,22 @@
 
 **Professor**: Bravo. You've both contributed fantastic points to our conversation.
 
-**Professor**: That concludes our session for today. I'll see you next week.
+**Professor**: That ==concludes== our session for today. I'll see you next week.
 
 # 单词
 
 | 单词 | 释义 | 意群 | 评分 |
 | :--- | :--- | :--- | --- |
+| retail | n. ==零售==<br><br>adv. 以零售方式或价格<br><br>v. 零售(以某零售价出售); 详细转述 | many **retail** outlets | 0 |
+| outlets | n. 出口(河口, 插座); ==销售点==(市场, 工厂直销店, 媒体); 发泄途径 | retail **outlets** across the country | 0 |
+| recession | n. ==经济衰退==; 退行 | since the **recession** | 0 |
+| specialize | v. 专攻(专门从事) | now **specialize** in this one product | 0 |
+| drawings | n. 素描(==绘画==); 抽奖 | technical **drawings** of the furniture | 0 |
+| significantly | adv. ==显著地==; 意味深长地(暗示地) | soon improve **significantly** | 0 |
+| interactive | adj. 相互作用的; ==交互式的== | very **interactive** and allows clients | 0 |
+| browse | v. ==随意浏览==(浏览文本或网站数据); 啃食嫩叶<br><br>n. 随便看看(供随意翻阅的书刊网站); 嫩枝叶 | easily **browse** the furniture catalog | 0 |
+| catalog | n. ==目录==<br><br>v. 编目 | browse the furniture **catalog** | 0 |
+| concludes | v. ==结束==(缔结); 断定(总结说) | That **concludes** our session for today | 0 |
 
 # 短语
 

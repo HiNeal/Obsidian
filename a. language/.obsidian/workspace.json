@@ -4,41 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "38843fab45652dce",
+        "id": "5d01703f9f13c798",
         "type": "tabs",
         "children": [
           {
-            "id": "716a02f236bca08b",
+            "id": "dad95a2303176535",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "memory-cards-view",
               "state": {
-                "file": "05. listening/10. 今日听力/Afternoon Tea.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "05. listening/01. 听力词汇/13. 答案词.md",
+                "tableKey": null
               },
-              "icon": "lucide-file",
-              "title": "Afternoon Tea"
-            }
-          },
-          {
-            "id": "ad7765329dbfc3c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "05. listening/10. 今日听力/Early History of Salt.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Early History of Salt"
+              "icon": "mc-cards",
+              "title": "13. 答案词"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -72,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"meit\"",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -100,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.4107971191406,
+    "width": 341.5765075683594,
     "collapsed": true
   },
   "right": {
@@ -117,7 +99,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "05. listening/10. 今日听力/Early History of Salt.md",
+                "file": "05. listening/01. 听力词汇/13. 答案词.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -208,38 +190,44 @@
       "obsidian-local-images-plus:Local Images Plus  0.19.8\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "ad7765329dbfc3c7",
+  "active": "dad95a2303176535",
   "lastOpenFiles": [
-    "05. listening/10. 今日听力/Afternoon Tea.md",
-    "05. listening/10. 今日听力/Early History of Salt.md",
+    "05. listening/01. 听力词汇/13. 答案词.md",
     "02. word/a. 雅思词汇真经/05-学校教育.md",
-    "02. word/a. 雅思词汇真经/06-科技发明.md",
-    "02. word/a. 雅思词汇真经/04-太空探索.md",
-    "02. word/a. 雅思词汇真经/03-动物保护.md",
-    "02. word/a. 雅思词汇真经/02-植物研究.md",
-    "02. word/a. 雅思词汇真经/01-自然地理.md",
-    "02. word/a. 雅思词汇真经/21-身心健康.md",
-    "02. word/a. 雅思词汇真经/22-时间日期.md",
-    "06. reading/04. 分项说明/Fishbourne Roman Palace.md",
-    "06. reading/06. 研究报道/Footprints in the Mud.md",
-    "20. resource/06. reading/04. 分项说明/Fishbourne Roman Palace/audio/install.mp3",
-    "20. resource/06. reading/04. 分项说明/Fishbourne Roman Palace/audio/imperial.mp3",
-    "20. resource/06. reading/04. 分项说明/Fishbourne Roman Palace/audio/substantial.mp3",
-    "20. resource/06. reading/04. 分项说明/Fishbourne Roman Palace/audio/wing.mp3",
-    "20. resource/06. reading/04. 分项说明/Fishbourne Roman Palace/audio/ad.mp3",
-    "20. resource/06. reading/06. 研究报道/Footprints in the Mud/audio/monster.mp3",
-    "20. resource/06. reading/06. 研究报道/Footprints in the Mud/audio/impact.mp3",
-    "20. resource/06. reading/06. 研究报道/Footprints in the Mud/audio/anomaly.mp3",
-    "20. resource/06. reading/04. 分项说明/Fishbourne Roman Palace/audio/replant.mp3",
-    "20. resource/06. reading/04. 分项说明/Fishbourne Roman Palace/audio/conquest.mp3",
-    "05. listening/01. 听力词汇/01. 住宿.md",
-    "05. listening/02. Part One/Birthday Party Booking.md",
-    "05. listening/01. 听力词汇/02. 旅游.md",
-    "02. word/a. 雅思词汇真经/10-物品材料.md",
-    "01. base/y.word-root.md",
-    "02. word/a. 雅思词汇真经/11-时尚潮流.md",
-    "06. reading/20. 未整理阅读/Elephant Communication.md",
-    "06. reading/20. 未整理阅读/Flower Power.md",
+    "02. word/b. 剑雅阅读真题/05-学校教育.md",
+    "03. phrase/a. 剑雅通用短语/02-动作.md",
+    "05. listening/01. 听力词汇/12. 通用词.md",
+    "05. listening/01. 听力词汇/03. 旅游与参观.md",
+    "05. listening/01. 听力词汇/07. 商业与人文研究.md",
+    "05. listening/01. 听力词汇/09. 食品与健康.md",
+    "05. listening/01. 听力词汇/08. 教育与学习.md",
+    "05. listening/01. 听力词汇/11. 地图题.md",
+    "05. listening/01. 听力词汇/06. 自然与环境保护.md",
+    "05. listening/01. 听力词汇/05. 文化与历史交流.md",
+    "05. listening/01. 听力词汇/04. 城市规划与设施建设.md",
+    "05. listening/01. 听力词汇/01. 日常生活与社交活动.md",
+    "05. listening/01. 听力词汇/02. 求职与工作.md",
+    "05. listening/01. 听力词汇/10. 科技与自然科学.md",
+    "20. resource/05. listening/01. 听力词汇/05. 文化与历史交流/audio/twinning.mp3",
+    "20. resource/05. listening/01. 听力词汇/01. 日常生活与社交活动/audio/socialise.mp3",
+    "20. resource/05. listening/01. 听力词汇/06. 自然与环境保护/audio/rood.mp3",
+    "20. resource/05. listening/01. 听力词汇/06. 自然与环境保护/audio/redstart.mp3",
+    "20. resource/05. listening/01. 听力词汇/05. 文化与历史交流/audio/publicise.mp3",
+    "20. resource/05. listening/01. 听力词汇/08. 教育与学习/audio/paperclip.mp3",
+    "20. resource/05. listening/01. 听力词汇/07. 商业与人文研究/audio/laterality.mp3",
+    "20. resource/05. listening/01. 听力词汇/07. 商业与人文研究/audio/emphasise.mp3",
+    "20. resource/05. listening/01. 听力词汇/05. 文化与历史交流/audio/digitalise.mp3",
+    "20. resource/05. listening/01. 听力词汇/06. 自然与环境保护/audio/cryptobiosis.mp3",
+    "05. listening/01. 听力词汇/09. 地图题.md",
+    "05. listening/01. 听力词汇/科技与自然科学.md",
+    "05. listening/01. 听力词汇/城市规划与设施建设.md",
+    "05. listening/01. 听力词汇/教育与学习.md",
+    "05. listening/01. 听力词汇/旅游与参观.md",
+    "05. listening/01. 听力词汇/自然与环境保护.md",
+    "05. listening/01. 听力词汇/日常生活与社交活动.md",
+    "05. listening/01. 听力词汇/商业与人文研究.md",
+    "05. listening/01. 听力词汇/食品与健康.md",
+    "05. listening/01. 听力词汇/文化与历史交流.md",
     "20. resource/17. dictionary/05. 牛津大词典/o2022k.png",
     "20. resource/17. dictionary/05. 牛津大词典/INTRODUCTION.jpeg",
     "20. resource/17. dictionary/05. 牛津大词典 /o2022k.png",
@@ -250,12 +238,6 @@
     "20. resource/17. dictionary/OED now/o2022k(1).png",
     "20. resource/17. dictionary/OED now/INTRODUCTION.jpeg",
     "20. resource/17. dictionary/OED now/INTRODUCTION(1).jpeg",
-    "01. base/a.phonemes.md",
-    "02. word/h. 词根词缀词典/oyword-root-p.md",
-    "02. word/h. 词根词缀词典/oyword-root-o.md",
-    "02. word/b. 剑雅阅读真题/14-交通旅行.md",
-    "02. word/h. 词根词缀词典/oyword-root-r.md",
-    "01. base/z.word-suffix.md",
     "04. grammer/z. 长难句骨架.canvas",
     "Untitled.canvas"
   ]

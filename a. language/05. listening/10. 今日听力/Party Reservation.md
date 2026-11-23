@@ -54,7 +54,7 @@
 
 **Maria**: I'll need to check, but I do know that one of my daughter's friends is very allergic to ==strawberries==. Even just being near them can be a problem.
 
-**Manager**: Okay. I'll make a note to our chef to avoid those completely. Do you have any other requests for desserts?
+**Manager**: Okay. I'll make a note to our chef to avoid those completely. Do you have any other requests for ==desserts==?
 
 **Maria**: Well, I'd like a choice if possible. And could we have ==cheese== as well?
 

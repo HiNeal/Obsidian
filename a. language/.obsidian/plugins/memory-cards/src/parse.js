@@ -132,4 +132,70 @@ function parseDeck(markdown, { rootIndex = null } = {}) {
   return cards;
 }
 
-module.exports = { parseDeck, tableColumns };
+/** 轻量判断单元格第一行是否有有效词头, 避免运行 parseMeaning / resolveRootHints。 */
+function hasHeadWord(raw) {
+  if (!raw) return false;
+  const first = brToNewline(stripComments(raw)).split("\n").find((l) => l.trim());
+  return Boolean(first && plain(first));
+}
+
+/** 仅扫描可用于学习范围的表格与行数, 不解析释义/构词/英意等重字段。 */
+function scanTables(markdown) {
+  const lines = markdown.split(/\r?\n/);
+  const rows = [];
+  let heading = "";
+  const occurrences = new Map();
+  let inCode = false;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (/^\s*```/.test(line)) { inCode = !inCode; continue; }
+    if (inCode) continue;
+    const hm = line.match(/^(#{1,6})\s+(.+?)\s*#*\s*$/);
+    if (hm) { heading = plain(hm[2]); continue; }
+    if (!isTableLine(line) || !isSeparator(lines[i + 1])) continue;
+    const header = splitRow(line).map(headerName);
+    const cols = tableColumns(header);
+    const tableStart = i;
+    const identity = JSON.stringify([heading, header[0]]);
+    const occurrence = (occurrences.get(identity) || 0) + 1;
+    occurrences.set(identity, occurrence);
+    const tableKey = JSON.stringify([heading, header[0], occurrence]);
+    i += 1;
+    while (isTableLine(lines[i + 1])) {
+      i++;
+      if (!cols) continue;
+      const cell = splitRow(lines[i])[cols.word] || "";
+      if (!hasHeadWord(cell)) continue;
+      rows.push({
+        tableKey,
+        tableStart,
+        tableHeading: heading,
+        tableHeader: header[0],
+        line: i,
+      });
+    }
+  }
+  return rows;
+}
+
+/** 找到第一张有效卡片即立刻返回, 供打开笔记时快速判定是否自动切卡片。 */
+function hasDeckCards(markdown) {
+  const lines = markdown.split(/\r?\n/);
+  let inCode = false;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (/^\s*```/.test(line)) { inCode = !inCode; continue; }
+    if (inCode) continue;
+    if (!isTableLine(line) || !isSeparator(lines[i + 1])) continue;
+    const cols = tableColumns(splitRow(line).map(headerName));
+    i += 1;
+    while (isTableLine(lines[i + 1])) {
+      i++;
+      if (!cols) continue;
+      if (hasHeadWord(splitRow(lines[i])[cols.word] || "")) return true;
+    }
+  }
+  return false;
+}
+
+module.exports = { parseDeck, tableColumns, scanTables, hasDeckCards };

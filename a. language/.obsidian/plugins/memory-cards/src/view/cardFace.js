@@ -225,11 +225,16 @@ class CardFace {
   /** 翻页开始时调用: 立刻收起并忘掉悬停, 旧卡的悬浮卡不跟着飞出动画停留。 */
   dismissPeek() {
     clearTimeout(this.leaveTimer);
+    const wasVisible = this.peekEl.hasClass("is-visible");
     if (this.hovering) {
       this.resumeHover = true;
-      if (this.peekEl.hasClass("is-visible")) this.resumeRect = this.peekEl.getBoundingClientRect();
+      if (wasVisible) this.resumeRect = this.peekEl.getBoundingClientRect();
     }
     this.hovering = false;
+    if (!wasVisible) {
+      this.hidePeek();
+      return;
+    }
     // 翻页时不淡出, 直接消失
     this.peekEl.addClass("is-instant");
     this.hidePeek();
@@ -317,7 +322,7 @@ class CardFace {
     }
   }
 
-  /** 单词尽量大, 放不下就缩: 单个词不折行, 多词短语最多三行。 */
+  /** 单词尽量大, 放不下就缩: 单个词不折行, 多词短语最多三行。用二分查找减少强制重排次数。 */
   fit() {
     const el = this.wordEl;
     if (!el.isConnected || !el.clientWidth) return;
@@ -325,14 +330,22 @@ class CardFace {
     el.style.paddingBottom = "";
     const multi = el.hasClass("is-multi");
     const width = this.el.clientWidth;
-    let size = Math.round(Math.min(multi ? 30 : 44, width * (multi ? 0.09 : 0.13)));
+    const max = Math.round(Math.min(multi ? 30 : 44, width * (multi ? 0.09 : 0.13)));
     const min = 16;
     const lineHeight = multi ? 1.3 : 1.15;
     const glyphRoom = 0.72; // 与 CSS 里 .mc-word 上下 padding (0.4em + 0.32em) 一致
-    el.style.fontSize = `${size}px`;
-    while (size > min && (el.scrollWidth > el.clientWidth + 1 || (multi && el.scrollHeight > size * (lineHeight * 3 + glyphRoom) + 2))) {
-      size -= 1;
+    const fits = (size) => {
       el.style.fontSize = `${size}px`;
+      return el.scrollWidth <= el.clientWidth + 1 && (!multi || el.scrollHeight <= size * (lineHeight * 3 + glyphRoom) + 2);
+    };
+    if (!fits(max)) {
+      let lo = min, hi = max - 1, best = min;
+      while (lo <= hi) {
+        const mid = (lo + hi) >> 1;
+        if (fits(mid)) { best = mid; lo = mid + 1; }
+        else hi = mid - 1;
+      }
+      if (el.style.fontSize !== `${best}px`) el.style.fontSize = `${best}px`;
     }
     this.placeRootMeanings();
   }
@@ -342,20 +355,26 @@ class CardFace {
     const marks = this.wordEl.querySelectorAll(".mc-word-root");
     if (!marks.length) return;
     const doc = this.wordEl.ownerDocument;
-    const ctx = doc.createElement("canvas").getContext("2d");
+    if (!this._measureCtx) this._measureCtx = doc.createElement("canvas").getContext("2d");
+    const ctx = this._measureCtx;
+    const win = doc.defaultView;
+    const trim = 3; // 再向内收 3px, 让线比字母略短一点点, 两端不顶到字形边缘。
+    const insets = [];
     for (const mark of marks) {
-      const style = doc.defaultView.getComputedStyle(mark);
+      const style = win.getComputedStyle(mark);
       ctx.font = `${style.fontStyle} ${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;
       if ("letterSpacing" in ctx) ctx.letterSpacing = style.letterSpacing === "normal" ? "0px" : style.letterSpacing;
       const text = mark.textContent;
       const first = ctx.measureText(text[0]);
       const last = ctx.measureText(text[text.length - 1]);
-      // 再向内收 3px, 让线比字母略短一点点, 两端不顶到字形边缘。
-      const trim = 3;
-      const left = Math.max(0, -first.actualBoundingBoxLeft) + trim;
-      const right = Math.max(0, last.width - last.actualBoundingBoxRight) + trim;
-      mark.style.setProperty("--mc-root-inset-l", `${left.toFixed(2)}px`);
-      mark.style.setProperty("--mc-root-inset-r", `${right.toFixed(2)}px`);
+      insets.push([
+        Math.max(0, -first.actualBoundingBoxLeft) + trim,
+        Math.max(0, last.width - last.actualBoundingBoxRight) + trim,
+      ]);
+    }
+    for (let i = 0; i < marks.length; i++) {
+      marks[i].style.setProperty("--mc-root-inset-l", `${insets[i][0].toFixed(2)}px`);
+      marks[i].style.setProperty("--mc-root-inset-r", `${insets[i][1].toFixed(2)}px`);
     }
   }
 

@@ -5,9 +5,8 @@ const __defs = {
 
 const { Plugin, MarkdownView, TFile, addIcon } = require("obsidian");
 const { VIEW_TYPE, DECK_ROOTS } = require("./constants");
-const { parseDeck } = require("./parse");
+const { hasDeckCards } = require("./parse");
 const { PrefsStore } = require("./store");
-const { BASE_SOURCES, createRootIndex } = require("./roots");
 const { MemoryCardsSettingTab } = require("./settings");
 const { AudioLibrary } = require("./audio");
 const { registerIcons } = require("./ui/icons");
@@ -24,7 +23,6 @@ class MemoryCardsPlugin extends Plugin {
   async onload() {
     registerIcons(addIcon);
     this.store = await PrefsStore.load(this);
-    await this.loadRootIndex();
     this.addSettingTab(new MemoryCardsSettingTab(this.app, this));
     this.audio = new AudioLibrary(this.app);
     this.registerView(VIEW_TYPE, (leaf) => new CardView(leaf, this));
@@ -65,13 +63,6 @@ class MemoryCardsPlugin extends Plugin {
     // 笔记改名时迁移它的学习进度与设置 (卡片页没开着也要迁)
     this.registerEvent(this.app.vault.on("rename", (file, oldPath) => {
       if (file instanceof TFile && oldPath.endsWith(".md")) this.store.rename(oldPath, file.path);
-    }));
-    this.registerEvent(this.app.vault.on("modify", async file => {
-      if (!BASE_SOURCES.some(source => source.path === file.path)) return;
-      await this.loadRootIndex();
-      for (const leaf of this.app.workspace.getLeavesOfType(VIEW_TYPE)) {
-        if (leaf.view instanceof CardView) await leaf.view.reload({ force: true });
-      }
     }));
 
     this.registerEvent(this.app.workspace.on("file-menu", (menu, file) => {
@@ -120,16 +111,6 @@ class MemoryCardsPlugin extends Plugin {
     }));
   }
 
-  async loadRootIndex() {
-    const seq = this.rootIndexSeq = (this.rootIndexSeq || 0) + 1;
-    const index = new Map();
-    for (const { path, kind } of BASE_SOURCES) {
-      const file = this.app.vault.getAbstractFileByPath(path);
-      createRootIndex(file instanceof TFile ? await this.app.vault.read(file) : "", kind, index);
-    }
-    if (seq === this.rootIndexSeq) this.rootIndex = index;
-  }
-
   setMemoryHints(value) {
     this.store.memoryHints = value;
     for (const leaf of this.app.workspace.getLeavesOfType(VIEW_TYPE)) {
@@ -152,7 +133,7 @@ class MemoryCardsPlugin extends Plugin {
     }
     if (!this.store.shouldAutoOpen(file.path)) return;
     const text = await this.app.vault.cachedRead(file);
-    if (!parseDeck(text).length) return;
+    if (!hasDeckCards(text)) return;
     if (leaf.view !== view || view.file !== file) return; // 读文件期间已切走
     if (this.noteByChoice.get(leaf) === file.path || !this.store.shouldAutoOpen(file.path)) return;
     await this.openDeck(file.path, leaf);
@@ -379,7 +360,73 @@ function parseDeck(markdown, { rootIndex = null } = {}) {
   return cards;
 }
 
-module.exports = { parseDeck, tableColumns };
+/** 轻量判断单元格第一行是否有有效词头, 避免运行 parseMeaning / resolveRootHints。 */
+function hasHeadWord(raw) {
+  if (!raw) return false;
+  const first = brToNewline(stripComments(raw)).split("\n").find((l) => l.trim());
+  return Boolean(first && plain(first));
+}
+
+/** 仅扫描可用于学习范围的表格与行数, 不解析释义/构词/英意等重字段。 */
+function scanTables(markdown) {
+  const lines = markdown.split(/\r?\n/);
+  const rows = [];
+  let heading = "";
+  const occurrences = new Map();
+  let inCode = false;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (/^\s*```/.test(line)) { inCode = !inCode; continue; }
+    if (inCode) continue;
+    const hm = line.match(/^(#{1,6})\s+(.+?)\s*#*\s*$/);
+    if (hm) { heading = plain(hm[2]); continue; }
+    if (!isTableLine(line) || !isSeparator(lines[i + 1])) continue;
+    const header = splitRow(line).map(headerName);
+    const cols = tableColumns(header);
+    const tableStart = i;
+    const identity = JSON.stringify([heading, header[0]]);
+    const occurrence = (occurrences.get(identity) || 0) + 1;
+    occurrences.set(identity, occurrence);
+    const tableKey = JSON.stringify([heading, header[0], occurrence]);
+    i += 1;
+    while (isTableLine(lines[i + 1])) {
+      i++;
+      if (!cols) continue;
+      const cell = splitRow(lines[i])[cols.word] || "";
+      if (!hasHeadWord(cell)) continue;
+      rows.push({
+        tableKey,
+        tableStart,
+        tableHeading: heading,
+        tableHeader: header[0],
+        line: i,
+      });
+    }
+  }
+  return rows;
+}
+
+/** 找到第一张有效卡片即立刻返回, 供打开笔记时快速判定是否自动切卡片。 */
+function hasDeckCards(markdown) {
+  const lines = markdown.split(/\r?\n/);
+  let inCode = false;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (/^\s*```/.test(line)) { inCode = !inCode; continue; }
+    if (inCode) continue;
+    if (!isTableLine(line) || !isSeparator(lines[i + 1])) continue;
+    const cols = tableColumns(splitRow(line).map(headerName));
+    i += 1;
+    while (isTableLine(lines[i + 1])) {
+      i++;
+      if (!cols) continue;
+      if (hasHeadWord(splitRow(lines[i])[cols.word] || "")) return true;
+    }
+  }
+  return false;
+}
+
+module.exports = { parseDeck, tableColumns, scanTables, hasDeckCards };
 
 },
 "text": function (module, exports, require) {
@@ -1242,37 +1289,41 @@ class DeckSheet extends Sheet {
   }
 
   decks() {
-    return this.app.vault.getMarkdownFiles()
-      .filter((f) => DECK_ROOTS.some((r) => f.path.startsWith(r)))
-      .map((f) => f.path)
-      .sort((a, b) => a.localeCompare(b, "zh"));
+    if (!this._decks) {
+      this._decks = this.app.vault.getMarkdownFiles()
+        .filter((f) => DECK_ROOTS.some((r) => f.path.startsWith(r)))
+        .map((f) => f.path)
+        .sort((a, b) => a.localeCompare(b, "zh"))
+        .map((path) => ({ path, lower: path.toLowerCase(), title: baseName(path), folder: folderOf(path) }));
+    }
+    return this._decks;
   }
 
   build(body) {
     const tokens = this.query.trim().toLowerCase().split(/\s+/).filter(Boolean);
     const all = this.decks();
-    const exists = new Set(all);
     const choose = (path) => () => { this.close(); this.onChoose(path); };
-    const addRow = (group, path) => this.row(group, {
-      title: baseName(path), desc: folderOf(path), selected: path === this.currentPath, onClick: choose(path),
+    const addRow = (group, item) => this.row(group, {
+      title: item.title, desc: item.folder, selected: item.path === this.currentPath, onClick: choose(item.path),
     });
 
     if (!tokens.length) {
-      const recent = this.store.recent.filter((p) => exists.has(p));
+      const byPath = new Map(all.map((item) => [item.path, item]));
+      const recent = this.store.recent.map((p) => byPath.get(p)).filter(Boolean);
       if (recent.length) {
         const group = this.group(body, { label: "最近学习" });
-        recent.forEach((p) => addRow(group, p));
+        recent.forEach((item) => addRow(group, item));
       }
     }
 
-    const matches = tokens.length ? all.filter((p) => tokens.every((t) => p.toLowerCase().includes(t))) : all;
+    const matches = tokens.length ? all.filter((item) => tokens.every((t) => item.lower.includes(t))) : all;
     const shown = matches.slice(0, 80);
     const group = this.group(body, {
       label: tokens.length ? `搜索结果 · ${matches.length}` : "全部笔记",
       footnote: matches.length > shown.length ? `还有 ${matches.length - shown.length} 篇, 输入关键词缩小范围。` : "",
     });
     if (!shown.length) this.row(group, { title: "没有匹配的笔记" });
-    shown.forEach((p) => addRow(group, p));
+    shown.forEach((item) => addRow(group, item));
   }
 }
 
@@ -1473,29 +1524,84 @@ module.exports = { paintRange, toggle, rangeField };
 },
 "noteTables": function (module, exports, require) {
 const { setIcon } = require("obsidian");
-const { parseDeck } = require("./parse");
-const { tableScopes } = require("./tableScopes");
+const { scanTableScopes } = require("./tableScopes");
+
+const EDIT_DEBOUNCE = 180;
+
+function hasTableMutation(records) {
+  for (const r of records) {
+    for (const n of r.addedNodes) {
+      if (n.nodeType !== 1 || n.classList?.contains('mc-table-study')) continue;
+      if (n.tagName === 'TABLE' || n.querySelector?.('table')) return true;
+    }
+    for (const n of r.removedNodes) {
+      if (n.nodeType !== 1 || n.classList?.contains('mc-table-study')) continue;
+      if (n.tagName === 'TABLE' || n.querySelector?.('table')) return true;
+    }
+  }
+  return false;
+}
 
 // 单表入口挂在第一列表头, 按钮不参与编辑, 不修改笔记源码。
 function registerNoteTables(plugin) {
   const contexts = new WeakMap();
   const cache = new WeakMap();
+  const observed = new WeakSet();
+  const observers = [];
   const buttons = new Set();
   let frame = null;
+  let editTimer = null;
+
+  const schedule = () => { if (frame === null) frame = requestAnimationFrame(refresh); };
+  const scheduleEdit = () => {
+    clearTimeout(editTimer);
+    editTimer = setTimeout(schedule, EDIT_DEBOUNCE);
+  };
+
+  const observeSource = (view) => {
+    const src = view.contentEl.querySelector('.markdown-source-view');
+    if (!src || observed.has(src)) return;
+    observed.add(src);
+    const observer = new MutationObserver((records) => {
+      if (hasTableMutation(records)) schedule();
+    });
+    observer.observe(src, { childList: true, subtree: true });
+    observers.push(observer);
+  };
+
   const refresh = () => {
     frame = null;
     for (const button of buttons) if (!button.isConnected) buttons.delete(button);
     for (const leaf of plugin.app.workspace.getLeavesOfType('markdown')) {
       const view = leaf.view;
-      if (!view.file) continue;
-      const text = view.editor?.getValue();
+      if (!view.file || !view.contentEl.isConnected || (!view.contentEl.offsetWidth && !view.contentEl.offsetHeight)) continue;
+      observeSource(view);
+
+      const docObj = view.editor?.cm?.state?.doc || null;
       let cached = cache.get(view);
-      if (!cached || cached.text !== text) {
-        cached = { text, tables: tableScopes(parseDeck(text || '')) };
+      let tablesChanged = false;
+      if (!cached || (docObj ? cached.docObj !== docObj : cached.text !== (view.editor?.getValue() ?? view.data ?? ''))) {
+        const text = docObj ? docObj.toString() : (view.editor?.getValue() ?? view.data ?? '');
+        if (!cached || cached.text !== text) {
+          cached = { docObj, text, path: view.file.path, tables: scanTableScopes(text) };
+          tablesChanged = true;
+        } else {
+          cached.docObj = docObj;
+          if (cached.path !== view.file.path) { cached.path = view.file.path; tablesChanged = true; }
+        }
         cache.set(view, cached);
+      } else if (cached.path !== view.file.path) {
+        cached.path = view.file.path;
+        tablesChanged = true;
       }
+
+      if (!cached.tables.length && !tablesChanged) continue;
+
       for (const table of view.contentEl.querySelectorAll('.markdown-preview-view table, .markdown-source-view table')) {
-        const headers = [...(table.querySelector('thead tr, tr')?.children || [])];
+        let button = table.mcStudyButton;
+        if (button && !button.isConnected) { delete table.mcStudyButton; button = null; }
+        if (button && !tablesChanged) continue;
+
         let line = null;
         try {
           if (table.closest('.markdown-source-view') && view.editor?.cm) {
@@ -1507,10 +1613,8 @@ function registerNoteTables(plugin) {
           }
         } catch (_) { /* 未完成挂载的表格等下一次刷新。 */ }
         const scope = line == null ? null : cached.tables.find(t => line >= t.line && line <= t.end);
-        let button = table.mcStudyButton;
-        if (button && !button.isConnected) { delete table.mcStudyButton; button = null; }
         if (!scope) { if (button) { button.remove(); delete table.mcStudyButton; } continue; }
-        const host = headers[0];
+        const host = table.querySelector('thead tr, tr')?.firstElementChild;
         if (!host) continue;
         if (button && button.parentElement !== host) { button.remove(); button = null; }
         if (!button) {
@@ -1532,19 +1636,23 @@ function registerNoteTables(plugin) {
       }
     }
   };
-  const schedule = () => { if (frame === null) frame = requestAnimationFrame(refresh); };
+
   plugin.registerMarkdownPostProcessor((el, ctx) => {
-    el.querySelectorAll('table').forEach(table => contexts.set(table, ctx));
+    const tables = el.querySelectorAll('table');
+    if (!tables.length) return;
+    tables.forEach(table => contexts.set(table, ctx));
     schedule();
   });
-  const observer = new MutationObserver(schedule);
-  observer.observe(plugin.app.workspace.containerEl, { childList: true, subtree: true, characterData: true });
   plugin.registerEvent(plugin.app.workspace.on('layout-change', schedule));
-  plugin.registerEvent(plugin.app.workspace.on('editor-change', schedule));
+  plugin.registerEvent(plugin.app.workspace.on('active-leaf-change', schedule));
+  plugin.registerEvent(plugin.app.workspace.on('file-open', schedule));
+  plugin.registerEvent(plugin.app.workspace.on('editor-change', scheduleEdit));
   plugin.app.workspace.onLayoutReady(schedule);
   schedule();
   plugin.register(() => {
-    observer.disconnect();
+    for (const observer of observers) observer.disconnect();
+    observers.length = 0;
+    clearTimeout(editTimer);
     if (frame !== null) cancelAnimationFrame(frame);
     buttons.forEach(button => button.remove());
     document.querySelectorAll('.mc-table-host').forEach(el => el.classList.remove('mc-table-host'));
@@ -1555,6 +1663,8 @@ module.exports = { registerNoteTables };
 
 },
 "tableScopes": function (module, exports, require) {
+const { scanTables } = require("./parse");
+
 // 表格身份来自标题、首列表头与同名表顺序; 不依赖渲染出的表格数量。
 function tableScopes(cards) {
   const groups = new Map();
@@ -1577,8 +1687,9 @@ function tableScopes(cards) {
   }
   return tables;
 }
+const scanTableScopes = (markdown) => tableScopes(scanTables(markdown));
 const scopeCards = (cards, key) => key == null ? cards : cards.filter(c => c.tableKey === key);
-module.exports = { tableScopes, scopeCards };
+module.exports = { tableScopes, scanTableScopes, scopeCards };
 
 },
 "view/CardView": function (module, exports, require) {
@@ -1637,6 +1748,7 @@ class CardView extends ItemView {
     this.revealTimer = null;
     this.pendingScores = new Map(); // card -> 待写回的分数
     this.scoreSaveTimer = null;
+    this.reloadTimer = null;
     this.ownWrite = null;    // 最近一次评分写盘后的全文: modify 事件读到同样内容就是自己写的
     this.loadToken = 0;      // 每次切换卡组自增, 晚到的旧结果直接丢弃
     this.reloadSeq = 0;      // 笔记编辑触发的重读: 只应用比已应用的更新的那一次
@@ -1689,7 +1801,7 @@ class CardView extends ItemView {
     this.renderChrome();
 
     this.registerEvent(this.app.vault.on("modify", (file) => {
-      if (file.path === this.deckPath) this.reload();
+      if (file.path === this.deckPath) this.scheduleReload();
     }));
     // 偏好的改名迁移由插件统一处理 (卡片页没开时也要迁移), 这里只跟着改自己的路径
     this.registerEvent(this.app.vault.on("rename", (file, oldPath) => {
@@ -1711,6 +1823,8 @@ class CardView extends ItemView {
     this.autoplay.stop();
     this.player.stop();
     this.clearReveal();
+    clearTimeout(this.reloadTimer);
+    this.reloadTimer = null;
     this.face && this.face.destroy();
     this.resizeObserver && this.resizeObserver.disconnect();
     await this.deleteWrite;
@@ -1780,10 +1894,11 @@ class CardView extends ItemView {
       await this.flushScores();
       if (token !== this.loadToken || this.closed) return;
       const file = this.app.vault.getAbstractFileByPath(path);
+      const changedFile = path !== this.deckPath;
       this.deckPath = path;
       this.tableKey = tableKey;
       this.ownWrite = null;
-      this.plugin.audio.clear();
+      if (changedFile) this.plugin.audio.clear();
       if (!(file instanceof TFile)) {
         this.store.forget(path);
         this.allCards = [];
@@ -1811,6 +1926,14 @@ class CardView extends ItemView {
         this.renderChrome();
       }
     }
+  }
+
+  scheduleReload() {
+    clearTimeout(this.reloadTimer);
+    this.reloadTimer = setTimeout(() => {
+      this.reloadTimer = null;
+      this.reload();
+    }, 180);
   }
 
   /**
@@ -1846,7 +1969,7 @@ class CardView extends ItemView {
   }
 
   readScope(data) {
-    this.allCards = parseDeck(data, { rootIndex: this.plugin.rootIndex });
+    this.allCards = parseDeck(data);
     this.tables = tableScopes(this.allCards);
     return scopeCards(this.allCards, this.tableKey);
   }
@@ -1878,7 +2001,7 @@ class CardView extends ItemView {
 
   // ==================== 渲染 ====================
 
-  render({ keepReveal = false } = {}) {
+  render({ keepReveal = false, deferLayout = true } = {}) {
     const card = this.session.card;
     const prefs = this.prefs;
     const wasRevealed = this.face.revealed;
@@ -1890,7 +2013,8 @@ class CardView extends ItemView {
       this.face.setMemoryHints(this.store.memoryHints);
       this.face.render(card, { dictation: prefs.dictation, review: prefs.review && !prefs.dictation });
       if (keepReveal && wasRevealed) this.face.reveal();
-      requestAnimationFrame(() => { this.face.fit(); this.placeDict(); });
+      if (deferLayout) requestAnimationFrame(() => { this.face.fit(); this.placeDict(); });
+      else { this.face.fit(); this.placeDict(); }
       this.saveProgress();
     }
     this.syncDict(card, keepReveal);
@@ -1966,7 +2090,7 @@ class CardView extends ItemView {
       if (this.closed) return;
 
       this.session.advance(direction, this.arrangePrefs());
-      this.render();
+      this.render({ deferLayout: false });
 
       card.style.transform = "";
       card.style.opacity = "";
@@ -2768,11 +2892,16 @@ class CardFace {
   /** 翻页开始时调用: 立刻收起并忘掉悬停, 旧卡的悬浮卡不跟着飞出动画停留。 */
   dismissPeek() {
     clearTimeout(this.leaveTimer);
+    const wasVisible = this.peekEl.hasClass("is-visible");
     if (this.hovering) {
       this.resumeHover = true;
-      if (this.peekEl.hasClass("is-visible")) this.resumeRect = this.peekEl.getBoundingClientRect();
+      if (wasVisible) this.resumeRect = this.peekEl.getBoundingClientRect();
     }
     this.hovering = false;
+    if (!wasVisible) {
+      this.hidePeek();
+      return;
+    }
     // 翻页时不淡出, 直接消失
     this.peekEl.addClass("is-instant");
     this.hidePeek();
@@ -2860,7 +2989,7 @@ class CardFace {
     }
   }
 
-  /** 单词尽量大, 放不下就缩: 单个词不折行, 多词短语最多三行。 */
+  /** 单词尽量大, 放不下就缩: 单个词不折行, 多词短语最多三行。用二分查找减少强制重排次数。 */
   fit() {
     const el = this.wordEl;
     if (!el.isConnected || !el.clientWidth) return;
@@ -2868,14 +2997,22 @@ class CardFace {
     el.style.paddingBottom = "";
     const multi = el.hasClass("is-multi");
     const width = this.el.clientWidth;
-    let size = Math.round(Math.min(multi ? 30 : 44, width * (multi ? 0.09 : 0.13)));
+    const max = Math.round(Math.min(multi ? 30 : 44, width * (multi ? 0.09 : 0.13)));
     const min = 16;
     const lineHeight = multi ? 1.3 : 1.15;
     const glyphRoom = 0.72; // 与 CSS 里 .mc-word 上下 padding (0.4em + 0.32em) 一致
-    el.style.fontSize = `${size}px`;
-    while (size > min && (el.scrollWidth > el.clientWidth + 1 || (multi && el.scrollHeight > size * (lineHeight * 3 + glyphRoom) + 2))) {
-      size -= 1;
+    const fits = (size) => {
       el.style.fontSize = `${size}px`;
+      return el.scrollWidth <= el.clientWidth + 1 && (!multi || el.scrollHeight <= size * (lineHeight * 3 + glyphRoom) + 2);
+    };
+    if (!fits(max)) {
+      let lo = min, hi = max - 1, best = min;
+      while (lo <= hi) {
+        const mid = (lo + hi) >> 1;
+        if (fits(mid)) { best = mid; lo = mid + 1; }
+        else hi = mid - 1;
+      }
+      if (el.style.fontSize !== `${best}px`) el.style.fontSize = `${best}px`;
     }
     this.placeRootMeanings();
   }
@@ -2885,20 +3022,26 @@ class CardFace {
     const marks = this.wordEl.querySelectorAll(".mc-word-root");
     if (!marks.length) return;
     const doc = this.wordEl.ownerDocument;
-    const ctx = doc.createElement("canvas").getContext("2d");
+    if (!this._measureCtx) this._measureCtx = doc.createElement("canvas").getContext("2d");
+    const ctx = this._measureCtx;
+    const win = doc.defaultView;
+    const trim = 3; // 再向内收 3px, 让线比字母略短一点点, 两端不顶到字形边缘。
+    const insets = [];
     for (const mark of marks) {
-      const style = doc.defaultView.getComputedStyle(mark);
+      const style = win.getComputedStyle(mark);
       ctx.font = `${style.fontStyle} ${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;
       if ("letterSpacing" in ctx) ctx.letterSpacing = style.letterSpacing === "normal" ? "0px" : style.letterSpacing;
       const text = mark.textContent;
       const first = ctx.measureText(text[0]);
       const last = ctx.measureText(text[text.length - 1]);
-      // 再向内收 3px, 让线比字母略短一点点, 两端不顶到字形边缘。
-      const trim = 3;
-      const left = Math.max(0, -first.actualBoundingBoxLeft) + trim;
-      const right = Math.max(0, last.width - last.actualBoundingBoxRight) + trim;
-      mark.style.setProperty("--mc-root-inset-l", `${left.toFixed(2)}px`);
-      mark.style.setProperty("--mc-root-inset-r", `${right.toFixed(2)}px`);
+      insets.push([
+        Math.max(0, -first.actualBoundingBoxLeft) + trim,
+        Math.max(0, last.width - last.actualBoundingBoxRight) + trim,
+      ]);
+    }
+    for (let i = 0; i < marks.length; i++) {
+      marks[i].style.setProperty("--mc-root-inset-l", `${insets[i][0].toFixed(2)}px`);
+      marks[i].style.setProperty("--mc-root-inset-r", `${insets[i][1].toFixed(2)}px`);
     }
   }
 

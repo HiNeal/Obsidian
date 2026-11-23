@@ -24,15 +24,15 @@
 
 **Manager**: So just go directly to the new building on the Monday, and by then, hopefully, all the hard work will have been done.
 
-**Manager**: Now, if you take a look at the plan, I'll show you the layout of our new office. Can you all see the lifts at the bottom of the plan? Now, as you come out of the lifts, you'll see the reception is on the other side of the corridor. As you can see, it's quite a ==large space==, so there will be ==ample room== for the receptionist desk straight in front of you, ==a waiting area== for our clients on the left, and a display area over to the right.
+**Manager**: Now, if you take a look at the plan, I'll show you the layout of our new office. Can you all see the lifts at the bottom of the plan? Now, as you come out of the lifts, you'll see the reception is on the other side of the corridor. As you can see, it's quite a ==large space==, so there will be ==ample room== for the receptionist desk ==straight in front of== you, ==a waiting area== for our clients on the left, and a display area over to the right.
 
 **Manager**: Now, to reach your desk, you'll need to walk through the reception to the open plan area at the back of the office suite.
 
-**Manager**: You'll see some desks there drawn on the plan. For the sales staff, we've asked the builders to put in a ==partition== between your area and the rest of the staff. We're aware that you're on the phone a lot talking to clients, and you'll need some privacy.
+**Manager**: You'll see some desks there ==drawn== on the plan. For the sales staff, we've asked the builders to put in a ==partition== between your area and the rest of the staff. We're aware that you're on the phone a lot talking to clients, and you'll need some privacy.
 
 **Manager**: So that's your area in the ==top left corner==.
 
-**Manager**: Now, if you look at the very top of the plan, opposite the doorway, you'll see the designer's desks. We didn't want to put you too close to the entrance. Those desks to the right of the entrance to the open plan area will be for ==temporary staff==.
+**Manager**: Now, if you look at the very top of the plan, ==opposite== the doorway, you'll see the designer's desks. We didn't want to put you too close to the ==entrance==. Those desks to the right of the entrance to the open plan area will be for ==temporary staff==.
 
 **Manager**: Okay, let's see now. What else do I need to point out?
 
@@ -49,7 +49,10 @@
 | outgrown | v. 长得超出(发展得过大而不再适合) | we've just **outgrown** the space | 0 |
 | space | n. 空地(空旷地, 营业场所, 空格); 空间(太空, 星际空间, 数学空间); 一段时间; 篇幅(广告版面, 存储空间); 自由空间<br><br>v. 间隔排列(加空格) | just outgrown the **space** | 0 |
 | lease | n. 租约<br><br>v. 出租(租用) | cut short our **lease** | 0 |
+| drawn | v. ==画==(画出, 画线); 拖(拉动, 缓缓移动, 拉窗帘); 拔出; 汲取(提款, 吸气); 引起(吸引, 得出, 作出比较)<br><br>n. 抽签; 平局; 有吸引力的人或物; 拔枪; 吸一口烟 | desks there **drawn** on the plan | 0 |
 | partition | n. 分开; 划分; 分隔; 隔开部分 | put in a **partition** | 0 |
+| opposite | adj. 对面的; 相反的(对立的)<br><br>n. 对立面<br><br>adv. 在对面<br><br>prep. ==在…对面==; 与…演对手戏 | **opposite** the doorway | 0 |
+| entrance | n. ==入口==; 进入(上场, 入学资格)<br><br>v. 使着迷(使入迷) | too close to the **entrance** | 0 |
 | reassure | v. 使安心 | want to **reassure** you | 0 |
 | allowances | n. 限额(免税额); 津贴(零花钱)<br><br>v. 给…津贴 | made **allowances** for that | 0 |
 
@@ -65,6 +68,7 @@
 | get rid of ... | 扔掉 ...<br>摆脱 ... | go through your files and **get rid of** outdated and unnecessary paperwork | 0 |
 | large space | n. 宽敞的空间 | it's quite a **large space** | 0 |
 | ample room | n. 充足的空间 | there will be **ample room** for the receptionist desk | 0 |
+| straight in front of ... | 在 ... 的正前方 | the receptionist desk **straight in front of** you | 0 |
 | a waiting area | n. 等候区 | **a waiting area** for our clients on the left | 0 |
 | top left corner | n. 左上角 | that's your area in the **top left corner** | 0 |
 | temporary staff | n. 临时员工 | will be for **temporary staff** | 0 |

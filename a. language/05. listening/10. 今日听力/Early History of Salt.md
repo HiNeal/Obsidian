@@ -25,11 +25,34 @@
 
 | 单词 | 释义 | 意群 | 评分 |
 | :--- | :--- | :--- | --- |
+| salt | n. ==盐==(趣味); 盐类; 老水手<br><br>adj. 含盐的; 盐生的<br><br>v. 用盐腌(增添趣味); 撒盐融雪 | going to talk about **salt** | 0 |
+| ubiquitous | adj. 无处不在的 | most **ubiquitous** food seasonings | 0 |
+| indispensable | adj. 不可或缺的 | plays an **indispensable** role | 0 |
+| commodity | n. ==商品==(有用之物) | a valuable **commodity** during human history | 0 |
+| currency | n. ==货币==; 通行(通用时期) | method of trade and **currency** | 0 |
+| condiment | n. 调味品 | the first **condiment** discovered | 0 |
+| microorganisms | n. 微生物 | **microorganisms** in the food | 0 |
+| multiply | v. 乘; 倍增(==繁殖==, 繁育)<br><br>adv. 多方面地 | **multiply** in abundance | 0 |
+| abundance | n. ==大量==(充裕, 富裕, 丰度) | multiply in **abundance** | 0 |
+| principal | adj. ==主要的==; 本金的<br><br>n. 负责人(校长, 主角, 首席乐手); 本金; 委托人; 主犯 | the **principal** means of livelihood | 0 |
+| livelihood | n. 生计 | means of **livelihood** | 0 |
+| soared | v. 高飞(翱翔, ==猛增==) | in Sweden **soared** during that period | 0 |
+| basins | n. 洗脸盆; 盆; ==盆地==(流域, 港池) | oceans and **basins** | 0 |
+| impurities | n. 不纯(==杂质==, 掺杂物) | mixed with **impurities** | 0 |
+| sediments | n. ==沉淀物==(沉积物)<br><br>v. 沉淀(产生沉淀, 使沉积) | the **sediments** and other chemicals | 0 |
+| purified | v. ==净化==(提取); 使纯洁 | need to be **purified** before eating | 0 |
+| crucial | adj. 决定性的(==至关重要的==, 极好的) | the most **crucial** way | 0 |
+| boosted | v. ==促进==(放大); 托举<br><br>n. 推动(增长); 托举 | trade between different regions was **boosted** | 0 |
 
 # 短语
 
 | 短语 | 释义 | 意群 | 评分 |
 | :--- | :--- | :--- | --- |
+| many health experts | 许多健康专家 | **many health experts** warn that we should use less salt | 0 |
+| annual sales | 年销售额 | the **annual sales** of beer in Sweden | 0 |
+| mineral deposits | 矿藏 | seawater, **mineral deposits**, saline lakes | 0 |
+| brine spring | 盐水泉 | saline lakes, **brine spring**, etc. | 0 |
+| large amounts | 大量 | import **large amounts** of salt | 0 |
 
 # 同义改写
 

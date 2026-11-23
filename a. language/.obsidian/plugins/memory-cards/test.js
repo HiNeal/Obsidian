@@ -469,4 +469,18 @@ test("写作、口语卡组包含未高亮词且不改用户偏好", () => {
   assert.strictEqual(CardView.prototype.arrangePrefs.call({deckPath: "02. word/example.md", prefs}), prefs);
 });
 
+test("轻量表范围扫描与完整解析结果一致", () => {
+  const { hasDeckCards } = require("./src/parse");
+  const { tableScopes, scanTableScopes } = require("./src/tableScopes");
+  const md = "# 练习\n\n| 总览 | 内容 |\n| --- | --- |\n| a | b |\n\n## 词汇\n\n| 单词 | 释义 | 评分 |\n| --- | --- | --- |\n| same | 第一表 | 0 |\n| | 空词头跳过 | 0 |\n\n| 短语 | 释义 | 评分 |\n| --- | --- | --- |\n| same | 第二表 | 2 |\n";
+  assert.deepStrictEqual(scanTableScopes(md), tableScopes(parseDeck(md)));
+  assert.strictEqual(hasDeckCards(md), true);
+  assert.strictEqual(hasDeckCards("| 词根 | 例子 |\n| --- | --- |\n| ac | acid |\n"), false);
+  const real = path.join(vault, "05. listening/01. 听力词汇/13. 答案词.md");
+  if (fs.existsSync(real)) {
+    const content = fs.readFileSync(real, "utf8");
+    assert.deepStrictEqual(scanTableScopes(content), tableScopes(parseDeck(content)));
+  }
+});
+
 console.log(process.exitCode ? `有失败, 通过 ${passed} 项` : `全部通过 ${passed} 项`);
