@@ -69,6 +69,21 @@
 | dozens of                                              | det. 几十个 | manage **dozens of** studio extras | 1 |
 | terms and conditions                                   | n. 条款与条件 | now about **terms and conditions**                                                                    | 1 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| travel expenses | transport costs |
+| meals | catering |
+| waiting around for hours doing nothing | bored or have nothing to do |
+| difficult directors | impatient |
+| basic kit | the essentials |
+| Always carry | at all times |
+| permission | approval |
+| well-organised | good order |
+| flexible | willing to do whatever is asked of you |
+| working quickly | swift pace |
+
 # 错题记录
 
 **The speaker says a problem for makeup artists is**

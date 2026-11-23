@@ -111,6 +111,27 @@ Right. So it looks as …
 | the usual principles                                      | n. 通常的原则 | follow all **the usual principles** | 0 |
 | focus on poverty                                          | v. 关注贫困问题 | We could **focus on poverty**                                                                         | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| too vague | so general |
+| course | syllabus |
+| easy to find | straightforward to find |
+| reliable | manipulated |
+| interesting | fascinating |
+| crime | theft and robbery |
+| unemployment | don't have jobs |
+| housing | homeless |
+| retail centres | shopping centres |
+| conference centres | conferences |
+| sports centres | football |
+| unexpected costs | budgeted for |
+| historical buildings | architecturally significant |
+| sustainable energy | renewable energy |
+| opposition | against it |
+| how much of it has actually been built | how far they've got with it |
+
 # 错题记录
 
 |  | A | B | C | D | E | F | G |

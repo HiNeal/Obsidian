@@ -91,6 +91,16 @@
 | in advance                                                   | adv. 提前 | book **in advance**                                                                                   | 0 |
 | luxury cabins                                                | n. 豪华客舱 | They also have **luxury cabins**                                                                      | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| depart | leave |
+| Cost | paid |
+| a little less than | just under |
+| required | need to provide |
+| Try to see | keeping a lookout for |
+
 # 错题记录
 
 - Cancellation policy: receive a \_\_\_\_\_\_\_\_ (if cancelled a month in advance)

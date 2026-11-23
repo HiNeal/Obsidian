@@ -117,6 +117,26 @@
 
 # 短语
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| types of farming | What kind of farming |
+| location of the farms | where they are |
+| face-to-face | in person |
+| fuller answers | talk freely |
+| workplaces | places where they work |
+| get information on | find out about |
+| irrelevant | doesn't actually apply to them |
+| too little time to calculate | too busy to work out |
+| limited research | just a few pieces of research |
+| plenty of evidence | overwhelming |
+| out of date | written years ago |
+| essential reading | required textbook |
+| inaccurate | misleading or simply wrong |
+| well illustrated | decent pictures |
+| boring | dull |
+
 # 错题记录
 
 **What does Dr Owen advise Joel to include in the title of his project?**

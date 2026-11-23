@@ -59,6 +59,24 @@ Another possibility is a desert shrub grown in Mexico and Texas …
 | engine parts                                                        | n. 发动机零件 | manufacture precision automobile **engine parts** | 0 |
 | aircraft tyres                                                      | n. 飞机轮胎 | durable rubber for **aircraft tyres** | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| essential | without which industry could not exist |
+| limited | limiting |
+| growth of the tree is | eight to ten years |
+| adjusted | change what crop they produce |
+| increasing or decreasing | rising or falling |
+| shift to | turning to |
+| cooking utensils | pots and pans |
+| less | not anything like as |
+| unsuitable | can't replace |
+| wild flower | wild plant |
+| does not require | don't need |
+| good | rich |
+| grown in many locations | grow in all sorts of places |
+
 # 错题记录
 
 - the growth of the tree is \_\_\_\_\_\_\_\_

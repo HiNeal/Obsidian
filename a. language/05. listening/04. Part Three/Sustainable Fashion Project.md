@@ -100,6 +100,21 @@
 
 # 短语
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| People think they mean the same thing | use these terms interchangeably |
+| used imprecisely | deliberately vague |
+| Wool is easy to recycle | can be recycled |
+| long-lasting | lasts a long time |
+| few chemicals | doesn't use many chemicals |
+| Chemicals required for production can be reused | dissolving agents used in the manufacturing process are used again |
+| least sustainable | doesn't compare favourably |
+| additional health benefits | antibacterial |
+| wholly sustainable | fundamentally sustainable |
+| produced in a certain way | only organic bamboo |
+
 # 错题记录
 
 |  | A | B | C | D | E | F | G | H |

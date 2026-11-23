@@ -124,6 +124,19 @@
 | life jacket                                        | n. 救生衣 | provide wetsuits and **life jackets**                                                                 | 1 |
 | swimming trunks                                    | n. 男式游泳裤 | bring **swimming trunks** and trainers | 1 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| max | no more than |
+| understanding the | learn about |
+| available for club members | for members |
+| all inclusive | everything's included |
+| useful | really good |
+| at the end of the course | on completion of the course |
+| able to swim | know how to swim |
+| recommended | recommend |
+
 # 错题记录
 
 | **Name of course** | **What you learn** | **Cost** | **Other information** |

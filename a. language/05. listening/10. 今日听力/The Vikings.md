@@ -45,6 +45,20 @@
 | 短语 | 释义 | 意群 | 评分 |
 | :--- | :--- | :--- | --- |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| interaction | engaged in exchanges |
+| proving | confirming |
+| exceptional | advanced |
+| enabled long-distance travel | travel efficiently across vast distances |
+| ensure food lasted | prevent spoilage |
+| preservation | preservative |
+| sustain | ensured their survival |
+| stories | tales |
+| go to court | approach a court |
+
 # 错题记录
 
 They were exceptional shipbuilders and constructed vessels with a \_\_\_\_\_\_\_\_ that enabled long-distance travel.

@@ -124,6 +124,15 @@
 | 短语 | 释义 | 意群 | 评分 |
 | :--- | :--- | :--- | --- |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| Starting time | what time would you like the room for |
+| Number of guests | How many people |
+| Room decoration | decorate the room |
+| Special request | special message |
+
 # 错题记录
 
 Starting time of the party: \_\_\_\_\_\_\_\_ pm

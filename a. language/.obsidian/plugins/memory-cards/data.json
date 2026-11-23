@@ -1,13 +1,13 @@
 {
   "speech": true,
-  "lastDeck": "02. word/a. 雅思词汇真经/22-时间日期.md",
+  "lastDeck": "02. word/a. 雅思词汇真经/05-学校教育.md",
   "recent": [
-    "02. word/a. 雅思词汇真经/22-时间日期.md",
-    "06. reading/06. 研究报道/Footprints in the Mud.md",
-    "02. word/a. 雅思词汇真经/10-物品材料.md",
+    "02. word/a. 雅思词汇真经/05-学校教育.md",
+    "02. word/a. 雅思词汇真经/04-太空探索.md",
+    "02. word/a. 雅思词汇真经/03-动物保护.md",
+    "02. word/a. 雅思词汇真经/02-植物研究.md",
     "02. word/a. 雅思词汇真经/01-自然地理.md",
-    "02. word/a. 雅思词汇真经/11-时尚潮流.md",
-    "02. word/a. 雅思词汇真经/03-动物保护.md"
+    "02. word/a. 雅思词汇真经/21-身心健康.md"
   ],
   "decks": {
     "02. word/未整理单词.md": {
@@ -31,25 +31,25 @@
       }
     },
     "02. word/a. 雅思词汇真经/01-自然地理.md": {
-      "progress": 17,
+      "progress": 1,
       "focus": false,
       "contentMode": "word",
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "contaminate",
+        "word": "deteriorate",
         "occurrence": 0
       },
       "dictation": false,
       "order": "smart"
     },
     "02. word/a. 雅思词汇真经/02-植物研究.md": {
-      "progress": 1,
+      "progress": 0,
       "contentMode": "word",
       "dictation": false,
       "interval": 2.2,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "perennial",
+        "word": "respire",
         "occurrence": 0
       },
       "focus": false
@@ -78,29 +78,29 @@
       "interval": 3
     },
     "02. word/a. 雅思词汇真经/22-时间日期.md": {
-      "progress": 0,
+      "progress": 2,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "anniversary",
+        "word": "precedent",
         "occurrence": 0
       },
       "focus": false
     },
     "02. word/a. 雅思词汇真经/21-身心健康.md": {
-      "progress": 209,
+      "progress": 500,
       "review": false,
       "revealDelay": 1.3,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "antibiotic",
+        "word": "fancy",
         "occurrence": 0
       }
     },
     "02. word/a. 雅思词汇真经/03-动物保护.md": {
-      "progress": 35,
+      "progress": 1,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "germ",
+        "word": "courtship",
         "occurrence": 0
       },
       "focus": false
@@ -115,13 +115,14 @@
       }
     },
     "02. word/a. 雅思词汇真经/05-学校教育.md": {
-      "progress": 0,
+      "progress": 2,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "wit",
+        "word": "notorious",
         "occurrence": 0
       },
-      "focus": false
+      "focus": false,
+      "interval": 0
     },
     "02. word/a. 雅思词汇真经/06-科技发明.md": {
       "progress": 4,

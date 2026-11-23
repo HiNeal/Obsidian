@@ -53,6 +53,20 @@
 | dense woods                                                   | n. 茂密的树林 | walk through the **dense woods** | 0 |
 | hand implements                                               | n. 手工工具 | dig using traditional **hand implements** | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| Catch a boat | ferries |
+| Don't worry about getting lost | you don't even need to take a map with you |
+| ruins | a pile of stones |
+| circular walk | back down to the starting point |
+| stands on the site of | situated where there was once |
+| older structure | hunting lodge |
+| far-reaching views | take in the views |
+| Baths | bathhouse |
+| Vehicles | wagons |
+
 # 错题记录
 
 **Which TWO pieces of advice are given about the Marsden Coastal Walk?**

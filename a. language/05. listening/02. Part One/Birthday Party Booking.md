@@ -109,6 +109,18 @@
 | 短语 | 释义 | 意群 | 评分 |
 | --- | --- | --- | --- |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| sea view | looks right out over the bay |
+| disabled access | ramps |
+| indoor | under cover |
+| choice | variety |
+| private dining room | our own room |
+| discount | reduction |
+| group | so many of us |
+
 # 错题记录
 
 disabled access \_\_\_\_\_\_\_\_

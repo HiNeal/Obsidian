@@ -113,6 +113,18 @@
 | website address | n. 网址 | I'll give you our **website address** | 0 |
 | fill ... in online | 在线填写 ... | You can **fill it in online** or... | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| 24 hours per day | twenty-four hours |
+| as a | as a leader of some sort |
+| Salary | get paid |
+| First week of job is used for | that time's spent on |
+| at least | minimum |
+| Must pay for | do have to pay for |
+| check | checked by the police |
+
 # 错题记录
 
 Job in summer camp lasts for \_\_\_\_\_\_\_\_ weeks with the chance to travel afterwards

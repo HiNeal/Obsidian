@@ -8,19 +8,37 @@
         "type": "tabs",
         "children": [
           {
-            "id": "66b54613d2ec7d2a",
+            "id": "716a02f236bca08b",
             "type": "leaf",
             "state": {
-              "type": "memory-cards-view",
+              "type": "markdown",
               "state": {
-                "file": "02. word/a. 雅思词汇真经/22-时间日期.md",
-                "tableKey": null
+                "file": "05. listening/10. 今日听力/Afternoon Tea.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "mc-cards",
-              "title": "22-时间日期"
+              "icon": "lucide-file",
+              "title": "Afternoon Tea"
+            }
+          },
+          {
+            "id": "ad7765329dbfc3c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05. listening/10. 今日听力/Early History of Salt.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Early History of Salt"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -82,7 +100,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.4107971191406
+    "width": 296.4107971191406,
+    "collapsed": true
   },
   "right": {
     "id": "8994399f8735ddbf",
@@ -98,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06. reading/06. 研究报道/Footprints in the Mud.md",
+                "file": "05. listening/10. 今日听力/Early History of Salt.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -189,8 +208,17 @@
       "obsidian-local-images-plus:Local Images Plus  0.19.8\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "66b54613d2ec7d2a",
+  "active": "ad7765329dbfc3c7",
   "lastOpenFiles": [
+    "05. listening/10. 今日听力/Afternoon Tea.md",
+    "05. listening/10. 今日听力/Early History of Salt.md",
+    "02. word/a. 雅思词汇真经/05-学校教育.md",
+    "02. word/a. 雅思词汇真经/06-科技发明.md",
+    "02. word/a. 雅思词汇真经/04-太空探索.md",
+    "02. word/a. 雅思词汇真经/03-动物保护.md",
+    "02. word/a. 雅思词汇真经/02-植物研究.md",
+    "02. word/a. 雅思词汇真经/01-自然地理.md",
+    "02. word/a. 雅思词汇真经/21-身心健康.md",
     "02. word/a. 雅思词汇真经/22-时间日期.md",
     "06. reading/04. 分项说明/Fishbourne Roman Palace.md",
     "06. reading/06. 研究报道/Footprints in the Mud.md",
@@ -209,11 +237,9 @@
     "05. listening/01. 听力词汇/02. 旅游.md",
     "02. word/a. 雅思词汇真经/10-物品材料.md",
     "01. base/y.word-root.md",
-    "02. word/a. 雅思词汇真经/01-自然地理.md",
     "02. word/a. 雅思词汇真经/11-时尚潮流.md",
     "06. reading/20. 未整理阅读/Elephant Communication.md",
     "06. reading/20. 未整理阅读/Flower Power.md",
-    "02. word/a. 雅思词汇真经/03-动物保护.md",
     "20. resource/17. dictionary/05. 牛津大词典/o2022k.png",
     "20. resource/17. dictionary/05. 牛津大词典/INTRODUCTION.jpeg",
     "20. resource/17. dictionary/05. 牛津大词典 /o2022k.png",
@@ -224,19 +250,12 @@
     "20. resource/17. dictionary/OED now/o2022k(1).png",
     "20. resource/17. dictionary/OED now/INTRODUCTION.jpeg",
     "20. resource/17. dictionary/OED now/INTRODUCTION(1).jpeg",
-    "02. word/a. 雅思词汇真经/02-植物研究.md",
     "01. base/a.phonemes.md",
     "02. word/h. 词根词缀词典/oyword-root-p.md",
     "02. word/h. 词根词缀词典/oyword-root-o.md",
     "02. word/b. 剑雅阅读真题/14-交通旅行.md",
     "02. word/h. 词根词缀词典/oyword-root-r.md",
-    "02. word/a. 雅思词汇真经/21-身心健康.md",
     "01. base/z.word-suffix.md",
-    "后缀.md",
-    "02. word/a. 雅思词汇真经/06-科技发明.md",
-    "AGENTS.md",
-    "20. resource/Memory/AGENTS.md",
-    "02. word/a. 雅思词汇真经/05-学校教育.md",
     "04. grammer/z. 长难句骨架.canvas",
     "Untitled.canvas"
   ]

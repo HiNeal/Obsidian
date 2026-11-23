@@ -105,6 +105,24 @@
 | floating marine cities                               | n. 海上浮动城市 | design of **floating marine cities** | 1 |
 | insufficient evidence                                | n. 证据不足 | dismissed due to **insufficient evidence** | 1 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| broad | wide-ranging |
+| type of issues discussed | long-term issues |
+| practical suggestions for solutions | real solution |
+| government policy | policy changes |
+| wide geographical scale | came from all round the world |
+| specialists | experts |
+| statistical | figures |
+| very specialist | way above my head |
+| outdated | showing its age |
+| insufficient evidence | didn't really provide much information |
+| does not give a balanced account | one-sided picture |
+| too predictable | stating the obvious |
+| clear explanation of the problems | better understanding of the issues |
+
 # 错题记录
 
 **Which TWO features of the lecture on ocean biodiversity had the greatest impact on the students?**

@@ -119,6 +119,27 @@
 | include in                                              | v. 把…包括在内 | topics to **include in** coursework | 0 |
 | crop yields                                             | n. 作物产量 | increase agricultural **crop yields** sustainably | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| contaminated | unsafe |
+| the amount of food that is wasted | how much food is thrown away |
+| obese | obesity |
+| fraud | incorrect information |
+| publicity | publicising |
+| dietary requirements | religious rules |
+| multiple tests | different stages |
+| fishing | seafood industry |
+| targeted nutrition | personalised approach to diet |
+| global differences in consumption | eating habits around the world |
+| sustainable agriculture | crop yields can be increased without damaging the environment |
+| digital technology | technological stuff |
+| easy to decide on | made up our minds about that pretty quickly |
+| guidelines | handout with advice |
+| selecting a new ingredient | deciding what we'd use |
+| challenging | harder than I expected |
+
 # 错题记录
 
 **Which TWO features of a project aiming to prevent food fraud impressed Fergus?**

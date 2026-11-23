@@ -54,6 +54,25 @@ As a thank you to the volunteers, we arrange an annual event. In recent years we
 | in the audience                                           | adv. 在观众中 | guide everyone **in the audience** | 0 |
 | events they’ve attended                                   | n. 他们参加过的活动 | feedback on **events they’ve attended** | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| walking around the town centre | walk around the town centre streets |
+| giving advice | recommendations |
+| visitors | tourists |
+| helping people find their seats | get everyone in the audience to the right place |
+| providing entertainment | put on a show |
+| encouraging cooperation | help each other |
+| local organisations | community groups |
+| collecting feedback | find out what people think |
+| providing publicity | making sure residents know about it |
+| interpersonal skills | get on well with other people |
+| flexibility | flexible |
+| essential | What's essential |
+| boat trip | trip along the canal |
+| next | forthcoming |
+
 # 错题记录
 
 |  | A | B | C | D | E | F | G | H | I |

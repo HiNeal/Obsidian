@@ -108,6 +108,23 @@
 | 短语 | 释义 | 意群 | 评分 |
 | :--- | :--- | :--- | --- |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| cheaper | economical |
+| different kind of commodity | beauty product |
+| really do exist | not just imagined |
+| rarely publicised | keep it quiet |
+| looks less attractive | doesn't enhance the visual impact |
+| weight | less heavy |
+| loyalty to certain brands | sticking to one or two favorite brands |
+| willingness to try new products | up for giving it a go |
+| enviable lifestyle | wish they were the people in the ad |
+| romantic interest | couple |
+| product reliability | informed decision |
+| relaxation | calming |
+
 # 错题记录
 
 |  | A | B | C | D | E | F | G |

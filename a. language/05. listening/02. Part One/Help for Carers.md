@@ -89,6 +89,20 @@
 | claim for the insurance                                                | v. 申请保险赔偿 | **claim for the insurance** too | 0 |
 | get in touch | v. 取得联系 | **get touch** with the council | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| Local councils | the local council |
+| Assessment of mother's needs | assessment of your mother's needs |
+| how much | the amount of |
+| dressing | getting dressed |
+| dealing with | cope using |
+| especially difficult | particularly difficult |
+| preventing | avoid |
+| fuel | petrol |
+| reduce | minimise |
+
 # 错题记录
 
 - dealing with \_\_\_\_\_\_\_\_

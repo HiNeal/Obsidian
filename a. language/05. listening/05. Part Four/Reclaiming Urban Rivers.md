@@ -89,6 +89,21 @@ And in future, the final stage could even be carried out by ==drone==, although 
 | less energy                                                   | n. 更少能源 | consume far **less energy** | 0 |
 | cargo bikes                                                   | n. 货运自行车 | deliver parcels using **cargo bikes** | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| recreation | pleasure |
+| Industrial development | industries developed |
+| rising populations | populations increased |
+| biologically | in biological terms |
+| created | transformed |
+| sides of the river | banks |
+| Over 2 billion | more than two billion |
+| Changes in shopping habits | huge rise in online shopping |
+| goods | parcels |
+| road transport | Trucks and vans |
+
 # 错题记录
 
 - pollution from \_\_\_\_\_\_\_\_ on the river bank.

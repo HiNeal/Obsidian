@@ -57,6 +57,20 @@
 
 # 短语
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| The mucus on their skin is for | give their sensitive skin protection |
+| the size of female frogs | half as big as females |
+| prefer | particularly like |
+| drought | dry weather |
+| for a long period of time | for more than a year |
+| capture food | detect their prey |
+| ample food | animal food |
+| unique | distinctive |
+| regard them as | seen as |
+
 # 错题记录
 
 - Their skin is \_\_\_\_\_\_\_\_

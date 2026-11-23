@@ -135,6 +135,23 @@
 | urban design                                                  | n. 城市设计 | way **cities are designed** | 0 |
 | mobile workforce                                              | n. 流动劳动力 | a flexible and **mobile workforce** | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| smaller nuclear families | fewer children |
+| urban design | the way cities are designed |
+| a mobile workforce | move around for work |
+| solid evidence | sound |
+| little practical relevance | not really useful |
+| needs further investigation | More evidence is needed |
+| medical cure | effective treatment |
+| recognise | relate to |
+| sense of belonging | connected with their community |
+| more positive | more optimistic |
+| necessary | beneficial |
+| mental health | wellbeing |
+
 # 错题记录
 
 **Which TWO things do the students both believe are responsible for the increase in loneliness?**

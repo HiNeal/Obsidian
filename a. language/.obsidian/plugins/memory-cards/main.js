@@ -212,7 +212,7 @@ const DEFAULT_PREFS = Object.freeze({
   interval: 2.3,       // 读完后停顿 (秒)
   revealDelay: 0.3,    // 复习模式释义渐显延迟 (秒)
   order: "smart",      // loop 循环播放 | smart 智能播放 (默认智能)
-  focus: true,         // 进阶模式; 卡组没有进阶词时自动忽略
+  focus: false,        // 进阶模式, 默认关闭; 卡组没有进阶词时自动忽略
   dictation: false,
   review: false,
   progress: 0,
@@ -1100,7 +1100,7 @@ module.exports = { icon, setIconEl, registerIcons, ICONS };
 const { Platform } = require("obsidian");
 const { Sheet } = require("./sheet");
 const { toggle, rangeField } = require("./components");
-const { LIMITS, DECK_ROOTS, AUTO_CARD_CATEGORIES } = require("../constants");
+const { LIMITS, DECK_ROOTS } = require("../constants");
 const { baseName, folderOf } = require("../text");
 
 const seconds = (v) => (v === 0 ? "不停顿" : `${Number(v).toFixed(1)} 秒`);
@@ -1178,17 +1178,6 @@ class SettingsSheet extends Sheet {
       title: "播放发音",
       trailing: toggle({ value: view.store.speech, onChange: (v) => view.setSpeech(v) }).el,
     });
-
-    const autoCards = this.group(body, { label: "自动展示卡片", footnote: "按类别应用于所有笔记。关闭后, 再打开文章时保持笔记形式; 单词包含短语库。" });
-    for (const { key, label } of AUTO_CARD_CATEGORIES) {
-      this.row(autoCards, {
-        title: label,
-        trailing: toggle({
-          value: view.store.autoCardsEnabled(key),
-          onChange: value => view.store.setAutoCards(key, value),
-        }).el,
-      });
-    }
 
     const deck = this.group(body, { label: "卡组" });
     this.row(deck, {

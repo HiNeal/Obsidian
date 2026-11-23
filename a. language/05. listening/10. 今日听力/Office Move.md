@@ -71,6 +71,19 @@
 | reserve for meetings | 预订以供开会 | a conference room that you can **reserve for meetings** | 0 |
 | questions or comments | n. 疑问或意见 | are there any **questions or comments** | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| expanded | outgrown |
+| printers | materials are printed |
+| sold | for sale |
+| throw out | get rid of |
+| old files | outdated and unnecessary paperwork |
+| help the movers | come in on that day to assist |
+| take home current work | stay in the office |
+| Designers' area | designer's desks |
+
 # 错题记录
 
 ![[20. resource/05. listening/10. 今日听力/Office Move/picture/map.png]]

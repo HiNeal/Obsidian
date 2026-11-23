@@ -1,11 +1,11 @@
 ---
 name: ielts-listening-note
-description: 把雅思哥或九分学长的听力做题记录生成或补全为本库篇章笔记, 含音频剧本、本篇词表与错题记录。用户要求整理新做题记录、同步听力笔记或提取与整理听力答案词时使用。
+description: 把雅思哥或九分学长的听力做题记录生成或补全为本库篇章笔记, 含音频剧本、本篇词表、同义改写表与错题记录。用户要求整理新做题记录、同步听力笔记或提取与整理听力答案词时使用。
 ---
 
 # 目标格式
 
-在 `a. language/` 根目录操作, 以根 `AGENTS.md` 的 Common 与 Listening 为准。结构固定为 `# 音频 → # 单词 → # 短语 → # 错题记录`。
+在 `a. language/` 根目录操作, 以根 `AGENTS.md` 的 Common 与 Listening 为准。结构固定为 `# 音频 → # 单词 → # 短语 → # 同义改写 → # 错题记录`。
 
 - 没有填空题的文章, `# 单词` 下只保留重点词表, 不设空答案词表。有填空题的文章, `# 单词` 标题下放两张表, 不另设标题: 先是答案词表 `| 答案词 | 释义 | 意群 | 评分 |`, 后是重点词表 `| 单词 | 释义 | 意群 | 评分 |`。答案词表收录本篇题目的答案词, 答案取自缓存: 填空题取标准答案本身（纯数字、日期、电话、人名地名拼写不录）, 选择/匹配/地图题的关键词不进答案词表, 已收录的保留在重点词表; 按剧本顺序排列, 并在剧本答案处高亮。答案词不在重点词表重复。
 - 答案词保存完整填空答案, 保留标准答案所需的单复数、时态和多词表达; 如 `walking boots` 同行同格保存, 不拆词或还原原形。选择、匹配、地图题的正确选项字母及定位关键词都不作为填空答案录入。
@@ -28,14 +28,14 @@ UV_CACHE_DIR="$PWD/.cache/uv" uv run --no-project --python "$PWD/.venv/bin/pytho
 3. 新文章手动创建: 剧本与音频优先取九分学长缓存 `units/<id>/exam` 的 `parts[].articleJson.segments`、`speaker.name` 与 `audioUrl`, 缺失时参考雅思哥 listening/detail。按缓存或原始音频标注的真实 Part 归入 `02. Part One`、`03. Part Two`、`04. Part Three` 或 `05. Part Four`; 含地图题的整篇统一归入 `06. Maps`, 不重复存放。方法论留在 `01. 方法总论`, 文件名沿用库内约定。音频嵌在 # 音频 下, 后接剧本; 说话人用真实姓名, 不用 A/B, 不写考试提示语。
 4. 题干、选项、实际作答与标准答案只作为缓存中的复盘素材, 不先写旧题目区再转换。用 listening_worksheet.py <笔记名关键字> 读取工作单。先检查工具是否能从当前记录得到完整素材, 缺失时只读缓存原始详情, 不猜答案。
 5. 仅将错题写入 `# 错题记录`: 保留题干与必要选项, 选项在下方, 不写题号、题组说明或对错标记。每题末尾用引用块逐行写 `正确 / 错误 / 常见陷阱 / 直接原因 / 破局法则`, 依据本模块方法论判断, 不硬套分类。
-6. 保持听力四段结构, 不自动增加同义改写表。意群须为本篇真题剧本连续真实片段。
+6. 保持听力五段结构。`# 同义改写` 表 `| 题目表达 | 原文表达 |` 放在 `# 短语` 与 `# 错题记录` 之间: 取缓存中的全部题干与选项(不限错题), 与 `# 音频` 剧本逐项对照, 原文表达须是剧本连续真实片段, 题目表达须出自题干或选项, 两列均为单词或短语, 不写整句、题号、省略号, 无对应关系不强配; 缓存里没有该篇题目时不建空表并汇报。意群须为本篇真题剧本连续真实片段。
 7. 整理答案词时, 逐篇按缓存题型提取全部填空标准答案, 排除根规则不收录的类别后实际补齐答案词表; 不仅列出核对结论。九分学长 exam 的 rightAnswer 可能为空, 应按 questionId 对照 results/review 的 details[].rightAnswer。缓存缺失或文章匹配不确定时报告未完成项, 不猜答案, 不当作没有填空题。
 8. 确认全篇没有填空题时, `# 单词` 下只保留普通单词表; 将原答案词表中错分的既有关键词迁入该表, 保留释义、意群、高亮和评分。已有填空答案从普通单词表移入答案词表, 两表不重复; 均按剧本顺序排列。
 9. 仅录入用户指定词条或本次授权提取的填空答案, 完成后核对标题顺序、表头、评分、高亮与错题来源, 运行 `git diff --check`, 确认修改仅涉及目标篇章及必要记录映射。
 
 # 旧流程与资源边界
 
-- `reading_questions.py`、`ieltsbro_questions.py`、`jiufen_questions.py`、`mock_flow.py` 的旧题目写盘流程, 以及 `matching_table.py`、`listening_matching_table.py`、`matching_refresh.py`、`judgement_options.py`、`options_below.py`、`strip_answer_lines.py`、`result_marks.py`、`errattr_apply.py`、`errattr_correct.py`、`paraphrase_apply.py` 不用于新格式笔记的写入。不得按旧顺序批量 --apply。
+- `reading_questions.py`、`ieltsbro_questions.py`、`jiufen_questions.py`、`mock_flow.py` 的旧题目写盘流程, 以及 `matching_table.py`、`listening_matching_table.py`、`matching_refresh.py`、`judgement_options.py`、`options_below.py`、`strip_answer_lines.py`、`result_marks.py`、`errattr_apply.py`、`errattr_correct.py`、`paraphrase_apply.py`(旧嵌入式同义改写) 不用于新格式笔记的写入。不得按旧顺序批量 --apply。
 - 旧 `audit_reading_format.py` 与嵌入式同义改写审计按旧格式判断, 不作为当前格式验收依据。
 - 所有音频落在 `20. resource/` 加笔记完整相对路径(去 .md)的 `audio/` 中, 不跨篇借用。默认不合成 TTS, 只汇报缺失数量; 听力短语原声不得用 TTS 覆盖。
 - 音频修剪与原声切片仅在用户要求时进行, 使用限定目标的流程, 不无范围运行全库写盘脚本。

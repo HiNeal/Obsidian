@@ -57,6 +57,22 @@ The idea is that around thirty-five thousand years ago, there was a ==sudden inc
 | --- | --- | --- | --- |
 | sudden increase | 突然增加<br>骤增 | a **sudden increase** in creativity | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| simple shapes | quite simple |
+| mixing | made up from |
+| something similar to | looked like |
+| unusual | strange |
+| lightheadedness | light-headed |
+| different groups | different tribes |
+| deer's teeth | teeth of a red deer |
+| innovations | invention |
+| artefacts | artifact |
+| types of | different sorts of |
+| disagree | disagreement |
+
 # 错题记录
 
 The paint was made by mixing charcoal with \_\_\_\_\_\_\_\_ and saliva.

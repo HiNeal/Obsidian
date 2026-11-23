@@ -79,6 +79,21 @@
 | toxic compounds                                             | n. 有毒化合物 | **toxic compounds** into the air | 0 |
 | sculpting tool                                              | n. 雕塑工具 | relying on a **sculpting tool** | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| lasts longer in the ground | survive in the earth |
+| the marks that are on it | the impressions on the clay |
+| outlive | last longer than they do |
+| calming effect | takes you away from the stresses |
+| have never made a pot before | the first time you will have tried the art |
+| take off | remove |
+| jewellery | necklaces |
+| when they were invented | Since their invention |
+| ways of keeping them safe | safety procedures |
+| available for use by participants | provide |
+
 # 错题记录
 
 **Archaeologists sometimes identify the use of ancient pottery from**

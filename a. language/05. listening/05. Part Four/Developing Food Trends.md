@@ -65,6 +65,27 @@ But ==ethical concerns== have been raised about the effects a ==surge== in deman
 | ethical concerns | n. 伦理方面的担忧 | But **ethical concerns** have been raised | 0 |
 | While the popularity of | conj. 虽然 ... 的流行 | **While the popularity of** quinoa has benefitted farmers financially, there have been other negative consequences. | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| growth | risen rapidly |
+| constantly developing | obsessed with finding and exploiting |
+| new or different | previously unknown |
+| rapidly | really quickly |
+| track | closely following |
+| Famous | well-known |
+| growers | farmers |
+| invited | paid for |
+| focused on | designed to promote |
+| publicity | attracted a lot of attention |
+| upsetting | aggravated |
+| reduced | removed |
+| strengthen | build |
+| increase | soared |
+| Overuse of resources | working the land all year round |
+| poor quality | decreased dramatically |
+
 # 错题记录
 
 - Sales of \_\_\_\_\_\_\_\_ food brands have grown rapidly this way.

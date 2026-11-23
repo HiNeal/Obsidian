@@ -97,6 +97,14 @@
 | go down         | v. 下降; 沉没; 被记载 | **go down** the High Street     | 0   |
 | turn right      | v. 向右转         | **turn right** into West Street | 0   |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| alarm system | alarmed |
+| new | just been replaced |
+| the bus stop | get the bus |
+
 # 错题记录
 
 |  | A | B | C |

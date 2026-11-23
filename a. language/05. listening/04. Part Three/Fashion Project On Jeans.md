@@ -54,6 +54,24 @@
 
 # 短语
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| origin of the word | where the name jeans comes from |
+| countryside | rural |
+| context | setting |
+| stitching | stitches |
+| attached | torn off |
+| long-lasting | durable |
+| quotations | quotes |
+| magazine advertisements | ads |
+| interviews | interviewing |
+| practical uses | using jeans for work |
+| global aspects | all corners of the earth |
+| visual illustrations | step-by-step drawings |
+| prediction for the future | where you think the whole thing might go |
+
 # 错题记录
 
 **What do the students think is the main attraction of jeans for most people?**

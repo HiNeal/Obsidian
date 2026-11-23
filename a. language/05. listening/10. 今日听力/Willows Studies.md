@@ -76,6 +76,18 @@
 | 短语 | 释义 | 意群 | 评分 |
 | :--- | :--- | :--- | --- |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| Specialising in one product | specialize in this one product |
+| read | saw |
+| not easy to predict | very difficult to predict |
+| employ more new staff | hire more staff |
+| cut labour costs | lower labor costs |
+| linking | connect |
+| wasting less time | save them a lot of time |
+
 # 错题记录
 
 **In which TWO ways will the new system affect the company?**

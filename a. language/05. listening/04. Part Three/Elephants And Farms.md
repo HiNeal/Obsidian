@@ -95,6 +95,25 @@
 | trampled down | 踩倒<br>践踏 | the elephants **trampled down** the trees | 0 |
 | dashed off | 飞奔离开 | they **dashed off** in the opposite direction | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| aggressive | hostile |
+| less support for elephant conservation | don't feel like supporting elephant conservation |
+| hurt | sting |
+| sensitive parts | sensitive areas |
+| young elephants | baby elephants |
+| affected negatively | badly affected |
+| hanging | hung |
+| protecting | keep their crops safe |
+| ran away quickly | dashed off |
+| kept looking back | kept turning their heads around |
+| never had the experience | lacked any experience |
+| scared | afraid |
+| power | electricity |
+| drawback | not all that straightforward |
+
 # 错题记录
 
 What are the TWO results that happen as elephants step on a farmer's field?

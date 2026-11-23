@@ -43,6 +43,24 @@ Okay, now that's all I want to share with you today. Are there any questions?
 
 # 短语
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| quickly | in a short period |
+| relative | grandfather |
+| new products | new electronic toys |
+| meet | satisfy |
+| illness | sick leave |
+| half a year | six months |
+| package delivery | sending out goods |
+| late payment | won't get paid on time |
+| wage | salary |
+| maintenance | look after the mechanical side |
+| research and development | develop new products |
+| production | manufacturing |
+| maintaining customer relationship | keep a long-term relationship with customers |
+
 # 错题记录
 
 **What point is made about the history of the company?**

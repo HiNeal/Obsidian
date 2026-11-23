@@ -79,6 +79,21 @@
 | age range | 年龄段 | those in the **age range** of 21 to 45 | 0 |
 | relied upon | ==依靠==<br>依赖 | wifi that can be **relied upon** at all times | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| worst | greatest |
+| reduce numbers | deter enough people |
+| limit | manageable level |
+| managing | control |
+| assumption | perceived |
+| elderly | retirees |
+| diverse selection | variety |
+| reliable | relied upon |
+| high quality | first rate |
+| attracting | appeal to |
+
 # 错题记录
 
 - A tourist \_\_\_\_\_\_\_\_ is being introduced in some cities to reduce numbers, e.g. Barcelona.

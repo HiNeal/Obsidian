@@ -122,6 +122,18 @@
 | set lunch                                                   | n. 套餐午饭 | the daily **set lunch** menu | 0 |
 | a head                                                      | adv. 每人 | £30 **a head**                                                                                        | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| especially keen on | like |
+| a good place for a drink | have a drink |
+| good for sharing | dishes to share |
+| limited | quite limited |
+| Only uses | only likes cooking with |
+| ingredients | products |
+| At the top of | on the top floor |
+
 # 错题记录
 
 | **Name of restaurant** | **Location** | **Reason for recommendation** | **Other comments** |

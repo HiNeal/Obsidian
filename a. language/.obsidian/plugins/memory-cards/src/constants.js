@@ -26,7 +26,7 @@ const DEFAULT_PREFS = Object.freeze({
   interval: 2.3,       // 读完后停顿 (秒)
   revealDelay: 0.3,    // 复习模式释义渐显延迟 (秒)
   order: "smart",      // loop 循环播放 | smart 智能播放 (默认智能)
-  focus: true,         // 进阶模式; 卡组没有进阶词时自动忽略
+  focus: false,        // 进阶模式, 默认关闭; 卡组没有进阶词时自动忽略
   dictation: false,
   review: false,
   progress: 0,

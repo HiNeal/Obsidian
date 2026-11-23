@@ -67,6 +67,21 @@
 
 # 短语
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| Length of trip: two days | two-day mini break |
+| Best month to go | really great time to go |
+| large numbers of | huge flock |
+| Final destination | Where you're really heading for |
+| chance to have | get the opportunity to |
+| Explore the valley | go up this incredible valley |
+| problems | trouble |
+| rocky paths | steep and uneven paths |
+| Book online | register online |
+| Inform | let |
+
 # 错题记录
 
 - Type of accommodation: a \_\_\_\_\_\_\_\_

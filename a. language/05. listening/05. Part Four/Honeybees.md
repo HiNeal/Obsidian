@@ -43,6 +43,23 @@ Additionally, byproducts like ==propolis==, a ==resinous== material produced by 
 
 # 短语
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| earliest evidence | earliest indications |
+| offering | offer |
+| deities | gods |
+| waterproof | weatherproof |
+| heal | treat |
+| wounds | infections |
+| predict | reliable indicators |
+| critical | indispensable |
+| resin-like | resinous |
+| related to | affecting |
+| widely adopted | gained popularity |
+| frying and baking | cooking |
+
 # 错题记录
 
 - The earliest evidence of beekeeping was found in a prehistoric \_\_\_\_\_\_\_\_ .

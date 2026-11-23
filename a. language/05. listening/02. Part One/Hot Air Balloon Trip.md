@@ -77,6 +77,20 @@
 
 # 短语
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| lowest price | cheapest flight |
+| given | provide |
+| free | free of charge |
+| exact date | specific date |
+| maximum height | highest altitude |
+| no flights | Night flights are avoided |
+| advised | suggest |
+| restriction | limit |
+| throughout | during |
+
 # 错题记录
 
 Each participant will be given a free \_\_\_\_\_\_\_\_ at the end of the flight.

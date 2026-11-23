@@ -95,6 +95,23 @@
 
 # 短语
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| Address | current address |
+| Contact number | phone number |
+| part-time job | part-time gig |
+| studying PE | majoring in physical education |
+| hope to work | want to become |
+| worked at | worked part-time as |
+| Good vision | good eyesight |
+| concentration | stay focused |
+| Need a certificate | certification |
+| expires | expire |
+| Preferred | prefer |
+| Source of information | recruitment information |
+
 # 错题记录
 
 worked at the \_\_\_\_\_\_\_\_ as a lifeguard

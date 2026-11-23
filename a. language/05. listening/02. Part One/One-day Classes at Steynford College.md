@@ -85,6 +85,19 @@
 
 # 短语
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| provides information on | explains |
+| no places | all the places are taken |
+| trained in | did her training |
+| Bring | take |
+| ingredients | products |
+| old | don't use any more |
+| use a drill | use an electric drill |
+| put up a shelf | fixing a shelf to a wall |
+
 # 错题记录
 
 | Course | Date | Cost | Notes |

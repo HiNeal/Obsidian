@@ -52,6 +52,24 @@
 
 # 短语
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| causes harm to | harmful to |
+| introduces | bring |
+| takes food from | losing their sources of food |
+| threatens | putting its survival at risk |
+| returning from | come back |
+| intentionally | deliberately |
+| pest control | control pests |
+| damaging | destroying |
+| became widespread | found all over |
+| prevent | block out |
+| understand | learning about |
+| Setting up | create |
+| Asking the public to | encouraged |
+
 # 错题记录
 
 - accidentally e.g. via people returning from their \_\_\_\_\_\_\_\_ or on cargo ships

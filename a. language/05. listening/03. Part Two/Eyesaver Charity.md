@@ -70,6 +70,22 @@ And we have a similar friendship with a group called Youth Health. Our connectio
 | three decades | 三十年 | for **three decades** | 0 |
 | stamp out | 消除<br>根除 | As we try to **stamp out** eye problems | 0 |
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| 30 years ago | three decades |
+| original aim | wanted |
+| rich people | wealthy benefactors |
+| main purpose | goal |
+| make a difference | help change a person's life |
+| advertises | advertising |
+| take the reputation to a higher level | gain fame |
+| reputation | fame |
+| help look for equipment manufacturers | seek producers of equipment |
+| earn support from colleges | link with many different academic institutions |
+| children in need | young kids |
+
 # 错题记录
 
 When was Eyesaver founded?

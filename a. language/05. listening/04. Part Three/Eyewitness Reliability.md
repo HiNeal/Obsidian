@@ -83,6 +83,25 @@
 
 # 短语
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| confidence | self-assured |
+| gathered some time ago | more than ten years old |
+| how long the event lasts | split second |
+| how good the lighting is | in the dark |
+| how far away | some way away |
+| briefed | told exactly what they have to do |
+| was not present at the incident | had nothing to do with the event |
+| appear foolish | seeming unintelligent |
+| legal consequences | punished |
+| reluctant | don't like to |
+| Frightened | scared |
+| unfamiliar environment | formal setting |
+| terminology | specialist language |
+| Distrust | suspicious |
+
 # 错题记录
 
 **Jamie criticizes photo-identifications, saying witnesses**

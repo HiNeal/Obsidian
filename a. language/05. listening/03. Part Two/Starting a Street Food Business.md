@@ -47,6 +47,21 @@
 
 # 短语
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| low price | cheap |
+| freshly made | prepared in front of them |
+| unusual food | something different |
+| convenience | easy to find |
+| parks | local park |
+| presentation | how you're going to serve it |
+| too expensive | so high |
+| took a long time to prepare | quite complicated |
+| permit | licence |
+| long hours | til midnight |
+
 # 错题记录
 
 **Which TWO explanations for the popularity of street food are given?**

@@ -43,6 +43,23 @@
 
 # 短语
 
+# 同义改写
+
+| 题目表达 | 原文表达 |
+| --- | --- |
+| Café bar | cafe bar |
+| attract | draw |
+| remain | stay |
+| midway up | halfway up |
+| highest level | very top level |
+| trained floor staff | our own assistants |
+| professional | qualified |
+| child care | nursery |
+| charging for tickets | make a charge for people to attend |
+| receive feedback and encouragement | kind and encouraging |
+| expert | best-known poets |
+| become professional poets | earn your living as a professional poet |
+
 # 错题记录
 
 |  | A | B | C | D | E | F | G | H |
