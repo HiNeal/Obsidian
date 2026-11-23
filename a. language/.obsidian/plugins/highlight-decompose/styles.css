@@ -521,11 +521,11 @@ th[data-audio-bound="phonetic"] {
   transition: background-color 0.15s ease, box-shadow 0.15s ease !important;
 }
 
-/* 单元格内容垂直居中，消除下方突兀空白，与多行发音技巧自然对齐 */
-.markdown-source-view.mod-cm6 .cm-table-widget td[data-audio-bound="phoneme"] .table-cell-wrapper,
-.markdown-source-view.mod-cm6 .cm-table-widget th[data-audio-bound="phoneme"] .table-cell-wrapper,
-td[data-audio-bound="phoneme"] .table-cell-wrapper,
-th[data-audio-bound="phoneme"] .table-cell-wrapper {
+/* 单元格内容垂直居中，消除下方突兀空白，与多行发音技巧自然对齐（编辑态下保留 Obsidian 对静态副本的 display: none） */
+.markdown-source-view.mod-cm6 .cm-table-widget td[data-audio-bound="phoneme"]:not(:has(.cm-editor)) > .table-cell-wrapper:not([style*="display: none"]),
+.markdown-source-view.mod-cm6 .cm-table-widget th[data-audio-bound="phoneme"]:not(:has(.cm-editor)) > .table-cell-wrapper:not([style*="display: none"]),
+td[data-audio-bound="phoneme"]:not(:has(.cm-editor)) > .table-cell-wrapper:not([style*="display: none"]),
+th[data-audio-bound="phoneme"]:not(:has(.cm-editor)) > .table-cell-wrapper:not([style*="display: none"]) {
   display: flex !important;
   align-items: center !important;
   height: 100% !important;

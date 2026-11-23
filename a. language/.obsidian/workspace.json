@@ -4,20 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "5d01703f9f13c798",
+        "id": "07802691ab28ac65",
         "type": "tabs",
         "children": [
           {
-            "id": "dad95a2303176535",
+            "id": "34454ed2665433ef",
             "type": "leaf",
             "state": {
-              "type": "memory-cards-view",
+              "type": "markdown",
               "state": {
-                "file": "05. listening/01. 听力词汇/13. 答案词.md",
-                "tableKey": null
+                "file": "01. base/a.phonemes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "mc-cards",
-              "title": "13. 答案词"
+              "icon": "lucide-file",
+              "title": "a.phonemes"
             }
           }
         ]
@@ -190,7 +192,7 @@
       "obsidian-local-images-plus:Local Images Plus  0.19.8\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "dad95a2303176535",
+  "active": "34454ed2665433ef",
   "lastOpenFiles": [
     "05. listening/01. 听力词汇/13. 答案词.md",
     "02. word/a. 雅思词汇真经/05-学校教育.md",

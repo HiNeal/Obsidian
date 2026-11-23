@@ -13,11 +13,13 @@ function createAudioBtn(titleText, onClickHandler) {
   } catch (e) {
     btn.innerHTML = HEADPHONES_SVG;
   }
-  btn.addEventListener("pointerdown", (e) => {
-    if (e.button !== undefined && e.button !== 0) return;
-    e.preventDefault();
-    e.stopPropagation();
-  });
+  for (const type of ["pointerdown", "mousedown"]) {
+    btn.addEventListener(type, (e) => {
+      if (e.button !== undefined && e.button !== 0) return;
+      e.preventDefault();
+      e.stopPropagation();
+    });
+  }
   btn.addEventListener("click", (e) => {
     if (e.button !== undefined && e.button !== 0) return;
     e.preventDefault();
