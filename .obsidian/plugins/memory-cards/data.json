@@ -1,0 +1,779 @@
+{
+  "speech": true,
+  "lastDeck": "a. language/02. word/a. 雅思词汇真经/01-自然地理.md",
+  "recent": [
+    "a. language/02. word/a. 雅思词汇真经/01-自然地理.md",
+    "a. language/01. base/a.phonemes.md",
+    "a. language/06. reading/11. 今日阅读/Spinning Jenny.md",
+    "a. language/06. reading/11. 今日阅读/The Return of Monkey Life.md",
+    "a. language/06. reading/04. 分项说明/Brassica.md",
+    "a. language/06. reading/04. 分项说明/A survivor’s story.md"
+  ],
+  "decks": {
+    "a. language/02. word/未整理单词.md": {
+      "progress": 0,
+      "dictation": false,
+      "focus": true
+    },
+    "a. language/02. word/m. 剑雅听力真题/音义词块.md": {
+      "progress": 68,
+      "dictation": false
+    },
+    "a. language/02. word/b. 剑雅阅读真题/01-自然地理.md": {
+      "progress": 0,
+      "dictation": false,
+      "contentMode": "meaningUnit",
+      "focus": false,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "gorge",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/01-自然地理.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "cave",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/02-植物研究.md": {
+      "progress": 0,
+      "contentMode": "word",
+      "dictation": false,
+      "interval": 2.2,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "respire",
+        "occurrence": 0
+      },
+      "focus": false
+    },
+    "a. language/03. phrase/未整理短语.md": {
+      "progress": 10
+    },
+    "a. language/02. word/a. 雅思词汇真经/20-行为动作.md": {
+      "progress": 3,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "scold",
+        "occurrence": 0
+      }
+    },
+    "a. language/01. base/x.word-prefix.md": {
+      "progress": 48,
+      "bookmark": {
+        "tableKey": "[\"prefix-e\",\"prefix-e\",1]",
+        "word": "enne(a)-",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/b. 剑雅阅读真题/20-行为动作.md": {
+      "progress": 1,
+      "interval": 3
+    },
+    "a. language/02. word/a. 雅思词汇真经/22-时间日期.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "anniversary",
+        "occurrence": 0
+      },
+      "focus": false
+    },
+    "a. language/02. word/a. 雅思词汇真经/21-身心健康.md": {
+      "progress": 3,
+      "review": false,
+      "revealDelay": 1.3,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "pore",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/03-动物保护.md": {
+      "progress": 1,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "courtship",
+        "occurrence": 0
+      },
+      "focus": false
+    },
+    "a. language/02. word/a. 雅思词汇真经/04-太空探索.md": {
+      "progress": 1,
+      "focus": false,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "crater",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/05-学校教育.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "wit",
+        "occurrence": 0
+      },
+      "focus": false,
+      "interval": 0
+    },
+    "a. language/02. word/a. 雅思词汇真经/06-科技发明.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "appliance",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/07-文化历史.md": {
+      "progress": 1,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "ritual",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/08-语言演化.md": {
+      "progress": 1,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "eloquence",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/09-娱乐运动.md": {
+      "progress": 7,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "flute",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/10-物品材料.md": {
+      "progress": 5,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "pedal",
+        "occurrence": 0
+      },
+      "focus": false,
+      "review": false
+    },
+    "a. language/02. word/a. 雅思词汇真经/11-时尚潮流.md": {
+      "progress": 1,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "prevalent",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/12-饮食健康.md": {
+      "progress": 2,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "strip",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/13-建筑场所.md": {
+      "progress": 2,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "eaves",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/14-交通旅行.md": {
+      "progress": 42,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "brake",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/15-国家政府.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "regime",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/16-社会经济.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "levy",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/17-法律法规.md": {
+      "progress": 1,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "mandatory",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/19-社会角色.md": {
+      "progress": 2,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "successive",
+        "occurrence": 0
+      }
+    },
+    "a. language/03. phrase/a. 剑雅通用短语/02-动作.md": {
+      "progress": 27,
+      "bookmark": {
+        "tableKey": "[\"短语动词\",\"短语\",1]",
+        "word": "use up",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/02. 事物历程/A Brief History of Humans and Food.md": {
+      "progress": 1,
+      "focus": false,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "advent",
+        "occurrence": 0
+      }
+    },
+    "a. language/03. phrase/a. 剑雅通用短语/01-对象.md": {
+      "progress": 3,
+      "bookmark": {
+        "tableKey": "[\"学术与研究\",\"短语\",1]",
+        "word": "sharp contrast",
+        "occurrence": 0
+      },
+      "focus": false
+    },
+    "a. language/03. phrase/a. 剑雅通用短语/03-修饰.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"介词短语\",\"短语\",1]",
+        "word": "on the premises",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/b. 剑雅阅读真题/21-身心健康.md": {
+      "progress": 0
+    },
+    "a. language/02. word/b. 剑雅阅读真题/03-动物保护.md": {
+      "progress": 0
+    },
+    "a. language/06. reading/02. 事物历程/Frozen Food - A US perspective on the development of the frozen food industry.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "trample",
+        "occurrence": 0
+      }
+    },
+    "a. language/05. listening/02. Part One/Accommodation Options.md": {
+      "progress": 12
+    },
+    "a. language/06. reading/02. 事物历程/Dolls through the ages.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "primitive",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/02. 事物历程/Nutmeg-a valuable spice.md": {
+      "progress": 3
+    },
+    "a. language/06. reading/02. 事物历程/The development of the London underground railway.md": {
+      "progress": 0
+    },
+    "a. language/06. reading/02. 事物历程/The kākāpō.md": {
+      "progress": 61,
+      "bookmark": {
+        "tableKey": "[\"短语\",\"短语\",1]",
+        "word": "spend long periods away from ...",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/02. 事物历程/The Origins of Cinema.md": {
+      "progress": 53,
+      "bookmark": {
+        "tableKey": "[\"短语\",\"短语\",1]",
+        "word": "set the standard for ...",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/02. 事物历程/The thylacine.md": {
+      "progress": 78,
+      "bookmark": {
+        "tableKey": "[\"短语\",\"短语\",1]",
+        "word": "(be) concerned about ...",
+        "occurrence": 0
+      }
+    },
+    "a. language/05. listening/02. Part One/Oyster Bay Sailing Club Courses.md": {
+      "progress": 0
+    },
+    "a. language/06. reading/05. 问题方案/Muscle Loss.md": {
+      "progress": 3
+    },
+    "a. language/03. phrase/y. 写作通用模板/大作文通用模板.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"大作文通用模板\",\"短语\",1]",
+        "word": "end up",
+        "occurrence": 0
+      }
+    },
+    "a. language/03. phrase/y. 写作通用模板/小作文通用模板.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"图表类型\",\"短语\",1]",
+        "word": "pie chart",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/10. 推翻旧说/A closer examination of a study on verbal and non-verbal messages.md": {
+      "progress": 4
+    },
+    "a. language/01. base/y.word-root.md": {
+      "progress": 24,
+      "order": "loop",
+      "focus": false,
+      "tableProgress": {
+        "[\"root-c\",\"词根\",1]": 9,
+        "[\"root-a\",\"词根\",1]": 25,
+        "[\"root-b\",\"词根\",1]": 6
+      },
+      "bookmark": {
+        "tableKey": "[\"root-a\",\"词根\",1]",
+        "word": "apt, ept",
+        "occurrence": 0
+      },
+      "tableBookmarks": {
+        "[\"root-c\",\"词根\",1]": {
+          "tableKey": "[\"root-c\",\"词根\",1]",
+          "word": "cap(t), cept, ceive, cip, cup",
+          "occurrence": 0
+        },
+        "[\"root-a\",\"词根\",1]": {
+          "tableKey": "[\"root-a\",\"词根\",1]",
+          "word": "aqu(a)",
+          "occurrence": 0
+        },
+        "[\"root-b\",\"词根\",1]": {
+          "tableKey": "[\"root-b\",\"词根\",1]",
+          "word": "bel, bell",
+          "occurrence": 0
+        }
+      }
+    },
+    "a. language/03. phrase/a. 剑雅通用短语/05-关系.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"条件与让步\",\"短语\",1]",
+        "word": "justification for ...",
+        "occurrence": 0
+      },
+      "tableProgress": {
+        "[\"条件与让步\",\"短语\",1]": 0
+      },
+      "tableBookmarks": {
+        "[\"条件与让步\",\"短语\",1]": {
+          "tableKey": "[\"条件与让步\",\"短语\",1]",
+          "word": "ban on ...",
+          "occurrence": 0
+        }
+      }
+    },
+    "a. language/03. phrase/a. 剑雅通用短语/04-俚语.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"惯用表达\",\"短语\",1]",
+        "word": "a no-no",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/01. 方法总论/长难句.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"平行并列结构\",\"并列词\",1]",
+        "word": "and",
+        "occurrence": 0
+      }
+    },
+    "a. language/07. writing/03. 大作文/a. Agree-Disagree.md": {
+      "progress": 11,
+      "bookmark": {
+        "tableKey": "[\"短语\",\"短语\",1]",
+        "word": "insulated from existential financial anxiety",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/05. 问题方案/A new role for livestock guard dogs.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "exterminate",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/h. 词根词缀词典/oyword-root-a.md": {
+      "progress": 7,
+      "bookmark": {
+        "tableKey": "[\"aem, haem(o), haemat(o)\",\"单词\",1]",
+        "word": "hemoglobin",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/h. 词根词缀词典/oyword-root-c.md": {
+      "progress": 52,
+      "bookmark": {
+        "tableKey": "[\"cap(t), cept, ceive, cip, cup\",\"单词\",1]",
+        "word": "captivate",
+        "occurrence": 0
+      },
+      "order": "loop"
+    },
+    "a. language/02. word/h. 词根词缀词典/oyword-root-b.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"ban\",\"单词\",1]",
+        "word": "abandon",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/h. 词根词缀词典/oyword-root-d.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"dactyl(o)\",\"单词\",1]",
+        "word": "pterodactyl",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/b. 剑雅阅读真题/05-学校教育.md": {
+      "progress": 70,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "specialise",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/20. 未整理阅读/Living dunes.md": {
+      "tableProgress": {
+        "[\"单词\",\"单词\",1]": 37
+      },
+      "tableBookmarks": {
+        "[\"单词\",\"单词\",1]": {
+          "tableKey": "[\"单词\",\"单词\",1]",
+          "word": "glaze",
+          "occurrence": 0
+        }
+      }
+    },
+    "a. language/05. listening/04. Part Three/Elephants And Farms.md": {
+      "progress": 11,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "encounter",
+        "occurrence": 0
+      }
+    },
+    "a. language/05. listening/03. Part Two/A Visit to Edelman Pottery.md": {
+      "progress": 13,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "artefact / artifact",
+        "occurrence": 0
+      }
+    },
+    "a. language/07. writing/03. 大作文/d. Two_Part.md": {
+      "progress": 21,
+      "bookmark": {
+        "tableKey": "[\"短语\",\"短语\",1]",
+        "word": "be renowned for ...",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/20. 未整理阅读/Robert Louis Stevenson.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "pendulum",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/a. 雅思词汇真经/18-沙场争锋.md": {
+      "progress": 287,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "soldier",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/20. 未整理阅读/When people are 'deaf' to music.md": {
+      "progress": 3,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "competence",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/b. 剑雅阅读真题/12-饮食健康.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "dine",
+        "occurrence": 0
+      }
+    },
+    "a. language/05. listening/01. 听力词汇/01. 住宿.md": {
+      "progress": 29,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "repaint",
+        "occurrence": 0
+      },
+      "order": "smart",
+      "review": false,
+      "revealDelay": 1.6,
+      "dictation": false
+    },
+    "a. language/05. listening/01. 听力词汇/11. 答案词.md": {
+      "progress": 0,
+      "dictation": true,
+      "interval": 4,
+      "focus": false,
+      "bookmark": {
+        "tableKey": "[\"答案词1次\",\"单词\",1]",
+        "word": "rub",
+        "occurrence": 0
+      },
+      "order": "loop",
+      "tableProgress": {
+        "[\"答案词10次以上\",\"单词\",1]": 0,
+        "[\"答案词8~9次\",\"单词\",1]": 0,
+        "[\"答案词7次\",\"单词\",1]": 0,
+        "[\"答案词6次\",\"单词\",1]": 0,
+        "[\"答案词5次\",\"单词\",1]": 0,
+        "[\"答案词4次\",\"单词\",1]": 0,
+        "[\"答案词3次\",\"单词\",1]": 0
+      },
+      "tableBookmarks": {
+        "[\"答案词10次以上\",\"单词\",1]": {
+          "tableKey": "[\"答案词10次以上\",\"单词\",1]",
+          "word": "art",
+          "occurrence": 0
+        },
+        "[\"答案词8~9次\",\"单词\",1]": {
+          "tableKey": "[\"答案词8~9次\",\"单词\",1]",
+          "word": "car",
+          "occurrence": 0
+        },
+        "[\"答案词7次\",\"单词\",1]": {
+          "tableKey": "[\"答案词7次\",\"单词\",1]",
+          "word": "map",
+          "occurrence": 0
+        },
+        "[\"答案词6次\",\"单词\",1]": {
+          "tableKey": "[\"答案词6次\",\"单词\",1]",
+          "word": "dry",
+          "occurrence": 0
+        },
+        "[\"答案词5次\",\"单词\",1]": {
+          "tableKey": "[\"答案词5次\",\"单词\",1]",
+          "word": "air",
+          "occurrence": 0
+        },
+        "[\"答案词4次\",\"单词\",1]": {
+          "tableKey": "[\"答案词4次\",\"单词\",1]",
+          "word": "dog",
+          "occurrence": 0
+        },
+        "[\"答案词3次\",\"单词\",1]": {
+          "tableKey": "[\"答案词3次\",\"单词\",1]",
+          "word": "red",
+          "occurrence": 0
+        }
+      }
+    },
+    "a. language/02. word/h. 词根词缀词典/oyword-root-r.md": {
+      "progress": 6,
+      "bookmark": {
+        "tableKey": "[\"radi(o)\",\"单词\",1]",
+        "word": "radiosensitivity",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/b. 剑雅阅读真题/14-交通旅行.md": {
+      "progress": 15,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "travelogue",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/h. 词根词缀词典/oyword-root-o.md": {
+      "progress": 77,
+      "bookmark": {
+        "tableKey": "[\"opt(o), ops, opi\",\"单词\",1]",
+        "word": "opinionated",
+        "occurrence": 0
+      }
+    },
+    "a. language/02. word/h. 词根词缀词典/oyword-root-p.md": {
+      "progress": 335,
+      "bookmark": {
+        "tableKey": "[\"ple, pli, ply, plen(i)\",\"单词\",1]",
+        "word": "plenipotentiary",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/06. 研究报道/Footprints in the Mud.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "dinosaur",
+        "occurrence": 0
+      }
+    },
+    "a. language/05. listening/01. 听力词汇/02. 旅游.md": {
+      "progress": 20,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "camp",
+        "occurrence": 0
+      }
+    },
+    "a. language/05. listening/01. 听力词汇/09. 地图题.md": {
+      "progress": 60,
+      "bookmark": {
+        "tableKey": "[\"短语\",\"单词\",1]",
+        "word": "the upper left",
+        "occurrence": 0
+      }
+    },
+    "a. language/05. listening/01. 听力词汇/01. 日常生活与社交活动.md": {
+      "progress": 41,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "trail",
+        "occurrence": 0
+      }
+    },
+    "a. language/05. listening/01. 听力词汇/13. 答案词.md": {
+      "progress": 5,
+      "bookmark": {
+        "tableKey": "[\"答案词1次\",\"单词\",1]",
+        "word": "drum",
+        "occurrence": 0
+      },
+      "tableProgress": {
+        "[\"答案词2次\",\"单词\",1]": 0
+      },
+      "tableBookmarks": {
+        "[\"答案词2次\",\"单词\",1]": {
+          "tableKey": "[\"答案词2次\",\"单词\",1]",
+          "word": "mud",
+          "occurrence": 0
+        }
+      },
+      "interval": 0,
+      "dictation": true
+    },
+    "a. language/06. reading/20. 未整理阅读/Elephant Communication.md": {
+      "progress": 1,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "cavity",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/03. 人物生平/Georgia O'Keeffe.md": {
+      "progress": 70,
+      "bookmark": {
+        "tableKey": "[\"短语\",\"短语\",1]",
+        "word": "a wealth of ...",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/03. 人物生平/Henry Moore (1898-1986).md": {
+      "progress": 105,
+      "bookmark": {
+        "tableKey": "[\"同义改写\",\"题目表达\",1]",
+        "word": "makes it possible for",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/03. 人物生平/Katherine Mansfield.md": {
+      "progress": 34,
+      "bookmark": {
+        "tableKey": "[\"同义改写\",\"题目表达\",1]",
+        "word": "planned to be",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/03. 人物生平/The Davies Sisters.md": {
+      "progress": 52,
+      "bookmark": {
+        "tableKey": "[\"短语\",\"短语\",1]",
+        "word": "be responsible for",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/04. 分项说明/A survivor’s story.md": {
+      "progress": 45,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "arrival",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/04. 分项说明/Brassica.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "comprise",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/11. 今日阅读/The Return of Monkey Life.md": {
+      "progress": 46,
+      "bookmark": {
+        "tableKey": "[\"同义改写\",\"题目表达\",1]",
+        "word": "helps the agriculture",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/11. 今日阅读/Spinning Jenny.md": {
+      "progress": 1,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "clasp",
+        "occurrence": 0
+      }
+    },
+    "a. language/06. reading/11. 今日阅读/Saving The Skink V2.md": {
+      "progress": 1,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "scale",
+        "occurrence": 0
+      }
+    }
+  },
+  "prefsVersion": 2,
+  "autoCards": {
+    "word": false,
+    "listening": false,
+    "reading": false,
+    "writing": false,
+    "speaking": false
+  },
+  "showMemory": true,
+  "memoryHints": false
+}

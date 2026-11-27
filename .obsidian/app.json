@@ -10,7 +10,9 @@
     "*.mp3"
   ],
   "alwaysUpdateLinks": true,
-  "focusNewTab": true,
+  "focusNewTab": false,
   "defaultViewMode": "source",
-  "livePreview": true
+  "livePreview": true,
+  "showLineNumber": false,
+  "showUnsupportedFiles": false
 }

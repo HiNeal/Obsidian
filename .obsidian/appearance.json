@@ -1,5 +1,4 @@
 {
-  "accentColor": "",
   "cssTheme": "Baseline",
   "theme": "moonstone",
   "baseFontSize": 14,
@@ -7,5 +6,6 @@
   "monospaceFontFamily": "Maple Mono NF CN",
   "interfaceFontFamily": "Maple Mono NF CN",
   "enabledCssSnippets": [],
-  "showRibbon": true
+  "showRibbon": true,
+  "translucency": true
 }
