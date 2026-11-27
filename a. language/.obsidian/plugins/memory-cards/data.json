@@ -1,13 +1,12 @@
 {
   "speech": true,
-  "lastDeck": "05. listening/01. 听力词汇/13. 答案词.md",
+  "lastDeck": "06. reading/11. 今日阅读/Spinning Jenny.md",
   "recent": [
-    "05. listening/01. 听力词汇/13. 答案词.md",
-    "05. listening/01. 听力词汇/01. 日常生活与社交活动.md",
-    "05. listening/01. 听力词汇/02. 旅游.md",
-    "05. listening/01. 听力词汇/01. 住宿.md",
-    "05. listening/01. 听力词汇/11. 答案词.md",
-    "02. word/a. 雅思词汇真经/05-学校教育.md"
+    "06. reading/11. 今日阅读/Spinning Jenny.md",
+    "06. reading/11. 今日阅读/The Return of Monkey Life.md",
+    "06. reading/04. 分项说明/Brassica.md",
+    "06. reading/04. 分项说明/A survivor’s story.md",
+    "06. reading/03. 人物生平/The Davies Sisters.md"
   ],
   "decks": {
     "02. word/未整理单词.md": {
@@ -58,10 +57,10 @@
       "progress": 10
     },
     "02. word/a. 雅思词汇真经/20-行为动作.md": {
-      "progress": 158,
+      "progress": 3,
       "bookmark": {
-        "tableKey": "[\"\",\"行为动作单词\",1]",
-        "word": "tap",
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "scold",
         "occurrence": 0
       }
     },
@@ -78,21 +77,21 @@
       "interval": 3
     },
     "02. word/a. 雅思词汇真经/22-时间日期.md": {
-      "progress": 2,
+      "progress": 0,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "precedent",
+        "word": "anniversary",
         "occurrence": 0
       },
       "focus": false
     },
     "02. word/a. 雅思词汇真经/21-身心健康.md": {
-      "progress": 500,
+      "progress": 3,
       "review": false,
       "revealDelay": 1.3,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "fancy",
+        "word": "pore",
         "occurrence": 0
       }
     },
@@ -115,88 +114,118 @@
       }
     },
     "02. word/a. 雅思词汇真经/05-学校教育.md": {
-      "progress": 2,
+      "progress": 0,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "notorious",
+        "word": "wit",
         "occurrence": 0
       },
       "focus": false,
       "interval": 0
     },
     "02. word/a. 雅思词汇真经/06-科技发明.md": {
-      "progress": 4,
+      "progress": 0,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "specialise",
+        "word": "appliance",
         "occurrence": 0
       }
     },
     "02. word/a. 雅思词汇真经/07-文化历史.md": {
-      "progress": 0
-    },
-    "02. word/a. 雅思词汇真经/08-语言演化.md": {
-      "progress": 2
-    },
-    "02. word/a. 雅思词汇真经/09-娱乐运动.md": {
-      "progress": 14
-    },
-    "02. word/a. 雅思词汇真经/10-物品材料.md": {
-      "progress": 15,
+      "progress": 1,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "cementer",
+        "word": "ritual",
+        "occurrence": 0
+      }
+    },
+    "02. word/a. 雅思词汇真经/08-语言演化.md": {
+      "progress": 1,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "eloquence",
+        "occurrence": 0
+      }
+    },
+    "02. word/a. 雅思词汇真经/09-娱乐运动.md": {
+      "progress": 7,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "flute",
+        "occurrence": 0
+      }
+    },
+    "02. word/a. 雅思词汇真经/10-物品材料.md": {
+      "progress": 5,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "pedal",
         "occurrence": 0
       },
       "focus": false,
       "review": false
     },
     "02. word/a. 雅思词汇真经/11-时尚潮流.md": {
-      "progress": 5,
+      "progress": 1,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "embellish",
+        "word": "prevalent",
         "occurrence": 0
       }
     },
     "02. word/a. 雅思词汇真经/12-饮食健康.md": {
-      "progress": 84
-    },
-    "02. word/a. 雅思词汇真经/13-建筑场所.md": {
-      "progress": 1
-    },
-    "02. word/a. 雅思词汇真经/14-交通旅行.md": {
       "progress": 2,
       "bookmark": {
-        "tableKey": "[\"\",\"交通旅行单词\",1]",
-        "word": "haunt",
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "strip",
+        "occurrence": 0
+      }
+    },
+    "02. word/a. 雅思词汇真经/13-建筑场所.md": {
+      "progress": 2,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "eaves",
+        "occurrence": 0
+      }
+    },
+    "02. word/a. 雅思词汇真经/14-交通旅行.md": {
+      "progress": 42,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "brake",
         "occurrence": 0
       }
     },
     "02. word/a. 雅思词汇真经/15-国家政府.md": {
-      "progress": 4,
+      "progress": 0,
       "bookmark": {
-        "tableKey": "[\"\",\"国家政府单词\",1]",
-        "word": "conservative",
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "regime",
         "occurrence": 0
       }
     },
     "02. word/a. 雅思词汇真经/16-社会经济.md": {
-      "progress": 89,
+      "progress": 0,
       "bookmark": {
-        "tableKey": "[\"\",\"社会经济单词\",1]",
-        "word": "manage",
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "levy",
         "occurrence": 0
       }
     },
     "02. word/a. 雅思词汇真经/17-法律法规.md": {
-      "progress": 4
-    },
-    "02. word/a. 雅思词汇真经/19-社会角色.md": {
-      "progress": 66,
+      "progress": 1,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "colleague",
+        "word": "mandatory",
+        "occurrence": 0
+      }
+    },
+    "02. word/a. 雅思词汇真经/19-社会角色.md": {
+      "progress": 2,
+      "bookmark": {
+        "tableKey": "[\"\",\"单词\",1]",
+        "word": "successive",
         "occurrence": 0
       }
     },
@@ -241,13 +270,23 @@
       "progress": 0
     },
     "06. reading/02. 事物历程/Frozen Food - A US perspective on the development of the frozen food industry.md": {
-      "progress": 14
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "trample",
+        "occurrence": 0
+      }
     },
     "05. listening/02. Part One/Accommodation Options.md": {
       "progress": 12
     },
     "06. reading/02. 事物历程/Dolls through the ages.md": {
-      "progress": 32
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "primitive",
+        "occurrence": 0
+      }
     },
     "06. reading/02. 事物历程/Nutmeg-a valuable spice.md": {
       "progress": 3
@@ -256,13 +295,28 @@
       "progress": 0
     },
     "06. reading/02. 事物历程/The kākāpō.md": {
-      "progress": 31
+      "progress": 61,
+      "bookmark": {
+        "tableKey": "[\"短语\",\"短语\",1]",
+        "word": "spend long periods away from ...",
+        "occurrence": 0
+      }
     },
     "06. reading/02. 事物历程/The Origins of Cinema.md": {
-      "progress": 0
+      "progress": 53,
+      "bookmark": {
+        "tableKey": "[\"短语\",\"短语\",1]",
+        "word": "set the standard for ...",
+        "occurrence": 0
+      }
     },
     "06. reading/02. 事物历程/The thylacine.md": {
-      "progress": 1
+      "progress": 78,
+      "bookmark": {
+        "tableKey": "[\"短语\",\"短语\",1]",
+        "word": "(be) concerned about ...",
+        "occurrence": 0
+      }
     },
     "05. listening/02. Part One/Oyster Bay Sailing Club Courses.md": {
       "progress": 0
@@ -457,10 +511,10 @@
       }
     },
     "02. word/a. 雅思词汇真经/18-沙场争锋.md": {
-      "progress": 3,
+      "progress": 287,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "deflect",
+        "word": "soldier",
         "occurrence": 0
       }
     },
@@ -633,6 +687,86 @@
       },
       "interval": 0,
       "dictation": true
+    },
+    "06. reading/20. 未整理阅读/Elephant Communication.md": {
+      "progress": 1,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "cavity",
+        "occurrence": 0
+      }
+    },
+    "06. reading/03. 人物生平/Georgia O'Keeffe.md": {
+      "progress": 70,
+      "bookmark": {
+        "tableKey": "[\"短语\",\"短语\",1]",
+        "word": "a wealth of ...",
+        "occurrence": 0
+      }
+    },
+    "06. reading/03. 人物生平/Henry Moore (1898-1986).md": {
+      "progress": 105,
+      "bookmark": {
+        "tableKey": "[\"同义改写\",\"题目表达\",1]",
+        "word": "makes it possible for",
+        "occurrence": 0
+      }
+    },
+    "06. reading/03. 人物生平/Katherine Mansfield.md": {
+      "progress": 34,
+      "bookmark": {
+        "tableKey": "[\"同义改写\",\"题目表达\",1]",
+        "word": "planned to be",
+        "occurrence": 0
+      }
+    },
+    "06. reading/03. 人物生平/The Davies Sisters.md": {
+      "progress": 52,
+      "bookmark": {
+        "tableKey": "[\"短语\",\"短语\",1]",
+        "word": "be responsible for",
+        "occurrence": 0
+      }
+    },
+    "06. reading/04. 分项说明/A survivor’s story.md": {
+      "progress": 45,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "arrival",
+        "occurrence": 0
+      }
+    },
+    "06. reading/04. 分项说明/Brassica.md": {
+      "progress": 0,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "comprise",
+        "occurrence": 0
+      }
+    },
+    "06. reading/11. 今日阅读/The Return of Monkey Life.md": {
+      "progress": 46,
+      "bookmark": {
+        "tableKey": "[\"同义改写\",\"题目表达\",1]",
+        "word": "helps the agriculture",
+        "occurrence": 0
+      }
+    },
+    "06. reading/11. 今日阅读/Spinning Jenny.md": {
+      "progress": 1,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "clasp",
+        "occurrence": 0
+      }
+    },
+    "06. reading/11. 今日阅读/Saving The Skink V2.md": {
+      "progress": 1,
+      "bookmark": {
+        "tableKey": "[\"单词\",\"单词\",1]",
+        "word": "scale",
+        "occurrence": 0
+      }
     }
   },
   "prefsVersion": 2,
