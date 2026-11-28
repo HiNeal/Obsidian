@@ -1177,11 +1177,10 @@ function markBaseExampleTable(table) {
   }
 }
 
-// Only word-library tables move their context into the card; grammar stays intact.
-// 短语库(03. phrase/, 含未整理短语)的「意群」列直接显示在表格里, 不进卡片。
+// 单词库、短语库以及文章词表的「意群」列隐藏进悬浮卡片，表格只保留「词头 | 释义」两列。
 function contextCardColumn(names, path) {
   path = displayPath(path, names[0]);
-  if (libraryKind(path) !== "word" || !names.includes("释义")) return -1;
+  if (!["word", "phrase", "context"].includes(libraryKind(path)) || !names.includes("释义")) return -1;
   const word = names[0] === "意群" ? 1 : 0;
   return names.findIndex((name, i) => i !== word && (name === "意群" || name === "短语"));
 }
@@ -1220,7 +1219,7 @@ function markTable(table, path) {
         row.cells[wordCol].classList.add("hd-word-cell");
       }
     }
-    const hidden = Platform.isMobile ? headers.map((_, i) => i).filter(i => i > 1) : [];
+    const hidden = headers.map((_, i) => i).filter(i => i > 1);
     markHiddenColumns(table, markContextCard(table, headers.map(headerText), path, hidden));
     return;
   }
@@ -1239,9 +1238,7 @@ function markTable(table, path) {
   const isPhrase = !isVocab && chunkCol >= 0;
   if (!isVocab && !isPhrase) return markHiddenColumns(table, []);
   table.classList.add(isVocab ? "hd-decomp-table" : "hd-phrase-table");
-  const phCol = headers.findIndex((h) => headerText(h) === "音标");
-  const hiddenColumns = Platform.isMobile ? mobileHiddenColumns(headers)
-    : isVocab ? (phCol >= 0 ? [decompCol, phCol] : [decompCol]) : [];
+  const hiddenColumns = mobileHiddenColumns(headers);
   markHiddenColumns(table, markContextCard(table, headers.map(headerText), path, hiddenColumns));
   for (const row of table.querySelectorAll("tr")) {
     const cells = row.querySelectorAll("th, td");
@@ -2675,9 +2672,48 @@ module.exports = { ReadingAudioMethods };
 const { AUDIO_ROOT, AUDIO_SUBDIR, VAULT_PREFIX } = require("./constants");
 const { PHONEME_ALIASES, toSlug } = require("./extract");
 
+// 跨平台目录清单缓存（iOS 无 Node fs，用 vault.adapter.list 列出被 excludedFiles 隐藏的 mp3）
+const dirListingCache = new Map();
+const dirListingPending = new Map();
+
+async function ensureDirListed(app, dir) {
+  if (!app || !app.vault || !app.vault.adapter || !dir) return;
+  if (dirListingCache.has(dir)) return;
+  if (dirListingPending.has(dir)) return dirListingPending.get(dir);
+  const task = (async () => {
+    const set = new Set();
+    try {
+      const adapter = app.vault.adapter;
+      if (typeof adapter.exists === "function" && typeof adapter.list === "function" && await adapter.exists(dir)) {
+        const listed = await adapter.list(dir);
+        for (const f of (listed && listed.files) || []) {
+          set.add(String(f).normalize("NFC").toLowerCase());
+        }
+      }
+    } catch (e) {}
+    dirListingCache.set(dir, set);
+    dirListingPending.delete(dir);
+  })();
+  dirListingPending.set(dir, task);
+  return task;
+}
+
+async function ensureArticleAudioDirsListed(app, contextFile = null) {
+  const dirs = getArticleAudioDirectories(app, contextFile);
+  if (!dirs.length) return;
+  await Promise.all(dirs.map((d) => ensureDirListed(app, d)));
+}
+
 function vaultPathExists(app, vaultPath) {
   if (!app || !app.vault || !vaultPath) return false;
   if (app.vault.getAbstractFileByPath(vaultPath)) return true;
+
+  const slash = vaultPath.lastIndexOf("/");
+  if (slash > 0) {
+    const dir = vaultPath.slice(0, slash);
+    const listed = dirListingCache.get(dir);
+    if (listed) return listed.has(vaultPath.normalize("NFC").toLowerCase());
+  }
 
   // MP3 files are deliberately excluded from the file explorer, so they do
   // not appear in Vault.getFiles(). Use the desktop adapter as a fallback.
@@ -2880,6 +2916,8 @@ function getAudioFileIndex(app) {
 
 function invalidateAudioFileIndex() {
   audioFileIndexCache = null;
+  dirListingCache.clear();
+  dirListingPending.clear();
 }
 
 function findSentenceAudioPath(app, sentenceText, contextFile = null) {
@@ -2936,7 +2974,7 @@ function findChunkAudioPath(app, chunkText, targetWord, contextFile = null) {
   return null;
 }
 
-module.exports = { vaultPathExists, getArticleAudioDirectories, findAudioFilePath, findPhonemeAudioPath, getAudioFileIndex, invalidateAudioFileIndex, findSentenceAudioPath, findChunkAudioPath };
+module.exports = { vaultPathExists, ensureArticleAudioDirsListed, getArticleAudioDirectories, findAudioFilePath, findPhonemeAudioPath, getAudioFileIndex, invalidateAudioFileIndex, findSentenceAudioPath, findChunkAudioPath };
 
 },
 "audio/constants": function (module, exports, require) {
@@ -4527,7 +4565,7 @@ module.exports = { RuleMethods };
 const { Notice } = require("obsidian");
 const { playClip, prepareClipSafe, releaseClip } = require("../clip");
 const { PAUSED_CELL_CLASS, PLAYING_CELL_CLASS } = require("../constants");
-const { findAudioFilePath, findChunkAudioPath } = require("../lookup");
+const { ensureArticleAudioDirsListed, findAudioFilePath, findChunkAudioPath } = require("../lookup");
 const { describePlayingCell, resolvePlayingCell } = require("../playingCell");
 const { getSettings } = require("../settings");
 const { listeningNotePath } = require("../../shared/notes");
@@ -4680,6 +4718,7 @@ class PlaybackMethods {
 
     this.stopCurrentAudio();
 
+    await ensureArticleAudioDirsListed(this.app, context && context.file);
     const resolved = this.resolveAudioForCell(cell, type, context);
     return this.playResolvedAudio(cell, resolved);
   }

@@ -1,13 +1,13 @@
 {
   "speech": true,
-  "lastDeck": "a. language/02. word/a. 雅思词汇真经/01-自然地理.md",
+  "lastDeck": "a. language/09. speaking/常用口语/600常见词组、翻译、例句.md",
   "recent": [
+    "a. language/09. speaking/常用口语/600常见词组、翻译、例句.md",
+    "a. language/09. speaking/常用口语/常用英语500句.md",
     "a. language/02. word/a. 雅思词汇真经/01-自然地理.md",
     "a. language/01. base/a.phonemes.md",
     "a. language/06. reading/11. 今日阅读/Spinning Jenny.md",
-    "a. language/06. reading/11. 今日阅读/The Return of Monkey Life.md",
-    "a. language/06. reading/04. 分项说明/Brassica.md",
-    "a. language/06. reading/04. 分项说明/A survivor’s story.md"
+    "a. language/06. reading/11. 今日阅读/The Return of Monkey Life.md"
   ],
   "decks": {
     "a. language/02. word/未整理单词.md": {
@@ -31,10 +31,10 @@
       }
     },
     "a. language/02. word/a. 雅思词汇真经/01-自然地理.md": {
-      "progress": 0,
+      "progress": 40,
       "bookmark": {
         "tableKey": "[\"\",\"单词\",1]",
-        "word": "cave",
+        "word": "horizon",
         "occurrence": 0
       }
     },

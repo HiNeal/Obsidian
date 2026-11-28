@@ -866,8 +866,11 @@ class PrefsStore {
   }
 
   setDeck(path, patch) {
-    if (!path) return;
-    this.data.decks[path] = Object.assign(this.data.decks[path] || {}, patch);
+    if (!path || !patch) return;
+    const prev = this.data.decks[path] || {};
+    const changed = Object.entries(patch).some(([k, v]) => JSON.stringify(prev[k]) !== JSON.stringify(v));
+    if (!changed) return;
+    this.data.decks[path] = Object.assign({}, prev, patch);
     this.save();
   }
 
@@ -894,8 +897,11 @@ class PrefsStore {
   get recent() { return this.data.recent.slice(); }
 
   touch(path) {
+    const nextRecent = [path, ...this.data.recent.filter((p) => p !== path)].slice(0, RECENT_LIMIT);
+    if (this.data.lastDeck === path && this.data.recent.length === nextRecent.length
+      && this.data.recent.every((p, i) => p === nextRecent[i])) return;
     this.data.lastDeck = path;
-    this.data.recent = [path, ...this.data.recent.filter((p) => p !== path)].slice(0, RECENT_LIMIT);
+    this.data.recent = nextRecent;
     this.save();
   }
 
@@ -1808,12 +1814,12 @@ class CardView extends ItemView {
 
   async onOpen() {
     this.ensureBuilt();
-    this.addAction("mc-note", "返回笔记", () => this.backToNote()).removeAttribute("aria-label"); // 不要悬浮提示
     this.scopeButton = this.addAction("mc-cards", "学习范围", () => {
       if (this.tables.length) new ScopeSheet(this.app, this).open();
     });
     this.scopeButton.addClass("mc-scope-action");
     this.scopeButton.removeAttribute("aria-label");
+    this.addAction("mc-note", "返回笔记", () => this.backToNote()).removeAttribute("aria-label"); // 不要悬浮提示，放最后以便移动端优先露出
     this.deleteButton = this.addAction("trash-2", "删除当前卡片及笔记整行 (⌘⌫)", () => this.deleteCurrentCard());
     this.deleteButton.addClass("mc-delete-action");
     // 删除键挪到左侧: 紧跟 Obsidian 自带的 后退/前进 按钮

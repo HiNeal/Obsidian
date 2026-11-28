@@ -1,7 +1,10 @@
 {
   "syncEnabled": true,
-  "configSyncEnabled": true,
+  "configSyncEnabled": false,
   "logEnabled": "off",
+  "api": "http://122.152.250.186:9000",
+  "apiToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsIm5pY2tuYW1lIjoiIiwidG9rZW5JZCI6Miwibm9uY2UiOiJ0TlZGTDk2c2FnaDZVeGxJIiwiaXNzIjoiZmFzdC1ub3RlLXN5bmMtc2VydmljZSIsInN1YiI6InVzZXItdG9rZW4iLCJleHAiOjE4MjczMDI3MTYsIm5iZiI6MTc5NTc2NjcxNiwiaWF0IjoxNzk1NzY2NzE2LCJqdGkiOiIxIn0.ChqJEZFjCku_hny9W9J-D1DgeZp2uVlC-K2DA_9vbC0",
+  "vault": "Obsidian",
   "startupDelay": 500,
   "offlineSyncStrategy": "",
   "syncExcludeFolders": "[{\"pattern\":\"a. language/20. resource/17. dictionary/\",\"caseSensitive\":false},{\"pattern\":\"a. language/20. resource/Memory/\",\"caseSensitive\":false},{\"pattern\":\"a. language/20. resource/20. common/\",\"caseSensitive\":false}]",
@@ -32,7 +35,9 @@
   "maxConcurrentUploads": 20,
   "showConcurrencyIndicator": true,
   "showSyncIndicator": true,
+  "autoRedirectEnabled": true,
   "allowedRedirectDomains": "",
+  "wsPreProbeEnabled": true,
   "mobileToastTop": 110,
   "mobileBlurPauseEnabled": true,
   "binarySyncLimitEnabled": true,
@@ -41,8 +46,5 @@
   "attachmentSyncLimit": 3000,
   "hashSyncLimitEnabled": false,
   "hashSyncLimit": 50000,
-  "largeFileNoticeShown": [],
-  "apiToken": "fns-enc2:9a86b5979db89c96b096b5b6aa85b6ceb196b68cb691adca9cbcb6c9b6948fa7a9bcb5c6d19a86b5ce9ea8ae96b095ba8cb692ca8fa6cd8b8aa6a8ce93b6959096b69688969bb8c68da5a8cab5a5bcb6c9b29688969d92c68aa6cdaa96b096b5cfab93a5b8abbb94cd9ccdb9919ebba5a99ab887b5b69688969ea7b185b6959096a592b9859bbcce8a9dccad93b3a7b1ca9d92b28b9ccda9869b929395a5acb68cb691b1cea696b6c9b691a985a5a7b68b9bb8c68da5a8cb96b3bcb5939ab7be96b095bacbb2959c85b2bbb6ccb2aba68cb692ca96a596b6c9b2ab9ccab1ab9ccdb1959c87b19688969ea8b9cfb6959087b18594ceb185a6cdb185bacdb3bcb58e9bb89496b096b687b691cfd1bc978eb5baa5b995bc948aa0979186c6a8c6b5d2bbcebb989aa58fcd8aa993bcd2b4cdbbbea0c6899dbccf",
-  "api": "http://122.152.250.186:9000",
-  "vault": "Obsidian"
+  "largeFileNoticeShown": []
 }

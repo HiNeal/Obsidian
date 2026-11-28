@@ -91,6 +91,10 @@
   -webkit-user-select: none;
   container-type: inline-size; /* 给 .mc-stage 的 max-height 提供宽度 (cqw) */
 }
+/* iPhone 底部悬浮导航栏会覆盖 .view-content 底部，给播放控制栏让出空间（不影响桌面端） */
+body.is-mobile .mc-root {
+  padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+}
 /* 卡片 + 进度条 + 控制栏作为一组, 多出来的高度按 2 : 3 分到上下: 整组略偏上, 控制栏紧跟卡片 */
 .mc-root::before,
 .mc-root::after { content: ""; flex: 2 1 0; min-height: 0; }

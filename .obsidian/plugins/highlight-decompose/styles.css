@@ -346,7 +346,46 @@ table > tbody > tr:last-child > td.hd-visible-last .table-cell-wrapper {
    耳机点读（原 table-sound 插件的 styles.css，2026-10-05 原样并入）
    ========================================================================== */
 
+/* ==========================================================================
+   两列表格（桌面端 & 移动端）第一列优先不折行，剩余宽度全部给第二列（释义）
+   ========================================================================== */
+table:is(.hd-decomp-table, .hd-phrase-table, .hd-phrase-library, .hd-column-table, .hd-base-examples-table) {
+  width: 100% !important;
+  table-layout: auto !important;
+}
+
+table:is(.hd-decomp-table, .hd-phrase-table, .hd-phrase-library, .hd-column-table, .hd-base-examples-table) > thead > tr > th:first-child,
+table:is(.hd-decomp-table, .hd-phrase-table, .hd-phrase-library, .hd-column-table, .hd-base-examples-table) > tbody > tr > td:first-child,
+table:is(.hd-decomp-table, .hd-phrase-table, .hd-phrase-library, .hd-column-table, .hd-base-examples-table) > tbody > tr > td:first-child .table-cell-wrapper {
+  width: 1% !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+}
+
+table:is(.hd-decomp-table, .hd-phrase-table, .hd-phrase-library, .hd-column-table, .hd-base-examples-table) > thead > tr > th:not(:first-child):not(.hd-hidden-col),
+table:is(.hd-decomp-table, .hd-phrase-table, .hd-phrase-library, .hd-column-table, .hd-base-examples-table) > tbody > tr > td:not(:first-child):not(.hd-hidden-col) {
+  width: auto !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: anywhere !important;
+}
+
+/* 移动端（iPhone）：彻底隐藏多余列，释放布局宽度 */
+body.is-mobile table .hd-hidden-col {
+  display: none !important;
+}
+
+/* 移动端超长短语允许在词间换行，避免把释义列彻底挤出屏幕 */
+body.is-mobile table.hd-phrase-library > tbody > tr > td:first-child,
+body.is-mobile table.hd-phrase-library > tbody > tr > td:first-child .table-cell-wrapper {
+  max-width: 48vw !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+}
+
 /* Audio Playback: table-cell controls */
+
 
 /* 耳机按钮几何单一事实源：按钮尺寸与右偏移都从这里推导。 */
 body {

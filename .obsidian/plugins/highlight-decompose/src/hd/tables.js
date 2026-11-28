@@ -26,11 +26,10 @@ function markBaseExampleTable(table) {
   }
 }
 
-// Only word-library tables move their context into the card; grammar stays intact.
-// 短语库(03. phrase/, 含未整理短语)的「意群」列直接显示在表格里, 不进卡片。
+// 单词库、短语库以及文章词表的「意群」列隐藏进悬浮卡片，表格只保留「词头 | 释义」两列。
 function contextCardColumn(names, path) {
   path = displayPath(path, names[0]);
-  if (libraryKind(path) !== "word" || !names.includes("释义")) return -1;
+  if (!["word", "phrase", "context"].includes(libraryKind(path)) || !names.includes("释义")) return -1;
   const word = names[0] === "意群" ? 1 : 0;
   return names.findIndex((name, i) => i !== word && (name === "意群" || name === "短语"));
 }
@@ -69,7 +68,7 @@ function markTable(table, path) {
         row.cells[wordCol].classList.add("hd-word-cell");
       }
     }
-    const hidden = Platform.isMobile ? headers.map((_, i) => i).filter(i => i > 1) : [];
+    const hidden = headers.map((_, i) => i).filter(i => i > 1);
     markHiddenColumns(table, markContextCard(table, headers.map(headerText), path, hidden));
     return;
   }
@@ -88,9 +87,7 @@ function markTable(table, path) {
   const isPhrase = !isVocab && chunkCol >= 0;
   if (!isVocab && !isPhrase) return markHiddenColumns(table, []);
   table.classList.add(isVocab ? "hd-decomp-table" : "hd-phrase-table");
-  const phCol = headers.findIndex((h) => headerText(h) === "音标");
-  const hiddenColumns = Platform.isMobile ? mobileHiddenColumns(headers)
-    : isVocab ? (phCol >= 0 ? [decompCol, phCol] : [decompCol]) : [];
+  const hiddenColumns = mobileHiddenColumns(headers);
   markHiddenColumns(table, markContextCard(table, headers.map(headerText), path, hiddenColumns));
   for (const row of table.querySelectorAll("tr")) {
     const cells = row.querySelectorAll("th, td");

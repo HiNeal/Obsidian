@@ -92,12 +92,12 @@ class CardView extends ItemView {
 
   async onOpen() {
     this.ensureBuilt();
-    this.addAction("mc-note", "返回笔记", () => this.backToNote()).removeAttribute("aria-label"); // 不要悬浮提示
     this.scopeButton = this.addAction("mc-cards", "学习范围", () => {
       if (this.tables.length) new ScopeSheet(this.app, this).open();
     });
     this.scopeButton.addClass("mc-scope-action");
     this.scopeButton.removeAttribute("aria-label");
+    this.addAction("mc-note", "返回笔记", () => this.backToNote()).removeAttribute("aria-label"); // 不要悬浮提示，放最后以便移动端优先露出
     this.deleteButton = this.addAction("trash-2", "删除当前卡片及笔记整行 (⌘⌫)", () => this.deleteCurrentCard());
     this.deleteButton.addClass("mc-delete-action");
     // 删除键挪到左侧: 紧跟 Obsidian 自带的 后退/前进 按钮

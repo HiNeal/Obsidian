@@ -1,7 +1,7 @@
 const { Notice } = require("obsidian");
 const { playClip, prepareClipSafe, releaseClip } = require("../clip");
 const { PAUSED_CELL_CLASS, PLAYING_CELL_CLASS } = require("../constants");
-const { findAudioFilePath, findChunkAudioPath } = require("../lookup");
+const { ensureArticleAudioDirsListed, findAudioFilePath, findChunkAudioPath } = require("../lookup");
 const { describePlayingCell, resolvePlayingCell } = require("../playingCell");
 const { getSettings } = require("../settings");
 const { listeningNotePath } = require("../../shared/notes");
@@ -154,6 +154,7 @@ class PlaybackMethods {
 
     this.stopCurrentAudio();
 
+    await ensureArticleAudioDirsListed(this.app, context && context.file);
     const resolved = this.resolveAudioForCell(cell, type, context);
     return this.playResolvedAudio(cell, resolved);
   }

@@ -27,8 +27,11 @@ class PrefsStore {
   }
 
   setDeck(path, patch) {
-    if (!path) return;
-    this.data.decks[path] = Object.assign(this.data.decks[path] || {}, patch);
+    if (!path || !patch) return;
+    const prev = this.data.decks[path] || {};
+    const changed = Object.entries(patch).some(([k, v]) => JSON.stringify(prev[k]) !== JSON.stringify(v));
+    if (!changed) return;
+    this.data.decks[path] = Object.assign({}, prev, patch);
     this.save();
   }
 
@@ -55,8 +58,11 @@ class PrefsStore {
   get recent() { return this.data.recent.slice(); }
 
   touch(path) {
+    const nextRecent = [path, ...this.data.recent.filter((p) => p !== path)].slice(0, RECENT_LIMIT);
+    if (this.data.lastDeck === path && this.data.recent.length === nextRecent.length
+      && this.data.recent.every((p, i) => p === nextRecent[i])) return;
     this.data.lastDeck = path;
-    this.data.recent = [path, ...this.data.recent.filter((p) => p !== path)].slice(0, RECENT_LIMIT);
+    this.data.recent = nextRecent;
     this.save();
   }
 

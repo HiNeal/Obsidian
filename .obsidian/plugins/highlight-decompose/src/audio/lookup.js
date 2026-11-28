@@ -1,9 +1,48 @@
 const { AUDIO_ROOT, AUDIO_SUBDIR, VAULT_PREFIX } = require("./constants");
 const { PHONEME_ALIASES, toSlug } = require("./extract");
 
+// 跨平台目录清单缓存（iOS 无 Node fs，用 vault.adapter.list 列出被 excludedFiles 隐藏的 mp3）
+const dirListingCache = new Map();
+const dirListingPending = new Map();
+
+async function ensureDirListed(app, dir) {
+  if (!app || !app.vault || !app.vault.adapter || !dir) return;
+  if (dirListingCache.has(dir)) return;
+  if (dirListingPending.has(dir)) return dirListingPending.get(dir);
+  const task = (async () => {
+    const set = new Set();
+    try {
+      const adapter = app.vault.adapter;
+      if (typeof adapter.exists === "function" && typeof adapter.list === "function" && await adapter.exists(dir)) {
+        const listed = await adapter.list(dir);
+        for (const f of (listed && listed.files) || []) {
+          set.add(String(f).normalize("NFC").toLowerCase());
+        }
+      }
+    } catch (e) {}
+    dirListingCache.set(dir, set);
+    dirListingPending.delete(dir);
+  })();
+  dirListingPending.set(dir, task);
+  return task;
+}
+
+async function ensureArticleAudioDirsListed(app, contextFile = null) {
+  const dirs = getArticleAudioDirectories(app, contextFile);
+  if (!dirs.length) return;
+  await Promise.all(dirs.map((d) => ensureDirListed(app, d)));
+}
+
 function vaultPathExists(app, vaultPath) {
   if (!app || !app.vault || !vaultPath) return false;
   if (app.vault.getAbstractFileByPath(vaultPath)) return true;
+
+  const slash = vaultPath.lastIndexOf("/");
+  if (slash > 0) {
+    const dir = vaultPath.slice(0, slash);
+    const listed = dirListingCache.get(dir);
+    if (listed) return listed.has(vaultPath.normalize("NFC").toLowerCase());
+  }
 
   // MP3 files are deliberately excluded from the file explorer, so they do
   // not appear in Vault.getFiles(). Use the desktop adapter as a fallback.
@@ -206,6 +245,8 @@ function getAudioFileIndex(app) {
 
 function invalidateAudioFileIndex() {
   audioFileIndexCache = null;
+  dirListingCache.clear();
+  dirListingPending.clear();
 }
 
 function findSentenceAudioPath(app, sentenceText, contextFile = null) {
@@ -262,4 +303,4 @@ function findChunkAudioPath(app, chunkText, targetWord, contextFile = null) {
   return null;
 }
 
-module.exports = { vaultPathExists, getArticleAudioDirectories, findAudioFilePath, findPhonemeAudioPath, getAudioFileIndex, invalidateAudioFileIndex, findSentenceAudioPath, findChunkAudioPath };
+module.exports = { vaultPathExists, ensureArticleAudioDirsListed, getArticleAudioDirectories, findAudioFilePath, findPhonemeAudioPath, getAudioFileIndex, invalidateAudioFileIndex, findSentenceAudioPath, findChunkAudioPath };
